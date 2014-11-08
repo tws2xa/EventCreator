@@ -76,6 +76,7 @@ namespace EventCreator
             myMap[Keys.LOSE_FOLLOW_UP_KEY] = loseFollowUp;
             myMap[Keys.LOSE_RESOURCE_CHANGE_KEY] = loseResourceChange;
             myMap[Keys.LOSE_PARTY_STAT_CHANGE_KEY] = losePartyStatChange;
+
         }
     }
 }

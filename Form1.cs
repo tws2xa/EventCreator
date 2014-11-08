@@ -44,10 +44,9 @@ namespace EventCreator
             return eventNameInput.Text;
         }
 
-        internal static string getEventType()
+        internal string getEventType()
         {
-            //TODO Return the event type
-            return "";
+            return (string)eventTypeInput.Items[eventTypeInput.SelectedIndex];
         }
 
         internal static List<string> getPossibleLocations()
@@ -62,10 +61,9 @@ namespace EventCreator
             return new List<string>();
         }
 
-        internal static string getIntroText()
+        internal string getIntroText()
         {
-            //TODO Return the intro text
-            return "";
+            return introDescInput.Text;
         }
 
         internal static bool getSelectPlayer()
