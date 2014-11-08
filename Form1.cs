@@ -62,10 +62,9 @@ namespace EventCreator
             return new List<string>();
         }
 
-        internal static string getIntroText()
+        internal string getIntroText()
         {
-            //TODO Return the intro text
-            return "";
+            return introDescInput.Text;
         }
 
         internal static bool getSelectPlayer()
