@@ -30,6 +30,7 @@
         {
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabGeneralInfo = new System.Windows.Forms.TabPage();
+            this.btnLoadEvent = new System.Windows.Forms.Button();
             this.selectplayerB = new System.Windows.Forms.CheckBox();
             this.selectPlayerLabel = new System.Windows.Forms.Label();
             this.introDescLabel = new System.Windows.Forms.Label();
@@ -335,7 +336,6 @@
             this.lblFileName = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnLoadEvent = new System.Windows.Forms.Button();
             this.openFileDialog_LoadEvent = new System.Windows.Forms.OpenFileDialog();
             this.tabMain.SuspendLayout();
             this.tabGeneralInfo.SuspendLayout();
@@ -468,6 +468,17 @@
             this.tabGeneralInfo.TabIndex = 0;
             this.tabGeneralInfo.Text = "General Info";
             this.tabGeneralInfo.UseVisualStyleBackColor = true;
+            this.tabGeneralInfo.Click += new System.EventHandler(this.tabGeneralInfo_Click);
+            // 
+            // btnLoadEvent
+            // 
+            this.btnLoadEvent.Location = new System.Drawing.Point(369, 420);
+            this.btnLoadEvent.Name = "btnLoadEvent";
+            this.btnLoadEvent.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadEvent.TabIndex = 29;
+            this.btnLoadEvent.Text = "Load Event";
+            this.btnLoadEvent.UseVisualStyleBackColor = true;
+            this.btnLoadEvent.Click += new System.EventHandler(this.btnLoadEvent_Click);
             // 
             // selectplayerB
             // 
@@ -589,6 +600,7 @@
             this.locationsInput.Name = "locationsInput";
             this.locationsInput.Size = new System.Drawing.Size(151, 199);
             this.locationsInput.TabIndex = 19;
+            this.locationsInput.SelectedIndexChanged += new System.EventHandler(this.locationsInput_SelectedIndexChanged);
             // 
             // eventTypeInput
             // 
@@ -3419,16 +3431,6 @@
             this.openFileDialog1.DefaultExt = "txt";
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Text File|*.txt";
-            // 
-            // btnLoadEvent
-            // 
-            this.btnLoadEvent.Location = new System.Drawing.Point(369, 420);
-            this.btnLoadEvent.Name = "btnLoadEvent";
-            this.btnLoadEvent.Size = new System.Drawing.Size(75, 23);
-            this.btnLoadEvent.TabIndex = 29;
-            this.btnLoadEvent.Text = "Load Event";
-            this.btnLoadEvent.UseVisualStyleBackColor = true;
-            this.btnLoadEvent.Click += new System.EventHandler(this.btnLoadEvent_Click);
             // 
             // openFileDialog_LoadEvent
             // 

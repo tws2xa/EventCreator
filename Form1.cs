@@ -49,16 +49,24 @@ namespace EventCreator
             return (string)eventTypeInput.Items[eventTypeInput.SelectedIndex];
         }
 
-        internal static List<string> getPossibleLocations()
+        internal List<string> getPossibleLocations()
         {
-            //TODO Return the list of possible locations
-            return new List<string>();
+            List<String> possibleLocations = new List<String>();
+            foreach (int index in locationsInput.CheckedIndices)
+            {
+                possibleLocations.Add((String)(locationsInput.Items[index]));
+            }
+            return possibleLocations;
         }
 
-        internal static List<string> getRequiredParty()
-        {
-            //TODO Return the list of required party members
-            return new List<string>();
+        internal List<string> getRequiredParty()
+        {        
+            List<String> reqPartyMem = new List<String>();
+            foreach (int index in reqPaMemInput.CheckedIndices)
+            {
+                reqPartyMem.Add((String)(reqPaMemInput.Items[index]));
+            }
+            return reqPartyMem;
         }
 
         internal string getIntroText()
@@ -696,6 +704,16 @@ namespace EventCreator
             numLabels.Add(labelResponse5);
 
             responseOptions.Add(0, new ResponseOption(textResponse1.Text));
+        }
+
+        private void tabGeneralInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void locationsInput_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         /* ------------------------------------------------ */
