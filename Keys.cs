@@ -32,8 +32,10 @@ namespace EventCreator
         public const String TEXT_KEY = "text";
         //List<Integer>
         public const String RESOURCE_STAT_COST_KEY = "resourceStatCost";
+        public const String PARTY_STAT_COST_KEY = "partyStatCost";
         //List<Integer>
         public const String PARTY_STAT_REQUIREMENT_KEY = "partyStatRequirement";
+        public const String RESOURCE_STAT_REQUIREMENT_KEY = "resouceStatRequirement";
 
         //Needed for determining win/lose
         //List<int>
