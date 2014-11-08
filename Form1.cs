@@ -495,6 +495,7 @@ namespace EventCreator
 
 
             //TODO - Save the Response! Woo!
+            List<int> globalStats = new List<int>;
 
 
             return "";
