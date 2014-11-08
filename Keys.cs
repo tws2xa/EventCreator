@@ -36,9 +36,9 @@ namespace EventCreator
         public const String PARTY_STAT_REQUIREMENT_KEY = "partyStatRequirement";
 
         //Needed for determining win/lose
-        //List<String>
+        //List<int>
         public const String RESOURCE_MODIFIERS_KEY = "resourceModifiers";
-        //List<String>
+        //List<int>
         public const String PARTY_STAT_MODIFIERS_KEY = "partyStatModifiers";
 
         //Pass Info
@@ -59,5 +59,14 @@ namespace EventCreator
         public const String LOSE_RESOURCE_CHANGE_KEY = "loseResourceChange";
         //List<Integer>
         public const String LOSE_PARTY_STAT_CHANGE_KEY = "losePartyStatChange";
+
+        
+        public const String KILL_PERSON_PASS_KEY = "killPersonPass";
+        public const String KILL_PERSON_WIN_KEY = "killPersonWin";
+        public const String KILL_PERSON_LOSE_KEY = "killPersonLose";
+        public const String REWARD_DISPERSE_LOSE_KEY = "rewardDisperseLose";
+        public const String REWARD_DISPERSE_WIN_KEY = "rewardDisperseWin";
+
+
     }
 }

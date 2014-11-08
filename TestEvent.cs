@@ -9,7 +9,7 @@ namespace EventCreator
     static class TestEvent
     {
 
-        public static Event getEvent() {
+        public static Event GetEvent() {
 
             string eventId = "Socrates Attack";
             string type = "MoveTo";
@@ -51,9 +51,9 @@ namespace EventCreator
 		    List<int> resourceStatCost = new List<int>() { 10, 10 , 10, 10, 10, 10, 10, 10 };		    
 		    List<int> partyStatCost = new List<int>() { 10, 10 , 10, 10, 10, 10, 10, 10 };		
             List<int> resourceStatReq = new List<int>() { 2, 2, 2, 2, 2, 2, 2, 2 };
-		    List<int> partyStatReq = new List<int>() { 2, 2, 2, 2, 2, 2, 2, 2 };		
-		    List<String> resourceModifiers = new List<String>() {"What is this?", "I don't know"};		
-		    List<String> partyStatModifiers = new List<String>(){"What is this also?", "I have no idea."};		
+		    List<int> partyStatReq = new List<int>() { 2, 2, 2, 2, 2, 2, 2, 2 };
+            List<int> resourceModifiers = new List<int>() { 2, 2, 2, 2, 2, 2, 2, 2 };
+            List<int> partyStatModifiers = new List<int>() { 2, 2, 2, 2, 2, 2, 2, 2 };		
 		    string passText = "You passed the test!";
             string winText = "You won the challenge!";
             string loseText = "You lost the challenge! You died.";
@@ -66,15 +66,15 @@ namespace EventCreator
 		    List<int> losePartyStatChange = new List<int>(){ -10, -10 , -10, -10, -10, -10, -10, -10 };
 
             ResponseOption responseOption1 = new ResponseOption("Engage in Socratic Dialogue", resourceStatCost, partyStatCost, resourceStatReq, partyStatReq, resourceModifiers, partyStatModifiers,
-                winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange);	    
+                winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange, false, false, false, 2, 2);	    
             ResponseOption responseOption2 = new ResponseOption("Take him to court!", resourceStatCost, partyStatCost, resourceStatReq, partyStatReq, resourceModifiers, partyStatModifiers,
-                winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange);
+                winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange, false, false, false, 2, 2);
             ResponseOption responseOption3 = new ResponseOption("Ask about the oracle.", resourceStatCost, partyStatCost, resourceStatReq, partyStatReq, resourceModifiers, partyStatModifiers,
-               winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange);
+               winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange, false, false, false, 2, 2);
             ResponseOption responseOption4 = new ResponseOption("Set up a system of organized trade.", resourceStatCost, partyStatCost, resourceStatReq, partyStatReq, resourceModifiers, partyStatModifiers,
-                           winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange);
+                           winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange, false, false, false, 2, 2);
             ResponseOption responseOption5 = new ResponseOption("Run Away!", resourceStatCost, partyStatCost, resourceStatReq, partyStatReq, resourceModifiers, partyStatModifiers,
-                           winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange);
+                           winText, passText, loseText, winFollowUp, passFollowUp, loseFollowUp, winResourceChange, winPartyStatChange, loseResourceChange, losePartyStatChange, false, false, false, 2, 2);
 
             responseOptions.Add(responseOption1);
 		    responseOptions.Add(responseOption2);
