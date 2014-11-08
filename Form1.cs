@@ -39,10 +39,9 @@ namespace EventCreator
         // General Info Stuff                               //
         /* ------------------------------------------------ */
 
-        internal static string getEventId()
+        internal string getEventId()
         {
-            //TODO Return the event id
-            return "";
+            return eventNameInput.Text;
         }
 
         internal static string getEventType()
