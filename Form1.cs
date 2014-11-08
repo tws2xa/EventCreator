@@ -545,8 +545,82 @@ namespace EventCreator
 
             // Global Variable Requirements (Resource Stat Cost)
             List<int> resourceStatCost = new List<int>;
-            resourceStatCost.Add((int)markMod.Value);
-            resourceStatCost.Add()
+            resourceStatCost.Add((int)foodReq.Value);
+            resourceStatCost.Add((int)waterReq.Value);
+            resourceStatCost.Add((int)valueReq.Value);
+            resourceStatCost.Add((int)ammoReq.Value);
+            resourceStatCost.Add((int)medReq.Value);
+            resourceStatCost.Add((int)moraleReq.Value);
+            resourceStatCost.Add((int)staminaReq.Value);
+            resourceStatCost.Add((int)packReq.Value);
+
+            responseToEdit.myMap[Keys.RESOURCE_STAT_COST_KEY] = resourceStatCost;
+
+            // Party Member Requirements (Party Stat Requirement)
+            List<int> partyMemReq = new List<int>;
+            partyMemReq.Add((int)marksReq.Value);
+            partyMemReq.Add((int)percReq.Value);
+            partyMemReq.Add((int)tacticsReq.Value);
+            partyMemReq.Add((int)loyalReq.Value);
+            partyMemReq.Add((int)agilityReq.Value);
+            partyMemReq.Add((int)strengthReq.Value);
+            partyMemReq.Add((int)diploReq.Value);
+            partyMemReq.Add((int)knowReq.Value);
+
+            responseToEdit.myMap[Keys.PARTY_STAT_REQUIREMENT_KEY] = partyMemReq;
+
+            // Lose Global Stats (Lose Resource Change)
+            List<int> loseGlobal = new List<int>;
+            loseGlobal.Add((int)foodLose.Value);
+            loseGlobal.Add((int)waterLose.Value);
+            loseGlobal.Add((int)valueLose.Value);
+            loseGlobal.Add((int)ammoLose.Value);
+            loseGlobal.Add((int)medLose.Value);
+            loseGlobal.Add((int)moraleLose.Value);
+            loseGlobal.Add((int)staminaLose.Value);
+            loseGlobal.Add((int)packLose.Value);
+
+            responseToEdit.myMap[Keys.LOSE_RESOURCE_CHANGE_KEY] = loseGlobal;
+
+            // Lose Member Stats (Lose Party Stat Change)
+            List<int> loseMember = new List<int>;
+            loseMember.Add((int)markLose.Value);
+            loseMember.Add((int)percLose.Value);
+            loseMember.Add((int)tacticsLose.Value);
+            loseMember.Add((int)loyalLose.Value);
+            loseMember.Add((int)agilityLose.Value);
+            loseMember.Add((int)strengthLose.Value);
+            loseMember.Add((int)diploLose.Value);
+            loseMember.Add((int)knowLose.Value);
+
+            responseToEdit.myMap[Keys.LOSE_PARTY_STAT_CHANGE_KEY] = loseMember;
+
+            // Win Global Stats (Win Resource Change)
+            List<int> winGlobal = new List<int>;
+            winGlobal.Add((int)foodWin.Value);
+            winGlobal.Add((int)waterWin.Value);
+            winGlobal.Add((int)valueWin.Value);
+            winGlobal.Add((int)ammoWin.Value);
+            winGlobal.Add((int)medWin.Value);
+            winGlobal.Add((int)moraleWin.Value);
+            winGlobal.Add((int)staminaWin.Value);
+            winGlobal.Add((int)packWin.Value);
+
+            responseToEdit.myMap[Keys.WIN_RESOURCE_CHANGE_KEY] = winGlobal;
+
+            // Win Member Stats (WIN_PARTY_STAT_CHANGE_KEY)
+            List<int> winMember = new List<int>;
+            winMember.Add((int)marksWin.Value);
+            winMember.Add((int)percWin.Value);
+            winMember.Add((int)tacticsWin.Value);
+            winMember.Add((int)loyalWin.Value);
+            winMember.Add((int)agilityWin.Value);
+            winMember.Add((int)strengthWin.Value);
+            winMember.Add((int)diploWin.Value);
+            winMember.Add((int)knowWin.Value);
+
+            responseToEdit.myMap[Keys.WIN_PARTY_STAT_CHANGE_KEY] = winMember;
+
 
 
             return "";
