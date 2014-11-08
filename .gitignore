@@ -4,8 +4,6 @@ bin/Debug/EventCreator.pdb
 bin/Debug/EventCreator.vshost.exe
 bin/Debug/EventCreator.vshost.exe.config
 bin/Debug/EventCreator.vshost.exe.manifest
-bin/Debug/Newtonsoft.Json.dll
-bin/Debug/Newtonsoft.Json.xml
 obj/Debug/DesignTimeResolveAssemblyReferences.cache
 obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 obj/Debug/EventCreator.csproj.FileListAbsolute.txt
