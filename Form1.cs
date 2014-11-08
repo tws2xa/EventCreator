@@ -493,7 +493,52 @@ namespace EventCreator
 
 
             //TODO - Save the Response! Woo!
+            // Global Stats (Resource Modifiers)
             List<int> globalStats = new List<int>;
+            if (foodModB.Checked){globalStats.Add((int)foodMod.Value);}
+            else {globalStats.Add(-1)}
+            if (waterModB.Checked){globalStats.Add((int)waterMod.Value);}
+            else {globalStats.Add(-1)}
+            if (vModB.Checked){globalStats.Add((int)valueMod.Value);}
+            else {globalStats.Add(-1)}
+            if (ammoModB.Checked){globalStats.Add((int)ammoMod.Value);}
+            else {globalStats.Add(-1)}
+            if (medModB.Checked){globalStats.Add((int)medMod.Value);}
+            else {globalStats.Add(-1)}
+            if (moraleModB.Checked){globalStats.Add((int)moraleMod.Value);}
+            else {globalStats.Add(-1)}
+            if (staminaModB.Checked){globalStats.Add((int)staminaMod.Value);}
+            else {globalStats.Add(-1)}
+            if (valueModB.Checked){globalStats.Add((int)packMod.Value);}
+            else {globalStats.Add(-1)}
+
+            responseToEdit.myMap[Keys.RESOURCE_MODIFIERS_KEY] = globalStats;
+
+            // Member Stats (Party Stat Modifiers)
+            List<int> memberStats = new List<int>;
+            if (marksModB.Checked){memberStats.Add((int)markMod.Value);}
+            else {memberStats.Add(-1)}
+            if (percModB.Checked){memberStats.Add((int)percMod.Value);}
+            else {memberStats.Add(-1)}
+            if (tacticsModB.Checked){memberStats.Add((int)tacticsMod.Value);}
+            else {memberStats.Add(-1)}
+            if (loyalModB.Checked){memberStats.Add((int)loyalMod.Value);}
+            else {memberStats.Add(-1)}
+            if (agilityModB.Checked){memberStats.Add((int)agilityMod.Value);}
+            else {memberStats.Add(-1)}
+            if (strengthModB.Checked){memberStats.Add((int)strengthMod.Value);}
+            else {memberStats.Add(-1)}
+            if (diploModB.Checked){memberStats.Add((int)diploMod.Value);}
+            else {memberStats.Add(-1)}
+            if (knowModB.Checked){memberStats.Add((int)knowMod.Value);}
+            else {memberStats.Add(-1)}
+
+            responseToEdit.myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = memberStats;
+
+            // Global Variable Requirements (Resource Stat Cost)
+            List<int> resourceStatCost = new List<int>;
+            resourceStatCost.Add((int)markMod.Value);
+            resourceStatCost.Add()
 
 
             return "";
