@@ -75,10 +75,37 @@ namespace EventCreator
             return false;
         }
 
+        /// <summary>
+        /// Loads in an event. Calls all tabs' load methods.
+        /// </summary>
+        private void btnLoadEvent_Click(object sender, EventArgs e)
+        {
+            DialogResult result = openFileDialog_LoadEvent.ShowDialog();
+            if (result == DialogResult.Cancel) return;
+
+            Event toLoad = EventLoader.GetEventFromFile(openFileDialog_LoadEvent.FileName);
+
+            GeneralInfoLoadEvent(toLoad);
+            AdviceLoadEvent(toLoad);
+            ResponseOptionsLoadEvent(toLoad);
+            EditResponseOptionsLoadEvent(toLoad);
+            FinishLoadEvent(toLoad);
+
+        }
+
+        /// <summary>
+        /// Sets the general info tab information to load in all needed info from the event.
+        /// </summary>
+        /// <param name="theEvent">Event to load in</param>
+        private void GeneralInfoLoadEvent(Event theEvent)
+        {
+            //TODO - Load event information for this tab.
+        }
+
         /* ------------------------------------------------ */
         // Advice Stuff                                     //
         /* ------------------------------------------------ */
-        
+
         /// <summary>
         /// Creates the dictionary containing advice from every character.
         /// </summary>
@@ -140,6 +167,16 @@ namespace EventCreator
             dictionaryAdvice.Add(lblTheunisVanZyl.Text, adviceGuide);
 
             return dictionaryAdvice;
+        }
+
+
+        /// <summary>
+        /// Sets the advice tab information to load in all needed info from the event.
+        /// </summary>
+        /// <param name="theEvent">Event to load in</param>
+        private void AdviceLoadEvent(Event theEvent)
+        {
+            //TODO - Fill out advice load in
         }
 
 
@@ -281,6 +318,15 @@ namespace EventCreator
         private void textResponse5_TextChanged(object sender, EventArgs e)
         {
             responseOptions[4].myMap[Keys.TEXT_KEY] = textResponse5.Text;
+        }
+        
+        /// <summary>
+        /// Sets the Response Options tab information to load in all needed info from the event.
+        /// </summary>
+        /// <param name="theEvent">Event to load in</param>
+        private void ResponseOptionsLoadEvent(Event theEvent)
+        {
+            //TODO - Load in event info for this tab.
         }
 
         /* ------------------------------------------------ */
@@ -476,7 +522,15 @@ namespace EventCreator
             return "";
         }
 
-
+        /// <summary>
+        /// Sets the Edit Response Options tab information to load in all needed info from the event.
+        /// </summary>
+        /// <param name="theEvent">Event to load in</param>
+        private void EditResponseOptionsLoadEvent(Event theEvent)
+        {
+            //TODO - Load in event info for this tab.
+        }
+        
         /* ------------------------------------------------ */
         // Finish Stuff                                     //
         /* ------------------------------------------------ */
@@ -551,8 +605,15 @@ namespace EventCreator
             if (isValidFileName(fileLoc) == "") return fileLoc;
             else return null;
         }
-
-
+        
+        /// <summary>
+        /// Sets the Finish tab information to load in all needed info from the event.
+        /// </summary>
+        /// <param name="theEvent">Event to load in</param>
+        private void FinishLoadEvent(Event theEvent)
+        {
+            //TODO - Load in event info for this tab.
+        }
         /* ------------------------------------------------ */
         // Other                                            //
         /* ------------------------------------------------ */

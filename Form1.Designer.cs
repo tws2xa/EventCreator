@@ -335,6 +335,8 @@
             this.lblFileName = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnLoadEvent = new System.Windows.Forms.Button();
+            this.openFileDialog_LoadEvent = new System.Windows.Forms.OpenFileDialog();
             this.tabMain.SuspendLayout();
             this.tabGeneralInfo.SuspendLayout();
             this.Advice.SuspendLayout();
@@ -444,6 +446,7 @@
             // 
             // tabGeneralInfo
             // 
+            this.tabGeneralInfo.Controls.Add(this.btnLoadEvent);
             this.tabGeneralInfo.Controls.Add(this.selectplayerB);
             this.tabGeneralInfo.Controls.Add(this.selectPlayerLabel);
             this.tabGeneralInfo.Controls.Add(this.introDescLabel);
@@ -3417,6 +3420,22 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Text File|*.txt";
             // 
+            // btnLoadEvent
+            // 
+            this.btnLoadEvent.Location = new System.Drawing.Point(369, 420);
+            this.btnLoadEvent.Name = "btnLoadEvent";
+            this.btnLoadEvent.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadEvent.TabIndex = 29;
+            this.btnLoadEvent.Text = "Load Event";
+            this.btnLoadEvent.UseVisualStyleBackColor = true;
+            this.btnLoadEvent.Click += new System.EventHandler(this.btnLoadEvent_Click);
+            // 
+            // openFileDialog_LoadEvent
+            // 
+            this.openFileDialog_LoadEvent.FileName = "*.txt";
+            this.openFileDialog_LoadEvent.Filter = "Text Files|*.txt";
+            this.openFileDialog_LoadEvent.Title = "Load Event";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3836,6 +3855,8 @@
         private System.Windows.Forms.Label labelResponse2;
         private System.Windows.Forms.Label labelResponse4;
         private System.Windows.Forms.Label labelResponse5;
+        private System.Windows.Forms.Button btnLoadEvent;
+        private System.Windows.Forms.OpenFileDialog openFileDialog_LoadEvent;
 
     }
 }

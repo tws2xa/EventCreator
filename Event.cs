@@ -57,6 +57,10 @@ namespace EventCreator
             myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY] = targetPartyMember;
         }
 
+        public Event(Dictionary<string, object> eventDictionary)
+        {
+            myDictionary = eventDictionary;
+        }
 
         public void AddResponseOption(ResponseOption toAdd)
         {
@@ -75,6 +79,16 @@ namespace EventCreator
         public void SetResponseOptions(List<Dictionary<string, object>> list)
         {
             myDictionary[Keys.RESPONSE_OPTIONS_KEY] = list;
+        }
+
+        public override string ToString()
+        {
+            string toRet = "{ ";
+            foreach(string key in myDictionary.Keys) {
+                toRet += "(" + key + ", " + myDictionary[key] + ") ";
+            }
+            toRet += " }";
+            return toRet;
         }
 
     }
