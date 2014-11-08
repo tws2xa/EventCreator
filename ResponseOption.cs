@@ -71,8 +71,10 @@ namespace EventCreator
             bool killOnLose, bool killOnPass, bool killOnWin, int disperseWin, int disperseLose)
         {
             myMap[Keys.TEXT_KEY] = text;
+            myMap[Keys.PARTY_STAT_COST_KEY] = partyStatCosts;
             myMap[Keys.RESOURCE_STAT_COST_KEY] = resourceStatCosts;
             myMap[Keys.PARTY_STAT_REQUIREMENT_KEY] = partyStatReqs;
+            myMap[Keys.RESOURCE_STAT_REQUIREMENT_KEY] = resourceStatReqs;
             myMap[Keys.RESOURCE_MODIFIERS_KEY] = resourceStatModifiers;
             myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = partyStatModifiers;
             myMap[Keys.PASS_TEXT_KEY] = passText;
