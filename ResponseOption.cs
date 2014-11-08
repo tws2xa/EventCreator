@@ -14,7 +14,9 @@ namespace EventCreator
         { 
 		    {Keys.TEXT_KEY, null},
             {Keys.RESOURCE_STAT_COST_KEY, new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
+            {Keys.PARTY_STAT_COST_KEY, new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
 		    {Keys.PARTY_STAT_REQUIREMENT_KEY,  new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
+		    {Keys.RESOURCE_STAT_REQUIREMENT_KEY,  new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
 		    {Keys.RESOURCE_MODIFIERS_KEY, new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
             {Keys.PARTY_STAT_MODIFIERS_KEY, new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
 		    {Keys.PASS_TEXT_KEY, ""},
@@ -30,7 +32,7 @@ namespace EventCreator
             {Keys.KILL_PERSON_PASS_KEY, false},
             {Keys.KILL_PERSON_WIN_KEY, false},
             {Keys.REWARD_DISPERSE_LOSE_KEY, 2},
-            {Keys.REWARD_DISPERSE_WIN_KEY, 2}
+            {Keys.REWARD_DISPERSE_WIN_KEY, 2},
         };
 
         /// <summary>
