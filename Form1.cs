@@ -668,7 +668,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.LOSE_FOLLOW_UP_KEY] = loseFollowUp.Text;
 
             // PASS_FOLLOW_UP_KEY
-            // TO - DO
+            responseToEdit.myMap[Keys.PASS_FOLLOW_UP_KEY] = passFollowUp.Text;
 
             // REWARD_DISPERSE_LOSE_KEY
             responseToEdit.myMap[Keys.REWARD_DISPERSE_LOSE_KEY] = comboBoxLoseApplication.SelectedIndex;
