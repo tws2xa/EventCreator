@@ -97,35 +97,54 @@ namespace EventCreator
 
             Event toLoad = EventLoader.GetEventFromFile(openFileDialog_LoadEvent.FileName);
 
-            GeneralInfoLoadEvent(toLoad);
-            AdviceLoadEvent(toLoad);
-            ResponseOptionsLoadEvent(toLoad);
-            EditResponseOptionsLoadEvent(toLoad);
-            FinishLoadEvent(toLoad);
+            string loadStatus = "";
 
+            string tmp = GeneralInfoLoadEvent(toLoad);
+            if (!String.IsNullOrWhiteSpace(tmp)) loadStatus += "\n" + tmp;
+            tmp = AdviceLoadEvent(toLoad);
+            if (!String.IsNullOrWhiteSpace(tmp)) loadStatus += "\n" + tmp;
+            tmp = ResponseOptionsLoadEvent(toLoad);
+            if (!String.IsNullOrWhiteSpace(tmp)) loadStatus += "\n" + tmp;
+            tmp = EditResponseOptionsLoadEvent(toLoad);
+            if (!String.IsNullOrWhiteSpace(tmp)) loadStatus += "\n" + tmp;
+            tmp = FinishLoadEvent(toLoad);
+            if (!String.IsNullOrWhiteSpace(tmp)) loadStatus += "\n" + tmp;
+
+            if (!String.IsNullOrWhiteSpace(loadStatus))
+            {
+                MessageBox.Show("Uh-oh! Unable to properly load the following tabs:\n" + loadStatus + "\n\nSorry!");
+            }
         }
 
         /// <summary>
         /// Sets the general info tab information to load in all needed info from the event.
         /// </summary>
         /// <param name="theEvent">Event to load in</param>
-        private void GeneralInfoLoadEvent(Event theEvent)
+        private string GeneralInfoLoadEvent(Event theEvent)
         {
-            eventNameInput.Text = (string)theEvent.myDictionary[Keys.EVENT_ID_KEY];
-            SelectStrInComboBox(eventTypeInput, (string)theEvent.myDictionary[Keys.EVENT_TYPE_KEY]);
-            SelectStrInComboBox(frequencyInput, (string)theEvent.myDictionary[Keys.EVENT_FREQUENCY_KEY]);
-            List<string> locations = GetStringListFromJSON(theEvent.myDictionary[Keys.POSSIBLE_LOCATIONS_KEY]);
-            for (int i = 0; i < locationsInput.Items.Count; i++)
+            try
             {
-                locationsInput.SetItemChecked(i, locations.Contains(locationsInput.Items[i]));
+                eventNameInput.Text = (string)theEvent.myDictionary[Keys.EVENT_ID_KEY];
+                SelectStrInComboBox(eventTypeInput, (string)theEvent.myDictionary[Keys.EVENT_TYPE_KEY]);
+                SelectStrInComboBox(frequencyInput, (string)theEvent.myDictionary[Keys.EVENT_FREQUENCY_KEY]);
+                List<string> locations = GetStringListFromJSON(theEvent.myDictionary[Keys.POSSIBLE_LOCATIONS_KEY]);
+                for (int i = 0; i < locationsInput.Items.Count; i++)
+                {
+                    locationsInput.SetItemChecked(i, locations.Contains(locationsInput.Items[i]));
+                }
+                List<string> partyNeeded = GetStringListFromJSON(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
+                for (int i = 0; i < reqPaMemInput.Items.Count; i++)
+                {
+                    reqPaMemInput.SetItemChecked(i, partyNeeded.Contains(reqPaMemInput.Items[i]));
+                }
+                introDescInput.Text = (string)theEvent.myDictionary[Keys.INTRO_TEXT_KEY];
+                selectplayerB.Checked = (bool)theEvent.myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY];
             }
-            List<string> partyNeeded = GetStringListFromJSON(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
-            for (int i = 0; i < reqPaMemInput.Items.Count; i++)
+            catch (Exception e)
             {
-                reqPaMemInput.SetItemChecked(i, partyNeeded.Contains(reqPaMemInput.Items[i]));
+                return "General Information";
             }
-            introDescInput.Text = (string)theEvent.myDictionary[Keys.INTRO_TEXT_KEY];
-            selectplayerB.Checked = (bool)theEvent.myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY];
+            return "";
         }
 
 
@@ -250,33 +269,41 @@ namespace EventCreator
         /// Sets the advice tab information to load in all needed info from the event.
         /// </summary>
         /// <param name="theEvent">Event to load in</param>
-        private void AdviceLoadEvent(Event theEvent)
+        private string AdviceLoadEvent(Event theEvent)
         {
-            Dictionary<string, string> advice = GetStrStrDictionaryFromJSON(theEvent.myDictionary[Keys.ADVICE_KEY]);
-            //Umbopa
-            SetAdviceRow(txtUmbopa, chkUmbopa, advice[lblUmbopa.Text]);
-            //Macumazahn
-            SetAdviceRow(txtMacumazahn, chkMacumazahn, advice[lblMacumazahn.Text]);
-            //Wonai
-            SetAdviceRow(txtWonai, chkWonai, advice[lblWonai.Text]);
-            //Tariro
-            SetAdviceRow(txtTariro, chkTariro, advice[lblTariro.Text]);
-            //JanKruger
-            SetAdviceRow(txtJanKruger, chkJanKruger, advice[lblJanKruger.Text]);
-            //TheunisVanZyl
-            SetAdviceRow(txtTheunisVanZyl, chkTheunisVanZyl, advice[lblTheunisVanZyl.Text]);
-            //WillemDeBruin
-            SetAdviceRow(txtWillemDeBruin, chkWillemDeBruin, advice[lblWillemDeBruin.Text]);
-            //JakobusKotze
-            SetAdviceRow(txtJakobusKotze, chkJakobusKotze, advice[lblJakobusKotze.Text]);
-            //RolandPerry
-            SetAdviceRow(txtRolandPerry, chkRolandPerry, advice[lblRolandPerry.Text]);
-            //JackReed
-            SetAdviceRow(txtJackReed, chkJackReed, advice[lblJackReed.Text]);
-            //DuncanMacKinnon
-            SetAdviceRow(txtDuncanMacKinnon, chkDuncanMacKinnon, advice[lblDuncanMacKinnon.Text]);
-            //GuntherReinhart
-            SetAdviceRow(txtGuntherReinhart, chkGuntherReinhart, advice[lblGuntherReinhart.Text]);
+            try
+            {
+                Dictionary<string, string> advice = GetStrStrDictionaryFromJSON(theEvent.myDictionary[Keys.ADVICE_KEY]);
+                //Umbopa
+                SetAdviceRow(txtUmbopa, chkUmbopa, advice[lblUmbopa.Text]);
+                //Macumazahn
+                SetAdviceRow(txtMacumazahn, chkMacumazahn, advice[lblMacumazahn.Text]);
+                //Wonai
+                SetAdviceRow(txtWonai, chkWonai, advice[lblWonai.Text]);
+                //Tariro
+                SetAdviceRow(txtTariro, chkTariro, advice[lblTariro.Text]);
+                //JanKruger
+                SetAdviceRow(txtJanKruger, chkJanKruger, advice[lblJanKruger.Text]);
+                //TheunisVanZyl
+                SetAdviceRow(txtTheunisVanZyl, chkTheunisVanZyl, advice[lblTheunisVanZyl.Text]);
+                //WillemDeBruin
+                SetAdviceRow(txtWillemDeBruin, chkWillemDeBruin, advice[lblWillemDeBruin.Text]);
+                //JakobusKotze
+                SetAdviceRow(txtJakobusKotze, chkJakobusKotze, advice[lblJakobusKotze.Text]);
+                //RolandPerry
+                SetAdviceRow(txtRolandPerry, chkRolandPerry, advice[lblRolandPerry.Text]);
+                //JackReed
+                SetAdviceRow(txtJackReed, chkJackReed, advice[lblJackReed.Text]);
+                //DuncanMacKinnon
+                SetAdviceRow(txtDuncanMacKinnon, chkDuncanMacKinnon, advice[lblDuncanMacKinnon.Text]);
+                //GuntherReinhart
+                SetAdviceRow(txtGuntherReinhart, chkGuntherReinhart, advice[lblGuntherReinhart.Text]);
+            }
+            catch (Exception e)
+            {
+                return "Advice";
+            }
+            return "";
         }
 
         private void SetAdviceRow(TextBox txtBox, CheckBox chkBox, string fullAdviceStr) {
@@ -430,9 +457,10 @@ namespace EventCreator
         /// Sets the Response Options tab information to load in all needed info from the event.
         /// </summary>
         /// <param name="theEvent">Event to load in</param>
-        private void ResponseOptionsLoadEvent(Event theEvent)
+        private string ResponseOptionsLoadEvent(Event theEvent)
         {
             //TODO - Load in event info for this tab.
+            return "";
         }
 
         /* ------------------------------------------------ */
@@ -965,9 +993,10 @@ namespace EventCreator
         /// Sets the Edit Response Options tab information to load in all needed info from the event.
         /// </summary>
         /// <param name="theEvent">Event to load in</param>
-        private void EditResponseOptionsLoadEvent(Event theEvent)
+        private string EditResponseOptionsLoadEvent(Event theEvent)
         {
             //TODO - Load in event info for this tab.
+            return "";
         }
         
         /* ------------------------------------------------ */
@@ -1049,9 +1078,10 @@ namespace EventCreator
         /// Sets the Finish tab information to load in all needed info from the event.
         /// </summary>
         /// <param name="theEvent">Event to load in</param>
-        private void FinishLoadEvent(Event theEvent)
+        private string FinishLoadEvent(Event theEvent)
         {
             //TODO - Load in event info for this tab.
+            return "";
         }
         /* ------------------------------------------------ */
         // Other                                            //
