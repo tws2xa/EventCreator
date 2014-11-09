@@ -543,18 +543,18 @@ namespace EventCreator
 
             responseToEdit.myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = memberStats;
 
-            // Global Variable Requirements (Resource Stat Cost)
-            List<int> resourceStatCost = new List<int>;
-            resourceStatCost.Add((int)foodReq.Value);
-            resourceStatCost.Add((int)waterReq.Value);
-            resourceStatCost.Add((int)valueReq.Value);
-            resourceStatCost.Add((int)ammoReq.Value);
-            resourceStatCost.Add((int)medReq.Value);
-            resourceStatCost.Add((int)moraleReq.Value);
-            resourceStatCost.Add((int)staminaReq.Value);
-            resourceStatCost.Add((int)packReq.Value);
+            // Global Variable Requirements (Resource Stat Requirement)
+            List<int> resourceStatReq = new List<int>;
+            resourceStatReq.Add((int)foodReq.Value);
+            resourceStatReq.Add((int)waterReq.Value);
+            resourceStatReq.Add((int)valueReq.Value);
+            resourceStatReq.Add((int)ammoReq.Value);
+            resourceStatReq.Add((int)medReq.Value);
+            resourceStatReq.Add((int)moraleReq.Value);
+            resourceStatReq.Add((int)staminaReq.Value);
+            resourceStatReq.Add((int)packReq.Value);
 
-            responseToEdit.myMap[Keys.RESOURCE_STAT_COST_KEY] = resourceStatCost;
+            responseToEdit.myMap[Keys.RESOURCE_STAT_REQUIREMENT_KEY] = resourceStatReq;
 
             // Party Member Requirements (Party Stat Requirement)
             List<int> partyMemReq = new List<int>;
@@ -620,6 +620,64 @@ namespace EventCreator
             winMember.Add((int)knowWin.Value);
 
             responseToEdit.myMap[Keys.WIN_PARTY_STAT_CHANGE_KEY] = winMember;
+
+            // Cost Resource Stats (RESOURCE_STAT_COST_KEY)
+            List<int> costResource = new List<int>;
+            costResource.Add((int)foodCost.Value);
+            costResource.Add((int)waterCost.Value);
+            costResource.Add((int)valueCost.Value);
+            costResource.Add((int)ammoCost.Value);
+            costResource.Add((int)medCost.Value);
+            costResource.Add((int)moraleCost.Value);
+            costResource.Add((int)staminaCost.Value);
+            costResource.Add((int)packCost.Value);
+
+            responseToEdit.myMap[Keys.RESOURCE_STAT_COST_KEY] = costResource;
+
+            // Cost Member Stats (PARTY_STAT_COST_KEY)
+            List<int> costMember = new List<int>;
+            costMember.Add((int)marksCost.Value);
+            costMember.Add((int)percCost.Value);
+            costMember.Add((int)tacticsCost.Value);
+            costMember.Add((int)loyalCost.Value);
+            costMember.Add((int)agilityCost.Value);
+            costMember.Add((int)strengthCost.Value);
+            costMember.Add((int)diploCost.Value);
+            costMember.Add((int)knowCost.Value);
+
+            responseToEdit.myMap[Keys.PARTY_STAT_COST_KEY] = costMember;
+
+            // Win Text (WIN_TEXT_KEY)
+            responseToEdit.myMap[Keys.WIN_TEXT_KEY] = winText.Text;
+
+            // Lose Text (LOSE_TEXT_KEY)
+            responseToEdit.myMap[Keys.LOSE_TEXT_KEY] = loseText.Text;
+
+            // Pass Text (PASS_TEXT_KEY)
+            responseToEdit.myMap[Keys.PASS_TEXT_KEY] = passText.Text;
+
+            // KILL_PERSON_LOSE_KEY
+            responseToEdit.myMap[Keys.KILL_PERSON_LOSE_KEY] = chkKillLose.Checked;
+
+            // KILL_PERSON_WIN_KEY
+            responseToEdit.myMap[Keys.KILL_PERSON_WIN_KEY] = chkWinKill.Checked;
+
+            // WIN_FOLLOW_UP_KEY
+            responseToEdit.myMap[Keys.WIN_FOLLOW_UP_KEY] = winFollowUp.Text;
+
+            // LOSE_FOLLOW_UP_KEY
+            responseToEdit.myMap[Keys.LOSE_FOLLOW_UP_KEY] = loseFollowUp.Text;
+
+            // PASS_FOLLOW_UP_KEY
+            // TO - DO
+
+            // REWARD_DISPERSE_LOSE_KEY
+            responseToEdit.myMap[Keys.REWARD_DISPERSE_LOSE_KEY] = comboBoxLoseApplication.SelectedIndex;
+
+            // REWARD_DISPERSE_WIN_KEY
+            responseToEdit.myMap[Keys.REWARD_DISPERSE_WIN_KEY] = comboBoxWinApplication.SelectedIndex;
+
+           
 
 
 

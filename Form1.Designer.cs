@@ -103,12 +103,9 @@
             this.tabEditRespOpts = new System.Windows.Forms.TabPage();
             this.lblLoseEffects = new System.Windows.Forms.Label();
             this.comboBoxLoseApplication = new System.Windows.Forms.ComboBox();
-            this.lblPassEffects = new System.Windows.Forms.Label();
-            this.comboBoxPassApplication = new System.Windows.Forms.ComboBox();
             this.lblWinEffects = new System.Windows.Forms.Label();
             this.comboBoxWinApplication = new System.Windows.Forms.ComboBox();
             this.chkKillLose = new System.Windows.Forms.CheckBox();
-            this.chkPassKill = new System.Windows.Forms.CheckBox();
             this.chkWinKill = new System.Windows.Forms.CheckBox();
             this.horizLine4 = new System.Windows.Forms.PictureBox();
             this.btnRespOptSave = new System.Windows.Forms.Button();
@@ -1204,12 +1201,9 @@
             this.tabEditRespOpts.AutoScroll = true;
             this.tabEditRespOpts.Controls.Add(this.lblLoseEffects);
             this.tabEditRespOpts.Controls.Add(this.comboBoxLoseApplication);
-            this.tabEditRespOpts.Controls.Add(this.lblPassEffects);
-            this.tabEditRespOpts.Controls.Add(this.comboBoxPassApplication);
             this.tabEditRespOpts.Controls.Add(this.lblWinEffects);
             this.tabEditRespOpts.Controls.Add(this.comboBoxWinApplication);
             this.tabEditRespOpts.Controls.Add(this.chkKillLose);
-            this.tabEditRespOpts.Controls.Add(this.chkPassKill);
             this.tabEditRespOpts.Controls.Add(this.chkWinKill);
             this.tabEditRespOpts.Controls.Add(this.horizLine4);
             this.tabEditRespOpts.Controls.Add(this.btnRespOptSave);
@@ -1460,29 +1454,6 @@
             this.comboBoxLoseApplication.TabIndex = 509;
             this.comboBoxLoseApplication.SelectedIndexChanged += new System.EventHandler(this.EffectApplicationDropdownChanged);
             // 
-            // lblPassEffects
-            // 
-            this.lblPassEffects.AutoSize = true;
-            this.lblPassEffects.Location = new System.Drawing.Point(307, 979);
-            this.lblPassEffects.Name = "lblPassEffects";
-            this.lblPassEffects.Size = new System.Drawing.Size(123, 13);
-            this.lblPassEffects.TabIndex = 508;
-            this.lblPassEffects.Text = "Pass Effects Applied To:";
-            // 
-            // comboBoxPassApplication
-            // 
-            this.comboBoxPassApplication.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxPassApplication.FormattingEnabled = true;
-            this.comboBoxPassApplication.Items.AddRange(new object[] {
-            "Everyone",
-            "Selected Player",
-            "Random Player"});
-            this.comboBoxPassApplication.Location = new System.Drawing.Point(436, 976);
-            this.comboBoxPassApplication.Name = "comboBoxPassApplication";
-            this.comboBoxPassApplication.Size = new System.Drawing.Size(108, 21);
-            this.comboBoxPassApplication.TabIndex = 507;
-            this.comboBoxPassApplication.SelectedIndexChanged += new System.EventHandler(this.EffectApplicationDropdownChanged);
-            // 
             // lblWinEffects
             // 
             this.lblWinEffects.AutoSize = true;
@@ -1516,17 +1487,6 @@
             this.chkKillLose.TabIndex = 504;
             this.chkKillLose.Text = "Kill Party Member on Lose";
             this.chkKillLose.UseVisualStyleBackColor = true;
-            // 
-            // chkPassKill
-            // 
-            this.chkPassKill.AutoSize = true;
-            this.chkPassKill.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkPassKill.Location = new System.Drawing.Point(360, 896);
-            this.chkPassKill.Name = "chkPassKill";
-            this.chkPassKill.Size = new System.Drawing.Size(148, 17);
-            this.chkPassKill.TabIndex = 503;
-            this.chkPassKill.Text = "Kill Party Member on Pass";
-            this.chkPassKill.UseVisualStyleBackColor = true;
             // 
             // chkWinKill
             // 
@@ -3836,11 +3796,8 @@
         private System.Windows.Forms.PictureBox horizLine4;
         private System.Windows.Forms.CheckBox chkWinKill;
         private System.Windows.Forms.CheckBox chkKillLose;
-        private System.Windows.Forms.CheckBox chkPassKill;
         private System.Windows.Forms.Label lblLoseEffects;
         private System.Windows.Forms.ComboBox comboBoxLoseApplication;
-        private System.Windows.Forms.Label lblPassEffects;
-        private System.Windows.Forms.ComboBox comboBoxPassApplication;
         private System.Windows.Forms.Label lblWinEffects;
         private System.Windows.Forms.ComboBox comboBoxWinApplication;
         private System.Windows.Forms.NumericUpDown removeNumBox;
