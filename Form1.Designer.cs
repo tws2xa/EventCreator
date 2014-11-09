@@ -2052,6 +2052,11 @@
             // strengthLose
             // 
             this.strengthLose.Location = new System.Drawing.Point(752, 543);
+            this.strengthLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.strengthLose.Name = "strengthLose";
             this.strengthLose.Size = new System.Drawing.Size(31, 20);
             this.strengthLose.TabIndex = 437;
@@ -2059,6 +2064,11 @@
             // knowLose
             // 
             this.knowLose.Location = new System.Drawing.Point(752, 518);
+            this.knowLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.knowLose.Name = "knowLose";
             this.knowLose.Size = new System.Drawing.Size(31, 20);
             this.knowLose.TabIndex = 436;
@@ -2066,6 +2076,11 @@
             // markLose
             // 
             this.markLose.Location = new System.Drawing.Point(752, 492);
+            this.markLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.markLose.Name = "markLose";
             this.markLose.Size = new System.Drawing.Size(31, 20);
             this.markLose.TabIndex = 435;
@@ -2073,6 +2088,11 @@
             // loyalLose
             // 
             this.loyalLose.Location = new System.Drawing.Point(752, 466);
+            this.loyalLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.loyalLose.Name = "loyalLose";
             this.loyalLose.Size = new System.Drawing.Size(31, 20);
             this.loyalLose.TabIndex = 434;
@@ -2080,6 +2100,11 @@
             // percLose
             // 
             this.percLose.Location = new System.Drawing.Point(752, 440);
+            this.percLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.percLose.Name = "percLose";
             this.percLose.Size = new System.Drawing.Size(31, 20);
             this.percLose.TabIndex = 433;
@@ -2087,6 +2112,11 @@
             // agilityLose
             // 
             this.agilityLose.Location = new System.Drawing.Point(752, 414);
+            this.agilityLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.agilityLose.Name = "agilityLose";
             this.agilityLose.Size = new System.Drawing.Size(31, 20);
             this.agilityLose.TabIndex = 432;
@@ -2094,6 +2124,11 @@
             // diploLose
             // 
             this.diploLose.Location = new System.Drawing.Point(752, 389);
+            this.diploLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.diploLose.Name = "diploLose";
             this.diploLose.Size = new System.Drawing.Size(31, 20);
             this.diploLose.TabIndex = 431;
@@ -2101,6 +2136,11 @@
             // tacticsLose
             // 
             this.tacticsLose.Location = new System.Drawing.Point(752, 363);
+            this.tacticsLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.tacticsLose.Name = "tacticsLose";
             this.tacticsLose.Size = new System.Drawing.Size(31, 20);
             this.tacticsLose.TabIndex = 430;
@@ -2180,6 +2220,11 @@
             // foodLose
             // 
             this.foodLose.Location = new System.Drawing.Point(547, 543);
+            this.foodLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.foodLose.Name = "foodLose";
             this.foodLose.Size = new System.Drawing.Size(31, 20);
             this.foodLose.TabIndex = 421;
@@ -2187,6 +2232,11 @@
             // staminaLose
             // 
             this.staminaLose.Location = new System.Drawing.Point(547, 518);
+            this.staminaLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.staminaLose.Name = "staminaLose";
             this.staminaLose.Size = new System.Drawing.Size(31, 20);
             this.staminaLose.TabIndex = 420;
@@ -2194,6 +2244,11 @@
             // moraleLose
             // 
             this.moraleLose.Location = new System.Drawing.Point(547, 492);
+            this.moraleLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.moraleLose.Name = "moraleLose";
             this.moraleLose.Size = new System.Drawing.Size(31, 20);
             this.moraleLose.TabIndex = 419;
@@ -2201,6 +2256,11 @@
             // valueLose
             // 
             this.valueLose.Location = new System.Drawing.Point(547, 466);
+            this.valueLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.valueLose.Name = "valueLose";
             this.valueLose.Size = new System.Drawing.Size(31, 20);
             this.valueLose.TabIndex = 418;
@@ -2208,6 +2268,11 @@
             // packLose
             // 
             this.packLose.Location = new System.Drawing.Point(547, 440);
+            this.packLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.packLose.Name = "packLose";
             this.packLose.Size = new System.Drawing.Size(31, 20);
             this.packLose.TabIndex = 417;
@@ -2215,6 +2280,11 @@
             // ammoLose
             // 
             this.ammoLose.Location = new System.Drawing.Point(547, 414);
+            this.ammoLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.ammoLose.Name = "ammoLose";
             this.ammoLose.Size = new System.Drawing.Size(31, 20);
             this.ammoLose.TabIndex = 416;
@@ -2222,6 +2292,11 @@
             // medLose
             // 
             this.medLose.Location = new System.Drawing.Point(547, 389);
+            this.medLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.medLose.Name = "medLose";
             this.medLose.Size = new System.Drawing.Size(31, 20);
             this.medLose.TabIndex = 415;
@@ -2229,6 +2304,11 @@
             // waterLose
             // 
             this.waterLose.Location = new System.Drawing.Point(547, 363);
+            this.waterLose.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.waterLose.Name = "waterLose";
             this.waterLose.Size = new System.Drawing.Size(31, 20);
             this.waterLose.TabIndex = 414;
@@ -2338,6 +2418,11 @@
             // strengthWin
             // 
             this.strengthWin.Location = new System.Drawing.Point(310, 543);
+            this.strengthWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.strengthWin.Name = "strengthWin";
             this.strengthWin.Size = new System.Drawing.Size(31, 20);
             this.strengthWin.TabIndex = 402;
@@ -2345,6 +2430,11 @@
             // knowWin
             // 
             this.knowWin.Location = new System.Drawing.Point(310, 518);
+            this.knowWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.knowWin.Name = "knowWin";
             this.knowWin.Size = new System.Drawing.Size(31, 20);
             this.knowWin.TabIndex = 401;
@@ -2352,6 +2442,11 @@
             // marksWin
             // 
             this.marksWin.Location = new System.Drawing.Point(310, 492);
+            this.marksWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.marksWin.Name = "marksWin";
             this.marksWin.Size = new System.Drawing.Size(31, 20);
             this.marksWin.TabIndex = 400;
@@ -2359,6 +2454,11 @@
             // loyalWin
             // 
             this.loyalWin.Location = new System.Drawing.Point(310, 466);
+            this.loyalWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.loyalWin.Name = "loyalWin";
             this.loyalWin.Size = new System.Drawing.Size(31, 20);
             this.loyalWin.TabIndex = 399;
@@ -2366,6 +2466,11 @@
             // percWin
             // 
             this.percWin.Location = new System.Drawing.Point(310, 440);
+            this.percWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.percWin.Name = "percWin";
             this.percWin.Size = new System.Drawing.Size(31, 20);
             this.percWin.TabIndex = 398;
@@ -2373,6 +2478,11 @@
             // agilityWin
             // 
             this.agilityWin.Location = new System.Drawing.Point(310, 414);
+            this.agilityWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.agilityWin.Name = "agilityWin";
             this.agilityWin.Size = new System.Drawing.Size(31, 20);
             this.agilityWin.TabIndex = 397;
@@ -2380,6 +2490,11 @@
             // diploWin
             // 
             this.diploWin.Location = new System.Drawing.Point(310, 389);
+            this.diploWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.diploWin.Name = "diploWin";
             this.diploWin.Size = new System.Drawing.Size(31, 20);
             this.diploWin.TabIndex = 396;
@@ -2387,6 +2502,11 @@
             // tacticsWin
             // 
             this.tacticsWin.Location = new System.Drawing.Point(310, 363);
+            this.tacticsWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.tacticsWin.Name = "tacticsWin";
             this.tacticsWin.Size = new System.Drawing.Size(31, 20);
             this.tacticsWin.TabIndex = 395;
@@ -2466,6 +2586,11 @@
             // foodWin
             // 
             this.foodWin.Location = new System.Drawing.Point(105, 543);
+            this.foodWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.foodWin.Name = "foodWin";
             this.foodWin.Size = new System.Drawing.Size(31, 20);
             this.foodWin.TabIndex = 386;
@@ -2473,6 +2598,11 @@
             // staminaWin
             // 
             this.staminaWin.Location = new System.Drawing.Point(105, 518);
+            this.staminaWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.staminaWin.Name = "staminaWin";
             this.staminaWin.Size = new System.Drawing.Size(31, 20);
             this.staminaWin.TabIndex = 385;
@@ -2480,6 +2610,11 @@
             // moraleWin
             // 
             this.moraleWin.Location = new System.Drawing.Point(105, 492);
+            this.moraleWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.moraleWin.Name = "moraleWin";
             this.moraleWin.Size = new System.Drawing.Size(31, 20);
             this.moraleWin.TabIndex = 384;
@@ -2487,6 +2622,11 @@
             // valueWin
             // 
             this.valueWin.Location = new System.Drawing.Point(105, 466);
+            this.valueWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.valueWin.Name = "valueWin";
             this.valueWin.Size = new System.Drawing.Size(31, 20);
             this.valueWin.TabIndex = 383;
@@ -2494,6 +2634,11 @@
             // packWin
             // 
             this.packWin.Location = new System.Drawing.Point(105, 440);
+            this.packWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.packWin.Name = "packWin";
             this.packWin.Size = new System.Drawing.Size(31, 20);
             this.packWin.TabIndex = 382;
@@ -2501,6 +2646,11 @@
             // ammoWin
             // 
             this.ammoWin.Location = new System.Drawing.Point(105, 414);
+            this.ammoWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.ammoWin.Name = "ammoWin";
             this.ammoWin.Size = new System.Drawing.Size(31, 20);
             this.ammoWin.TabIndex = 381;
@@ -2508,6 +2658,11 @@
             // medWin
             // 
             this.medWin.Location = new System.Drawing.Point(105, 389);
+            this.medWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.medWin.Name = "medWin";
             this.medWin.Size = new System.Drawing.Size(31, 20);
             this.medWin.TabIndex = 380;
@@ -2515,6 +2670,11 @@
             // waterWin
             // 
             this.waterWin.Location = new System.Drawing.Point(105, 363);
+            this.waterWin.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.waterWin.Name = "waterWin";
             this.waterWin.Size = new System.Drawing.Size(31, 20);
             this.waterWin.TabIndex = 379;
@@ -2992,6 +3152,11 @@
             // strengthMod
             // 
             this.strengthMod.Location = new System.Drawing.Point(310, 276);
+            this.strengthMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.strengthMod.Name = "strengthMod";
             this.strengthMod.Size = new System.Drawing.Size(31, 20);
             this.strengthMod.TabIndex = 323;
@@ -2999,6 +3164,11 @@
             // knowMod
             // 
             this.knowMod.Location = new System.Drawing.Point(310, 251);
+            this.knowMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.knowMod.Name = "knowMod";
             this.knowMod.Size = new System.Drawing.Size(31, 20);
             this.knowMod.TabIndex = 322;
@@ -3006,6 +3176,11 @@
             // markMod
             // 
             this.markMod.Location = new System.Drawing.Point(310, 225);
+            this.markMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.markMod.Name = "markMod";
             this.markMod.Size = new System.Drawing.Size(31, 20);
             this.markMod.TabIndex = 321;
@@ -3013,6 +3188,11 @@
             // loyalMod
             // 
             this.loyalMod.Location = new System.Drawing.Point(310, 199);
+            this.loyalMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.loyalMod.Name = "loyalMod";
             this.loyalMod.Size = new System.Drawing.Size(31, 20);
             this.loyalMod.TabIndex = 320;
@@ -3020,6 +3200,11 @@
             // percMod
             // 
             this.percMod.Location = new System.Drawing.Point(310, 173);
+            this.percMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.percMod.Name = "percMod";
             this.percMod.Size = new System.Drawing.Size(31, 20);
             this.percMod.TabIndex = 319;
@@ -3027,6 +3212,11 @@
             // agilityMod
             // 
             this.agilityMod.Location = new System.Drawing.Point(310, 147);
+            this.agilityMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.agilityMod.Name = "agilityMod";
             this.agilityMod.Size = new System.Drawing.Size(31, 20);
             this.agilityMod.TabIndex = 318;
@@ -3034,6 +3224,11 @@
             // diploMod
             // 
             this.diploMod.Location = new System.Drawing.Point(310, 122);
+            this.diploMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.diploMod.Name = "diploMod";
             this.diploMod.Size = new System.Drawing.Size(31, 20);
             this.diploMod.TabIndex = 317;
@@ -3041,6 +3236,11 @@
             // tacticsMod
             // 
             this.tacticsMod.Location = new System.Drawing.Point(310, 96);
+            this.tacticsMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.tacticsMod.Name = "tacticsMod";
             this.tacticsMod.Size = new System.Drawing.Size(31, 20);
             this.tacticsMod.TabIndex = 316;
@@ -3192,6 +3392,11 @@
             // foodMod
             // 
             this.foodMod.Location = new System.Drawing.Point(105, 276);
+            this.foodMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.foodMod.Name = "foodMod";
             this.foodMod.Size = new System.Drawing.Size(31, 20);
             this.foodMod.TabIndex = 299;
@@ -3199,6 +3404,11 @@
             // staminaMod
             // 
             this.staminaMod.Location = new System.Drawing.Point(105, 251);
+            this.staminaMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.staminaMod.Name = "staminaMod";
             this.staminaMod.Size = new System.Drawing.Size(31, 20);
             this.staminaMod.TabIndex = 298;
@@ -3206,6 +3416,11 @@
             // moraleMod
             // 
             this.moraleMod.Location = new System.Drawing.Point(105, 225);
+            this.moraleMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.moraleMod.Name = "moraleMod";
             this.moraleMod.Size = new System.Drawing.Size(31, 20);
             this.moraleMod.TabIndex = 297;
@@ -3213,6 +3428,11 @@
             // valueMod
             // 
             this.valueMod.Location = new System.Drawing.Point(105, 199);
+            this.valueMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.valueMod.Name = "valueMod";
             this.valueMod.Size = new System.Drawing.Size(31, 20);
             this.valueMod.TabIndex = 296;
@@ -3220,6 +3440,11 @@
             // packMod
             // 
             this.packMod.Location = new System.Drawing.Point(105, 173);
+            this.packMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.packMod.Name = "packMod";
             this.packMod.Size = new System.Drawing.Size(31, 20);
             this.packMod.TabIndex = 295;
@@ -3227,6 +3452,11 @@
             // ammoMod
             // 
             this.ammoMod.Location = new System.Drawing.Point(105, 147);
+            this.ammoMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.ammoMod.Name = "ammoMod";
             this.ammoMod.Size = new System.Drawing.Size(31, 20);
             this.ammoMod.TabIndex = 294;
@@ -3234,6 +3464,11 @@
             // medMod
             // 
             this.medMod.Location = new System.Drawing.Point(105, 122);
+            this.medMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.medMod.Name = "medMod";
             this.medMod.Size = new System.Drawing.Size(31, 20);
             this.medMod.TabIndex = 293;
@@ -3241,6 +3476,11 @@
             // waterMod
             // 
             this.waterMod.Location = new System.Drawing.Point(105, 96);
+            this.waterMod.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.waterMod.Name = "waterMod";
             this.waterMod.Size = new System.Drawing.Size(31, 20);
             this.waterMod.TabIndex = 292;
