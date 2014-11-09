@@ -127,12 +127,12 @@ namespace EventCreator
                 eventNameInput.Text = (string)theEvent.myDictionary[Keys.EVENT_ID_KEY];
                 SelectStrInComboBox(eventTypeInput, (string)theEvent.myDictionary[Keys.EVENT_TYPE_KEY]);
                 SelectStrInComboBox(frequencyInput, (string)theEvent.myDictionary[Keys.EVENT_FREQUENCY_KEY]);
-                List<string> locations = GetStringListFromJSON(theEvent.myDictionary[Keys.POSSIBLE_LOCATIONS_KEY]);
+                List<string> locations = GetListFromJSON<List<string>>(theEvent.myDictionary[Keys.POSSIBLE_LOCATIONS_KEY]);
                 for (int i = 0; i < locationsInput.Items.Count; i++)
                 {
                     locationsInput.SetItemChecked(i, locations.Contains(locationsInput.Items[i]));
                 }
-                List<string> partyNeeded = GetStringListFromJSON(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
+                List<string> partyNeeded = GetListFromJSON<List<string>>(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
                 for (int i = 0; i < reqPaMemInput.Items.Count; i++)
                 {
                     reqPaMemInput.SetItemChecked(i, partyNeeded.Contains(reqPaMemInput.Items[i]));
@@ -273,7 +273,7 @@ namespace EventCreator
         {
             try
             {
-                Dictionary<string, string> advice = GetStrStrDictionaryFromJSON(theEvent.myDictionary[Keys.ADVICE_KEY]);
+                Dictionary<string, string> advice = GetObjFromJSON<Dictionary<string, string>>(theEvent.myDictionary[Keys.ADVICE_KEY]);
                 //Umbopa
                 SetAdviceRow(txtUmbopa, chkUmbopa, advice[lblUmbopa.Text]);
                 //Macumazahn
@@ -459,10 +459,61 @@ namespace EventCreator
         /// <param name="theEvent">Event to load in</param>
         private string ResponseOptionsLoadEvent(Event theEvent)
         {
-            //TODO - Load in event info for this tab.
+            List<Dictionary<string, object>> respOps = GetListFromJSON<List<Dictionary<string, object>>>(theEvent.myDictionary[Keys.RESPONSE_OPTIONS_KEY]);
+            numOfClicks = respOps.Count() - 1;
+            if (numOfClicks > 4) return "Response Options (Too Many Response Options)";
+            if (numOfClicks < 0) return "Response Options (Too Few Response Options)";
+
+            int currentLoc = 0;
+            responseOptions.Clear();
+            foreach (Dictionary<string, object> option in respOps)
+            {
+                responseOptions.Add(currentLoc, CreateRespOpFromJSONDictionary(option));
+                textBoxes[currentLoc].Text = (string)option[Keys.TEXT_KEY];
+                currentLoc++;
+            }
+
+            handlePlus(); //Sets all the appropriate boxes to visible.
+
+            LoadResponse((string)responseOptions[0].myMap[Keys.TEXT_KEY]); //Load in first response option.
+
             return "";
         }
 
+        private ResponseOption CreateRespOpFromJSONDictionary(Dictionary<string, object> option)
+        {
+            string text = (string)option[Keys.TEXT_KEY];
+            List<int> resCosts = GetListFromJSON<List<int>>(option[Keys.RESOURCE_STAT_COST_KEY]);
+            List<int> partCosts = GetListFromJSON<List<int>>(option[Keys.PARTY_STAT_COST_KEY]);
+            List<int> partReqs = GetListFromJSON<List<int>>(option[Keys.PARTY_STAT_REQUIREMENT_KEY]);
+            List<int> resReqs = GetListFromJSON<List<int>>(option[Keys.RESOURCE_STAT_REQUIREMENT_KEY]);
+            List<int> resMods = GetListFromJSON<List<int>>(option[Keys.RESOURCE_MODIFIERS_KEY]);
+            List<int> partMods = GetListFromJSON<List<int>>(option[Keys.PARTY_STAT_MODIFIERS_KEY]);
+            string passText = (string)option[Keys.PASS_TEXT_KEY];
+            string winText = (string)option[Keys.WIN_TEXT_KEY];
+            string winFollowup = (string)option[Keys.WIN_FOLLOW_UP_KEY];
+            string passFollowup = (string)option[Keys.PASS_FOLLOW_UP_KEY];
+            List<int> winResChange = GetListFromJSON<List<int>>(option[Keys.WIN_RESOURCE_CHANGE_KEY]);
+            List<int> winPartyChange = GetListFromJSON<List<int>>(option[Keys.WIN_PARTY_STAT_CHANGE_KEY]);
+            string loseText = (string)option[Keys.LOSE_TEXT_KEY];
+            string loseFollowup = (string)option[Keys.LOSE_FOLLOW_UP_KEY];
+            List<int> loseResChange = GetListFromJSON<List<int>>(option[Keys.LOSE_RESOURCE_CHANGE_KEY]);
+            List<int> losePartyChange = GetListFromJSON<List<int>>(option[Keys.LOSE_PARTY_STAT_CHANGE_KEY]);
+            bool killOnLose = (bool)option[Keys.KILL_PERSON_LOSE_KEY];
+            bool killOnPass = (bool)option[Keys.KILL_PERSON_PASS_KEY];
+            bool killOnWin = (bool)option[Keys.KILL_PERSON_WIN_KEY];
+
+            long dispLose = (long)option[Keys.REWARD_DISPERSE_LOSE_KEY];
+            long dispWin = (long)option[Keys.REWARD_DISPERSE_WIN_KEY];
+
+            int rewardDispLose = Convert.ToInt32(dispLose);
+            int rewardDispWin = Convert.ToInt32(dispWin);
+
+
+            return new ResponseOption(text, resCosts, partCosts, resReqs, partReqs, resMods, partMods, winText, passText, loseText,
+                winFollowup, passFollowup, loseFollowup, winResChange, winPartyChange, winResChange, losePartyChange, killOnLose, killOnPass, killOnWin,
+                rewardDispWin, rewardDispLose);
+        }
         /* ------------------------------------------------ */
         // Edit Response Stuff                              //
         /* ------------------------------------------------ */
@@ -1123,20 +1174,16 @@ namespace EventCreator
             responseOptions.Add(0, new ResponseOption(textResponse1.Text));
         }
 
-        public List<int> GetIntListFromJSON(object toList)
+        public T GetListFromJSON<T>(object toList)
         {
-            Newtonsoft.Json.Linq.JArray locationsArray = (Newtonsoft.Json.Linq.JArray)(toList);
-            return locationsArray.ToObject<List<int>>();
+            Newtonsoft.Json.Linq.JArray array = (Newtonsoft.Json.Linq.JArray)(toList);
+            return array.ToObject<T>();
         }
-        public List<string> GetStringListFromJSON(object toList)
-        {
-            Newtonsoft.Json.Linq.JArray locationsArray = (Newtonsoft.Json.Linq.JArray)(toList);
-            return locationsArray.ToObject<List<string>>();
-        }
-        public Dictionary<string, string> GetStrStrDictionaryFromJSON(object toConvert)
+        
+        public static T GetObjFromJSON<T>(object toConvert)
         {
             Newtonsoft.Json.Linq.JObject obj = (Newtonsoft.Json.Linq.JObject)(toConvert);
-            return obj.ToObject<Dictionary<string, string>>();
+            return obj.ToObject<T>();
         }
 
         /// <summary>
