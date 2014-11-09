@@ -15,6 +15,8 @@ namespace EventCreator
         //General Info Variables
 
         //Advice Variables
+        public const string LETTER_USEFUL = "U";
+        public const string LETTER_NOT_USEFUL = "N";
 
         //Response Option Definition Variables
         int numOfClicks = 0;
@@ -138,50 +140,92 @@ namespace EventCreator
         public Dictionary<string, string> generateAdviceDictionary()
         {
 
-            string letterYes = "U";
-            string letterNo = "N";
-
-            string preTxt = letterNo;
+            string preTxt = LETTER_NOT_USEFUL;
             if (chkUmbopa.Checked == true)
             {
-                preTxt = letterYes;
+                preTxt = LETTER_USEFUL;
             }
             string adviceHunter = preTxt + txtUmbopa.Text;
 
-            preTxt = letterNo;
+            preTxt = LETTER_NOT_USEFUL;
             if (chkMacumazahn.Checked == true)
             {
-                preTxt = letterYes;
+                preTxt = LETTER_USEFUL;
             }
             string adviceMercenary = preTxt + txtMacumazahn.Text;
 
-            preTxt = letterNo;
+            preTxt = LETTER_NOT_USEFUL;
             if (chkWonai.Checked == true)
             {
-                preTxt = letterYes;
+                preTxt = LETTER_USEFUL;
             }
             string adviceNaturalist = preTxt + txtWonai.Text;
 
-            preTxt = letterNo;
+            preTxt = LETTER_NOT_USEFUL;
             if (chkTariro.Checked == true)
             {
-                preTxt = letterYes;
+                preTxt = LETTER_USEFUL;
             }
             string adviceMissionary = preTxt + txtTariro.Text;
 
-            preTxt = letterNo;
+            preTxt = LETTER_NOT_USEFUL;
             if (chkJanKruger.Checked == true)
             {
-                preTxt = letterYes;
+                preTxt = LETTER_USEFUL;
             }
             string adviceExplorer = preTxt + txtJanKruger.Text;
 
-            preTxt = letterNo;
+            preTxt = LETTER_NOT_USEFUL;
             if (chkTheunisVanZyl.Checked == true)
             {
-                preTxt = letterYes;
+                preTxt = LETTER_USEFUL;
             }
             string adviceGuide = preTxt + txtTheunisVanZyl.Text;
+
+            preTxt = LETTER_NOT_USEFUL;
+            if (chkWillemDeBruin.Checked == true)
+            {
+                preTxt = LETTER_USEFUL;
+            }
+            string adviceWillemDeBruin = preTxt + txtWillemDeBruin.Text;
+
+            preTxt = LETTER_NOT_USEFUL;
+            if (chkJakobusKotze.Checked == true)
+            {
+                preTxt = LETTER_USEFUL;
+            }
+            string adviceJakobusKotze = preTxt + txtJakobusKotze.Text;
+
+            preTxt = LETTER_NOT_USEFUL;
+            if (chkRolandPerry.Checked == true)
+            {
+                preTxt = LETTER_USEFUL;
+            }
+            string adviceRolandPerry = preTxt + txtRolandPerry.Text;
+
+            preTxt = LETTER_NOT_USEFUL;
+            if (chkJackReed.Checked == true)
+            {
+                preTxt = LETTER_USEFUL;
+            }
+            string adviceJackReed = preTxt + txtJackReed.Text;
+
+            preTxt = LETTER_NOT_USEFUL;
+            if (chkDuncanMacKinnon.Checked == true)
+            {
+                preTxt = LETTER_USEFUL;
+            }
+            string adviceDuncanMacKinnon = preTxt + txtDuncanMacKinnon.Text;
+
+            preTxt = LETTER_NOT_USEFUL;
+            if (chkGuntherReinhart.Checked == true)
+            {
+                preTxt = LETTER_USEFUL;
+            }
+            string adviceGuntherReinhart = preTxt + txtGuntherReinhart.Text;
+
+
+
 
             Dictionary<String, String> dictionaryAdvice = new Dictionary<String, String>();
             dictionaryAdvice.Add(lblUmbopa.Text, adviceHunter);
@@ -190,6 +234,13 @@ namespace EventCreator
             dictionaryAdvice.Add(lblTariro.Text, adviceMissionary);
             dictionaryAdvice.Add(lblJanKruger.Text, adviceExplorer);
             dictionaryAdvice.Add(lblTheunisVanZyl.Text, adviceGuide);
+            dictionaryAdvice.Add(lblWillemDeBruin.Text, adviceWillemDeBruin);
+            dictionaryAdvice.Add(lblJakobusKotze.Text, adviceJakobusKotze);
+            dictionaryAdvice.Add(lblRolandPerry.Text, adviceRolandPerry);
+            dictionaryAdvice.Add(lblJackReed.Text, adviceJackReed);
+            dictionaryAdvice.Add(lblDuncanMacKinnon.Text, adviceDuncanMacKinnon);
+            dictionaryAdvice.Add(lblGuntherReinhart.Text, adviceGuntherReinhart);
+            
 
             return dictionaryAdvice;
         }
@@ -201,9 +252,39 @@ namespace EventCreator
         /// <param name="theEvent">Event to load in</param>
         private void AdviceLoadEvent(Event theEvent)
         {
-            //TODO - Load in advice from event.
+            Dictionary<string, string> advice = GetStrStrDictionaryFromJSON(theEvent.myDictionary[Keys.ADVICE_KEY]);
+            //Umbopa
+            SetAdviceRow(txtUmbopa, chkUmbopa, advice[lblUmbopa.Text]);
+            //Macumazahn
+            SetAdviceRow(txtMacumazahn, chkMacumazahn, advice[lblMacumazahn.Text]);
+            //Wonai
+            SetAdviceRow(txtWonai, chkWonai, advice[lblWonai.Text]);
+            //Tariro
+            SetAdviceRow(txtTariro, chkTariro, advice[lblTariro.Text]);
+            //JanKruger
+            SetAdviceRow(txtJanKruger, chkJanKruger, advice[lblJanKruger.Text]);
+            //TheunisVanZyl
+            SetAdviceRow(txtTheunisVanZyl, chkTheunisVanZyl, advice[lblTheunisVanZyl.Text]);
+            //WillemDeBruin
+            SetAdviceRow(txtWillemDeBruin, chkWillemDeBruin, advice[lblWillemDeBruin.Text]);
+            //JakobusKotze
+            SetAdviceRow(txtJakobusKotze, chkJakobusKotze, advice[lblJakobusKotze.Text]);
+            //RolandPerry
+            SetAdviceRow(txtRolandPerry, chkRolandPerry, advice[lblRolandPerry.Text]);
+            //JackReed
+            SetAdviceRow(txtJackReed, chkJackReed, advice[lblJackReed.Text]);
+            //DuncanMacKinnon
+            SetAdviceRow(txtDuncanMacKinnon, chkDuncanMacKinnon, advice[lblDuncanMacKinnon.Text]);
+            //GuntherReinhart
+            SetAdviceRow(txtGuntherReinhart, chkGuntherReinhart, advice[lblGuntherReinhart.Text]);
         }
 
+        private void SetAdviceRow(TextBox txtBox, CheckBox chkBox, string fullAdviceStr) {
+            string firstChar = fullAdviceStr.Substring(0, 1);
+            string advice = fullAdviceStr.Substring(1);
+            chkBox.Checked = (firstChar == LETTER_USEFUL);
+            txtBox.Text = advice;
+        }
 
         /* ------------------------------------------------ */
         // Response Options Intro Stuff                     //
@@ -1021,6 +1102,11 @@ namespace EventCreator
         {
             Newtonsoft.Json.Linq.JArray locationsArray = (Newtonsoft.Json.Linq.JArray)(toList);
             return locationsArray.ToObject<List<string>>();
+        }
+        public Dictionary<string, string> GetStrStrDictionaryFromJSON(object toConvert)
+        {
+            Newtonsoft.Json.Linq.JObject obj = (Newtonsoft.Json.Linq.JObject)(toConvert);
+            return obj.ToObject<Dictionary<string, string>>();
         }
 
         /// <summary>
