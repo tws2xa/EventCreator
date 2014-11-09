@@ -480,7 +480,7 @@
             // selectplayerB
             // 
             this.selectplayerB.AutoSize = true;
-            this.selectplayerB.Location = new System.Drawing.Point(143, 425);
+            this.selectplayerB.Location = new System.Drawing.Point(144, 273);
             this.selectplayerB.Name = "selectplayerB";
             this.selectplayerB.Size = new System.Drawing.Size(15, 14);
             this.selectplayerB.TabIndex = 28;
@@ -489,7 +489,7 @@
             // selectPlayerLabel
             // 
             this.selectPlayerLabel.AutoSize = true;
-            this.selectPlayerLabel.Location = new System.Drawing.Point(8, 426);
+            this.selectPlayerLabel.Location = new System.Drawing.Point(9, 274);
             this.selectPlayerLabel.Name = "selectPlayerLabel";
             this.selectPlayerLabel.Size = new System.Drawing.Size(127, 13);
             this.selectPlayerLabel.TabIndex = 27;
@@ -582,20 +582,16 @@
             this.locationsInput.Items.AddRange(new object[] {
             "Desert",
             "Oasis",
-            "Forest",
             "Jungle",
-            "River",
-            "Lake",
-            "Plains",
-            "Grassland",
+            "Water",
+            "Savannah",
             "Mountain",
             "Highland",
             "King Solomon’s Mines",
-            "Town",
             "Village"});
             this.locationsInput.Location = new System.Drawing.Point(11, 107);
             this.locationsInput.Name = "locationsInput";
-            this.locationsInput.Size = new System.Drawing.Size(151, 199);
+            this.locationsInput.Size = new System.Drawing.Size(151, 139);
             this.locationsInput.TabIndex = 19;
             this.locationsInput.SelectedIndexChanged += new System.EventHandler(this.locationsInput_SelectedIndexChanged);
             // 
