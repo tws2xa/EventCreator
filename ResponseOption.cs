@@ -22,6 +22,7 @@ namespace EventCreator
 		    {Keys.PASS_TEXT_KEY, ""},
 		    {Keys.WIN_TEXT_KEY, ""},
 		    {Keys.WIN_FOLLOW_UP_KEY, ""},
+            {Keys.PASS_FOLLOW_UP_KEY, ""},
 		    {Keys.WIN_RESOURCE_CHANGE_KEY, new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
 		    {Keys.WIN_PARTY_STAT_CHANGE_KEY, new List<int>() {0, 0, 0, 0, 0, 0, 0, 0}},
             {Keys.LOSE_TEXT_KEY, ""},
@@ -78,6 +79,7 @@ namespace EventCreator
             myMap[Keys.RESOURCE_MODIFIERS_KEY] = resourceStatModifiers;
             myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = partyStatModifiers;
             myMap[Keys.PASS_TEXT_KEY] = passText;
+            myMap[Keys.PASS_FOLLOW_UP_KEY] = passFollowUp;
             myMap[Keys.WIN_TEXT_KEY] = winText;
             myMap[Keys.WIN_FOLLOW_UP_KEY] = winFollowUp;
             myMap[Keys.WIN_RESOURCE_CHANGE_KEY] = winResourceChange;

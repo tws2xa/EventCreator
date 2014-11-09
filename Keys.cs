@@ -45,6 +45,7 @@ namespace EventCreator
 
         //Pass Info
         public const String PASS_TEXT_KEY = "passText";
+        public const String PASS_FOLLOW_UP_KEY = "passFollowUp";
 
         //Victory Info
         public const String WIN_TEXT_KEY = "winText";

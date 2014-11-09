@@ -501,49 +501,49 @@ namespace EventCreator
 
             //TODO - Save the Response! Woo!
             // Global Stats (Resource Modifiers)
-            List<int> globalStats = new List<int>;
+            List<int> globalStats = new List<int>();
             if (foodModB.Checked){globalStats.Add((int)foodMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (waterModB.Checked){globalStats.Add((int)waterMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (vModB.Checked){globalStats.Add((int)valueMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (ammoModB.Checked){globalStats.Add((int)ammoMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (medModB.Checked){globalStats.Add((int)medMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (moraleModB.Checked){globalStats.Add((int)moraleMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (staminaModB.Checked){globalStats.Add((int)staminaMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
             if (valueModB.Checked){globalStats.Add((int)packMod.Value);}
-            else {globalStats.Add(-1)}
+            else {globalStats.Add(-1);}
 
             responseToEdit.myMap[Keys.RESOURCE_MODIFIERS_KEY] = globalStats;
 
             // Member Stats (Party Stat Modifiers)
-            List<int> memberStats = new List<int>;
+            List<int> memberStats = new List<int>();
             if (marksModB.Checked){memberStats.Add((int)markMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (percModB.Checked){memberStats.Add((int)percMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (tacticsModB.Checked){memberStats.Add((int)tacticsMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (loyalModB.Checked){memberStats.Add((int)loyalMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (agilityModB.Checked){memberStats.Add((int)agilityMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (strengthModB.Checked){memberStats.Add((int)strengthMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (diploModB.Checked){memberStats.Add((int)diploMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
             if (knowModB.Checked){memberStats.Add((int)knowMod.Value);}
-            else {memberStats.Add(-1)}
+            else {memberStats.Add(-1);}
 
             responseToEdit.myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = memberStats;
 
             // Global Variable Requirements (Resource Stat Requirement)
-            List<int> resourceStatReq = new List<int>;
+            List<int> resourceStatReq = new List<int>();
             resourceStatReq.Add((int)foodReq.Value);
             resourceStatReq.Add((int)waterReq.Value);
             resourceStatReq.Add((int)valueReq.Value);
@@ -556,7 +556,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.RESOURCE_STAT_REQUIREMENT_KEY] = resourceStatReq;
 
             // Party Member Requirements (Party Stat Requirement)
-            List<int> partyMemReq = new List<int>;
+            List<int> partyMemReq = new List<int>();
             partyMemReq.Add((int)marksReq.Value);
             partyMemReq.Add((int)percReq.Value);
             partyMemReq.Add((int)tacticsReq.Value);
@@ -569,7 +569,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.PARTY_STAT_REQUIREMENT_KEY] = partyMemReq;
 
             // Lose Global Stats (Lose Resource Change)
-            List<int> loseGlobal = new List<int>;
+            List<int> loseGlobal = new List<int>();
             loseGlobal.Add((int)foodLose.Value);
             loseGlobal.Add((int)waterLose.Value);
             loseGlobal.Add((int)valueLose.Value);
@@ -582,7 +582,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.LOSE_RESOURCE_CHANGE_KEY] = loseGlobal;
 
             // Lose Member Stats (Lose Party Stat Change)
-            List<int> loseMember = new List<int>;
+            List<int> loseMember = new List<int>();
             loseMember.Add((int)markLose.Value);
             loseMember.Add((int)percLose.Value);
             loseMember.Add((int)tacticsLose.Value);
@@ -595,7 +595,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.LOSE_PARTY_STAT_CHANGE_KEY] = loseMember;
 
             // Win Global Stats (Win Resource Change)
-            List<int> winGlobal = new List<int>;
+            List<int> winGlobal = new List<int>();
             winGlobal.Add((int)foodWin.Value);
             winGlobal.Add((int)waterWin.Value);
             winGlobal.Add((int)valueWin.Value);
@@ -608,7 +608,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.WIN_RESOURCE_CHANGE_KEY] = winGlobal;
 
             // Win Member Stats (WIN_PARTY_STAT_CHANGE_KEY)
-            List<int> winMember = new List<int>;
+            List<int> winMember = new List<int>();
             winMember.Add((int)marksWin.Value);
             winMember.Add((int)percWin.Value);
             winMember.Add((int)tacticsWin.Value);
@@ -621,7 +621,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.WIN_PARTY_STAT_CHANGE_KEY] = winMember;
 
             // Cost Resource Stats (RESOURCE_STAT_COST_KEY)
-            List<int> costResource = new List<int>;
+            List<int> costResource = new List<int>();
             costResource.Add((int)foodCost.Value);
             costResource.Add((int)waterCost.Value);
             costResource.Add((int)valueCost.Value);
@@ -634,7 +634,7 @@ namespace EventCreator
             responseToEdit.myMap[Keys.RESOURCE_STAT_COST_KEY] = costResource;
 
             // Cost Member Stats (PARTY_STAT_COST_KEY)
-            List<int> costMember = new List<int>;
+            List<int> costMember = new List<int>();
             costMember.Add((int)marksCost.Value);
             costMember.Add((int)percCost.Value);
             costMember.Add((int)tacticsCost.Value);
@@ -819,7 +819,6 @@ namespace EventCreator
             editRespNeedSave = true;
 
             comboBoxWinApplication.SelectedIndex = EFFECT_ON_RANDOM;
-            comboBoxPassApplication.SelectedIndex = EFFECT_ON_RANDOM;
             comboBoxLoseApplication.SelectedIndex = EFFECT_ON_RANDOM;
 
             textBoxes.Add(textResponse1);
