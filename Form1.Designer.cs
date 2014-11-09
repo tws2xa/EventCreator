@@ -538,6 +538,7 @@
             // 
             // reqPaMemInput
             // 
+            this.reqPaMemInput.CheckOnClick = true;
             this.reqPaMemInput.FormattingEnabled = true;
             this.reqPaMemInput.Items.AddRange(new object[] {
             "Jan Kruger",
@@ -578,6 +579,7 @@
             // 
             // locationsInput
             // 
+            this.locationsInput.CheckOnClick = true;
             this.locationsInput.FormattingEnabled = true;
             this.locationsInput.Items.AddRange(new object[] {
             "Desert",
