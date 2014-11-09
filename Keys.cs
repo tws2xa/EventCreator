@@ -23,6 +23,7 @@ namespace EventCreator
         public const string FLEE_FAIL_TEXT_KEY = "fleeFailText";
 
         public const string PARTY_MEMBER_TARGETED_KEY = "partyMemberTargeted";
+        public const string EVENT_FREQUENCY_KEY = "frequency";
 
 
         //* ----------------------------------- */

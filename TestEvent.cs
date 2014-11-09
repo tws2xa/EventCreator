@@ -37,7 +37,7 @@ namespace EventCreator
             advice.Add("Gunther Reinhar", "NI'm hungry.");
 
 
-            Event toRet = new Event(eventId, type, possibleLocations, reqParty, introText, GetResponseOptionSet(), advice, false);
+            Event toRet = new Event(eventId, type, possibleLocations, reqParty, "Uncommon", introText, GetResponseOptionSet(), advice, false);
 
             return toRet;
 	    }

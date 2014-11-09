@@ -53,12 +53,13 @@ namespace EventCreator
             string type = frmMain.getEventType();
             List<string> possibleLocations = frmMain.getPossibleLocations();
             List<string> reqParty = frmMain.getRequiredParty();
+            string frequency = frmMain.getFrequency();
             string introText = frmMain.getIntroText();
             List<ResponseOption> responseOptions = frmMain.getResponseOptions();
             Dictionary<string, string> advice = frmMain.generateAdviceDictionary();
             bool selectPlayer = frmMain.getSelectPlayer();
 
-            Event theEvent = new Event(eventId, type, possibleLocations, reqParty, introText, responseOptions, advice, false);
+            Event theEvent = new Event(eventId, type, possibleLocations, reqParty, frequency, introText, responseOptions, advice, selectPlayer);
             
             return theEvent.myDictionary;
         }

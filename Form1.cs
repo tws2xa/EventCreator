@@ -50,6 +50,11 @@ namespace EventCreator
             return (string)eventTypeInput.Items[eventTypeInput.SelectedIndex];
         }
 
+        internal string getFrequency()
+        {                  
+            return (string)frequencyInput.Items[frequencyInput.SelectedIndex];
+        }
+
         internal List<string> getPossibleLocations()
         {
             List<String> possibleLocations = new List<String>();
@@ -104,8 +109,23 @@ namespace EventCreator
         /// <param name="theEvent">Event to load in</param>
         private void GeneralInfoLoadEvent(Event theEvent)
         {
-            //TODO - Load event information for this tab.
+            eventNameInput.Text = (string)theEvent.myDictionary[Keys.EVENT_ID_KEY];
+            SelectStrInComboBox(eventTypeInput, (string)theEvent.myDictionary[Keys.EVENT_TYPE_KEY]);
+            SelectStrInComboBox(frequencyInput, (string)theEvent.myDictionary[Keys.EVENT_FREQUENCY_KEY]);
+            List<string> locations = GetStringListFromJSON(theEvent.myDictionary[Keys.POSSIBLE_LOCATIONS_KEY]);
+            for (int i = 0; i < locationsInput.Items.Count; i++)
+            {
+                locationsInput.SetItemChecked(i, locations.Contains(locationsInput.Items[i]));
+            }
+            List<string> partyNeeded = GetStringListFromJSON(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
+            for (int i = 0; i < reqPaMemInput.Items.Count; i++)
+            {
+                reqPaMemInput.SetItemChecked(i, partyNeeded.Contains(reqPaMemInput.Items[i]));
+            }
+            introDescInput.Text = (string)theEvent.myDictionary[Keys.INTRO_TEXT_KEY];
+            selectplayerB.Checked = (bool)theEvent.myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY];
         }
+
 
         /* ------------------------------------------------ */
         // Advice Stuff                                     //
@@ -990,6 +1010,36 @@ namespace EventCreator
             numLabels.Add(labelResponse5);
 
             responseOptions.Add(0, new ResponseOption(textResponse1.Text));
+        }
+
+        public List<int> GetIntListFromJSON(object toList)
+        {
+            Newtonsoft.Json.Linq.JArray locationsArray = (Newtonsoft.Json.Linq.JArray)(toList);
+            return locationsArray.ToObject<List<int>>();
+        }
+        public List<string> GetStringListFromJSON(object toList)
+        {
+            Newtonsoft.Json.Linq.JArray locationsArray = (Newtonsoft.Json.Linq.JArray)(toList);
+            return locationsArray.ToObject<List<string>>();
+        }
+
+        /// <summary>
+        /// Selects the item in the combo box (if there is one) that matches the given string.
+        /// Selects -1 if no match.
+        /// </summary>
+        /// <param name="box">ComboBox to look through</param>
+        /// <param name="toSelect">String to find</param>
+        public void SelectStrInComboBox(ComboBox box, string toSelect)
+        {
+            for (int i = 0; i < box.Items.Count; i++)
+            {
+                if ((string)(box.Items[i]) == toSelect)
+                {
+                    box.SelectedIndex = i;
+                    return;
+                }
+            }
+            box.SelectedIndex = -1;
         }
 
         private void tabGeneralInfo_Click(object sender, EventArgs e)

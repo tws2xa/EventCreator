@@ -14,6 +14,7 @@ namespace EventCreator
         {
             {Keys.EVENT_ID_KEY, null},
             {Keys.EVENT_TYPE_KEY, "MoveTo"},
+            {Keys.EVENT_FREQUENCY_KEY, "Uncommon"},
             {Keys.POSSIBLE_LOCATIONS_KEY, new List<string>()},
             {Keys.REQ_PARTY_KEY, new List<string>()},
             {Keys.INTRO_TEXT_KEY, "Demo Intro Text!"},
@@ -28,11 +29,12 @@ namespace EventCreator
         {
             myDictionary[Keys.EVENT_ID_KEY] = id;
         }
-        public Event(string id, string type, List<string> possibleLocs, List<string> reqParty, string introText, List<ResponseOption> respOpts,
+        public Event(string id, string type, List<string> possibleLocs, List<string> reqParty, string frequency, string introText, List<ResponseOption> respOpts,
             Dictionary<string, string> advice, bool targetPartyMember)
         {
             myDictionary[Keys.EVENT_ID_KEY] = id;
             myDictionary[Keys.EVENT_TYPE_KEY] = type;
+            myDictionary[Keys.EVENT_FREQUENCY_KEY] = frequency;
             myDictionary[Keys.POSSIBLE_LOCATIONS_KEY] = possibleLocs;
             myDictionary[Keys.REQ_PARTY_KEY] = reqParty;
             myDictionary[Keys.INTRO_TEXT_KEY] = introText;
@@ -42,11 +44,12 @@ namespace EventCreator
             myDictionary[Keys.FLEE_FAIL_TEXT_KEY] = "You failed to flee!";
             myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY] = targetPartyMember;
         }
-        public Event(string id, string type, List<string> possibleLocs, List<string> reqParty, string introText, List<Dictionary<string, object>> respOpts,
+        public Event(string id, string type, List<string> possibleLocs, List<string> reqParty, string frequency, string introText, List<Dictionary<string, object>> respOpts,
             Dictionary<string, string> advice, bool targetPartyMember)
         {
             myDictionary[Keys.EVENT_ID_KEY] = id;
             myDictionary[Keys.EVENT_TYPE_KEY] = type;
+            myDictionary[Keys.EVENT_FREQUENCY_KEY] = frequency;
             myDictionary[Keys.POSSIBLE_LOCATIONS_KEY] = possibleLocs;
             myDictionary[Keys.REQ_PARTY_KEY] = reqParty;
             myDictionary[Keys.INTRO_TEXT_KEY] = introText;
