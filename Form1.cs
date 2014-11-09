@@ -74,10 +74,9 @@ namespace EventCreator
             return introDescInput.Text;
         }
 
-        internal static bool getSelectPlayer()
+        internal bool getSelectPlayer()
         {
-            //TODO Return whether or not to select a player
-            return false;
+            return selectplayerB.Checked;
         }
 
         /// <summary>
@@ -181,7 +180,7 @@ namespace EventCreator
         /// <param name="theEvent">Event to load in</param>
         private void AdviceLoadEvent(Event theEvent)
         {
-            //TODO - Fill out advice load in
+            //TODO - Load in advice from event.
         }
 
 
