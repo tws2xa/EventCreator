@@ -1079,6 +1079,7 @@
             this.textResponse2.Name = "textResponse2";
             this.textResponse2.Size = new System.Drawing.Size(814, 20);
             this.textResponse2.TabIndex = 29;
+            this.textResponse2.Text = "Response 2";
             this.textResponse2.Visible = false;
             this.textResponse2.TextChanged += new System.EventHandler(this.textResponse2_TextChanged);
             // 
@@ -1099,6 +1100,7 @@
             this.textResponse3.Name = "textResponse3";
             this.textResponse3.Size = new System.Drawing.Size(814, 20);
             this.textResponse3.TabIndex = 28;
+            this.textResponse3.Text = "Response 3";
             this.textResponse3.Visible = false;
             this.textResponse3.TextChanged += new System.EventHandler(this.textResponse3_TextChanged);
             // 
@@ -1119,6 +1121,7 @@
             this.textResponse4.Name = "textResponse4";
             this.textResponse4.Size = new System.Drawing.Size(814, 20);
             this.textResponse4.TabIndex = 27;
+            this.textResponse4.Text = "Response 4";
             this.textResponse4.Visible = false;
             this.textResponse4.TextChanged += new System.EventHandler(this.textResponse4_TextChanged);
             // 
@@ -1139,6 +1142,7 @@
             this.textResponse5.Name = "textResponse5";
             this.textResponse5.Size = new System.Drawing.Size(814, 20);
             this.textResponse5.TabIndex = 26;
+            this.textResponse5.Text = "Response 5";
             this.textResponse5.Visible = false;
             this.textResponse5.TextChanged += new System.EventHandler(this.textResponse5_TextChanged);
             // 

@@ -29,6 +29,7 @@ namespace EventCreator
         public const int EFFECT_ON_EVERYONE = 0;
         public const int EFFECT_ON_SELECTED = 1;
         public const int EFFECT_ON_RANDOM = 2;
+        public const int notAppliedModifier = -1000;
 
         //Finish Variables
 
@@ -498,47 +499,45 @@ namespace EventCreator
                 return "We couldn't find the response option \"" + respText + "\" - Sorry!";
             }
 
-
-            //TODO - Save the Response! Woo!
             // Global Stats (Resource Modifiers)
             List<int> globalStats = new List<int>();
             if (foodModB.Checked){globalStats.Add((int)foodMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (waterModB.Checked){globalStats.Add((int)waterMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (vModB.Checked){globalStats.Add((int)valueMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (ammoModB.Checked){globalStats.Add((int)ammoMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (medModB.Checked){globalStats.Add((int)medMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (moraleModB.Checked){globalStats.Add((int)moraleMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (staminaModB.Checked){globalStats.Add((int)staminaMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
             if (valueModB.Checked){globalStats.Add((int)packMod.Value);}
-            else {globalStats.Add(-1);}
+            else {globalStats.Add(notAppliedModifier);}
 
             responseToEdit.myMap[Keys.RESOURCE_MODIFIERS_KEY] = globalStats;
 
             // Member Stats (Party Stat Modifiers)
             List<int> memberStats = new List<int>();
             if (marksModB.Checked){memberStats.Add((int)markMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (percModB.Checked){memberStats.Add((int)percMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (tacticsModB.Checked){memberStats.Add((int)tacticsMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (loyalModB.Checked){memberStats.Add((int)loyalMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (agilityModB.Checked){memberStats.Add((int)agilityMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (strengthModB.Checked){memberStats.Add((int)strengthMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (diploModB.Checked){memberStats.Add((int)diploMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
             if (knowModB.Checked){memberStats.Add((int)knowMod.Value);}
-            else {memberStats.Add(-1);}
+            else {memberStats.Add(notAppliedModifier);}
 
             responseToEdit.myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = memberStats;
 
@@ -676,10 +675,6 @@ namespace EventCreator
             // REWARD_DISPERSE_WIN_KEY
             responseToEdit.myMap[Keys.REWARD_DISPERSE_WIN_KEY] = comboBoxWinApplication.SelectedIndex;
 
-           
-
-
-
             return "";
         }
 
@@ -697,8 +692,169 @@ namespace EventCreator
                 return "We couldn't find the response option \"" + toLoad + "\" - Sorry!";
             }
             
+            // Global Stats (Resource Modifiers)
+            List<int> globalStats = (List<int>)(responseToLoad.myMap[Keys.RESOURCE_MODIFIERS_KEY]);
+            if (globalStats[0] == notAppliedModifier) { foodMod.Value = 0; } else { foodMod.Value = globalStats[0]; }
+            foodModB.Checked = (globalStats[0] != notAppliedModifier);
+            if (globalStats[1] == notAppliedModifier) { waterMod.Value = 0; } else { waterMod.Value = globalStats[1]; }
+            waterModB.Checked = (globalStats[1] != notAppliedModifier);
+            if (globalStats[2] == notAppliedModifier) { valueMod.Value = 0; } else { valueMod.Value = globalStats[2]; }
+            vModB.Checked = (globalStats[2] != notAppliedModifier);
+            if (globalStats[3] == notAppliedModifier) { ammoMod.Value = 0; } else { ammoMod.Value = globalStats[3]; }
+            ammoModB.Checked = (globalStats[3] != notAppliedModifier);
+            if (globalStats[4] == notAppliedModifier) { medMod.Value = 0; } else { medMod.Value = globalStats[4]; }
+            medModB.Checked = (globalStats[4] != notAppliedModifier);
+            if (globalStats[5] == notAppliedModifier) { moraleMod.Value = 0; } else { moraleMod.Value = globalStats[5]; }
+            moraleModB.Checked = (globalStats[5] != notAppliedModifier);
+            if (globalStats[6] == notAppliedModifier) { staminaMod.Value = 0; } else { staminaMod.Value = globalStats[6]; }
+            staminaModB.Checked = (globalStats[6] != notAppliedModifier);
+            if (globalStats[7] == notAppliedModifier) { packMod.Value = 0; } else { packMod.Value = globalStats[7]; }
+            valueModB.Checked = (globalStats[7] != notAppliedModifier);
 
-            //TODO - Load the Response! Hooray!
+
+            // Member Stats (Party Stat Modifiers)
+            List<int> memberStats = (List<int>)(responseToLoad.myMap[Keys.PARTY_STAT_MODIFIERS_KEY]);
+            if (memberStats[0] == notAppliedModifier) { markMod.Value = 0; } else { markMod.Value = memberStats[0]; }
+            marksModB.Checked = (memberStats[0] != notAppliedModifier);
+            if (memberStats[1] == notAppliedModifier) { percMod.Value = 0; } else { percMod.Value = memberStats[1]; }
+            percModB.Checked = (memberStats[1] != notAppliedModifier);
+            if (memberStats[2] == notAppliedModifier) { tacticsMod.Value = 0; } else { tacticsMod.Value = memberStats[2]; }
+            tacticsModB.Checked = (memberStats[2] != notAppliedModifier);
+            if (memberStats[3] == notAppliedModifier) { loyalMod.Value = 0; } else { loyalMod.Value = memberStats[3]; }
+            loyalModB.Checked = (memberStats[3] != notAppliedModifier);
+            if (memberStats[4] == notAppliedModifier) { agilityMod.Value = 0; } else { agilityMod.Value = memberStats[4]; }
+            agilityModB.Checked = (memberStats[4] != notAppliedModifier);
+            if (memberStats[5] == notAppliedModifier) { strengthMod.Value = 0; } else { strengthMod.Value = memberStats[5]; }
+            strengthModB.Checked = (memberStats[5] != notAppliedModifier);
+            if (memberStats[6] == notAppliedModifier) { diploMod.Value = 0; } else { diploMod.Value = memberStats[6]; }
+            diploModB.Checked = (memberStats[6] != notAppliedModifier);
+            if (memberStats[7] == notAppliedModifier) { knowMod.Value = 0; } else { knowMod.Value = memberStats[7]; }
+            knowModB.Checked = (memberStats[7] != notAppliedModifier);
+
+
+            // Global Variable Requirements (Resource Stat Requirement)
+            List<int> resourceStatReq = (List<int>)(responseToLoad.myMap[Keys.RESOURCE_STAT_REQUIREMENT_KEY]);
+            foodReq.Value = resourceStatReq[0];
+            waterReq.Value = resourceStatReq[1];
+            valueReq.Value = resourceStatReq[2];
+            ammoReq.Value = resourceStatReq[3];
+            medReq.Value = resourceStatReq[4];
+            moraleReq.Value = resourceStatReq[5];
+            staminaReq.Value = resourceStatReq[6];
+            packReq.Value = resourceStatReq[7];
+
+            // Party Member Requirements (Party Stat Requirement)
+            List<int> partyMemReq = (List<int>)responseToLoad.myMap[Keys.PARTY_STAT_REQUIREMENT_KEY];
+            marksReq.Value = partyMemReq[0];
+            percReq.Value = partyMemReq[1];
+            tacticsReq.Value = partyMemReq[2];
+            loyalReq.Value = partyMemReq[3];
+            agilityReq.Value = partyMemReq[4];
+            strengthReq.Value = partyMemReq[5];
+            diploReq.Value = partyMemReq[6];
+            knowReq.Value = partyMemReq[7];
+
+            // Lose Global Stats (Lose Resource Change)
+            List<int> loseGlobal = (List<int>)responseToLoad.myMap[Keys.LOSE_RESOURCE_CHANGE_KEY];
+            foodLose.Value = loseGlobal[0];
+            waterLose.Value = loseGlobal[1];
+            valueLose.Value = loseGlobal[2];
+            ammoLose.Value = loseGlobal[3];
+            medLose.Value = loseGlobal[4];
+            moraleLose.Value = loseGlobal[5];
+            staminaLose.Value = loseGlobal[6];
+            packLose.Value = loseGlobal[7];
+
+
+            // Lose Member Stats (Lose Party Stat Change)
+            List<int> loseMember = (List<int>)responseToLoad.myMap[Keys.LOSE_PARTY_STAT_CHANGE_KEY];
+            markLose.Value = loseMember[0];
+            percLose.Value = loseMember[1];
+            tacticsLose.Value = loseMember[2];
+            loyalLose.Value = loseMember[3];
+            agilityLose.Value = loseMember[4];
+            strengthLose.Value = loseMember[5];
+            diploLose.Value = loseMember[6];
+            knowLose.Value = loseMember[7];
+
+
+            // Win Global Stats (Win Resource Change)
+            List<int> winGlobal = (List<int>)responseToLoad.myMap[Keys.WIN_RESOURCE_CHANGE_KEY];
+            foodWin.Value = winGlobal[0];
+            waterWin.Value = winGlobal[1];
+            valueWin.Value = winGlobal[2];
+            ammoWin.Value = winGlobal[3];
+            medWin.Value = winGlobal[4];
+            moraleWin.Value = winGlobal[5];
+            staminaWin.Value = winGlobal[6];
+            packWin.Value = winGlobal[7];
+
+
+            // Win Member Stats (WIN_PARTY_STAT_CHANGE_KEY)
+            List<int> winMember = (List<int>)responseToLoad.myMap[Keys.WIN_PARTY_STAT_CHANGE_KEY];
+            marksWin.Value = winMember[0];
+            percWin.Value = winMember[1];
+            tacticsWin.Value = winMember[2];
+            loyalWin.Value = winMember[3];
+            agilityWin.Value = winMember[4];
+            strengthWin.Value = winMember[5];
+            diploWin.Value = winMember[6];
+            knowWin.Value = winMember[7];
+
+
+            // Cost Resource Stats (RESOURCE_STAT_COST_KEY)
+            List<int> costResource = (List<int>)responseToLoad.myMap[Keys.RESOURCE_STAT_COST_KEY];
+            foodCost.Value = costResource[0];
+            waterCost.Value = costResource[1];
+            valueCost.Value = costResource[2];
+            ammoCost.Value = costResource[3];
+            medCost.Value = costResource[4];
+            moraleCost.Value = costResource[5];
+            staminaCost.Value = costResource[6];
+            packCost.Value = costResource[7];
+
+
+            // Cost Member Stats (PARTY_STAT_COST_KEY)
+            List<int> costMember = (List<int>)responseToLoad.myMap[Keys.PARTY_STAT_COST_KEY];
+            marksCost.Value = costMember[0];
+            percCost.Value = costMember[1];
+            tacticsCost.Value = costMember[2];
+            loyalCost.Value = costMember[3];
+            agilityCost.Value = costMember[4];
+            strengthCost.Value = costMember[5];
+            diploCost.Value = costMember[6];
+            knowCost.Value = costMember[7];
+
+
+            // Win Text (WIN_TEXT_KEY)
+            winText.Text = (string)responseToLoad.myMap[Keys.WIN_TEXT_KEY];
+
+            // Lose Text (LOSE_TEXT_KEY)
+            loseText.Text = (string)responseToLoad.myMap[Keys.LOSE_TEXT_KEY];
+
+            // Pass Text (PASS_TEXT_KEY)
+            passText.Text = (string)responseToLoad.myMap[Keys.PASS_TEXT_KEY];
+
+            // KILL_PERSON_LOSE_KEY
+            chkKillLose.Checked = (bool)responseToLoad.myMap[Keys.KILL_PERSON_LOSE_KEY];
+
+            // KILL_PERSON_WIN_KEY
+            chkWinKill.Checked = (bool)responseToLoad.myMap[Keys.KILL_PERSON_WIN_KEY];
+
+            // WIN_FOLLOW_UP_KEY
+            winFollowUp.Text = (string)responseToLoad.myMap[Keys.WIN_FOLLOW_UP_KEY];
+
+            // LOSE_FOLLOW_UP_KEY
+            loseFollowUp.Text = (string)responseToLoad.myMap[Keys.LOSE_FOLLOW_UP_KEY];
+
+            // PASS_FOLLOW_UP_KEY
+            passFollowUp.Text = (string)responseToLoad.myMap[Keys.PASS_FOLLOW_UP_KEY];
+
+            // REWARD_DISPERSE_LOSE_KEY
+            comboBoxLoseApplication.SelectedIndex = (int)responseToLoad.myMap[Keys.REWARD_DISPERSE_LOSE_KEY];
+
+            // REWARD_DISPERSE_WIN_KEY
+            comboBoxWinApplication.SelectedIndex = (int)responseToLoad.myMap[Keys.REWARD_DISPERSE_WIN_KEY];
 
 
             return "";
