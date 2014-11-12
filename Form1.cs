@@ -511,7 +511,7 @@ namespace EventCreator
 
 
             return new ResponseOption(text, resCosts, partCosts, resReqs, partReqs, resMods, partMods, winText, passText, loseText,
-                winFollowup, passFollowup, loseFollowup, winResChange, winPartyChange, winResChange, losePartyChange, killOnLose, killOnPass, killOnWin,
+                winFollowup, passFollowup, loseFollowup, winResChange, winPartyChange, loseResChange, losePartyChange, killOnLose, killOnPass, killOnWin,
                 rewardDispWin, rewardDispLose);
         }
         /* ------------------------------------------------ */

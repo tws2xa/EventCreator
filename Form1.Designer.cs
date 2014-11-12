@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabGeneralInfo = new System.Windows.Forms.TabPage();
             this.btnLoadEvent = new System.Windows.Forms.Button();
@@ -3642,6 +3643,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 561);
             this.Controls.Add(this.tabMain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "Event Creator";
             this.Load += new System.EventHandler(this.frmMain_Load);
