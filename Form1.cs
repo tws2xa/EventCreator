@@ -35,6 +35,7 @@ namespace EventCreator
         public const int EFFECT_ON_SELECTED = 1;
         public const int EFFECT_ON_RANDOM = 2;
         public const int notAppliedModifier = -1000;
+        List<Panel> respEditPanels;
 
         //Finish Variables
 
@@ -152,7 +153,7 @@ namespace EventCreator
                 introDescInput.Text = (string)theEvent.myDictionary[Keys.INTRO_TEXT_KEY];
                 selectplayerB.Checked = (bool)theEvent.myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY];
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return "General Information";
             }
@@ -1187,6 +1188,11 @@ namespace EventCreator
             numLabels.Add(labelResponse5);
 
             responseOptions.Add(0, new ResponseOption(textResponse1.Text));
+
+            respEditPanels = new List<Panel>()
+            {
+                pnlMod, pnlReq, pnlWin, pnlLose, pnlCost, pnlResText
+            };
         }
 
         public T GetListFromJSON<T>(object toList)
@@ -1240,6 +1246,54 @@ namespace EventCreator
 
             tabMain.Width += wDiff;
             tabMain.Height += hDiff;
+
+            frmWidth = this.Width;
+            frmHeight = this.Height;
+
+            setEditRespLayout();
+        }
+
+        private void tabEditRespOpts_Resize(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void setEditRespLayout()
+        {
+            int panelWidth = pnlMod.Width;
+            int panelHeight = pnlMod.Height;
+
+            int tabWidth = tabMain.Width;
+
+            int hSpacer = 52;
+            int vSpacer = 8;
+            int border = 8;
+
+            int curX = border;
+            int curY = 49;
+
+            int pnlIndex = 0;
+
+            bool finished = false;
+
+            while (pnlIndex <= respEditPanels.Count - 1)
+            {
+                while (curX + panelWidth < tabWidth && !finished)
+                {
+                    Panel curPnl = respEditPanels[pnlIndex];
+                    pnlIndex++;
+
+                    if (pnlIndex > respEditPanels.Count - 1) finished = true;
+
+                    curPnl.Location = new Point(curX, curY);
+
+                    curX += panelWidth + hSpacer;
+                }
+                curX = border;
+                curY += panelHeight + vSpacer;
+            }
+
+            pnlOther.Location = new Point(curX, curY + vSpacer);
         }
 
         /* ------------------------------------------------ */

@@ -102,6 +102,7 @@
             this.labelResponse4 = new System.Windows.Forms.Label();
             this.labelResponse5 = new System.Windows.Forms.Label();
             this.tabEditRespOpts = new System.Windows.Forms.TabPage();
+            this.pnlOther = new System.Windows.Forms.Panel();
             this.lblLoseEffects = new System.Windows.Forms.Label();
             this.comboBoxLoseApplication = new System.Windows.Forms.ComboBox();
             this.lblWinEffects = new System.Windows.Forms.Label();
@@ -109,8 +110,6 @@
             this.chkKillLose = new System.Windows.Forms.CheckBox();
             this.chkWinKill = new System.Windows.Forms.CheckBox();
             this.btnRespOptSave = new System.Windows.Forms.Button();
-            this.lblCurrentResponse = new System.Windows.Forms.Label();
-            this.comboBoxRespToEdit = new System.Windows.Forms.ComboBox();
             this.btnBrowse3 = new System.Windows.Forms.Button();
             this.browse2 = new System.Windows.Forms.Button();
             this.browse1 = new System.Windows.Forms.Button();
@@ -120,14 +119,16 @@
             this.loseFollowUpLabel = new System.Windows.Forms.Label();
             this.passFollowUpLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.pnlResText = new System.Windows.Forms.Panel();
             this.passText = new System.Windows.Forms.TextBox();
             this.passTextLabel = new System.Windows.Forms.Label();
             this.loseText = new System.Windows.Forms.TextBox();
             this.loseTextLabel = new System.Windows.Forms.Label();
             this.winText = new System.Windows.Forms.TextBox();
             this.winTextLabel = new System.Windows.Forms.Label();
+            this.pnlCost = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.statLabelC = new System.Windows.Forms.Label();
             this.strengthCost = new System.Windows.Forms.NumericUpDown();
             this.knowCost = new System.Windows.Forms.NumericUpDown();
@@ -162,8 +163,8 @@
             this.medLabelC = new System.Windows.Forms.Label();
             this.waterLabelC = new System.Windows.Forms.Label();
             this.costLabel = new System.Windows.Forms.Label();
+            this.pnlLose = new System.Windows.Forms.Panel();
             this.subtractLabel = new System.Windows.Forms.Label();
-            this.addLabel = new System.Windows.Forms.Label();
             this.statLabelL = new System.Windows.Forms.Label();
             this.amountLLabel = new System.Windows.Forms.Label();
             this.strengthLose = new System.Windows.Forms.NumericUpDown();
@@ -199,6 +200,8 @@
             this.medLabelL = new System.Windows.Forms.Label();
             this.waterLabelL = new System.Windows.Forms.Label();
             this.loseLabel = new System.Windows.Forms.Label();
+            this.pnlWin = new System.Windows.Forms.Panel();
+            this.addLabel = new System.Windows.Forms.Label();
             this.statLabelW = new System.Windows.Forms.Label();
             this.amountWLabel = new System.Windows.Forms.Label();
             this.strengthWin = new System.Windows.Forms.NumericUpDown();
@@ -234,6 +237,7 @@
             this.medLabelW = new System.Windows.Forms.Label();
             this.waterLabelW = new System.Windows.Forms.Label();
             this.winLabel = new System.Windows.Forms.Label();
+            this.pnlReq = new System.Windows.Forms.Panel();
             this.statLabelR = new System.Windows.Forms.Label();
             this.amountLabelR = new System.Windows.Forms.Label();
             this.strengthReq = new System.Windows.Forms.NumericUpDown();
@@ -269,6 +273,7 @@
             this.medLabelR = new System.Windows.Forms.Label();
             this.waterLabelR = new System.Windows.Forms.Label();
             this.reqLabel = new System.Windows.Forms.Label();
+            this.pnlMod = new System.Windows.Forms.Panel();
             this.statMLabel = new System.Windows.Forms.Label();
             this.applyMLabel = new System.Windows.Forms.Label();
             this.amountMLabel = new System.Windows.Forms.Label();
@@ -321,6 +326,8 @@
             this.medLabel = new System.Windows.Forms.Label();
             this.waterLabel = new System.Windows.Forms.Label();
             this.modLabel = new System.Windows.Forms.Label();
+            this.lblCurrentResponse = new System.Windows.Forms.Label();
+            this.comboBoxRespToEdit = new System.Windows.Forms.ComboBox();
             this.tabFinish = new System.Windows.Forms.TabPage();
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
@@ -330,18 +337,15 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog_LoadEvent = new System.Windows.Forms.OpenFileDialog();
-            this.pnlMod = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.tabMain.SuspendLayout();
             this.tabGeneralInfo.SuspendLayout();
             this.Advice.SuspendLayout();
             this.tabRespOpts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.removeNumBox)).BeginInit();
             this.tabEditRespOpts.SuspendLayout();
+            this.pnlOther.SuspendLayout();
+            this.pnlResText.SuspendLayout();
+            this.pnlCost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksCost)).BeginInit();
@@ -358,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterCost)).BeginInit();
+            this.pnlLose.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthLose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowLose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markLose)).BeginInit();
@@ -374,6 +379,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoLose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medLose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterLose)).BeginInit();
+            this.pnlWin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksWin)).BeginInit();
@@ -390,6 +396,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterWin)).BeginInit();
+            this.pnlReq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksReq)).BeginInit();
@@ -406,6 +413,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterReq)).BeginInit();
+            this.pnlMod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markMod)).BeginInit();
@@ -423,12 +431,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.medMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterMod)).BeginInit();
             this.tabFinish.SuspendLayout();
-            this.pnlMod.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -1203,30 +1205,15 @@
             // tabEditRespOpts
             // 
             this.tabEditRespOpts.AutoScroll = true;
-            this.tabEditRespOpts.Controls.Add(this.panel5);
-            this.tabEditRespOpts.Controls.Add(this.panel4);
-            this.tabEditRespOpts.Controls.Add(this.panel3);
-            this.tabEditRespOpts.Controls.Add(this.panel2);
-            this.tabEditRespOpts.Controls.Add(this.panel1);
+            this.tabEditRespOpts.Controls.Add(this.pnlOther);
+            this.tabEditRespOpts.Controls.Add(this.pnlResText);
+            this.tabEditRespOpts.Controls.Add(this.pnlCost);
+            this.tabEditRespOpts.Controls.Add(this.pnlLose);
+            this.tabEditRespOpts.Controls.Add(this.pnlWin);
+            this.tabEditRespOpts.Controls.Add(this.pnlReq);
             this.tabEditRespOpts.Controls.Add(this.pnlMod);
-            this.tabEditRespOpts.Controls.Add(this.lblLoseEffects);
-            this.tabEditRespOpts.Controls.Add(this.comboBoxLoseApplication);
-            this.tabEditRespOpts.Controls.Add(this.lblWinEffects);
-            this.tabEditRespOpts.Controls.Add(this.comboBoxWinApplication);
-            this.tabEditRespOpts.Controls.Add(this.chkKillLose);
-            this.tabEditRespOpts.Controls.Add(this.chkWinKill);
-            this.tabEditRespOpts.Controls.Add(this.btnRespOptSave);
             this.tabEditRespOpts.Controls.Add(this.lblCurrentResponse);
             this.tabEditRespOpts.Controls.Add(this.comboBoxRespToEdit);
-            this.tabEditRespOpts.Controls.Add(this.btnBrowse3);
-            this.tabEditRespOpts.Controls.Add(this.browse2);
-            this.tabEditRespOpts.Controls.Add(this.browse1);
-            this.tabEditRespOpts.Controls.Add(this.loseFollowUp);
-            this.tabEditRespOpts.Controls.Add(this.passFollowUp);
-            this.tabEditRespOpts.Controls.Add(this.winFollowUp);
-            this.tabEditRespOpts.Controls.Add(this.loseFollowUpLabel);
-            this.tabEditRespOpts.Controls.Add(this.passFollowUpLabel);
-            this.tabEditRespOpts.Controls.Add(this.label1);
             this.tabEditRespOpts.Location = new System.Drawing.Point(4, 22);
             this.tabEditRespOpts.Name = "tabEditRespOpts";
             this.tabEditRespOpts.Size = new System.Drawing.Size(856, 534);
@@ -1235,10 +1222,34 @@
             this.tabEditRespOpts.UseVisualStyleBackColor = true;
             this.tabEditRespOpts.Enter += new System.EventHandler(this.tabEditRespOpts_Enter);
             // 
+            // pnlOther
+            // 
+            this.pnlOther.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlOther.Controls.Add(this.lblLoseEffects);
+            this.pnlOther.Controls.Add(this.comboBoxLoseApplication);
+            this.pnlOther.Controls.Add(this.lblWinEffects);
+            this.pnlOther.Controls.Add(this.comboBoxWinApplication);
+            this.pnlOther.Controls.Add(this.chkKillLose);
+            this.pnlOther.Controls.Add(this.chkWinKill);
+            this.pnlOther.Controls.Add(this.btnRespOptSave);
+            this.pnlOther.Controls.Add(this.btnBrowse3);
+            this.pnlOther.Controls.Add(this.browse2);
+            this.pnlOther.Controls.Add(this.browse1);
+            this.pnlOther.Controls.Add(this.loseFollowUp);
+            this.pnlOther.Controls.Add(this.passFollowUp);
+            this.pnlOther.Controls.Add(this.winFollowUp);
+            this.pnlOther.Controls.Add(this.loseFollowUpLabel);
+            this.pnlOther.Controls.Add(this.passFollowUpLabel);
+            this.pnlOther.Controls.Add(this.label1);
+            this.pnlOther.Location = new System.Drawing.Point(5, 855);
+            this.pnlOther.Name = "pnlOther";
+            this.pnlOther.Size = new System.Drawing.Size(812, 156);
+            this.pnlOther.TabIndex = 517;
+            // 
             // lblLoseEffects
             // 
             this.lblLoseEffects.AutoSize = true;
-            this.lblLoseEffects.Location = new System.Drawing.Point(562, 941);
+            this.lblLoseEffects.Location = new System.Drawing.Point(557, 91);
             this.lblLoseEffects.Name = "lblLoseEffects";
             this.lblLoseEffects.Size = new System.Drawing.Size(123, 13);
             this.lblLoseEffects.TabIndex = 510;
@@ -1252,7 +1263,7 @@
             "Everyone",
             "Selected Player",
             "Random Player"});
-            this.comboBoxLoseApplication.Location = new System.Drawing.Point(691, 938);
+            this.comboBoxLoseApplication.Location = new System.Drawing.Point(686, 88);
             this.comboBoxLoseApplication.Name = "comboBoxLoseApplication";
             this.comboBoxLoseApplication.Size = new System.Drawing.Size(109, 21);
             this.comboBoxLoseApplication.TabIndex = 509;
@@ -1261,7 +1272,7 @@
             // lblWinEffects
             // 
             this.lblWinEffects.AutoSize = true;
-            this.lblWinEffects.Location = new System.Drawing.Point(561, 909);
+            this.lblWinEffects.Location = new System.Drawing.Point(556, 59);
             this.lblWinEffects.Name = "lblWinEffects";
             this.lblWinEffects.Size = new System.Drawing.Size(119, 13);
             this.lblWinEffects.TabIndex = 506;
@@ -1275,7 +1286,7 @@
             "Everyone",
             "Selected Player",
             "Random Player"});
-            this.comboBoxWinApplication.Location = new System.Drawing.Point(690, 906);
+            this.comboBoxWinApplication.Location = new System.Drawing.Point(685, 56);
             this.comboBoxWinApplication.Name = "comboBoxWinApplication";
             this.comboBoxWinApplication.Size = new System.Drawing.Size(111, 21);
             this.comboBoxWinApplication.TabIndex = 505;
@@ -1285,7 +1296,7 @@
             // 
             this.chkKillLose.AutoSize = true;
             this.chkKillLose.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkKillLose.Location = new System.Drawing.Point(653, 883);
+            this.chkKillLose.Location = new System.Drawing.Point(648, 33);
             this.chkKillLose.Name = "chkKillLose";
             this.chkKillLose.Size = new System.Drawing.Size(148, 17);
             this.chkKillLose.TabIndex = 504;
@@ -1296,7 +1307,7 @@
             // 
             this.chkWinKill.AutoSize = true;
             this.chkWinKill.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkWinKill.Location = new System.Drawing.Point(654, 856);
+            this.chkWinKill.Location = new System.Drawing.Point(649, 6);
             this.chkWinKill.Name = "chkWinKill";
             this.chkWinKill.Size = new System.Drawing.Size(147, 17);
             this.chkWinKill.TabIndex = 501;
@@ -1305,7 +1316,7 @@
             // 
             // btnRespOptSave
             // 
-            this.btnRespOptSave.Location = new System.Drawing.Point(691, 972);
+            this.btnRespOptSave.Location = new System.Drawing.Point(686, 122);
             this.btnRespOptSave.Name = "btnRespOptSave";
             this.btnRespOptSave.Size = new System.Drawing.Size(109, 23);
             this.btnRespOptSave.TabIndex = 499;
@@ -1313,32 +1324,9 @@
             this.btnRespOptSave.UseVisualStyleBackColor = true;
             this.btnRespOptSave.Click += new System.EventHandler(this.btnRespOptSave_Click);
             // 
-            // lblCurrentResponse
-            // 
-            this.lblCurrentResponse.AutoSize = true;
-            this.lblCurrentResponse.Location = new System.Drawing.Point(10, 15);
-            this.lblCurrentResponse.Name = "lblCurrentResponse";
-            this.lblCurrentResponse.Size = new System.Drawing.Size(132, 13);
-            this.lblCurrentResponse.TabIndex = 498;
-            this.lblCurrentResponse.Text = "Current Response To Edit:";
-            // 
-            // comboBoxRespToEdit
-            // 
-            this.comboBoxRespToEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRespToEdit.FormattingEnabled = true;
-            this.comboBoxRespToEdit.Items.AddRange(new object[] {
-            "Event 1",
-            "Event 2",
-            "Event 3"});
-            this.comboBoxRespToEdit.Location = new System.Drawing.Point(148, 12);
-            this.comboBoxRespToEdit.Name = "comboBoxRespToEdit";
-            this.comboBoxRespToEdit.Size = new System.Drawing.Size(635, 21);
-            this.comboBoxRespToEdit.TabIndex = 497;
-            this.comboBoxRespToEdit.SelectionChangeCommitted += new System.EventHandler(this.comboBoxEvent_SelectedIndexChanged);
-            // 
             // btnBrowse3
             // 
-            this.btnBrowse3.Location = new System.Drawing.Point(463, 972);
+            this.btnBrowse3.Location = new System.Drawing.Point(449, 122);
             this.btnBrowse3.Name = "btnBrowse3";
             this.btnBrowse3.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse3.TabIndex = 492;
@@ -1348,7 +1336,7 @@
             // 
             // browse2
             // 
-            this.browse2.Location = new System.Drawing.Point(463, 923);
+            this.browse2.Location = new System.Drawing.Point(448, 73);
             this.browse2.Name = "browse2";
             this.browse2.Size = new System.Drawing.Size(75, 23);
             this.browse2.TabIndex = 491;
@@ -1358,7 +1346,7 @@
             // 
             // browse1
             // 
-            this.browse1.Location = new System.Drawing.Point(463, 879);
+            this.browse1.Location = new System.Drawing.Point(448, 23);
             this.browse1.Name = "browse1";
             this.browse1.Size = new System.Drawing.Size(75, 23);
             this.browse1.TabIndex = 490;
@@ -1368,29 +1356,29 @@
             // 
             // loseFollowUp
             // 
-            this.loseFollowUp.Location = new System.Drawing.Point(8, 975);
+            this.loseFollowUp.Location = new System.Drawing.Point(10, 124);
             this.loseFollowUp.Name = "loseFollowUp";
-            this.loseFollowUp.Size = new System.Drawing.Size(449, 20);
+            this.loseFollowUp.Size = new System.Drawing.Size(429, 20);
             this.loseFollowUp.TabIndex = 489;
             // 
             // passFollowUp
             // 
-            this.passFollowUp.Location = new System.Drawing.Point(8, 926);
+            this.passFollowUp.Location = new System.Drawing.Point(10, 75);
             this.passFollowUp.Name = "passFollowUp";
-            this.passFollowUp.Size = new System.Drawing.Size(449, 20);
+            this.passFollowUp.Size = new System.Drawing.Size(429, 20);
             this.passFollowUp.TabIndex = 488;
             // 
             // winFollowUp
             // 
-            this.winFollowUp.Location = new System.Drawing.Point(8, 876);
+            this.winFollowUp.Location = new System.Drawing.Point(10, 25);
             this.winFollowUp.Name = "winFollowUp";
-            this.winFollowUp.Size = new System.Drawing.Size(449, 20);
+            this.winFollowUp.Size = new System.Drawing.Size(429, 20);
             this.winFollowUp.TabIndex = 487;
             // 
             // loseFollowUpLabel
             // 
             this.loseFollowUpLabel.AutoSize = true;
-            this.loseFollowUpLabel.Location = new System.Drawing.Point(5, 959);
+            this.loseFollowUpLabel.Location = new System.Drawing.Point(7, 108);
             this.loseFollowUpLabel.Name = "loseFollowUpLabel";
             this.loseFollowUpLabel.Size = new System.Drawing.Size(109, 13);
             this.loseFollowUpLabel.TabIndex = 486;
@@ -1399,7 +1387,7 @@
             // passFollowUpLabel
             // 
             this.passFollowUpLabel.AutoSize = true;
-            this.passFollowUpLabel.Location = new System.Drawing.Point(5, 910);
+            this.passFollowUpLabel.Location = new System.Drawing.Point(7, 59);
             this.passFollowUpLabel.Name = "passFollowUpLabel";
             this.passFollowUpLabel.Size = new System.Drawing.Size(109, 13);
             this.passFollowUpLabel.TabIndex = 485;
@@ -1408,11 +1396,123 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 860);
+            this.label1.Location = new System.Drawing.Point(7, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 484;
             this.label1.Text = "Win Follow-up Event";
+            // 
+            // pnlResText
+            // 
+            this.pnlResText.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlResText.Controls.Add(this.passText);
+            this.pnlResText.Controls.Add(this.passTextLabel);
+            this.pnlResText.Controls.Add(this.loseText);
+            this.pnlResText.Controls.Add(this.loseTextLabel);
+            this.pnlResText.Controls.Add(this.winText);
+            this.pnlResText.Controls.Add(this.winTextLabel);
+            this.pnlResText.Location = new System.Drawing.Point(442, 586);
+            this.pnlResText.Name = "pnlResText";
+            this.pnlResText.Size = new System.Drawing.Size(376, 262);
+            this.pnlResText.TabIndex = 516;
+            // 
+            // passText
+            // 
+            this.passText.Location = new System.Drawing.Point(17, 193);
+            this.passText.Multiline = true;
+            this.passText.Name = "passText";
+            this.passText.Size = new System.Drawing.Size(341, 50);
+            this.passText.TabIndex = 481;
+            // 
+            // passTextLabel
+            // 
+            this.passTextLabel.AutoSize = true;
+            this.passTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passTextLabel.Location = new System.Drawing.Point(14, 173);
+            this.passTextLabel.Name = "passTextLabel";
+            this.passTextLabel.Size = new System.Drawing.Size(63, 13);
+            this.passTextLabel.TabIndex = 480;
+            this.passTextLabel.Text = "Pass Text";
+            // 
+            // loseText
+            // 
+            this.loseText.Location = new System.Drawing.Point(17, 103);
+            this.loseText.Multiline = true;
+            this.loseText.Name = "loseText";
+            this.loseText.Size = new System.Drawing.Size(341, 50);
+            this.loseText.TabIndex = 479;
+            // 
+            // loseTextLabel
+            // 
+            this.loseTextLabel.AutoSize = true;
+            this.loseTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loseTextLabel.Location = new System.Drawing.Point(14, 87);
+            this.loseTextLabel.Name = "loseTextLabel";
+            this.loseTextLabel.Size = new System.Drawing.Size(63, 13);
+            this.loseTextLabel.TabIndex = 478;
+            this.loseTextLabel.Text = "Lose Text";
+            // 
+            // winText
+            // 
+            this.winText.Location = new System.Drawing.Point(17, 23);
+            this.winText.Multiline = true;
+            this.winText.Name = "winText";
+            this.winText.Size = new System.Drawing.Size(341, 50);
+            this.winText.TabIndex = 477;
+            // 
+            // winTextLabel
+            // 
+            this.winTextLabel.AutoSize = true;
+            this.winTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winTextLabel.Location = new System.Drawing.Point(14, 7);
+            this.winTextLabel.Name = "winTextLabel";
+            this.winTextLabel.Size = new System.Drawing.Size(58, 13);
+            this.winTextLabel.TabIndex = 476;
+            this.winTextLabel.Text = "Win Text";
+            // 
+            // pnlCost
+            // 
+            this.pnlCost.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlCost.Controls.Add(this.label23);
+            this.pnlCost.Controls.Add(this.label40);
+            this.pnlCost.Controls.Add(this.statLabelC);
+            this.pnlCost.Controls.Add(this.strengthCost);
+            this.pnlCost.Controls.Add(this.knowCost);
+            this.pnlCost.Controls.Add(this.marksCost);
+            this.pnlCost.Controls.Add(this.loyalCost);
+            this.pnlCost.Controls.Add(this.percCost);
+            this.pnlCost.Controls.Add(this.agilityCost);
+            this.pnlCost.Controls.Add(this.diploCost);
+            this.pnlCost.Controls.Add(this.tacticsCost);
+            this.pnlCost.Controls.Add(this.strengthLabelC);
+            this.pnlCost.Controls.Add(this.knowLabelC);
+            this.pnlCost.Controls.Add(this.marksLabelC);
+            this.pnlCost.Controls.Add(this.loyalCostC);
+            this.pnlCost.Controls.Add(this.percLabelC);
+            this.pnlCost.Controls.Add(this.agilityLabelC);
+            this.pnlCost.Controls.Add(this.diploLabelC);
+            this.pnlCost.Controls.Add(this.tacticsLabelC);
+            this.pnlCost.Controls.Add(this.foodCost);
+            this.pnlCost.Controls.Add(this.staminaCost);
+            this.pnlCost.Controls.Add(this.moraleCost);
+            this.pnlCost.Controls.Add(this.valueCost);
+            this.pnlCost.Controls.Add(this.packCost);
+            this.pnlCost.Controls.Add(this.ammoCost);
+            this.pnlCost.Controls.Add(this.medCost);
+            this.pnlCost.Controls.Add(this.waterCost);
+            this.pnlCost.Controls.Add(this.foodLabelC);
+            this.pnlCost.Controls.Add(this.staminaLabelC);
+            this.pnlCost.Controls.Add(this.moraleLabelC);
+            this.pnlCost.Controls.Add(this.valueLabelC);
+            this.pnlCost.Controls.Add(this.packLabelC);
+            this.pnlCost.Controls.Add(this.ammoLabelC);
+            this.pnlCost.Controls.Add(this.medLabelC);
+            this.pnlCost.Controls.Add(this.waterLabelC);
+            this.pnlCost.Controls.Add(this.costLabel);
+            this.pnlCost.Location = new System.Drawing.Point(8, 586);
+            this.pnlCost.Name = "pnlCost";
+            this.pnlCost.Size = new System.Drawing.Size(376, 262);
+            this.pnlCost.TabIndex = 515;
             // 
             // label23
             // 
@@ -1433,60 +1533,6 @@
             this.label40.Size = new System.Drawing.Size(48, 13);
             this.label40.TabIndex = 482;
             this.label40.Text = "amount";
-            // 
-            // passText
-            // 
-            this.passText.Location = new System.Drawing.Point(17, 193);
-            this.passText.Multiline = true;
-            this.passText.Name = "passText";
-            this.passText.Size = new System.Drawing.Size(324, 50);
-            this.passText.TabIndex = 481;
-            // 
-            // passTextLabel
-            // 
-            this.passTextLabel.AutoSize = true;
-            this.passTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passTextLabel.Location = new System.Drawing.Point(14, 173);
-            this.passTextLabel.Name = "passTextLabel";
-            this.passTextLabel.Size = new System.Drawing.Size(63, 13);
-            this.passTextLabel.TabIndex = 480;
-            this.passTextLabel.Text = "Pass Text";
-            // 
-            // loseText
-            // 
-            this.loseText.Location = new System.Drawing.Point(17, 103);
-            this.loseText.Multiline = true;
-            this.loseText.Name = "loseText";
-            this.loseText.Size = new System.Drawing.Size(324, 50);
-            this.loseText.TabIndex = 479;
-            // 
-            // loseTextLabel
-            // 
-            this.loseTextLabel.AutoSize = true;
-            this.loseTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loseTextLabel.Location = new System.Drawing.Point(14, 87);
-            this.loseTextLabel.Name = "loseTextLabel";
-            this.loseTextLabel.Size = new System.Drawing.Size(63, 13);
-            this.loseTextLabel.TabIndex = 478;
-            this.loseTextLabel.Text = "Lose Text";
-            // 
-            // winText
-            // 
-            this.winText.Location = new System.Drawing.Point(17, 23);
-            this.winText.Multiline = true;
-            this.winText.Name = "winText";
-            this.winText.Size = new System.Drawing.Size(324, 50);
-            this.winText.TabIndex = 477;
-            // 
-            // winTextLabel
-            // 
-            this.winTextLabel.AutoSize = true;
-            this.winTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winTextLabel.Location = new System.Drawing.Point(14, 7);
-            this.winTextLabel.Name = "winTextLabel";
-            this.winTextLabel.Size = new System.Drawing.Size(58, 13);
-            this.winTextLabel.TabIndex = 476;
-            this.winTextLabel.Text = "Win Text";
             // 
             // statLabelC
             // 
@@ -1764,6 +1810,50 @@
             this.costLabel.TabIndex = 442;
             this.costLabel.Text = "Cost";
             // 
+            // pnlLose
+            // 
+            this.pnlLose.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlLose.Controls.Add(this.subtractLabel);
+            this.pnlLose.Controls.Add(this.statLabelL);
+            this.pnlLose.Controls.Add(this.amountLLabel);
+            this.pnlLose.Controls.Add(this.strengthLose);
+            this.pnlLose.Controls.Add(this.knowLose);
+            this.pnlLose.Controls.Add(this.markLose);
+            this.pnlLose.Controls.Add(this.loyalLose);
+            this.pnlLose.Controls.Add(this.percLose);
+            this.pnlLose.Controls.Add(this.agilityLose);
+            this.pnlLose.Controls.Add(this.diploLose);
+            this.pnlLose.Controls.Add(this.tacticsLose);
+            this.pnlLose.Controls.Add(this.strengthLabelL);
+            this.pnlLose.Controls.Add(this.knowLabelL);
+            this.pnlLose.Controls.Add(this.marksLabelL);
+            this.pnlLose.Controls.Add(this.loyalLabelL);
+            this.pnlLose.Controls.Add(this.percLabelL);
+            this.pnlLose.Controls.Add(this.agilityLabelL);
+            this.pnlLose.Controls.Add(this.diploLabelL);
+            this.pnlLose.Controls.Add(this.tacticsLabelL);
+            this.pnlLose.Controls.Add(this.foodLose);
+            this.pnlLose.Controls.Add(this.staminaLose);
+            this.pnlLose.Controls.Add(this.moraleLose);
+            this.pnlLose.Controls.Add(this.valueLose);
+            this.pnlLose.Controls.Add(this.packLose);
+            this.pnlLose.Controls.Add(this.ammoLose);
+            this.pnlLose.Controls.Add(this.medLose);
+            this.pnlLose.Controls.Add(this.waterLose);
+            this.pnlLose.Controls.Add(this.foodLabelL);
+            this.pnlLose.Controls.Add(this.staminaLabelL);
+            this.pnlLose.Controls.Add(this.moraleLabelL);
+            this.pnlLose.Controls.Add(this.valueLabelL);
+            this.pnlLose.Controls.Add(this.packLabelL);
+            this.pnlLose.Controls.Add(this.ammoLabelL);
+            this.pnlLose.Controls.Add(this.medLabelL);
+            this.pnlLose.Controls.Add(this.waterLabelL);
+            this.pnlLose.Controls.Add(this.loseLabel);
+            this.pnlLose.Location = new System.Drawing.Point(442, 317);
+            this.pnlLose.Name = "pnlLose";
+            this.pnlLose.Size = new System.Drawing.Size(376, 262);
+            this.pnlLose.TabIndex = 514;
+            // 
             // subtractLabel
             // 
             this.subtractLabel.AutoSize = true;
@@ -1773,16 +1863,6 @@
             this.subtractLabel.Size = new System.Drawing.Size(67, 13);
             this.subtractLabel.TabIndex = 441;
             this.subtractLabel.Text = "subtracted";
-            // 
-            // addLabel
-            // 
-            this.addLabel.AutoSize = true;
-            this.addLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addLabel.Location = new System.Drawing.Point(90, 26);
-            this.addLabel.Name = "addLabel";
-            this.addLabel.Size = new System.Drawing.Size(42, 13);
-            this.addLabel.TabIndex = 440;
-            this.addLabel.Text = "added";
             // 
             // statLabelL
             // 
@@ -1806,7 +1886,7 @@
             // 
             // strengthLose
             // 
-            this.strengthLose.Location = new System.Drawing.Point(302, 226);
+            this.strengthLose.Location = new System.Drawing.Point(322, 226);
             this.strengthLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1818,7 +1898,7 @@
             // 
             // knowLose
             // 
-            this.knowLose.Location = new System.Drawing.Point(302, 201);
+            this.knowLose.Location = new System.Drawing.Point(322, 201);
             this.knowLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1830,7 +1910,7 @@
             // 
             // markLose
             // 
-            this.markLose.Location = new System.Drawing.Point(302, 175);
+            this.markLose.Location = new System.Drawing.Point(322, 175);
             this.markLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1842,7 +1922,7 @@
             // 
             // loyalLose
             // 
-            this.loyalLose.Location = new System.Drawing.Point(302, 149);
+            this.loyalLose.Location = new System.Drawing.Point(322, 149);
             this.loyalLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1854,7 +1934,7 @@
             // 
             // percLose
             // 
-            this.percLose.Location = new System.Drawing.Point(302, 123);
+            this.percLose.Location = new System.Drawing.Point(322, 123);
             this.percLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1866,7 +1946,7 @@
             // 
             // agilityLose
             // 
-            this.agilityLose.Location = new System.Drawing.Point(302, 97);
+            this.agilityLose.Location = new System.Drawing.Point(322, 97);
             this.agilityLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1878,7 +1958,7 @@
             // 
             // diploLose
             // 
-            this.diploLose.Location = new System.Drawing.Point(302, 72);
+            this.diploLose.Location = new System.Drawing.Point(322, 72);
             this.diploLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1890,7 +1970,7 @@
             // 
             // tacticsLose
             // 
-            this.tacticsLose.Location = new System.Drawing.Point(302, 46);
+            this.tacticsLose.Location = new System.Drawing.Point(322, 46);
             this.tacticsLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1903,7 +1983,7 @@
             // strengthLabelL
             // 
             this.strengthLabelL.AutoSize = true;
-            this.strengthLabelL.Location = new System.Drawing.Point(210, 228);
+            this.strengthLabelL.Location = new System.Drawing.Point(230, 228);
             this.strengthLabelL.Name = "strengthLabelL";
             this.strengthLabelL.Size = new System.Drawing.Size(45, 13);
             this.strengthLabelL.TabIndex = 429;
@@ -1912,7 +1992,7 @@
             // knowLabelL
             // 
             this.knowLabelL.AutoSize = true;
-            this.knowLabelL.Location = new System.Drawing.Point(211, 203);
+            this.knowLabelL.Location = new System.Drawing.Point(231, 203);
             this.knowLabelL.Name = "knowLabelL";
             this.knowLabelL.Size = new System.Drawing.Size(59, 13);
             this.knowLabelL.TabIndex = 428;
@@ -1921,7 +2001,7 @@
             // marksLabelL
             // 
             this.marksLabelL.AutoSize = true;
-            this.marksLabelL.Location = new System.Drawing.Point(211, 178);
+            this.marksLabelL.Location = new System.Drawing.Point(231, 178);
             this.marksLabelL.Name = "marksLabelL";
             this.marksLabelL.Size = new System.Drawing.Size(74, 13);
             this.marksLabelL.TabIndex = 427;
@@ -1930,7 +2010,7 @@
             // loyalLabelL
             // 
             this.loyalLabelL.AutoSize = true;
-            this.loyalLabelL.Location = new System.Drawing.Point(211, 151);
+            this.loyalLabelL.Location = new System.Drawing.Point(231, 151);
             this.loyalLabelL.Name = "loyalLabelL";
             this.loyalLabelL.Size = new System.Drawing.Size(36, 13);
             this.loyalLabelL.TabIndex = 426;
@@ -1939,7 +2019,7 @@
             // percLabelL
             // 
             this.percLabelL.AutoSize = true;
-            this.percLabelL.Location = new System.Drawing.Point(210, 125);
+            this.percLabelL.Location = new System.Drawing.Point(230, 125);
             this.percLabelL.Name = "percLabelL";
             this.percLabelL.Size = new System.Drawing.Size(57, 13);
             this.percLabelL.TabIndex = 425;
@@ -1948,7 +2028,7 @@
             // agilityLabelL
             // 
             this.agilityLabelL.AutoSize = true;
-            this.agilityLabelL.Location = new System.Drawing.Point(209, 101);
+            this.agilityLabelL.Location = new System.Drawing.Point(229, 101);
             this.agilityLabelL.Name = "agilityLabelL";
             this.agilityLabelL.Size = new System.Drawing.Size(33, 13);
             this.agilityLabelL.TabIndex = 424;
@@ -1957,7 +2037,7 @@
             // diploLabelL
             // 
             this.diploLabelL.AutoSize = true;
-            this.diploLabelL.Location = new System.Drawing.Point(209, 75);
+            this.diploLabelL.Location = new System.Drawing.Point(229, 75);
             this.diploLabelL.Name = "diploLabelL";
             this.diploLabelL.Size = new System.Drawing.Size(54, 13);
             this.diploLabelL.TabIndex = 423;
@@ -1966,7 +2046,7 @@
             // tacticsLabelL
             // 
             this.tacticsLabelL.AutoSize = true;
-            this.tacticsLabelL.Location = new System.Drawing.Point(209, 48);
+            this.tacticsLabelL.Location = new System.Drawing.Point(229, 48);
             this.tacticsLabelL.Name = "tacticsLabelL";
             this.tacticsLabelL.Size = new System.Drawing.Size(38, 13);
             this.tacticsLabelL.TabIndex = 422;
@@ -2149,6 +2229,60 @@
             this.loseLabel.Size = new System.Drawing.Size(34, 13);
             this.loseLabel.TabIndex = 405;
             this.loseLabel.Text = "Lose";
+            // 
+            // pnlWin
+            // 
+            this.pnlWin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlWin.Controls.Add(this.addLabel);
+            this.pnlWin.Controls.Add(this.statLabelW);
+            this.pnlWin.Controls.Add(this.amountWLabel);
+            this.pnlWin.Controls.Add(this.strengthWin);
+            this.pnlWin.Controls.Add(this.knowWin);
+            this.pnlWin.Controls.Add(this.marksWin);
+            this.pnlWin.Controls.Add(this.loyalWin);
+            this.pnlWin.Controls.Add(this.percWin);
+            this.pnlWin.Controls.Add(this.agilityWin);
+            this.pnlWin.Controls.Add(this.diploWin);
+            this.pnlWin.Controls.Add(this.tacticsWin);
+            this.pnlWin.Controls.Add(this.strengthLabelW);
+            this.pnlWin.Controls.Add(this.knowLabelW);
+            this.pnlWin.Controls.Add(this.markLabelW);
+            this.pnlWin.Controls.Add(this.loyalLabelW);
+            this.pnlWin.Controls.Add(this.percLabelW);
+            this.pnlWin.Controls.Add(this.agilityLabelW);
+            this.pnlWin.Controls.Add(this.diploLabelW);
+            this.pnlWin.Controls.Add(this.tacticsLabelW);
+            this.pnlWin.Controls.Add(this.foodWin);
+            this.pnlWin.Controls.Add(this.staminaWin);
+            this.pnlWin.Controls.Add(this.moraleWin);
+            this.pnlWin.Controls.Add(this.valueWin);
+            this.pnlWin.Controls.Add(this.packWin);
+            this.pnlWin.Controls.Add(this.ammoWin);
+            this.pnlWin.Controls.Add(this.medWin);
+            this.pnlWin.Controls.Add(this.waterWin);
+            this.pnlWin.Controls.Add(this.foodLabelW);
+            this.pnlWin.Controls.Add(this.staminaLabelW);
+            this.pnlWin.Controls.Add(this.moraleLabelW);
+            this.pnlWin.Controls.Add(this.valueLabelW);
+            this.pnlWin.Controls.Add(this.packLabelW);
+            this.pnlWin.Controls.Add(this.ammoLabelW);
+            this.pnlWin.Controls.Add(this.medLabelW);
+            this.pnlWin.Controls.Add(this.waterLabelW);
+            this.pnlWin.Controls.Add(this.winLabel);
+            this.pnlWin.Location = new System.Drawing.Point(8, 317);
+            this.pnlWin.Name = "pnlWin";
+            this.pnlWin.Size = new System.Drawing.Size(376, 262);
+            this.pnlWin.TabIndex = 513;
+            // 
+            // addLabel
+            // 
+            this.addLabel.AutoSize = true;
+            this.addLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addLabel.Location = new System.Drawing.Point(90, 26);
+            this.addLabel.Name = "addLabel";
+            this.addLabel.Size = new System.Drawing.Size(42, 13);
+            this.addLabel.TabIndex = 440;
+            this.addLabel.Text = "added";
             // 
             // statLabelW
             // 
@@ -2516,6 +2650,49 @@
             this.winLabel.TabIndex = 370;
             this.winLabel.Text = "Win";
             // 
+            // pnlReq
+            // 
+            this.pnlReq.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlReq.Controls.Add(this.statLabelR);
+            this.pnlReq.Controls.Add(this.amountLabelR);
+            this.pnlReq.Controls.Add(this.strengthReq);
+            this.pnlReq.Controls.Add(this.knowReq);
+            this.pnlReq.Controls.Add(this.marksReq);
+            this.pnlReq.Controls.Add(this.loyalReq);
+            this.pnlReq.Controls.Add(this.percReq);
+            this.pnlReq.Controls.Add(this.agilityReq);
+            this.pnlReq.Controls.Add(this.diploReq);
+            this.pnlReq.Controls.Add(this.tacticsReq);
+            this.pnlReq.Controls.Add(this.strengthLabelR);
+            this.pnlReq.Controls.Add(this.knowLabelR);
+            this.pnlReq.Controls.Add(this.marksLabelR);
+            this.pnlReq.Controls.Add(this.loyalLabelR);
+            this.pnlReq.Controls.Add(this.percLabelR);
+            this.pnlReq.Controls.Add(this.agilityLabelR);
+            this.pnlReq.Controls.Add(this.diploLabelR);
+            this.pnlReq.Controls.Add(this.tacticsLabelR);
+            this.pnlReq.Controls.Add(this.foodReq);
+            this.pnlReq.Controls.Add(this.staminaReq);
+            this.pnlReq.Controls.Add(this.moraleReq);
+            this.pnlReq.Controls.Add(this.valueReq);
+            this.pnlReq.Controls.Add(this.packReq);
+            this.pnlReq.Controls.Add(this.ammoReq);
+            this.pnlReq.Controls.Add(this.medReq);
+            this.pnlReq.Controls.Add(this.waterReq);
+            this.pnlReq.Controls.Add(this.foodLabelR);
+            this.pnlReq.Controls.Add(this.staminaLabelR);
+            this.pnlReq.Controls.Add(this.moraleLabelR);
+            this.pnlReq.Controls.Add(this.valueLabelR);
+            this.pnlReq.Controls.Add(this.packLabelR);
+            this.pnlReq.Controls.Add(this.ammoLabelR);
+            this.pnlReq.Controls.Add(this.medLabelR);
+            this.pnlReq.Controls.Add(this.waterLabelR);
+            this.pnlReq.Controls.Add(this.reqLabel);
+            this.pnlReq.Location = new System.Drawing.Point(442, 49);
+            this.pnlReq.Name = "pnlReq";
+            this.pnlReq.Size = new System.Drawing.Size(376, 262);
+            this.pnlReq.TabIndex = 512;
+            // 
             // statLabelR
             // 
             this.statLabelR.AutoSize = true;
@@ -2538,56 +2715,56 @@
             // 
             // strengthReq
             // 
-            this.strengthReq.Location = new System.Drawing.Point(305, 226);
+            this.strengthReq.Location = new System.Drawing.Point(325, 226);
             this.strengthReq.Name = "strengthReq";
             this.strengthReq.Size = new System.Drawing.Size(37, 20);
             this.strengthReq.TabIndex = 367;
             // 
             // knowReq
             // 
-            this.knowReq.Location = new System.Drawing.Point(305, 201);
+            this.knowReq.Location = new System.Drawing.Point(325, 201);
             this.knowReq.Name = "knowReq";
             this.knowReq.Size = new System.Drawing.Size(37, 20);
             this.knowReq.TabIndex = 366;
             // 
             // marksReq
             // 
-            this.marksReq.Location = new System.Drawing.Point(305, 175);
+            this.marksReq.Location = new System.Drawing.Point(325, 175);
             this.marksReq.Name = "marksReq";
             this.marksReq.Size = new System.Drawing.Size(37, 20);
             this.marksReq.TabIndex = 365;
             // 
             // loyalReq
             // 
-            this.loyalReq.Location = new System.Drawing.Point(305, 149);
+            this.loyalReq.Location = new System.Drawing.Point(325, 149);
             this.loyalReq.Name = "loyalReq";
             this.loyalReq.Size = new System.Drawing.Size(37, 20);
             this.loyalReq.TabIndex = 364;
             // 
             // percReq
             // 
-            this.percReq.Location = new System.Drawing.Point(305, 123);
+            this.percReq.Location = new System.Drawing.Point(325, 123);
             this.percReq.Name = "percReq";
             this.percReq.Size = new System.Drawing.Size(37, 20);
             this.percReq.TabIndex = 363;
             // 
             // agilityReq
             // 
-            this.agilityReq.Location = new System.Drawing.Point(305, 97);
+            this.agilityReq.Location = new System.Drawing.Point(325, 97);
             this.agilityReq.Name = "agilityReq";
             this.agilityReq.Size = new System.Drawing.Size(37, 20);
             this.agilityReq.TabIndex = 362;
             // 
             // diploReq
             // 
-            this.diploReq.Location = new System.Drawing.Point(305, 72);
+            this.diploReq.Location = new System.Drawing.Point(325, 72);
             this.diploReq.Name = "diploReq";
             this.diploReq.Size = new System.Drawing.Size(37, 20);
             this.diploReq.TabIndex = 361;
             // 
             // tacticsReq
             // 
-            this.tacticsReq.Location = new System.Drawing.Point(305, 46);
+            this.tacticsReq.Location = new System.Drawing.Point(325, 46);
             this.tacticsReq.Name = "tacticsReq";
             this.tacticsReq.Size = new System.Drawing.Size(37, 20);
             this.tacticsReq.TabIndex = 360;
@@ -2595,7 +2772,7 @@
             // strengthLabelR
             // 
             this.strengthLabelR.AutoSize = true;
-            this.strengthLabelR.Location = new System.Drawing.Point(213, 228);
+            this.strengthLabelR.Location = new System.Drawing.Point(233, 228);
             this.strengthLabelR.Name = "strengthLabelR";
             this.strengthLabelR.Size = new System.Drawing.Size(45, 13);
             this.strengthLabelR.TabIndex = 359;
@@ -2604,7 +2781,7 @@
             // knowLabelR
             // 
             this.knowLabelR.AutoSize = true;
-            this.knowLabelR.Location = new System.Drawing.Point(214, 203);
+            this.knowLabelR.Location = new System.Drawing.Point(234, 203);
             this.knowLabelR.Name = "knowLabelR";
             this.knowLabelR.Size = new System.Drawing.Size(59, 13);
             this.knowLabelR.TabIndex = 358;
@@ -2613,7 +2790,7 @@
             // marksLabelR
             // 
             this.marksLabelR.AutoSize = true;
-            this.marksLabelR.Location = new System.Drawing.Point(214, 178);
+            this.marksLabelR.Location = new System.Drawing.Point(234, 178);
             this.marksLabelR.Name = "marksLabelR";
             this.marksLabelR.Size = new System.Drawing.Size(74, 13);
             this.marksLabelR.TabIndex = 357;
@@ -2622,7 +2799,7 @@
             // loyalLabelR
             // 
             this.loyalLabelR.AutoSize = true;
-            this.loyalLabelR.Location = new System.Drawing.Point(214, 151);
+            this.loyalLabelR.Location = new System.Drawing.Point(234, 151);
             this.loyalLabelR.Name = "loyalLabelR";
             this.loyalLabelR.Size = new System.Drawing.Size(36, 13);
             this.loyalLabelR.TabIndex = 356;
@@ -2631,7 +2808,7 @@
             // percLabelR
             // 
             this.percLabelR.AutoSize = true;
-            this.percLabelR.Location = new System.Drawing.Point(213, 125);
+            this.percLabelR.Location = new System.Drawing.Point(233, 125);
             this.percLabelR.Name = "percLabelR";
             this.percLabelR.Size = new System.Drawing.Size(57, 13);
             this.percLabelR.TabIndex = 355;
@@ -2640,7 +2817,7 @@
             // agilityLabelR
             // 
             this.agilityLabelR.AutoSize = true;
-            this.agilityLabelR.Location = new System.Drawing.Point(212, 101);
+            this.agilityLabelR.Location = new System.Drawing.Point(232, 101);
             this.agilityLabelR.Name = "agilityLabelR";
             this.agilityLabelR.Size = new System.Drawing.Size(33, 13);
             this.agilityLabelR.TabIndex = 354;
@@ -2649,7 +2826,7 @@
             // diploLabelR
             // 
             this.diploLabelR.AutoSize = true;
-            this.diploLabelR.Location = new System.Drawing.Point(212, 75);
+            this.diploLabelR.Location = new System.Drawing.Point(232, 75);
             this.diploLabelR.Name = "diploLabelR";
             this.diploLabelR.Size = new System.Drawing.Size(54, 13);
             this.diploLabelR.TabIndex = 353;
@@ -2658,7 +2835,7 @@
             // tacticsLabelR
             // 
             this.tacticsLabelR.AutoSize = true;
-            this.tacticsLabelR.Location = new System.Drawing.Point(212, 48);
+            this.tacticsLabelR.Location = new System.Drawing.Point(232, 48);
             this.tacticsLabelR.Name = "tacticsLabelR";
             this.tacticsLabelR.Size = new System.Drawing.Size(38, 13);
             this.tacticsLabelR.TabIndex = 352;
@@ -2801,6 +2978,66 @@
             this.reqLabel.Size = new System.Drawing.Size(84, 13);
             this.reqLabel.TabIndex = 335;
             this.reqLabel.Text = "Requirements";
+            // 
+            // pnlMod
+            // 
+            this.pnlMod.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlMod.Controls.Add(this.statMLabel);
+            this.pnlMod.Controls.Add(this.applyMLabel);
+            this.pnlMod.Controls.Add(this.amountMLabel);
+            this.pnlMod.Controls.Add(this.strengthModB);
+            this.pnlMod.Controls.Add(this.knowModB);
+            this.pnlMod.Controls.Add(this.marksModB);
+            this.pnlMod.Controls.Add(this.loyalModB);
+            this.pnlMod.Controls.Add(this.percModB);
+            this.pnlMod.Controls.Add(this.agilityModB);
+            this.pnlMod.Controls.Add(this.diploModB);
+            this.pnlMod.Controls.Add(this.tacticsModB);
+            this.pnlMod.Controls.Add(this.strengthMod);
+            this.pnlMod.Controls.Add(this.knowMod);
+            this.pnlMod.Controls.Add(this.markMod);
+            this.pnlMod.Controls.Add(this.loyalMod);
+            this.pnlMod.Controls.Add(this.percMod);
+            this.pnlMod.Controls.Add(this.agilityMod);
+            this.pnlMod.Controls.Add(this.diploMod);
+            this.pnlMod.Controls.Add(this.tacticsMod);
+            this.pnlMod.Controls.Add(this.strengthLabel);
+            this.pnlMod.Controls.Add(this.knowLabel);
+            this.pnlMod.Controls.Add(this.markLabel);
+            this.pnlMod.Controls.Add(this.loyalLabel);
+            this.pnlMod.Controls.Add(this.percLabel);
+            this.pnlMod.Controls.Add(this.agilityLabel);
+            this.pnlMod.Controls.Add(this.diploLabel);
+            this.pnlMod.Controls.Add(this.tacticsLabel);
+            this.pnlMod.Controls.Add(this.foodModB);
+            this.pnlMod.Controls.Add(this.staminaModB);
+            this.pnlMod.Controls.Add(this.moraleModB);
+            this.pnlMod.Controls.Add(this.vModB);
+            this.pnlMod.Controls.Add(this.valueModB);
+            this.pnlMod.Controls.Add(this.ammoModB);
+            this.pnlMod.Controls.Add(this.medModB);
+            this.pnlMod.Controls.Add(this.waterModB);
+            this.pnlMod.Controls.Add(this.foodMod);
+            this.pnlMod.Controls.Add(this.staminaMod);
+            this.pnlMod.Controls.Add(this.moraleMod);
+            this.pnlMod.Controls.Add(this.valueMod);
+            this.pnlMod.Controls.Add(this.packMod);
+            this.pnlMod.Controls.Add(this.ammoMod);
+            this.pnlMod.Controls.Add(this.medMod);
+            this.pnlMod.Controls.Add(this.waterMod);
+            this.pnlMod.Controls.Add(this.foodLabel);
+            this.pnlMod.Controls.Add(this.stamLabel);
+            this.pnlMod.Controls.Add(this.moraleLabel);
+            this.pnlMod.Controls.Add(this.valueLabel);
+            this.pnlMod.Controls.Add(this.packLabel);
+            this.pnlMod.Controls.Add(this.ammoLabel);
+            this.pnlMod.Controls.Add(this.medLabel);
+            this.pnlMod.Controls.Add(this.waterLabel);
+            this.pnlMod.Controls.Add(this.modLabel);
+            this.pnlMod.Location = new System.Drawing.Point(8, 49);
+            this.pnlMod.Name = "pnlMod";
+            this.pnlMod.Size = new System.Drawing.Size(376, 262);
+            this.pnlMod.TabIndex = 511;
             // 
             // statMLabel
             // 
@@ -3003,7 +3240,7 @@
             // strengthLabel
             // 
             this.strengthLabel.AutoSize = true;
-            this.strengthLabel.Location = new System.Drawing.Point(209, 232);
+            this.strengthLabel.Location = new System.Drawing.Point(214, 232);
             this.strengthLabel.Name = "strengthLabel";
             this.strengthLabel.Size = new System.Drawing.Size(45, 13);
             this.strengthLabel.TabIndex = 315;
@@ -3012,7 +3249,7 @@
             // knowLabel
             // 
             this.knowLabel.AutoSize = true;
-            this.knowLabel.Location = new System.Drawing.Point(210, 207);
+            this.knowLabel.Location = new System.Drawing.Point(215, 207);
             this.knowLabel.Name = "knowLabel";
             this.knowLabel.Size = new System.Drawing.Size(59, 13);
             this.knowLabel.TabIndex = 314;
@@ -3021,7 +3258,7 @@
             // markLabel
             // 
             this.markLabel.AutoSize = true;
-            this.markLabel.Location = new System.Drawing.Point(210, 182);
+            this.markLabel.Location = new System.Drawing.Point(215, 182);
             this.markLabel.Name = "markLabel";
             this.markLabel.Size = new System.Drawing.Size(74, 13);
             this.markLabel.TabIndex = 313;
@@ -3030,7 +3267,7 @@
             // loyalLabel
             // 
             this.loyalLabel.AutoSize = true;
-            this.loyalLabel.Location = new System.Drawing.Point(210, 155);
+            this.loyalLabel.Location = new System.Drawing.Point(215, 155);
             this.loyalLabel.Name = "loyalLabel";
             this.loyalLabel.Size = new System.Drawing.Size(36, 13);
             this.loyalLabel.TabIndex = 312;
@@ -3039,7 +3276,7 @@
             // percLabel
             // 
             this.percLabel.AutoSize = true;
-            this.percLabel.Location = new System.Drawing.Point(209, 129);
+            this.percLabel.Location = new System.Drawing.Point(214, 129);
             this.percLabel.Name = "percLabel";
             this.percLabel.Size = new System.Drawing.Size(57, 13);
             this.percLabel.TabIndex = 311;
@@ -3048,7 +3285,7 @@
             // agilityLabel
             // 
             this.agilityLabel.AutoSize = true;
-            this.agilityLabel.Location = new System.Drawing.Point(208, 105);
+            this.agilityLabel.Location = new System.Drawing.Point(213, 105);
             this.agilityLabel.Name = "agilityLabel";
             this.agilityLabel.Size = new System.Drawing.Size(33, 13);
             this.agilityLabel.TabIndex = 310;
@@ -3057,7 +3294,7 @@
             // diploLabel
             // 
             this.diploLabel.AutoSize = true;
-            this.diploLabel.Location = new System.Drawing.Point(208, 79);
+            this.diploLabel.Location = new System.Drawing.Point(213, 79);
             this.diploLabel.Name = "diploLabel";
             this.diploLabel.Size = new System.Drawing.Size(54, 13);
             this.diploLabel.TabIndex = 309;
@@ -3066,7 +3303,7 @@
             // tacticsLabel
             // 
             this.tacticsLabel.AutoSize = true;
-            this.tacticsLabel.Location = new System.Drawing.Point(208, 52);
+            this.tacticsLabel.Location = new System.Drawing.Point(213, 52);
             this.tacticsLabel.Name = "tacticsLabel";
             this.tacticsLabel.Size = new System.Drawing.Size(38, 13);
             this.tacticsLabel.TabIndex = 308;
@@ -3322,6 +3559,29 @@
             this.modLabel.TabIndex = 283;
             this.modLabel.Text = "Modifers";
             // 
+            // lblCurrentResponse
+            // 
+            this.lblCurrentResponse.AutoSize = true;
+            this.lblCurrentResponse.Location = new System.Drawing.Point(10, 15);
+            this.lblCurrentResponse.Name = "lblCurrentResponse";
+            this.lblCurrentResponse.Size = new System.Drawing.Size(132, 13);
+            this.lblCurrentResponse.TabIndex = 498;
+            this.lblCurrentResponse.Text = "Current Response To Edit:";
+            // 
+            // comboBoxRespToEdit
+            // 
+            this.comboBoxRespToEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRespToEdit.FormattingEnabled = true;
+            this.comboBoxRespToEdit.Items.AddRange(new object[] {
+            "Event 1",
+            "Event 2",
+            "Event 3"});
+            this.comboBoxRespToEdit.Location = new System.Drawing.Point(148, 12);
+            this.comboBoxRespToEdit.Name = "comboBoxRespToEdit";
+            this.comboBoxRespToEdit.Size = new System.Drawing.Size(670, 21);
+            this.comboBoxRespToEdit.TabIndex = 497;
+            this.comboBoxRespToEdit.SelectionChangeCommitted += new System.EventHandler(this.comboBoxEvent_SelectedIndexChanged);
+            // 
             // tabFinish
             // 
             this.tabFinish.Controls.Add(this.lblStatus);
@@ -3397,255 +3657,6 @@
             this.openFileDialog_LoadEvent.Filter = "Text Files|*.txt";
             this.openFileDialog_LoadEvent.Title = "Load Event";
             // 
-            // pnlMod
-            // 
-            this.pnlMod.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlMod.Controls.Add(this.statMLabel);
-            this.pnlMod.Controls.Add(this.applyMLabel);
-            this.pnlMod.Controls.Add(this.amountMLabel);
-            this.pnlMod.Controls.Add(this.strengthModB);
-            this.pnlMod.Controls.Add(this.knowModB);
-            this.pnlMod.Controls.Add(this.marksModB);
-            this.pnlMod.Controls.Add(this.loyalModB);
-            this.pnlMod.Controls.Add(this.percModB);
-            this.pnlMod.Controls.Add(this.agilityModB);
-            this.pnlMod.Controls.Add(this.diploModB);
-            this.pnlMod.Controls.Add(this.tacticsModB);
-            this.pnlMod.Controls.Add(this.strengthMod);
-            this.pnlMod.Controls.Add(this.knowMod);
-            this.pnlMod.Controls.Add(this.markMod);
-            this.pnlMod.Controls.Add(this.loyalMod);
-            this.pnlMod.Controls.Add(this.percMod);
-            this.pnlMod.Controls.Add(this.agilityMod);
-            this.pnlMod.Controls.Add(this.diploMod);
-            this.pnlMod.Controls.Add(this.tacticsMod);
-            this.pnlMod.Controls.Add(this.strengthLabel);
-            this.pnlMod.Controls.Add(this.knowLabel);
-            this.pnlMod.Controls.Add(this.markLabel);
-            this.pnlMod.Controls.Add(this.loyalLabel);
-            this.pnlMod.Controls.Add(this.percLabel);
-            this.pnlMod.Controls.Add(this.agilityLabel);
-            this.pnlMod.Controls.Add(this.diploLabel);
-            this.pnlMod.Controls.Add(this.tacticsLabel);
-            this.pnlMod.Controls.Add(this.foodModB);
-            this.pnlMod.Controls.Add(this.staminaModB);
-            this.pnlMod.Controls.Add(this.moraleModB);
-            this.pnlMod.Controls.Add(this.vModB);
-            this.pnlMod.Controls.Add(this.valueModB);
-            this.pnlMod.Controls.Add(this.ammoModB);
-            this.pnlMod.Controls.Add(this.medModB);
-            this.pnlMod.Controls.Add(this.waterModB);
-            this.pnlMod.Controls.Add(this.foodMod);
-            this.pnlMod.Controls.Add(this.staminaMod);
-            this.pnlMod.Controls.Add(this.moraleMod);
-            this.pnlMod.Controls.Add(this.valueMod);
-            this.pnlMod.Controls.Add(this.packMod);
-            this.pnlMod.Controls.Add(this.ammoMod);
-            this.pnlMod.Controls.Add(this.medMod);
-            this.pnlMod.Controls.Add(this.waterMod);
-            this.pnlMod.Controls.Add(this.foodLabel);
-            this.pnlMod.Controls.Add(this.stamLabel);
-            this.pnlMod.Controls.Add(this.moraleLabel);
-            this.pnlMod.Controls.Add(this.valueLabel);
-            this.pnlMod.Controls.Add(this.packLabel);
-            this.pnlMod.Controls.Add(this.ammoLabel);
-            this.pnlMod.Controls.Add(this.medLabel);
-            this.pnlMod.Controls.Add(this.waterLabel);
-            this.pnlMod.Controls.Add(this.modLabel);
-            this.pnlMod.Location = new System.Drawing.Point(8, 49);
-            this.pnlMod.Name = "pnlMod";
-            this.pnlMod.Size = new System.Drawing.Size(379, 262);
-            this.pnlMod.TabIndex = 511;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.statLabelR);
-            this.panel1.Controls.Add(this.amountLabelR);
-            this.panel1.Controls.Add(this.strengthReq);
-            this.panel1.Controls.Add(this.knowReq);
-            this.panel1.Controls.Add(this.marksReq);
-            this.panel1.Controls.Add(this.loyalReq);
-            this.panel1.Controls.Add(this.percReq);
-            this.panel1.Controls.Add(this.agilityReq);
-            this.panel1.Controls.Add(this.diploReq);
-            this.panel1.Controls.Add(this.tacticsReq);
-            this.panel1.Controls.Add(this.strengthLabelR);
-            this.panel1.Controls.Add(this.knowLabelR);
-            this.panel1.Controls.Add(this.marksLabelR);
-            this.panel1.Controls.Add(this.loyalLabelR);
-            this.panel1.Controls.Add(this.percLabelR);
-            this.panel1.Controls.Add(this.agilityLabelR);
-            this.panel1.Controls.Add(this.diploLabelR);
-            this.panel1.Controls.Add(this.tacticsLabelR);
-            this.panel1.Controls.Add(this.foodReq);
-            this.panel1.Controls.Add(this.staminaReq);
-            this.panel1.Controls.Add(this.moraleReq);
-            this.panel1.Controls.Add(this.valueReq);
-            this.panel1.Controls.Add(this.packReq);
-            this.panel1.Controls.Add(this.ammoReq);
-            this.panel1.Controls.Add(this.medReq);
-            this.panel1.Controls.Add(this.waterReq);
-            this.panel1.Controls.Add(this.foodLabelR);
-            this.panel1.Controls.Add(this.staminaLabelR);
-            this.panel1.Controls.Add(this.moraleLabelR);
-            this.panel1.Controls.Add(this.valueLabelR);
-            this.panel1.Controls.Add(this.packLabelR);
-            this.panel1.Controls.Add(this.ammoLabelR);
-            this.panel1.Controls.Add(this.medLabelR);
-            this.panel1.Controls.Add(this.waterLabelR);
-            this.panel1.Controls.Add(this.reqLabel);
-            this.panel1.Location = new System.Drawing.Point(439, 49);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(362, 262);
-            this.panel1.TabIndex = 512;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.addLabel);
-            this.panel2.Controls.Add(this.statLabelW);
-            this.panel2.Controls.Add(this.amountWLabel);
-            this.panel2.Controls.Add(this.strengthWin);
-            this.panel2.Controls.Add(this.knowWin);
-            this.panel2.Controls.Add(this.marksWin);
-            this.panel2.Controls.Add(this.loyalWin);
-            this.panel2.Controls.Add(this.percWin);
-            this.panel2.Controls.Add(this.agilityWin);
-            this.panel2.Controls.Add(this.diploWin);
-            this.panel2.Controls.Add(this.tacticsWin);
-            this.panel2.Controls.Add(this.strengthLabelW);
-            this.panel2.Controls.Add(this.knowLabelW);
-            this.panel2.Controls.Add(this.markLabelW);
-            this.panel2.Controls.Add(this.loyalLabelW);
-            this.panel2.Controls.Add(this.percLabelW);
-            this.panel2.Controls.Add(this.agilityLabelW);
-            this.panel2.Controls.Add(this.diploLabelW);
-            this.panel2.Controls.Add(this.tacticsLabelW);
-            this.panel2.Controls.Add(this.foodWin);
-            this.panel2.Controls.Add(this.staminaWin);
-            this.panel2.Controls.Add(this.moraleWin);
-            this.panel2.Controls.Add(this.valueWin);
-            this.panel2.Controls.Add(this.packWin);
-            this.panel2.Controls.Add(this.ammoWin);
-            this.panel2.Controls.Add(this.medWin);
-            this.panel2.Controls.Add(this.waterWin);
-            this.panel2.Controls.Add(this.foodLabelW);
-            this.panel2.Controls.Add(this.staminaLabelW);
-            this.panel2.Controls.Add(this.moraleLabelW);
-            this.panel2.Controls.Add(this.valueLabelW);
-            this.panel2.Controls.Add(this.packLabelW);
-            this.panel2.Controls.Add(this.ammoLabelW);
-            this.panel2.Controls.Add(this.medLabelW);
-            this.panel2.Controls.Add(this.waterLabelW);
-            this.panel2.Controls.Add(this.winLabel);
-            this.panel2.Location = new System.Drawing.Point(8, 317);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 259);
-            this.panel2.TabIndex = 513;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.subtractLabel);
-            this.panel3.Controls.Add(this.statLabelL);
-            this.panel3.Controls.Add(this.amountLLabel);
-            this.panel3.Controls.Add(this.strengthLose);
-            this.panel3.Controls.Add(this.knowLose);
-            this.panel3.Controls.Add(this.markLose);
-            this.panel3.Controls.Add(this.loyalLose);
-            this.panel3.Controls.Add(this.percLose);
-            this.panel3.Controls.Add(this.agilityLose);
-            this.panel3.Controls.Add(this.diploLose);
-            this.panel3.Controls.Add(this.tacticsLose);
-            this.panel3.Controls.Add(this.strengthLabelL);
-            this.panel3.Controls.Add(this.knowLabelL);
-            this.panel3.Controls.Add(this.marksLabelL);
-            this.panel3.Controls.Add(this.loyalLabelL);
-            this.panel3.Controls.Add(this.percLabelL);
-            this.panel3.Controls.Add(this.agilityLabelL);
-            this.panel3.Controls.Add(this.diploLabelL);
-            this.panel3.Controls.Add(this.tacticsLabelL);
-            this.panel3.Controls.Add(this.foodLose);
-            this.panel3.Controls.Add(this.staminaLose);
-            this.panel3.Controls.Add(this.moraleLose);
-            this.panel3.Controls.Add(this.valueLose);
-            this.panel3.Controls.Add(this.packLose);
-            this.panel3.Controls.Add(this.ammoLose);
-            this.panel3.Controls.Add(this.medLose);
-            this.panel3.Controls.Add(this.waterLose);
-            this.panel3.Controls.Add(this.foodLabelL);
-            this.panel3.Controls.Add(this.staminaLabelL);
-            this.panel3.Controls.Add(this.moraleLabelL);
-            this.panel3.Controls.Add(this.valueLabelL);
-            this.panel3.Controls.Add(this.packLabelL);
-            this.panel3.Controls.Add(this.ammoLabelL);
-            this.panel3.Controls.Add(this.medLabelL);
-            this.panel3.Controls.Add(this.waterLabelL);
-            this.panel3.Controls.Add(this.loseLabel);
-            this.panel3.Location = new System.Drawing.Point(442, 317);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(359, 258);
-            this.panel3.TabIndex = 514;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.label23);
-            this.panel4.Controls.Add(this.label40);
-            this.panel4.Controls.Add(this.statLabelC);
-            this.panel4.Controls.Add(this.strengthCost);
-            this.panel4.Controls.Add(this.knowCost);
-            this.panel4.Controls.Add(this.marksCost);
-            this.panel4.Controls.Add(this.loyalCost);
-            this.panel4.Controls.Add(this.percCost);
-            this.panel4.Controls.Add(this.agilityCost);
-            this.panel4.Controls.Add(this.diploCost);
-            this.panel4.Controls.Add(this.tacticsCost);
-            this.panel4.Controls.Add(this.strengthLabelC);
-            this.panel4.Controls.Add(this.knowLabelC);
-            this.panel4.Controls.Add(this.marksLabelC);
-            this.panel4.Controls.Add(this.loyalCostC);
-            this.panel4.Controls.Add(this.percLabelC);
-            this.panel4.Controls.Add(this.agilityLabelC);
-            this.panel4.Controls.Add(this.diploLabelC);
-            this.panel4.Controls.Add(this.tacticsLabelC);
-            this.panel4.Controls.Add(this.foodCost);
-            this.panel4.Controls.Add(this.staminaCost);
-            this.panel4.Controls.Add(this.moraleCost);
-            this.panel4.Controls.Add(this.valueCost);
-            this.panel4.Controls.Add(this.packCost);
-            this.panel4.Controls.Add(this.ammoCost);
-            this.panel4.Controls.Add(this.medCost);
-            this.panel4.Controls.Add(this.waterCost);
-            this.panel4.Controls.Add(this.foodLabelC);
-            this.panel4.Controls.Add(this.staminaLabelC);
-            this.panel4.Controls.Add(this.moraleLabelC);
-            this.panel4.Controls.Add(this.valueLabelC);
-            this.panel4.Controls.Add(this.packLabelC);
-            this.panel4.Controls.Add(this.ammoLabelC);
-            this.panel4.Controls.Add(this.medLabelC);
-            this.panel4.Controls.Add(this.waterLabelC);
-            this.panel4.Controls.Add(this.costLabel);
-            this.panel4.Location = new System.Drawing.Point(8, 583);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(378, 265);
-            this.panel4.TabIndex = 515;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.passText);
-            this.panel5.Controls.Add(this.passTextLabel);
-            this.panel5.Controls.Add(this.loseText);
-            this.panel5.Controls.Add(this.loseTextLabel);
-            this.panel5.Controls.Add(this.winText);
-            this.panel5.Controls.Add(this.winTextLabel);
-            this.panel5.Location = new System.Drawing.Point(442, 586);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(358, 261);
-            this.panel5.TabIndex = 516;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3667,6 +3678,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.removeNumBox)).EndInit();
             this.tabEditRespOpts.ResumeLayout(false);
             this.tabEditRespOpts.PerformLayout();
+            this.pnlOther.ResumeLayout(false);
+            this.pnlOther.PerformLayout();
+            this.pnlResText.ResumeLayout(false);
+            this.pnlResText.PerformLayout();
+            this.pnlCost.ResumeLayout(false);
+            this.pnlCost.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksCost)).EndInit();
@@ -3683,6 +3700,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterCost)).EndInit();
+            this.pnlLose.ResumeLayout(false);
+            this.pnlLose.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthLose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowLose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markLose)).EndInit();
@@ -3699,6 +3718,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoLose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medLose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterLose)).EndInit();
+            this.pnlWin.ResumeLayout(false);
+            this.pnlWin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksWin)).EndInit();
@@ -3715,6 +3736,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterWin)).EndInit();
+            this.pnlReq.ResumeLayout(false);
+            this.pnlReq.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksReq)).EndInit();
@@ -3731,6 +3754,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ammoReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterReq)).EndInit();
+            this.pnlMod.ResumeLayout(false);
+            this.pnlMod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strengthMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markMod)).EndInit();
@@ -3749,18 +3774,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.waterMod)).EndInit();
             this.tabFinish.ResumeLayout(false);
             this.tabFinish.PerformLayout();
-            this.pnlMod.ResumeLayout(false);
-            this.pnlMod.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4068,12 +4081,13 @@
         private System.Windows.Forms.Button btnLoadEvent;
         private System.Windows.Forms.OpenFileDialog openFileDialog_LoadEvent;
         private System.Windows.Forms.CheckBox chkOnlyOnce;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlResText;
+        private System.Windows.Forms.Panel pnlCost;
+        private System.Windows.Forms.Panel pnlLose;
+        private System.Windows.Forms.Panel pnlWin;
+        private System.Windows.Forms.Panel pnlReq;
         private System.Windows.Forms.Panel pnlMod;
+        private System.Windows.Forms.Panel pnlOther;
 
     }
 }
