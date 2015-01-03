@@ -13,6 +13,10 @@ namespace EventCreator
     public partial class frmMain : Form
     {
         //General Info Variables
+        int frmWidth;
+        int frmHeight;
+        const int minWidth = 880;
+        const int minHeight = 600;
 
         //Advice Variables
         public const string LETTER_USEFUL = "U";
@@ -22,8 +26,7 @@ namespace EventCreator
         int numOfClicks = 0;
         List<TextBox> textBoxes = new List<TextBox>();
         List<Label> numLabels = new List<Label>();
-
-
+        
         //Edit Response Variables
         int currentRspSelect = 0;
         bool editRespNeedSave = false;
@@ -53,8 +56,10 @@ namespace EventCreator
         }
 
         internal string getFrequency()
-        {                  
-            return (string)frequencyInput.Items[frequencyInput.SelectedIndex];
+        {          
+            string toAdd = "";
+            if(chkOnlyOnce.Checked) toAdd = "1";
+            return (toAdd + (string)frequencyInput.Items[frequencyInput.SelectedIndex]);
         }
 
         internal List<string> getPossibleLocations()
@@ -126,7 +131,14 @@ namespace EventCreator
             {
                 eventNameInput.Text = (string)theEvent.myDictionary[Keys.EVENT_ID_KEY];
                 SelectStrInComboBox(eventTypeInput, (string)theEvent.myDictionary[Keys.EVENT_TYPE_KEY]);
-                SelectStrInComboBox(frequencyInput, (string)theEvent.myDictionary[Keys.EVENT_FREQUENCY_KEY]);
+                string freq = (string)theEvent.myDictionary[Keys.EVENT_FREQUENCY_KEY];
+                if(freq[0] == '1') {
+                    freq = freq.Substring(1);
+                    chkOnlyOnce.Checked = true;
+                } else {
+                    chkOnlyOnce.Checked = false;
+                }
+                SelectStrInComboBox(frequencyInput, freq);
                 List<string> locations = GetListFromJSON<List<string>>(theEvent.myDictionary[Keys.POSSIBLE_LOCATIONS_KEY]);
                 for (int i = 0; i < locationsInput.Items.Count; i++)
                 {
@@ -1152,6 +1164,9 @@ namespace EventCreator
         /// </summary>
         private void frmMain_Load(object sender, EventArgs e)
         {
+            frmWidth = this.Width;
+            frmHeight = this.Height;
+
             currentRspSelect = 0;
             comboBoxRespToEdit.SelectedIndex = currentRspSelect;
             editRespNeedSave = true;
@@ -1213,6 +1228,18 @@ namespace EventCreator
         private void locationsInput_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmMain_Resize(object sender, EventArgs e)
+        {
+            if (this.Width < minWidth) this.Width = minWidth;
+            if (this.Height < minHeight) this.Height = minHeight;
+
+            int wDiff = this.Width - frmWidth;
+            int hDiff = this.Height - frmHeight;
+
+            tabMain.Width += wDiff;
+            tabMain.Height += hDiff;
         }
 
         /* ------------------------------------------------ */
