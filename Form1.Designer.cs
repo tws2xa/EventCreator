@@ -102,6 +102,13 @@
             this.labelResponse4 = new System.Windows.Forms.Label();
             this.labelResponse5 = new System.Windows.Forms.Label();
             this.tabEditRespOpts = new System.Windows.Forms.TabPage();
+            this.lblProbLose = new System.Windows.Forms.Label();
+            this.lblProbPass = new System.Windows.Forms.Label();
+            this.lblProbWin = new System.Windows.Forms.Label();
+            this.lblWithStdParty = new System.Windows.Forms.Label();
+            this.lblProbLoseTxt = new System.Windows.Forms.Label();
+            this.lblProbPassTxt = new System.Windows.Forms.Label();
+            this.lblProbOfWinTxt = new System.Windows.Forms.Label();
             this.pnlOther = new System.Windows.Forms.Panel();
             this.lblLoseEffects = new System.Windows.Forms.Label();
             this.comboBoxLoseApplication = new System.Windows.Forms.ComboBox();
@@ -498,9 +505,9 @@
             this.selectplayerB.AutoSize = true;
             this.selectplayerB.Location = new System.Drawing.Point(12, 274);
             this.selectplayerB.Name = "selectplayerB";
-            this.selectplayerB.Size = new System.Drawing.Size(146, 17);
+            this.selectplayerB.Size = new System.Drawing.Size(182, 17);
             this.selectplayerB.TabIndex = 28;
-            this.selectplayerB.Text = "Select Player Beforehand";
+            this.selectplayerB.Text = "Select Party Member Beforehand";
             this.selectplayerB.UseVisualStyleBackColor = true;
             // 
             // introDescLabel
@@ -1205,6 +1212,13 @@
             // tabEditRespOpts
             // 
             this.tabEditRespOpts.AutoScroll = true;
+            this.tabEditRespOpts.Controls.Add(this.lblProbLose);
+            this.tabEditRespOpts.Controls.Add(this.lblProbPass);
+            this.tabEditRespOpts.Controls.Add(this.lblProbWin);
+            this.tabEditRespOpts.Controls.Add(this.lblWithStdParty);
+            this.tabEditRespOpts.Controls.Add(this.lblProbLoseTxt);
+            this.tabEditRespOpts.Controls.Add(this.lblProbPassTxt);
+            this.tabEditRespOpts.Controls.Add(this.lblProbOfWinTxt);
             this.tabEditRespOpts.Controls.Add(this.pnlOther);
             this.tabEditRespOpts.Controls.Add(this.pnlResText);
             this.tabEditRespOpts.Controls.Add(this.pnlCost);
@@ -1221,6 +1235,69 @@
             this.tabEditRespOpts.Text = "Edit Response Optioins";
             this.tabEditRespOpts.UseVisualStyleBackColor = true;
             this.tabEditRespOpts.Enter += new System.EventHandler(this.tabEditRespOpts_Enter);
+            // 
+            // lblProbLose
+            // 
+            this.lblProbLose.AutoSize = true;
+            this.lblProbLose.Location = new System.Drawing.Point(402, 66);
+            this.lblProbLose.Name = "lblProbLose";
+            this.lblProbLose.Size = new System.Drawing.Size(27, 13);
+            this.lblProbLose.TabIndex = 524;
+            this.lblProbLose.Text = "40%";
+            // 
+            // lblProbPass
+            // 
+            this.lblProbPass.AutoSize = true;
+            this.lblProbPass.Location = new System.Drawing.Point(247, 66);
+            this.lblProbPass.Name = "lblProbPass";
+            this.lblProbPass.Size = new System.Drawing.Size(27, 13);
+            this.lblProbPass.TabIndex = 523;
+            this.lblProbPass.Text = "20%";
+            // 
+            // lblProbWin
+            // 
+            this.lblProbWin.AutoSize = true;
+            this.lblProbWin.Location = new System.Drawing.Point(97, 66);
+            this.lblProbWin.Name = "lblProbWin";
+            this.lblProbWin.Size = new System.Drawing.Size(27, 13);
+            this.lblProbWin.TabIndex = 522;
+            this.lblProbWin.Text = "40%";
+            // 
+            // lblWithStdParty
+            // 
+            this.lblWithStdParty.AutoSize = true;
+            this.lblWithStdParty.Location = new System.Drawing.Point(10, 49);
+            this.lblWithStdParty.Name = "lblWithStdParty";
+            this.lblWithStdParty.Size = new System.Drawing.Size(114, 13);
+            this.lblWithStdParty.TabIndex = 521;
+            this.lblWithStdParty.Text = "With a Standard Party:";
+            // 
+            // lblProbLoseTxt
+            // 
+            this.lblProbLoseTxt.AutoSize = true;
+            this.lblProbLoseTxt.Location = new System.Drawing.Point(310, 66);
+            this.lblProbLoseTxt.Name = "lblProbLoseTxt";
+            this.lblProbLoseTxt.Size = new System.Drawing.Size(99, 13);
+            this.lblProbLoseTxt.TabIndex = 520;
+            this.lblProbLoseTxt.Text = "Probability of Lose: ";
+            // 
+            // lblProbPassTxt
+            // 
+            this.lblProbPassTxt.AutoSize = true;
+            this.lblProbPassTxt.Location = new System.Drawing.Point(154, 66);
+            this.lblProbPassTxt.Name = "lblProbPassTxt";
+            this.lblProbPassTxt.Size = new System.Drawing.Size(99, 13);
+            this.lblProbPassTxt.TabIndex = 519;
+            this.lblProbPassTxt.Text = "Probability of Pass: ";
+            // 
+            // lblProbOfWinTxt
+            // 
+            this.lblProbOfWinTxt.AutoSize = true;
+            this.lblProbOfWinTxt.Location = new System.Drawing.Point(10, 66);
+            this.lblProbOfWinTxt.Name = "lblProbOfWinTxt";
+            this.lblProbOfWinTxt.Size = new System.Drawing.Size(95, 13);
+            this.lblProbOfWinTxt.TabIndex = 518;
+            this.lblProbOfWinTxt.Text = "Probability of Win: ";
             // 
             // pnlOther
             // 
@@ -1241,7 +1318,7 @@
             this.pnlOther.Controls.Add(this.loseFollowUpLabel);
             this.pnlOther.Controls.Add(this.passFollowUpLabel);
             this.pnlOther.Controls.Add(this.label1);
-            this.pnlOther.Location = new System.Drawing.Point(5, 855);
+            this.pnlOther.Location = new System.Drawing.Point(10, 906);
             this.pnlOther.Name = "pnlOther";
             this.pnlOther.Size = new System.Drawing.Size(812, 156);
             this.pnlOther.TabIndex = 517;
@@ -1411,7 +1488,7 @@
             this.pnlResText.Controls.Add(this.loseTextLabel);
             this.pnlResText.Controls.Add(this.winText);
             this.pnlResText.Controls.Add(this.winTextLabel);
-            this.pnlResText.Location = new System.Drawing.Point(442, 586);
+            this.pnlResText.Location = new System.Drawing.Point(447, 637);
             this.pnlResText.Name = "pnlResText";
             this.pnlResText.Size = new System.Drawing.Size(376, 262);
             this.pnlResText.TabIndex = 516;
@@ -1509,7 +1586,7 @@
             this.pnlCost.Controls.Add(this.medLabelC);
             this.pnlCost.Controls.Add(this.waterLabelC);
             this.pnlCost.Controls.Add(this.costLabel);
-            this.pnlCost.Location = new System.Drawing.Point(8, 586);
+            this.pnlCost.Location = new System.Drawing.Point(13, 637);
             this.pnlCost.Name = "pnlCost";
             this.pnlCost.Size = new System.Drawing.Size(376, 262);
             this.pnlCost.TabIndex = 515;
@@ -1548,57 +1625,65 @@
             // 
             this.strengthCost.Location = new System.Drawing.Point(304, 226);
             this.strengthCost.Name = "strengthCost";
-            this.strengthCost.Size = new System.Drawing.Size(37, 20);
+            this.strengthCost.Size = new System.Drawing.Size(44, 20);
             this.strengthCost.TabIndex = 474;
+            this.strengthCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // knowCost
             // 
             this.knowCost.Location = new System.Drawing.Point(304, 201);
             this.knowCost.Name = "knowCost";
-            this.knowCost.Size = new System.Drawing.Size(37, 20);
+            this.knowCost.Size = new System.Drawing.Size(44, 20);
             this.knowCost.TabIndex = 473;
+            this.knowCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // marksCost
             // 
             this.marksCost.Location = new System.Drawing.Point(304, 175);
             this.marksCost.Name = "marksCost";
-            this.marksCost.Size = new System.Drawing.Size(37, 20);
+            this.marksCost.Size = new System.Drawing.Size(44, 20);
             this.marksCost.TabIndex = 472;
+            this.marksCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // loyalCost
             // 
             this.loyalCost.Location = new System.Drawing.Point(304, 149);
             this.loyalCost.Name = "loyalCost";
-            this.loyalCost.Size = new System.Drawing.Size(37, 20);
+            this.loyalCost.Size = new System.Drawing.Size(44, 20);
             this.loyalCost.TabIndex = 471;
+            this.loyalCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // percCost
             // 
             this.percCost.Location = new System.Drawing.Point(304, 123);
             this.percCost.Name = "percCost";
-            this.percCost.Size = new System.Drawing.Size(37, 20);
+            this.percCost.Size = new System.Drawing.Size(44, 20);
             this.percCost.TabIndex = 470;
+            this.percCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // agilityCost
             // 
             this.agilityCost.Location = new System.Drawing.Point(304, 97);
             this.agilityCost.Name = "agilityCost";
-            this.agilityCost.Size = new System.Drawing.Size(37, 20);
+            this.agilityCost.Size = new System.Drawing.Size(44, 20);
             this.agilityCost.TabIndex = 469;
+            this.agilityCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // diploCost
             // 
             this.diploCost.Location = new System.Drawing.Point(304, 72);
             this.diploCost.Name = "diploCost";
-            this.diploCost.Size = new System.Drawing.Size(37, 20);
+            this.diploCost.Size = new System.Drawing.Size(44, 20);
             this.diploCost.TabIndex = 468;
+            this.diploCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // tacticsCost
             // 
             this.tacticsCost.Location = new System.Drawing.Point(304, 46);
             this.tacticsCost.Name = "tacticsCost";
-            this.tacticsCost.Size = new System.Drawing.Size(37, 20);
+            this.tacticsCost.Size = new System.Drawing.Size(44, 20);
             this.tacticsCost.TabIndex = 467;
+            this.tacticsCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // strengthLabelC
             // 
@@ -1676,57 +1761,65 @@
             // 
             this.foodCost.Location = new System.Drawing.Point(99, 226);
             this.foodCost.Name = "foodCost";
-            this.foodCost.Size = new System.Drawing.Size(37, 20);
+            this.foodCost.Size = new System.Drawing.Size(44, 20);
             this.foodCost.TabIndex = 458;
+            this.foodCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // staminaCost
             // 
             this.staminaCost.Location = new System.Drawing.Point(99, 201);
             this.staminaCost.Name = "staminaCost";
-            this.staminaCost.Size = new System.Drawing.Size(37, 20);
+            this.staminaCost.Size = new System.Drawing.Size(44, 20);
             this.staminaCost.TabIndex = 457;
+            this.staminaCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // moraleCost
             // 
             this.moraleCost.Location = new System.Drawing.Point(99, 175);
             this.moraleCost.Name = "moraleCost";
-            this.moraleCost.Size = new System.Drawing.Size(37, 20);
+            this.moraleCost.Size = new System.Drawing.Size(44, 20);
             this.moraleCost.TabIndex = 456;
+            this.moraleCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // valueCost
             // 
             this.valueCost.Location = new System.Drawing.Point(99, 149);
             this.valueCost.Name = "valueCost";
-            this.valueCost.Size = new System.Drawing.Size(37, 20);
+            this.valueCost.Size = new System.Drawing.Size(44, 20);
             this.valueCost.TabIndex = 455;
+            this.valueCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // packCost
             // 
             this.packCost.Location = new System.Drawing.Point(99, 123);
             this.packCost.Name = "packCost";
-            this.packCost.Size = new System.Drawing.Size(37, 20);
+            this.packCost.Size = new System.Drawing.Size(44, 20);
             this.packCost.TabIndex = 454;
+            this.packCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // ammoCost
             // 
             this.ammoCost.Location = new System.Drawing.Point(99, 97);
             this.ammoCost.Name = "ammoCost";
-            this.ammoCost.Size = new System.Drawing.Size(37, 20);
+            this.ammoCost.Size = new System.Drawing.Size(44, 20);
             this.ammoCost.TabIndex = 453;
+            this.ammoCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // medCost
             // 
             this.medCost.Location = new System.Drawing.Point(99, 72);
             this.medCost.Name = "medCost";
-            this.medCost.Size = new System.Drawing.Size(37, 20);
+            this.medCost.Size = new System.Drawing.Size(44, 20);
             this.medCost.TabIndex = 452;
+            this.medCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // waterCost
             // 
             this.waterCost.Location = new System.Drawing.Point(99, 46);
             this.waterCost.Name = "waterCost";
-            this.waterCost.Size = new System.Drawing.Size(37, 20);
+            this.waterCost.Size = new System.Drawing.Size(44, 20);
             this.waterCost.TabIndex = 451;
+            this.waterCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // foodLabelC
             // 
@@ -1849,7 +1942,7 @@
             this.pnlLose.Controls.Add(this.medLabelL);
             this.pnlLose.Controls.Add(this.waterLabelL);
             this.pnlLose.Controls.Add(this.loseLabel);
-            this.pnlLose.Location = new System.Drawing.Point(442, 317);
+            this.pnlLose.Location = new System.Drawing.Point(447, 368);
             this.pnlLose.Name = "pnlLose";
             this.pnlLose.Size = new System.Drawing.Size(376, 262);
             this.pnlLose.TabIndex = 514;
@@ -1893,8 +1986,9 @@
             0,
             -2147483648});
             this.strengthLose.Name = "strengthLose";
-            this.strengthLose.Size = new System.Drawing.Size(37, 20);
+            this.strengthLose.Size = new System.Drawing.Size(44, 20);
             this.strengthLose.TabIndex = 437;
+            this.strengthLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // knowLose
             // 
@@ -1905,8 +1999,9 @@
             0,
             -2147483648});
             this.knowLose.Name = "knowLose";
-            this.knowLose.Size = new System.Drawing.Size(37, 20);
+            this.knowLose.Size = new System.Drawing.Size(44, 20);
             this.knowLose.TabIndex = 436;
+            this.knowLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // markLose
             // 
@@ -1917,8 +2012,9 @@
             0,
             -2147483648});
             this.markLose.Name = "markLose";
-            this.markLose.Size = new System.Drawing.Size(37, 20);
+            this.markLose.Size = new System.Drawing.Size(44, 20);
             this.markLose.TabIndex = 435;
+            this.markLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // loyalLose
             // 
@@ -1929,8 +2025,9 @@
             0,
             -2147483648});
             this.loyalLose.Name = "loyalLose";
-            this.loyalLose.Size = new System.Drawing.Size(37, 20);
+            this.loyalLose.Size = new System.Drawing.Size(44, 20);
             this.loyalLose.TabIndex = 434;
+            this.loyalLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // percLose
             // 
@@ -1941,8 +2038,9 @@
             0,
             -2147483648});
             this.percLose.Name = "percLose";
-            this.percLose.Size = new System.Drawing.Size(37, 20);
+            this.percLose.Size = new System.Drawing.Size(44, 20);
             this.percLose.TabIndex = 433;
+            this.percLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // agilityLose
             // 
@@ -1953,8 +2051,9 @@
             0,
             -2147483648});
             this.agilityLose.Name = "agilityLose";
-            this.agilityLose.Size = new System.Drawing.Size(37, 20);
+            this.agilityLose.Size = new System.Drawing.Size(44, 20);
             this.agilityLose.TabIndex = 432;
+            this.agilityLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // diploLose
             // 
@@ -1965,8 +2064,9 @@
             0,
             -2147483648});
             this.diploLose.Name = "diploLose";
-            this.diploLose.Size = new System.Drawing.Size(37, 20);
+            this.diploLose.Size = new System.Drawing.Size(44, 20);
             this.diploLose.TabIndex = 431;
+            this.diploLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // tacticsLose
             // 
@@ -1977,8 +2077,9 @@
             0,
             -2147483648});
             this.tacticsLose.Name = "tacticsLose";
-            this.tacticsLose.Size = new System.Drawing.Size(37, 20);
+            this.tacticsLose.Size = new System.Drawing.Size(44, 20);
             this.tacticsLose.TabIndex = 430;
+            this.tacticsLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // strengthLabelL
             // 
@@ -2061,8 +2162,9 @@
             0,
             -2147483648});
             this.foodLose.Name = "foodLose";
-            this.foodLose.Size = new System.Drawing.Size(37, 20);
+            this.foodLose.Size = new System.Drawing.Size(44, 20);
             this.foodLose.TabIndex = 421;
+            this.foodLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // staminaLose
             // 
@@ -2073,8 +2175,9 @@
             0,
             -2147483648});
             this.staminaLose.Name = "staminaLose";
-            this.staminaLose.Size = new System.Drawing.Size(37, 20);
+            this.staminaLose.Size = new System.Drawing.Size(44, 20);
             this.staminaLose.TabIndex = 420;
+            this.staminaLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // moraleLose
             // 
@@ -2085,8 +2188,9 @@
             0,
             -2147483648});
             this.moraleLose.Name = "moraleLose";
-            this.moraleLose.Size = new System.Drawing.Size(37, 20);
+            this.moraleLose.Size = new System.Drawing.Size(44, 20);
             this.moraleLose.TabIndex = 419;
+            this.moraleLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // valueLose
             // 
@@ -2097,8 +2201,9 @@
             0,
             -2147483648});
             this.valueLose.Name = "valueLose";
-            this.valueLose.Size = new System.Drawing.Size(37, 20);
+            this.valueLose.Size = new System.Drawing.Size(44, 20);
             this.valueLose.TabIndex = 418;
+            this.valueLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // packLose
             // 
@@ -2109,8 +2214,9 @@
             0,
             -2147483648});
             this.packLose.Name = "packLose";
-            this.packLose.Size = new System.Drawing.Size(37, 20);
+            this.packLose.Size = new System.Drawing.Size(44, 20);
             this.packLose.TabIndex = 417;
+            this.packLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // ammoLose
             // 
@@ -2121,8 +2227,9 @@
             0,
             -2147483648});
             this.ammoLose.Name = "ammoLose";
-            this.ammoLose.Size = new System.Drawing.Size(37, 20);
+            this.ammoLose.Size = new System.Drawing.Size(44, 20);
             this.ammoLose.TabIndex = 416;
+            this.ammoLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // medLose
             // 
@@ -2133,8 +2240,9 @@
             0,
             -2147483648});
             this.medLose.Name = "medLose";
-            this.medLose.Size = new System.Drawing.Size(37, 20);
+            this.medLose.Size = new System.Drawing.Size(44, 20);
             this.medLose.TabIndex = 415;
+            this.medLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // waterLose
             // 
@@ -2145,8 +2253,9 @@
             0,
             -2147483648});
             this.waterLose.Name = "waterLose";
-            this.waterLose.Size = new System.Drawing.Size(37, 20);
+            this.waterLose.Size = new System.Drawing.Size(44, 20);
             this.waterLose.TabIndex = 414;
+            this.waterLose.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // foodLabelL
             // 
@@ -2269,7 +2378,7 @@
             this.pnlWin.Controls.Add(this.medLabelW);
             this.pnlWin.Controls.Add(this.waterLabelW);
             this.pnlWin.Controls.Add(this.winLabel);
-            this.pnlWin.Location = new System.Drawing.Point(8, 317);
+            this.pnlWin.Location = new System.Drawing.Point(13, 368);
             this.pnlWin.Name = "pnlWin";
             this.pnlWin.Size = new System.Drawing.Size(376, 262);
             this.pnlWin.TabIndex = 513;
@@ -2313,8 +2422,9 @@
             0,
             -2147483648});
             this.strengthWin.Name = "strengthWin";
-            this.strengthWin.Size = new System.Drawing.Size(37, 20);
+            this.strengthWin.Size = new System.Drawing.Size(44, 20);
             this.strengthWin.TabIndex = 402;
+            this.strengthWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // knowWin
             // 
@@ -2325,8 +2435,9 @@
             0,
             -2147483648});
             this.knowWin.Name = "knowWin";
-            this.knowWin.Size = new System.Drawing.Size(37, 20);
+            this.knowWin.Size = new System.Drawing.Size(44, 20);
             this.knowWin.TabIndex = 401;
+            this.knowWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // marksWin
             // 
@@ -2337,8 +2448,9 @@
             0,
             -2147483648});
             this.marksWin.Name = "marksWin";
-            this.marksWin.Size = new System.Drawing.Size(37, 20);
+            this.marksWin.Size = new System.Drawing.Size(44, 20);
             this.marksWin.TabIndex = 400;
+            this.marksWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // loyalWin
             // 
@@ -2349,8 +2461,9 @@
             0,
             -2147483648});
             this.loyalWin.Name = "loyalWin";
-            this.loyalWin.Size = new System.Drawing.Size(37, 20);
+            this.loyalWin.Size = new System.Drawing.Size(44, 20);
             this.loyalWin.TabIndex = 399;
+            this.loyalWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // percWin
             // 
@@ -2361,8 +2474,9 @@
             0,
             -2147483648});
             this.percWin.Name = "percWin";
-            this.percWin.Size = new System.Drawing.Size(37, 20);
+            this.percWin.Size = new System.Drawing.Size(44, 20);
             this.percWin.TabIndex = 398;
+            this.percWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // agilityWin
             // 
@@ -2373,8 +2487,9 @@
             0,
             -2147483648});
             this.agilityWin.Name = "agilityWin";
-            this.agilityWin.Size = new System.Drawing.Size(37, 20);
+            this.agilityWin.Size = new System.Drawing.Size(44, 20);
             this.agilityWin.TabIndex = 397;
+            this.agilityWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // diploWin
             // 
@@ -2385,8 +2500,9 @@
             0,
             -2147483648});
             this.diploWin.Name = "diploWin";
-            this.diploWin.Size = new System.Drawing.Size(37, 20);
+            this.diploWin.Size = new System.Drawing.Size(44, 20);
             this.diploWin.TabIndex = 396;
+            this.diploWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // tacticsWin
             // 
@@ -2397,8 +2513,9 @@
             0,
             -2147483648});
             this.tacticsWin.Name = "tacticsWin";
-            this.tacticsWin.Size = new System.Drawing.Size(37, 20);
+            this.tacticsWin.Size = new System.Drawing.Size(44, 20);
             this.tacticsWin.TabIndex = 395;
+            this.tacticsWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // strengthLabelW
             // 
@@ -2481,8 +2598,9 @@
             0,
             -2147483648});
             this.foodWin.Name = "foodWin";
-            this.foodWin.Size = new System.Drawing.Size(37, 20);
+            this.foodWin.Size = new System.Drawing.Size(44, 20);
             this.foodWin.TabIndex = 386;
+            this.foodWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // staminaWin
             // 
@@ -2493,8 +2611,9 @@
             0,
             -2147483648});
             this.staminaWin.Name = "staminaWin";
-            this.staminaWin.Size = new System.Drawing.Size(37, 20);
+            this.staminaWin.Size = new System.Drawing.Size(44, 20);
             this.staminaWin.TabIndex = 385;
+            this.staminaWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // moraleWin
             // 
@@ -2505,8 +2624,9 @@
             0,
             -2147483648});
             this.moraleWin.Name = "moraleWin";
-            this.moraleWin.Size = new System.Drawing.Size(37, 20);
+            this.moraleWin.Size = new System.Drawing.Size(44, 20);
             this.moraleWin.TabIndex = 384;
+            this.moraleWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // valueWin
             // 
@@ -2517,8 +2637,9 @@
             0,
             -2147483648});
             this.valueWin.Name = "valueWin";
-            this.valueWin.Size = new System.Drawing.Size(37, 20);
+            this.valueWin.Size = new System.Drawing.Size(44, 20);
             this.valueWin.TabIndex = 383;
+            this.valueWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // packWin
             // 
@@ -2529,8 +2650,9 @@
             0,
             -2147483648});
             this.packWin.Name = "packWin";
-            this.packWin.Size = new System.Drawing.Size(37, 20);
+            this.packWin.Size = new System.Drawing.Size(44, 20);
             this.packWin.TabIndex = 382;
+            this.packWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // ammoWin
             // 
@@ -2541,8 +2663,9 @@
             0,
             -2147483648});
             this.ammoWin.Name = "ammoWin";
-            this.ammoWin.Size = new System.Drawing.Size(37, 20);
+            this.ammoWin.Size = new System.Drawing.Size(44, 20);
             this.ammoWin.TabIndex = 381;
+            this.ammoWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // medWin
             // 
@@ -2553,8 +2676,9 @@
             0,
             -2147483648});
             this.medWin.Name = "medWin";
-            this.medWin.Size = new System.Drawing.Size(37, 20);
+            this.medWin.Size = new System.Drawing.Size(44, 20);
             this.medWin.TabIndex = 380;
+            this.medWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // waterWin
             // 
@@ -2565,8 +2689,9 @@
             0,
             -2147483648});
             this.waterWin.Name = "waterWin";
-            this.waterWin.Size = new System.Drawing.Size(37, 20);
+            this.waterWin.Size = new System.Drawing.Size(44, 20);
             this.waterWin.TabIndex = 379;
+            this.waterWin.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // foodLabelW
             // 
@@ -2688,7 +2813,7 @@
             this.pnlReq.Controls.Add(this.medLabelR);
             this.pnlReq.Controls.Add(this.waterLabelR);
             this.pnlReq.Controls.Add(this.reqLabel);
-            this.pnlReq.Location = new System.Drawing.Point(442, 49);
+            this.pnlReq.Location = new System.Drawing.Point(447, 100);
             this.pnlReq.Name = "pnlReq";
             this.pnlReq.Size = new System.Drawing.Size(376, 262);
             this.pnlReq.TabIndex = 512;
@@ -2717,57 +2842,65 @@
             // 
             this.strengthReq.Location = new System.Drawing.Point(325, 226);
             this.strengthReq.Name = "strengthReq";
-            this.strengthReq.Size = new System.Drawing.Size(37, 20);
+            this.strengthReq.Size = new System.Drawing.Size(44, 20);
             this.strengthReq.TabIndex = 367;
+            this.strengthReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // knowReq
             // 
             this.knowReq.Location = new System.Drawing.Point(325, 201);
             this.knowReq.Name = "knowReq";
-            this.knowReq.Size = new System.Drawing.Size(37, 20);
+            this.knowReq.Size = new System.Drawing.Size(44, 20);
             this.knowReq.TabIndex = 366;
+            this.knowReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // marksReq
             // 
             this.marksReq.Location = new System.Drawing.Point(325, 175);
             this.marksReq.Name = "marksReq";
-            this.marksReq.Size = new System.Drawing.Size(37, 20);
+            this.marksReq.Size = new System.Drawing.Size(44, 20);
             this.marksReq.TabIndex = 365;
+            this.marksReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // loyalReq
             // 
             this.loyalReq.Location = new System.Drawing.Point(325, 149);
             this.loyalReq.Name = "loyalReq";
-            this.loyalReq.Size = new System.Drawing.Size(37, 20);
+            this.loyalReq.Size = new System.Drawing.Size(44, 20);
             this.loyalReq.TabIndex = 364;
+            this.loyalReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // percReq
             // 
             this.percReq.Location = new System.Drawing.Point(325, 123);
             this.percReq.Name = "percReq";
-            this.percReq.Size = new System.Drawing.Size(37, 20);
+            this.percReq.Size = new System.Drawing.Size(44, 20);
             this.percReq.TabIndex = 363;
+            this.percReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // agilityReq
             // 
             this.agilityReq.Location = new System.Drawing.Point(325, 97);
             this.agilityReq.Name = "agilityReq";
-            this.agilityReq.Size = new System.Drawing.Size(37, 20);
+            this.agilityReq.Size = new System.Drawing.Size(44, 20);
             this.agilityReq.TabIndex = 362;
+            this.agilityReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // diploReq
             // 
             this.diploReq.Location = new System.Drawing.Point(325, 72);
             this.diploReq.Name = "diploReq";
-            this.diploReq.Size = new System.Drawing.Size(37, 20);
+            this.diploReq.Size = new System.Drawing.Size(44, 20);
             this.diploReq.TabIndex = 361;
+            this.diploReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // tacticsReq
             // 
             this.tacticsReq.Location = new System.Drawing.Point(325, 46);
             this.tacticsReq.Name = "tacticsReq";
-            this.tacticsReq.Size = new System.Drawing.Size(37, 20);
+            this.tacticsReq.Size = new System.Drawing.Size(44, 20);
             this.tacticsReq.TabIndex = 360;
+            this.tacticsReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // strengthLabelR
             // 
@@ -2845,57 +2978,65 @@
             // 
             this.foodReq.Location = new System.Drawing.Point(100, 226);
             this.foodReq.Name = "foodReq";
-            this.foodReq.Size = new System.Drawing.Size(37, 20);
+            this.foodReq.Size = new System.Drawing.Size(44, 20);
             this.foodReq.TabIndex = 351;
+            this.foodReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // staminaReq
             // 
             this.staminaReq.Location = new System.Drawing.Point(100, 201);
             this.staminaReq.Name = "staminaReq";
-            this.staminaReq.Size = new System.Drawing.Size(37, 20);
+            this.staminaReq.Size = new System.Drawing.Size(44, 20);
             this.staminaReq.TabIndex = 350;
+            this.staminaReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // moraleReq
             // 
             this.moraleReq.Location = new System.Drawing.Point(100, 175);
             this.moraleReq.Name = "moraleReq";
-            this.moraleReq.Size = new System.Drawing.Size(37, 20);
+            this.moraleReq.Size = new System.Drawing.Size(44, 20);
             this.moraleReq.TabIndex = 349;
+            this.moraleReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // valueReq
             // 
             this.valueReq.Location = new System.Drawing.Point(100, 149);
             this.valueReq.Name = "valueReq";
-            this.valueReq.Size = new System.Drawing.Size(37, 20);
+            this.valueReq.Size = new System.Drawing.Size(44, 20);
             this.valueReq.TabIndex = 348;
+            this.valueReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // packReq
             // 
             this.packReq.Location = new System.Drawing.Point(100, 123);
             this.packReq.Name = "packReq";
-            this.packReq.Size = new System.Drawing.Size(37, 20);
+            this.packReq.Size = new System.Drawing.Size(44, 20);
             this.packReq.TabIndex = 347;
+            this.packReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // ammoReq
             // 
             this.ammoReq.Location = new System.Drawing.Point(100, 97);
             this.ammoReq.Name = "ammoReq";
-            this.ammoReq.Size = new System.Drawing.Size(37, 20);
+            this.ammoReq.Size = new System.Drawing.Size(44, 20);
             this.ammoReq.TabIndex = 346;
+            this.ammoReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // medReq
             // 
             this.medReq.Location = new System.Drawing.Point(100, 72);
             this.medReq.Name = "medReq";
-            this.medReq.Size = new System.Drawing.Size(37, 20);
+            this.medReq.Size = new System.Drawing.Size(44, 20);
             this.medReq.TabIndex = 345;
+            this.medReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // waterReq
             // 
             this.waterReq.Location = new System.Drawing.Point(100, 46);
             this.waterReq.Name = "waterReq";
-            this.waterReq.Size = new System.Drawing.Size(37, 20);
+            this.waterReq.Size = new System.Drawing.Size(44, 20);
             this.waterReq.TabIndex = 344;
+            this.waterReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // foodLabelR
             // 
@@ -3034,7 +3175,7 @@
             this.pnlMod.Controls.Add(this.medLabel);
             this.pnlMod.Controls.Add(this.waterLabel);
             this.pnlMod.Controls.Add(this.modLabel);
-            this.pnlMod.Location = new System.Drawing.Point(8, 49);
+            this.pnlMod.Location = new System.Drawing.Point(13, 100);
             this.pnlMod.Name = "pnlMod";
             this.pnlMod.Size = new System.Drawing.Size(376, 262);
             this.pnlMod.TabIndex = 511;
@@ -3077,6 +3218,7 @@
             this.strengthModB.Size = new System.Drawing.Size(15, 14);
             this.strengthModB.TabIndex = 331;
             this.strengthModB.UseVisualStyleBackColor = true;
+            this.strengthModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // knowModB
             // 
@@ -3086,6 +3228,7 @@
             this.knowModB.Size = new System.Drawing.Size(15, 14);
             this.knowModB.TabIndex = 330;
             this.knowModB.UseVisualStyleBackColor = true;
+            this.knowModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // marksModB
             // 
@@ -3095,6 +3238,7 @@
             this.marksModB.Size = new System.Drawing.Size(15, 14);
             this.marksModB.TabIndex = 329;
             this.marksModB.UseVisualStyleBackColor = true;
+            this.marksModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // loyalModB
             // 
@@ -3104,6 +3248,7 @@
             this.loyalModB.Size = new System.Drawing.Size(15, 14);
             this.loyalModB.TabIndex = 328;
             this.loyalModB.UseVisualStyleBackColor = true;
+            this.loyalModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // percModB
             // 
@@ -3113,6 +3258,7 @@
             this.percModB.Size = new System.Drawing.Size(15, 14);
             this.percModB.TabIndex = 327;
             this.percModB.UseVisualStyleBackColor = true;
+            this.percModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // agilityModB
             // 
@@ -3122,6 +3268,7 @@
             this.agilityModB.Size = new System.Drawing.Size(15, 14);
             this.agilityModB.TabIndex = 326;
             this.agilityModB.UseVisualStyleBackColor = true;
+            this.agilityModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // diploModB
             // 
@@ -3131,6 +3278,7 @@
             this.diploModB.Size = new System.Drawing.Size(15, 14);
             this.diploModB.TabIndex = 325;
             this.diploModB.UseVisualStyleBackColor = true;
+            this.diploModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // tacticsModB
             // 
@@ -3140,6 +3288,7 @@
             this.tacticsModB.Size = new System.Drawing.Size(15, 14);
             this.tacticsModB.TabIndex = 324;
             this.tacticsModB.UseVisualStyleBackColor = true;
+            this.tacticsModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // strengthMod
             // 
@@ -3150,8 +3299,9 @@
             0,
             -2147483648});
             this.strengthMod.Name = "strengthMod";
-            this.strengthMod.Size = new System.Drawing.Size(37, 20);
+            this.strengthMod.Size = new System.Drawing.Size(44, 20);
             this.strengthMod.TabIndex = 323;
+            this.strengthMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // knowMod
             // 
@@ -3162,8 +3312,9 @@
             0,
             -2147483648});
             this.knowMod.Name = "knowMod";
-            this.knowMod.Size = new System.Drawing.Size(37, 20);
+            this.knowMod.Size = new System.Drawing.Size(44, 20);
             this.knowMod.TabIndex = 322;
+            this.knowMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // markMod
             // 
@@ -3174,8 +3325,9 @@
             0,
             -2147483648});
             this.markMod.Name = "markMod";
-            this.markMod.Size = new System.Drawing.Size(37, 20);
+            this.markMod.Size = new System.Drawing.Size(44, 20);
             this.markMod.TabIndex = 321;
+            this.markMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // loyalMod
             // 
@@ -3186,8 +3338,9 @@
             0,
             -2147483648});
             this.loyalMod.Name = "loyalMod";
-            this.loyalMod.Size = new System.Drawing.Size(37, 20);
+            this.loyalMod.Size = new System.Drawing.Size(44, 20);
             this.loyalMod.TabIndex = 320;
+            this.loyalMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // percMod
             // 
@@ -3198,8 +3351,9 @@
             0,
             -2147483648});
             this.percMod.Name = "percMod";
-            this.percMod.Size = new System.Drawing.Size(37, 20);
+            this.percMod.Size = new System.Drawing.Size(44, 20);
             this.percMod.TabIndex = 319;
+            this.percMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // agilityMod
             // 
@@ -3210,8 +3364,9 @@
             0,
             -2147483648});
             this.agilityMod.Name = "agilityMod";
-            this.agilityMod.Size = new System.Drawing.Size(37, 20);
+            this.agilityMod.Size = new System.Drawing.Size(44, 20);
             this.agilityMod.TabIndex = 318;
+            this.agilityMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // diploMod
             // 
@@ -3222,8 +3377,9 @@
             0,
             -2147483648});
             this.diploMod.Name = "diploMod";
-            this.diploMod.Size = new System.Drawing.Size(37, 20);
+            this.diploMod.Size = new System.Drawing.Size(44, 20);
             this.diploMod.TabIndex = 317;
+            this.diploMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // tacticsMod
             // 
@@ -3234,8 +3390,9 @@
             0,
             -2147483648});
             this.tacticsMod.Name = "tacticsMod";
-            this.tacticsMod.Size = new System.Drawing.Size(37, 20);
+            this.tacticsMod.Size = new System.Drawing.Size(44, 20);
             this.tacticsMod.TabIndex = 316;
+            this.tacticsMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // strengthLabel
             // 
@@ -3317,6 +3474,7 @@
             this.foodModB.Size = new System.Drawing.Size(15, 14);
             this.foodModB.TabIndex = 307;
             this.foodModB.UseVisualStyleBackColor = true;
+            this.foodModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // staminaModB
             // 
@@ -3326,6 +3484,7 @@
             this.staminaModB.Size = new System.Drawing.Size(15, 14);
             this.staminaModB.TabIndex = 306;
             this.staminaModB.UseVisualStyleBackColor = true;
+            this.staminaModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // moraleModB
             // 
@@ -3335,6 +3494,7 @@
             this.moraleModB.Size = new System.Drawing.Size(15, 14);
             this.moraleModB.TabIndex = 305;
             this.moraleModB.UseVisualStyleBackColor = true;
+            this.moraleModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // vModB
             // 
@@ -3344,6 +3504,7 @@
             this.vModB.Size = new System.Drawing.Size(15, 14);
             this.vModB.TabIndex = 304;
             this.vModB.UseVisualStyleBackColor = true;
+            this.vModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // valueModB
             // 
@@ -3353,6 +3514,7 @@
             this.valueModB.Size = new System.Drawing.Size(15, 14);
             this.valueModB.TabIndex = 303;
             this.valueModB.UseVisualStyleBackColor = true;
+            this.valueModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // ammoModB
             // 
@@ -3362,6 +3524,7 @@
             this.ammoModB.Size = new System.Drawing.Size(15, 14);
             this.ammoModB.TabIndex = 302;
             this.ammoModB.UseVisualStyleBackColor = true;
+            this.ammoModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // medModB
             // 
@@ -3371,6 +3534,7 @@
             this.medModB.Size = new System.Drawing.Size(15, 14);
             this.medModB.TabIndex = 301;
             this.medModB.UseVisualStyleBackColor = true;
+            this.medModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // waterModB
             // 
@@ -3380,6 +3544,7 @@
             this.waterModB.Size = new System.Drawing.Size(15, 14);
             this.waterModB.TabIndex = 300;
             this.waterModB.UseVisualStyleBackColor = true;
+            this.waterModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
             // foodMod
             // 
@@ -3390,8 +3555,9 @@
             0,
             -2147483648});
             this.foodMod.Name = "foodMod";
-            this.foodMod.Size = new System.Drawing.Size(37, 20);
+            this.foodMod.Size = new System.Drawing.Size(44, 20);
             this.foodMod.TabIndex = 299;
+            this.foodMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // staminaMod
             // 
@@ -3402,8 +3568,9 @@
             0,
             -2147483648});
             this.staminaMod.Name = "staminaMod";
-            this.staminaMod.Size = new System.Drawing.Size(37, 20);
+            this.staminaMod.Size = new System.Drawing.Size(44, 20);
             this.staminaMod.TabIndex = 298;
+            this.staminaMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // moraleMod
             // 
@@ -3414,8 +3581,9 @@
             0,
             -2147483648});
             this.moraleMod.Name = "moraleMod";
-            this.moraleMod.Size = new System.Drawing.Size(37, 20);
+            this.moraleMod.Size = new System.Drawing.Size(44, 20);
             this.moraleMod.TabIndex = 297;
+            this.moraleMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // valueMod
             // 
@@ -3426,8 +3594,9 @@
             0,
             -2147483648});
             this.valueMod.Name = "valueMod";
-            this.valueMod.Size = new System.Drawing.Size(37, 20);
+            this.valueMod.Size = new System.Drawing.Size(44, 20);
             this.valueMod.TabIndex = 296;
+            this.valueMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // packMod
             // 
@@ -3438,8 +3607,9 @@
             0,
             -2147483648});
             this.packMod.Name = "packMod";
-            this.packMod.Size = new System.Drawing.Size(37, 20);
+            this.packMod.Size = new System.Drawing.Size(44, 20);
             this.packMod.TabIndex = 295;
+            this.packMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // ammoMod
             // 
@@ -3450,8 +3620,9 @@
             0,
             -2147483648});
             this.ammoMod.Name = "ammoMod";
-            this.ammoMod.Size = new System.Drawing.Size(37, 20);
+            this.ammoMod.Size = new System.Drawing.Size(44, 20);
             this.ammoMod.TabIndex = 294;
+            this.ammoMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // medMod
             // 
@@ -3462,8 +3633,9 @@
             0,
             -2147483648});
             this.medMod.Name = "medMod";
-            this.medMod.Size = new System.Drawing.Size(37, 20);
+            this.medMod.Size = new System.Drawing.Size(44, 20);
             this.medMod.TabIndex = 293;
+            this.medMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // waterMod
             // 
@@ -3474,8 +3646,9 @@
             0,
             -2147483648});
             this.waterMod.Name = "waterMod";
-            this.waterMod.Size = new System.Drawing.Size(37, 20);
+            this.waterMod.Size = new System.Drawing.Size(44, 20);
             this.waterMod.TabIndex = 292;
+            this.waterMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // foodLabel
             // 
@@ -4088,6 +4261,13 @@
         private System.Windows.Forms.Panel pnlReq;
         private System.Windows.Forms.Panel pnlMod;
         private System.Windows.Forms.Panel pnlOther;
+        private System.Windows.Forms.Label lblProbLose;
+        private System.Windows.Forms.Label lblProbPass;
+        private System.Windows.Forms.Label lblProbWin;
+        private System.Windows.Forms.Label lblWithStdParty;
+        private System.Windows.Forms.Label lblProbLoseTxt;
+        private System.Windows.Forms.Label lblProbPassTxt;
+        private System.Windows.Forms.Label lblProbOfWinTxt;
 
     }
 }

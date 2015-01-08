@@ -679,6 +679,50 @@ namespace EventCreator
         }
 
 
+        public List<int> getGlobalStats()
+        {
+            List<int> globalStats = new List<int>();
+            if (foodModB.Checked) { globalStats.Add((int)foodMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (waterModB.Checked) { globalStats.Add((int)waterMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (vModB.Checked) { globalStats.Add((int)valueMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (ammoModB.Checked) { globalStats.Add((int)ammoMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (medModB.Checked) { globalStats.Add((int)medMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (moraleModB.Checked) { globalStats.Add((int)moraleMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (staminaModB.Checked) { globalStats.Add((int)staminaMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            if (valueModB.Checked) { globalStats.Add((int)packMod.Value); }
+            else { globalStats.Add(notAppliedModifier); }
+            return globalStats;
+        }
+
+        public List<int> getMemberStats()
+        {
+            List<int> memberStats = new List<int>();
+            if (marksModB.Checked) { memberStats.Add((int)markMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (percModB.Checked) { memberStats.Add((int)percMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (tacticsModB.Checked) { memberStats.Add((int)tacticsMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (loyalModB.Checked) { memberStats.Add((int)loyalMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (agilityModB.Checked) { memberStats.Add((int)agilityMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (strengthModB.Checked) { memberStats.Add((int)strengthMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (diploModB.Checked) { memberStats.Add((int)diploMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            if (knowModB.Checked) { memberStats.Add((int)knowMod.Value); }
+            else { memberStats.Add(notAppliedModifier); }
+            return memberStats;
+        }
+
         /// <summary>
         /// Saves all response option information in the edit response form into the given response.
         /// </summary>
@@ -691,48 +735,11 @@ namespace EventCreator
                 Console.WriteLine("Error: Could not find response option \"" + respText + "\" in saveEvent!");
                 return "We couldn't find the response option \"" + respText + "\" - Sorry!";
             }
+            
+            responseToEdit.myMap[Keys.RESOURCE_MODIFIERS_KEY] = getGlobalStats();
 
-            // Global Stats (Resource Modifiers)
-            List<int> globalStats = new List<int>();
-            if (foodModB.Checked){globalStats.Add((int)foodMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (waterModB.Checked){globalStats.Add((int)waterMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (vModB.Checked){globalStats.Add((int)valueMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (ammoModB.Checked){globalStats.Add((int)ammoMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (medModB.Checked){globalStats.Add((int)medMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (moraleModB.Checked){globalStats.Add((int)moraleMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (staminaModB.Checked){globalStats.Add((int)staminaMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
-            if (valueModB.Checked){globalStats.Add((int)packMod.Value);}
-            else {globalStats.Add(notAppliedModifier);}
 
-            responseToEdit.myMap[Keys.RESOURCE_MODIFIERS_KEY] = globalStats;
-
-            // Member Stats (Party Stat Modifiers)
-            List<int> memberStats = new List<int>();
-            if (marksModB.Checked){memberStats.Add((int)markMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (percModB.Checked){memberStats.Add((int)percMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (tacticsModB.Checked){memberStats.Add((int)tacticsMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (loyalModB.Checked){memberStats.Add((int)loyalMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (agilityModB.Checked){memberStats.Add((int)agilityMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (strengthModB.Checked){memberStats.Add((int)strengthMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (diploModB.Checked){memberStats.Add((int)diploMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-            if (knowModB.Checked){memberStats.Add((int)knowMod.Value);}
-            else {memberStats.Add(notAppliedModifier);}
-
-            responseToEdit.myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = memberStats;
+            responseToEdit.myMap[Keys.PARTY_STAT_MODIFIERS_KEY] = getMemberStats();
 
             // Global Variable Requirements (Resource Stat Requirement)
             List<int> resourceStatReq = new List<int>();
@@ -1053,6 +1060,119 @@ namespace EventCreator
             return "";
         }
 
+
+        private void tabEditRespOpts_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void setEditRespLayout()
+        {
+            int panelWidth = pnlMod.Width;
+            int panelHeight = pnlMod.Height;
+
+            int tabWidth = tabMain.Width;
+
+            int hSpacer = 52;
+            int vSpacer = 8;
+            int border = 8;
+
+            int curX = border;
+            int curY = 100;
+
+            int pnlIndex = 0;
+
+            bool finished = false;
+
+            while (pnlIndex <= respEditPanels.Count - 1)
+            {
+                while (curX + panelWidth < tabWidth && !finished)
+                {
+                    Panel curPnl = respEditPanels[pnlIndex];
+                    pnlIndex++;
+
+                    if (pnlIndex > respEditPanels.Count - 1) finished = true;
+
+                    curPnl.Location = new Point(curX, curY);
+
+                    curX += panelWidth + hSpacer;
+                }
+                curX = border;
+                curY += panelHeight + vSpacer;
+            }
+
+            pnlOther.Location = new Point(curX, curY + vSpacer);
+        }
+
+        private void waterModB_CheckedChanged(object sender, EventArgs e)
+        {
+            updateRespProbabilities();
+        }
+
+        private void waterMod_ValueChanged(object sender, EventArgs e)
+        {
+            updateRespProbabilities();
+        }
+
+        public void updateRespProbabilities()
+        {
+            List<int> avgGlobalResources = new List<int>() { 10, 10, 10, 10, 10, 90, 10, 0 };
+
+            List<int> resourceModifiers = getGlobalStats();
+
+            List<int> avgPartyStats = new List<int>() { 70, 70, 70, 60, 70, 70, 70, 70};
+
+            List<int> partyStatModifiers = getMemberStats();
+
+
+            int resourceModifier = 0;
+            for (int i = 0; i < avgGlobalResources.Count(); i++)
+            {
+                int currentResource = avgGlobalResources[i];
+                int currentResourceModifier = resourceModifiers[i];
+
+                if (currentResourceModifier != notAppliedModifier)
+                {
+                    resourceModifier += currentResource - currentResourceModifier;
+                }
+            }
+
+            int partyStatModifier = 0;
+            for (int i = 0; i < avgPartyStats.Count(); i++)
+            {
+                int currentPartyStat = avgPartyStats[i];
+                int currentPartyStatModifier = partyStatModifiers[i];
+
+                if (currentPartyStatModifier != notAppliedModifier)
+                {
+                    partyStatModifier += currentPartyStat - currentPartyStatModifier;
+                }
+            }
+
+            int totalModifier = resourceModifier + partyStatModifier;
+
+            //r = Random Roll 0-100 + modifier.
+            //r < 40 -- Lose
+            // 40 <= r < 60 -- pass
+            // r >= 60 -- Win
+
+            float loseThreshold = Math.Max(0, Math.Min(100, 40 - totalModifier)); //Clamp value between 0 and 100
+            float winThreshold = Math.Max(0, Math.Min(100, 60 - totalModifier)); //Clamp value between 0 and 100
+
+            float loseInterval = loseThreshold;
+            float passInterval = winThreshold - loseThreshold;
+            float winInterval = 100 - winThreshold;
+            
+            lblProbWin.Text = ((winInterval) + "%");
+            lblProbPass.Text = ((passInterval) + "%");
+            lblProbLose.Text = ((loseInterval) + "%");
+        }
+        
+        private void waterCost_ValueChanged(object sender, EventArgs e)
+        {
+            editRespNeedSave = true;
+        }
+
         /// <summary>
         /// Sets the Edit Response Options tab information to load in all needed info from the event.
         /// </summary>
@@ -1252,50 +1372,7 @@ namespace EventCreator
 
             setEditRespLayout();
         }
-
-        private void tabEditRespOpts_Resize(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void setEditRespLayout()
-        {
-            int panelWidth = pnlMod.Width;
-            int panelHeight = pnlMod.Height;
-
-            int tabWidth = tabMain.Width;
-
-            int hSpacer = 52;
-            int vSpacer = 8;
-            int border = 8;
-
-            int curX = border;
-            int curY = 49;
-
-            int pnlIndex = 0;
-
-            bool finished = false;
-
-            while (pnlIndex <= respEditPanels.Count - 1)
-            {
-                while (curX + panelWidth < tabWidth && !finished)
-                {
-                    Panel curPnl = respEditPanels[pnlIndex];
-                    pnlIndex++;
-
-                    if (pnlIndex > respEditPanels.Count - 1) finished = true;
-
-                    curPnl.Location = new Point(curX, curY);
-
-                    curX += panelWidth + hSpacer;
-                }
-                curX = border;
-                curY += panelHeight + vSpacer;
-            }
-
-            pnlOther.Location = new Point(curX, curY + vSpacer);
-        }
-
+        
         /* ------------------------------------------------ */
         // ------------------------------------------------ //
         /* ------------------------------------------------ */
