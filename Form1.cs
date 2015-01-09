@@ -602,8 +602,12 @@ namespace EventCreator
                 MessageBox.Show("You must select an event to edit.");
                 return;
             }
+
             string respToSave = comboBoxRespToEdit.Items[comboBoxRespToEdit.SelectedIndex].ToString();
             string save = SaveResponse(respToSave);
+
+
+
             if (save == "")
             {
                 editRespNeedSave = false;

@@ -1239,7 +1239,7 @@
             // lblProbLose
             // 
             this.lblProbLose.AutoSize = true;
-            this.lblProbLose.Location = new System.Drawing.Point(402, 66);
+            this.lblProbLose.Location = new System.Drawing.Point(362, 66);
             this.lblProbLose.Name = "lblProbLose";
             this.lblProbLose.Size = new System.Drawing.Size(27, 13);
             this.lblProbLose.TabIndex = 524;
@@ -1248,7 +1248,7 @@
             // lblProbPass
             // 
             this.lblProbPass.AutoSize = true;
-            this.lblProbPass.Location = new System.Drawing.Point(247, 66);
+            this.lblProbPass.Location = new System.Drawing.Point(231, 66);
             this.lblProbPass.Name = "lblProbPass";
             this.lblProbPass.Size = new System.Drawing.Size(27, 13);
             this.lblProbPass.TabIndex = 523;
@@ -1275,7 +1275,7 @@
             // lblProbLoseTxt
             // 
             this.lblProbLoseTxt.AutoSize = true;
-            this.lblProbLoseTxt.Location = new System.Drawing.Point(310, 66);
+            this.lblProbLoseTxt.Location = new System.Drawing.Point(271, 66);
             this.lblProbLoseTxt.Name = "lblProbLoseTxt";
             this.lblProbLoseTxt.Size = new System.Drawing.Size(99, 13);
             this.lblProbLoseTxt.TabIndex = 520;
@@ -1284,7 +1284,7 @@
             // lblProbPassTxt
             // 
             this.lblProbPassTxt.AutoSize = true;
-            this.lblProbPassTxt.Location = new System.Drawing.Point(154, 66);
+            this.lblProbPassTxt.Location = new System.Drawing.Point(140, 66);
             this.lblProbPassTxt.Name = "lblProbPassTxt";
             this.lblProbPassTxt.Size = new System.Drawing.Size(99, 13);
             this.lblProbPassTxt.TabIndex = 519;
@@ -3293,8 +3293,13 @@
             // strengthMod
             // 
             this.strengthMod.Location = new System.Drawing.Point(301, 230);
+            this.strengthMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.strengthMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3306,8 +3311,13 @@
             // knowMod
             // 
             this.knowMod.Location = new System.Drawing.Point(301, 205);
+            this.knowMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.knowMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3319,8 +3329,13 @@
             // markMod
             // 
             this.markMod.Location = new System.Drawing.Point(301, 179);
+            this.markMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.markMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3332,8 +3347,13 @@
             // loyalMod
             // 
             this.loyalMod.Location = new System.Drawing.Point(301, 153);
+            this.loyalMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.loyalMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3345,8 +3365,13 @@
             // percMod
             // 
             this.percMod.Location = new System.Drawing.Point(301, 127);
+            this.percMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.percMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3358,8 +3383,13 @@
             // agilityMod
             // 
             this.agilityMod.Location = new System.Drawing.Point(301, 101);
+            this.agilityMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.agilityMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3371,8 +3401,13 @@
             // diploMod
             // 
             this.diploMod.Location = new System.Drawing.Point(301, 76);
+            this.diploMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.diploMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3384,8 +3419,13 @@
             // tacticsMod
             // 
             this.tacticsMod.Location = new System.Drawing.Point(301, 50);
+            this.tacticsMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.tacticsMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3549,8 +3589,13 @@
             // foodMod
             // 
             this.foodMod.Location = new System.Drawing.Point(96, 230);
+            this.foodMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.foodMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3562,8 +3607,13 @@
             // staminaMod
             // 
             this.staminaMod.Location = new System.Drawing.Point(96, 205);
+            this.staminaMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.staminaMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3575,8 +3625,13 @@
             // moraleMod
             // 
             this.moraleMod.Location = new System.Drawing.Point(96, 179);
+            this.moraleMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.moraleMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3588,8 +3643,13 @@
             // valueMod
             // 
             this.valueMod.Location = new System.Drawing.Point(96, 153);
+            this.valueMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.valueMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3601,8 +3661,13 @@
             // packMod
             // 
             this.packMod.Location = new System.Drawing.Point(96, 127);
+            this.packMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.packMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3614,8 +3679,13 @@
             // ammoMod
             // 
             this.ammoMod.Location = new System.Drawing.Point(96, 101);
+            this.ammoMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.ammoMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3627,8 +3697,13 @@
             // medMod
             // 
             this.medMod.Location = new System.Drawing.Point(96, 76);
+            this.medMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.medMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
@@ -3640,8 +3715,13 @@
             // waterMod
             // 
             this.waterMod.Location = new System.Drawing.Point(96, 50);
+            this.waterMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.waterMod.Minimum = new decimal(new int[] {
-            100,
+            999,
             0,
             0,
             -2147483648});
