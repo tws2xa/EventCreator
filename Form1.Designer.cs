@@ -344,6 +344,9 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog_LoadEvent = new System.Windows.Forms.OpenFileDialog();
+            this.radioAnd = new System.Windows.Forms.RadioButton();
+            this.radioOr = new System.Windows.Forms.RadioButton();
+            this.radioNot = new System.Windows.Forms.RadioButton();
             this.tabMain.SuspendLayout();
             this.tabGeneralInfo.SuspendLayout();
             this.Advice.SuspendLayout();
@@ -455,6 +458,9 @@
             // 
             // tabGeneralInfo
             // 
+            this.tabGeneralInfo.Controls.Add(this.radioNot);
+            this.tabGeneralInfo.Controls.Add(this.radioOr);
+            this.tabGeneralInfo.Controls.Add(this.radioAnd);
             this.tabGeneralInfo.Controls.Add(this.chkOnlyOnce);
             this.tabGeneralInfo.Controls.Add(this.btnLoadEvent);
             this.tabGeneralInfo.Controls.Add(this.selectplayerB);
@@ -485,17 +491,17 @@
             this.chkOnlyOnce.Location = new System.Drawing.Point(224, 144);
             this.chkOnlyOnce.Name = "chkOnlyOnce";
             this.chkOnlyOnce.Size = new System.Drawing.Size(113, 17);
-            this.chkOnlyOnce.TabIndex = 30;
+            this.chkOnlyOnce.TabIndex = 4;
             this.chkOnlyOnce.Text = "Only Occurs Once";
             this.chkOnlyOnce.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkOnlyOnce.UseVisualStyleBackColor = true;
             // 
             // btnLoadEvent
             // 
-            this.btnLoadEvent.Location = new System.Drawing.Point(369, 420);
+            this.btnLoadEvent.Location = new System.Drawing.Point(369, 428);
             this.btnLoadEvent.Name = "btnLoadEvent";
             this.btnLoadEvent.Size = new System.Drawing.Size(75, 23);
-            this.btnLoadEvent.TabIndex = 29;
+            this.btnLoadEvent.TabIndex = 11;
             this.btnLoadEvent.Text = "Load Event";
             this.btnLoadEvent.UseVisualStyleBackColor = true;
             this.btnLoadEvent.Click += new System.EventHandler(this.btnLoadEvent_Click);
@@ -506,7 +512,7 @@
             this.selectplayerB.Location = new System.Drawing.Point(12, 274);
             this.selectplayerB.Name = "selectplayerB";
             this.selectplayerB.Size = new System.Drawing.Size(182, 17);
-            this.selectplayerB.TabIndex = 28;
+            this.selectplayerB.TabIndex = 6;
             this.selectplayerB.Text = "Select Party Member Beforehand";
             this.selectplayerB.UseVisualStyleBackColor = true;
             // 
@@ -525,7 +531,7 @@
             this.introDescInput.Multiline = true;
             this.introDescInput.Name = "introDescInput";
             this.introDescInput.Size = new System.Drawing.Size(220, 139);
-            this.introDescInput.TabIndex = 25;
+            this.introDescInput.TabIndex = 5;
             // 
             // frequencyLabel
             // 
@@ -549,7 +555,7 @@
             this.frequencyInput.Location = new System.Drawing.Point(224, 107);
             this.frequencyInput.Name = "frequencyInput";
             this.frequencyInput.Size = new System.Drawing.Size(220, 21);
-            this.frequencyInput.TabIndex = 23;
+            this.frequencyInput.TabIndex = 3;
             // 
             // reqPaMemInput
             // 
@@ -568,11 +574,11 @@
             "Duncan MacKinnon",
             "Jack Reed",
             "Tariro"});
-            this.reqPaMemInput.Location = new System.Drawing.Point(11, 346);
+            this.reqPaMemInput.Location = new System.Drawing.Point(11, 354);
             this.reqPaMemInput.MultiColumn = true;
             this.reqPaMemInput.Name = "reqPaMemInput";
             this.reqPaMemInput.Size = new System.Drawing.Size(433, 64);
-            this.reqPaMemInput.TabIndex = 22;
+            this.reqPaMemInput.TabIndex = 10;
             // 
             // reqPaMemLabel
             // 
@@ -609,7 +615,7 @@
             this.locationsInput.Location = new System.Drawing.Point(11, 107);
             this.locationsInput.Name = "locationsInput";
             this.locationsInput.Size = new System.Drawing.Size(151, 139);
-            this.locationsInput.TabIndex = 19;
+            this.locationsInput.TabIndex = 2;
             this.locationsInput.SelectedIndexChanged += new System.EventHandler(this.locationsInput_SelectedIndexChanged);
             // 
             // eventTypeInput
@@ -625,7 +631,7 @@
             this.eventTypeInput.MaxDropDownItems = 3;
             this.eventTypeInput.Name = "eventTypeInput";
             this.eventTypeInput.Size = new System.Drawing.Size(361, 21);
-            this.eventTypeInput.TabIndex = 18;
+            this.eventTypeInput.TabIndex = 1;
             // 
             // eventTypeLabel
             // 
@@ -650,7 +656,7 @@
             this.eventNameInput.Location = new System.Drawing.Point(83, 11);
             this.eventNameInput.Name = "eventNameInput";
             this.eventNameInput.Size = new System.Drawing.Size(361, 20);
-            this.eventNameInput.TabIndex = 15;
+            this.eventNameInput.TabIndex = 0;
             // 
             // Advice
             // 
@@ -743,7 +749,7 @@
             this.chkGuntherReinhart.Location = new System.Drawing.Point(821, 449);
             this.chkGuntherReinhart.Name = "chkGuntherReinhart";
             this.chkGuntherReinhart.Size = new System.Drawing.Size(15, 14);
-            this.chkGuntherReinhart.TabIndex = 34;
+            this.chkGuntherReinhart.TabIndex = 24;
             this.chkGuntherReinhart.UseVisualStyleBackColor = true;
             // 
             // chkRolandPerry
@@ -752,7 +758,7 @@
             this.chkRolandPerry.Location = new System.Drawing.Point(821, 341);
             this.chkRolandPerry.Name = "chkRolandPerry";
             this.chkRolandPerry.Size = new System.Drawing.Size(15, 14);
-            this.chkRolandPerry.TabIndex = 33;
+            this.chkRolandPerry.TabIndex = 21;
             this.chkRolandPerry.UseVisualStyleBackColor = true;
             // 
             // chkJackReed
@@ -761,7 +767,7 @@
             this.chkJackReed.Location = new System.Drawing.Point(822, 377);
             this.chkJackReed.Name = "chkJackReed";
             this.chkJackReed.Size = new System.Drawing.Size(15, 14);
-            this.chkJackReed.TabIndex = 32;
+            this.chkJackReed.TabIndex = 22;
             this.chkJackReed.UseVisualStyleBackColor = true;
             // 
             // chkDuncanMacKinnon
@@ -770,7 +776,7 @@
             this.chkDuncanMacKinnon.Location = new System.Drawing.Point(821, 413);
             this.chkDuncanMacKinnon.Name = "chkDuncanMacKinnon";
             this.chkDuncanMacKinnon.Size = new System.Drawing.Size(15, 14);
-            this.chkDuncanMacKinnon.TabIndex = 31;
+            this.chkDuncanMacKinnon.TabIndex = 23;
             this.chkDuncanMacKinnon.UseVisualStyleBackColor = true;
             // 
             // chkJakobusKotze
@@ -779,7 +785,7 @@
             this.chkJakobusKotze.Location = new System.Drawing.Point(821, 306);
             this.chkJakobusKotze.Name = "chkJakobusKotze";
             this.chkJakobusKotze.Size = new System.Drawing.Size(15, 14);
-            this.chkJakobusKotze.TabIndex = 30;
+            this.chkJakobusKotze.TabIndex = 20;
             this.chkJakobusKotze.UseVisualStyleBackColor = true;
             // 
             // txtDuncanMacKinnon
@@ -787,35 +793,35 @@
             this.txtDuncanMacKinnon.Location = new System.Drawing.Point(119, 410);
             this.txtDuncanMacKinnon.Name = "txtDuncanMacKinnon";
             this.txtDuncanMacKinnon.Size = new System.Drawing.Size(696, 20);
-            this.txtDuncanMacKinnon.TabIndex = 29;
+            this.txtDuncanMacKinnon.TabIndex = 11;
             // 
             // txtGuntherReinhart
             // 
             this.txtGuntherReinhart.Location = new System.Drawing.Point(119, 446);
             this.txtGuntherReinhart.Name = "txtGuntherReinhart";
             this.txtGuntherReinhart.Size = new System.Drawing.Size(696, 20);
-            this.txtGuntherReinhart.TabIndex = 28;
+            this.txtGuntherReinhart.TabIndex = 12;
             // 
             // txtJackReed
             // 
             this.txtJackReed.Location = new System.Drawing.Point(119, 374);
             this.txtJackReed.Name = "txtJackReed";
             this.txtJackReed.Size = new System.Drawing.Size(696, 20);
-            this.txtJackReed.TabIndex = 27;
+            this.txtJackReed.TabIndex = 10;
             // 
             // txtRolandPerry
             // 
             this.txtRolandPerry.Location = new System.Drawing.Point(119, 338);
             this.txtRolandPerry.Name = "txtRolandPerry";
             this.txtRolandPerry.Size = new System.Drawing.Size(696, 20);
-            this.txtRolandPerry.TabIndex = 26;
+            this.txtRolandPerry.TabIndex = 9;
             // 
             // txtJakobusKotze
             // 
             this.txtJakobusKotze.Location = new System.Drawing.Point(119, 303);
             this.txtJakobusKotze.Name = "txtJakobusKotze";
             this.txtJakobusKotze.Size = new System.Drawing.Size(696, 20);
-            this.txtJakobusKotze.TabIndex = 25;
+            this.txtJakobusKotze.TabIndex = 8;
             // 
             // lblJakobusKotze
             // 
@@ -832,7 +838,7 @@
             this.chkWillemDeBruin.Location = new System.Drawing.Point(821, 273);
             this.chkWillemDeBruin.Name = "chkWillemDeBruin";
             this.chkWillemDeBruin.Size = new System.Drawing.Size(15, 14);
-            this.chkWillemDeBruin.TabIndex = 23;
+            this.chkWillemDeBruin.TabIndex = 19;
             this.chkWillemDeBruin.UseVisualStyleBackColor = true;
             // 
             // txtWillemDeBruin
@@ -840,7 +846,7 @@
             this.txtWillemDeBruin.Location = new System.Drawing.Point(119, 270);
             this.txtWillemDeBruin.Name = "txtWillemDeBruin";
             this.txtWillemDeBruin.Size = new System.Drawing.Size(696, 20);
-            this.txtWillemDeBruin.TabIndex = 22;
+            this.txtWillemDeBruin.TabIndex = 7;
             // 
             // lblWillemDeBruin
             // 
@@ -893,7 +899,7 @@
             this.chkTheunisVanZyl.Location = new System.Drawing.Point(821, 240);
             this.chkTheunisVanZyl.Name = "chkTheunisVanZyl";
             this.chkTheunisVanZyl.Size = new System.Drawing.Size(15, 14);
-            this.chkTheunisVanZyl.TabIndex = 16;
+            this.chkTheunisVanZyl.TabIndex = 18;
             this.chkTheunisVanZyl.UseVisualStyleBackColor = true;
             // 
             // chkWonai
@@ -911,7 +917,7 @@
             this.chkTariro.Location = new System.Drawing.Point(822, 168);
             this.chkTariro.Name = "chkTariro";
             this.chkTariro.Size = new System.Drawing.Size(15, 14);
-            this.chkTariro.TabIndex = 14;
+            this.chkTariro.TabIndex = 16;
             this.chkTariro.UseVisualStyleBackColor = true;
             // 
             // chkJanKruger
@@ -920,7 +926,7 @@
             this.chkJanKruger.Location = new System.Drawing.Point(821, 204);
             this.chkJanKruger.Name = "chkJanKruger";
             this.chkJanKruger.Size = new System.Drawing.Size(15, 14);
-            this.chkJanKruger.TabIndex = 13;
+            this.chkJanKruger.TabIndex = 17;
             this.chkJanKruger.UseVisualStyleBackColor = true;
             // 
             // chkMacumazahn
@@ -929,7 +935,7 @@
             this.chkMacumazahn.Location = new System.Drawing.Point(821, 97);
             this.chkMacumazahn.Name = "chkMacumazahn";
             this.chkMacumazahn.Size = new System.Drawing.Size(15, 14);
-            this.chkMacumazahn.TabIndex = 12;
+            this.chkMacumazahn.TabIndex = 14;
             this.chkMacumazahn.UseVisualStyleBackColor = true;
             // 
             // txtJanKruger
@@ -937,35 +943,35 @@
             this.txtJanKruger.Location = new System.Drawing.Point(119, 201);
             this.txtJanKruger.Name = "txtJanKruger";
             this.txtJanKruger.Size = new System.Drawing.Size(696, 20);
-            this.txtJanKruger.TabIndex = 11;
+            this.txtJanKruger.TabIndex = 5;
             // 
             // txtTheunisVanZyl
             // 
             this.txtTheunisVanZyl.Location = new System.Drawing.Point(119, 237);
             this.txtTheunisVanZyl.Name = "txtTheunisVanZyl";
             this.txtTheunisVanZyl.Size = new System.Drawing.Size(696, 20);
-            this.txtTheunisVanZyl.TabIndex = 10;
+            this.txtTheunisVanZyl.TabIndex = 6;
             // 
             // txtTariro
             // 
             this.txtTariro.Location = new System.Drawing.Point(119, 165);
             this.txtTariro.Name = "txtTariro";
             this.txtTariro.Size = new System.Drawing.Size(696, 20);
-            this.txtTariro.TabIndex = 9;
+            this.txtTariro.TabIndex = 4;
             // 
             // txtWonai
             // 
             this.txtWonai.Location = new System.Drawing.Point(119, 129);
             this.txtWonai.Name = "txtWonai";
             this.txtWonai.Size = new System.Drawing.Size(696, 20);
-            this.txtWonai.TabIndex = 8;
+            this.txtWonai.TabIndex = 3;
             // 
             // txtMacumazahn
             // 
             this.txtMacumazahn.Location = new System.Drawing.Point(119, 94);
             this.txtMacumazahn.Name = "txtMacumazahn";
             this.txtMacumazahn.Size = new System.Drawing.Size(696, 20);
-            this.txtMacumazahn.TabIndex = 7;
+            this.txtMacumazahn.TabIndex = 2;
             // 
             // IsAdviceUseful
             // 
@@ -1012,7 +1018,7 @@
             this.chkUmbopa.Location = new System.Drawing.Point(821, 64);
             this.chkUmbopa.Name = "chkUmbopa";
             this.chkUmbopa.Size = new System.Drawing.Size(15, 14);
-            this.chkUmbopa.TabIndex = 2;
+            this.chkUmbopa.TabIndex = 13;
             this.chkUmbopa.UseVisualStyleBackColor = true;
             // 
             // txtUmbopa
@@ -1069,7 +1075,7 @@
             0});
             this.removeNumBox.Name = "removeNumBox";
             this.removeNumBox.Size = new System.Drawing.Size(40, 20);
-            this.removeNumBox.TabIndex = 30;
+            this.removeNumBox.TabIndex = 6;
             this.removeNumBox.Value = new decimal(new int[] {
             1,
             0,
@@ -1081,7 +1087,7 @@
             this.textResponse1.Location = new System.Drawing.Point(34, 33);
             this.textResponse1.Name = "textResponse1";
             this.textResponse1.Size = new System.Drawing.Size(814, 20);
-            this.textResponse1.TabIndex = 17;
+            this.textResponse1.TabIndex = 1;
             this.textResponse1.Text = "Response 1";
             this.textResponse1.TextChanged += new System.EventHandler(this.textResponse1_TextChanged);
             // 
@@ -1091,7 +1097,7 @@
             this.textResponse2.Location = new System.Drawing.Point(34, 80);
             this.textResponse2.Name = "textResponse2";
             this.textResponse2.Size = new System.Drawing.Size(814, 20);
-            this.textResponse2.TabIndex = 29;
+            this.textResponse2.TabIndex = 2;
             this.textResponse2.Visible = false;
             this.textResponse2.TextChanged += new System.EventHandler(this.textResponse2_TextChanged);
             // 
@@ -1111,7 +1117,7 @@
             this.textResponse3.Location = new System.Drawing.Point(34, 127);
             this.textResponse3.Name = "textResponse3";
             this.textResponse3.Size = new System.Drawing.Size(814, 20);
-            this.textResponse3.TabIndex = 28;
+            this.textResponse3.TabIndex = 3;
             this.textResponse3.Visible = false;
             this.textResponse3.TextChanged += new System.EventHandler(this.textResponse3_TextChanged);
             // 
@@ -1131,7 +1137,7 @@
             this.textResponse4.Location = new System.Drawing.Point(34, 174);
             this.textResponse4.Name = "textResponse4";
             this.textResponse4.Size = new System.Drawing.Size(814, 20);
-            this.textResponse4.TabIndex = 27;
+            this.textResponse4.TabIndex = 4;
             this.textResponse4.Visible = false;
             this.textResponse4.TextChanged += new System.EventHandler(this.textResponse4_TextChanged);
             // 
@@ -1140,7 +1146,7 @@
             this.removeResponseButton.Location = new System.Drawing.Point(722, 503);
             this.removeResponseButton.Name = "removeResponseButton";
             this.removeResponseButton.Size = new System.Drawing.Size(58, 23);
-            this.removeResponseButton.TabIndex = 20;
+            this.removeResponseButton.TabIndex = 7;
             this.removeResponseButton.Text = "Remove";
             this.removeResponseButton.UseVisualStyleBackColor = true;
             this.removeResponseButton.Click += new System.EventHandler(this.removeResponseButton_Click);
@@ -1151,7 +1157,7 @@
             this.textResponse5.Location = new System.Drawing.Point(34, 221);
             this.textResponse5.Name = "textResponse5";
             this.textResponse5.Size = new System.Drawing.Size(814, 20);
-            this.textResponse5.TabIndex = 26;
+            this.textResponse5.TabIndex = 5;
             this.textResponse5.Visible = false;
             this.textResponse5.TextChanged += new System.EventHandler(this.textResponse5_TextChanged);
             // 
@@ -1160,7 +1166,7 @@
             this.addResponseButton.Location = new System.Drawing.Point(819, 502);
             this.addResponseButton.Name = "addResponseButton";
             this.addResponseButton.Size = new System.Drawing.Size(29, 25);
-            this.addResponseButton.TabIndex = 21;
+            this.addResponseButton.TabIndex = 8;
             this.addResponseButton.Text = "+";
             this.addResponseButton.UseVisualStyleBackColor = true;
             this.addResponseButton.Click += new System.EventHandler(this.addButton_Click);
@@ -3910,6 +3916,38 @@
             this.openFileDialog_LoadEvent.Filter = "Text Files|*.txt";
             this.openFileDialog_LoadEvent.Title = "Load Event";
             // 
+            // radioAnd
+            // 
+            this.radioAnd.AutoSize = true;
+            this.radioAnd.Checked = true;
+            this.radioAnd.Location = new System.Drawing.Point(12, 334);
+            this.radioAnd.Name = "radioAnd";
+            this.radioAnd.Size = new System.Drawing.Size(48, 17);
+            this.radioAnd.TabIndex = 7;
+            this.radioAnd.TabStop = true;
+            this.radioAnd.Text = "AND";
+            this.radioAnd.UseVisualStyleBackColor = true;
+            // 
+            // radioOr
+            // 
+            this.radioOr.AutoSize = true;
+            this.radioOr.Location = new System.Drawing.Point(86, 334);
+            this.radioOr.Name = "radioOr";
+            this.radioOr.Size = new System.Drawing.Size(41, 17);
+            this.radioOr.TabIndex = 8;
+            this.radioOr.Text = "OR";
+            this.radioOr.UseVisualStyleBackColor = true;
+            // 
+            // radioNot
+            // 
+            this.radioNot.AutoSize = true;
+            this.radioNot.Location = new System.Drawing.Point(153, 334);
+            this.radioNot.Name = "radioNot";
+            this.radioNot.Size = new System.Drawing.Size(48, 17);
+            this.radioNot.TabIndex = 9;
+            this.radioNot.Text = "NOT";
+            this.radioNot.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4348,6 +4386,9 @@
         private System.Windows.Forms.Label lblProbLoseTxt;
         private System.Windows.Forms.Label lblProbPassTxt;
         private System.Windows.Forms.Label lblProbOfWinTxt;
+        private System.Windows.Forms.RadioButton radioOr;
+        private System.Windows.Forms.RadioButton radioAnd;
+        private System.Windows.Forms.RadioButton radioNot;
 
     }
 }

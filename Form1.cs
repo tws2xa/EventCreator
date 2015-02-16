@@ -17,6 +17,8 @@ namespace EventCreator
         int frmHeight;
         const int minWidth = 880;
         const int minHeight = 600;
+        const string useOr = "USE_OR";
+        const string useNot = "USE_NOT";
 
         //Advice Variables
         public const string LETTER_USEFUL = "U";
@@ -76,6 +78,9 @@ namespace EventCreator
         internal List<string> getRequiredParty()
         {        
             List<String> reqPartyMem = new List<String>();
+            if (radioNot.Checked) reqPartyMem.Add(useNot);
+            else if (radioOr.Checked) reqPartyMem.Add(useOr);
+            //Else default to AND
             foreach (int index in reqPaMemInput.CheckedIndices)
             {
                 reqPartyMem.Add((String)(reqPaMemInput.Items[index]));
@@ -146,6 +151,21 @@ namespace EventCreator
                     locationsInput.SetItemChecked(i, locations.Contains(locationsInput.Items[i]));
                 }
                 List<string> partyNeeded = GetListFromJSON<List<string>>(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
+                int startIndex = 0;
+                if (partyNeeded[0] == useNot)
+                {
+                    radioNot.Checked = true;
+                    startIndex = 1;
+                }
+                else if (partyNeeded[0] == useOr)
+                {
+                    radioOr.Checked = true;
+                    startIndex = 1;
+                }
+                else
+                {
+                    radioAnd.Checked = true;
+                }
                 for (int i = 0; i < reqPaMemInput.Items.Count; i++)
                 {
                     reqPaMemInput.SetItemChecked(i, partyNeeded.Contains(reqPaMemInput.Items[i]));
@@ -472,7 +492,16 @@ namespace EventCreator
         /// <param name="theEvent">Event to load in</param>
         private string ResponseOptionsLoadEvent(Event theEvent)
         {
-            List<Dictionary<string, object>> respOps = GetListFromJSON<List<Dictionary<string, object>>>(theEvent.myDictionary[Keys.RESPONSE_OPTIONS_KEY]);
+            List<Dictionary<string, object>> respOps;
+            try
+            {
+                respOps = GetListFromJSON<List<Dictionary<string, object>>>(theEvent.myDictionary[Keys.RESPONSE_OPTIONS_KEY]);
+            }
+            catch (Exception e)
+            {
+                return "All of them. Corrupt JSON information.";
+            }
+
             numOfClicks = respOps.Count() - 1;
             if (numOfClicks > 4) return "Response Options (Too Many Response Options)";
             if (numOfClicks < 0) return "Response Options (Too Few Response Options)";
@@ -491,6 +520,7 @@ namespace EventCreator
             LoadResponse((string)responseOptions[0].myMap[Keys.TEXT_KEY]); //Load in first response option.
 
             return "";
+            
         }
 
         private ResponseOption CreateRespOpFromJSONDictionary(Dictionary<string, object> option)
@@ -1291,6 +1321,9 @@ namespace EventCreator
         {
             frmWidth = this.Width;
             frmHeight = this.Height;
+
+            eventTypeInput.SelectedIndex = 0;
+            frequencyInput.SelectedIndex = 2;
 
             currentRspSelect = 0;
             comboBoxRespToEdit.SelectedIndex = currentRspSelect;
