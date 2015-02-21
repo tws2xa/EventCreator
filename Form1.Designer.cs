@@ -38,8 +38,8 @@
             this.introDescInput = new System.Windows.Forms.TextBox();
             this.frequencyLabel = new System.Windows.Forms.Label();
             this.frequencyInput = new System.Windows.Forms.ComboBox();
-            this.reqPaMemInput = new System.Windows.Forms.CheckedListBox();
-            this.reqPaMemLabel = new System.Windows.Forms.Label();
+            this.andClassInput = new System.Windows.Forms.CheckedListBox();
+            this.reqClassLabel = new System.Windows.Forms.Label();
             this.possibleLocationsLabel = new System.Windows.Forms.Label();
             this.locationsInput = new System.Windows.Forms.CheckedListBox();
             this.eventTypeInput = new System.Windows.Forms.ComboBox();
@@ -47,45 +47,27 @@
             this.eventNameLabel = new System.Windows.Forms.Label();
             this.eventNameInput = new System.Windows.Forms.TextBox();
             this.Advice = new System.Windows.Forms.TabPage();
-            this.lblGuntherReinhart = new System.Windows.Forms.Label();
-            this.lblDuncanMacKinnon = new System.Windows.Forms.Label();
-            this.lblJackReed = new System.Windows.Forms.Label();
-            this.lblRolandPerry = new System.Windows.Forms.Label();
-            this.chkGuntherReinhart = new System.Windows.Forms.CheckBox();
-            this.chkRolandPerry = new System.Windows.Forms.CheckBox();
-            this.chkJackReed = new System.Windows.Forms.CheckBox();
-            this.chkDuncanMacKinnon = new System.Windows.Forms.CheckBox();
-            this.chkJakobusKotze = new System.Windows.Forms.CheckBox();
-            this.txtDuncanMacKinnon = new System.Windows.Forms.TextBox();
-            this.txtGuntherReinhart = new System.Windows.Forms.TextBox();
-            this.txtJackReed = new System.Windows.Forms.TextBox();
-            this.txtRolandPerry = new System.Windows.Forms.TextBox();
-            this.txtJakobusKotze = new System.Windows.Forms.TextBox();
-            this.lblJakobusKotze = new System.Windows.Forms.Label();
-            this.chkWillemDeBruin = new System.Windows.Forms.CheckBox();
-            this.txtWillemDeBruin = new System.Windows.Forms.TextBox();
-            this.lblWillemDeBruin = new System.Windows.Forms.Label();
-            this.lblTheunisVanZyl = new System.Windows.Forms.Label();
-            this.lblJanKruger = new System.Windows.Forms.Label();
-            this.lblTariro = new System.Windows.Forms.Label();
-            this.lblWonai = new System.Windows.Forms.Label();
-            this.chkTheunisVanZyl = new System.Windows.Forms.CheckBox();
-            this.chkWonai = new System.Windows.Forms.CheckBox();
-            this.chkTariro = new System.Windows.Forms.CheckBox();
-            this.chkJanKruger = new System.Windows.Forms.CheckBox();
-            this.chkMacumazahn = new System.Windows.Forms.CheckBox();
-            this.txtJanKruger = new System.Windows.Forms.TextBox();
-            this.txtTheunisVanZyl = new System.Windows.Forms.TextBox();
-            this.txtTariro = new System.Windows.Forms.TextBox();
-            this.txtWonai = new System.Windows.Forms.TextBox();
-            this.txtMacumazahn = new System.Windows.Forms.TextBox();
+            this.lblGuide = new System.Windows.Forms.Label();
+            this.lblExplorer = new System.Windows.Forms.Label();
+            this.lblMissionary = new System.Windows.Forms.Label();
+            this.lblNaturalist = new System.Windows.Forms.Label();
+            this.chkGuide = new System.Windows.Forms.CheckBox();
+            this.chkNaturalist = new System.Windows.Forms.CheckBox();
+            this.chkMissionary = new System.Windows.Forms.CheckBox();
+            this.chkExplorer = new System.Windows.Forms.CheckBox();
+            this.chkMercenary = new System.Windows.Forms.CheckBox();
+            this.txtExplorer = new System.Windows.Forms.TextBox();
+            this.txtGuide = new System.Windows.Forms.TextBox();
+            this.txtMissionary = new System.Windows.Forms.TextBox();
+            this.txtNaturalist = new System.Windows.Forms.TextBox();
+            this.txtMercenary = new System.Windows.Forms.TextBox();
             this.IsAdviceUseful = new System.Windows.Forms.Label();
             this.CharacterAdvice = new System.Windows.Forms.Label();
             this.CharacterTtype = new System.Windows.Forms.Label();
-            this.lblMacumazahn = new System.Windows.Forms.Label();
-            this.chkUmbopa = new System.Windows.Forms.CheckBox();
-            this.txtUmbopa = new System.Windows.Forms.TextBox();
-            this.lblUmbopa = new System.Windows.Forms.Label();
+            this.lblMercenary = new System.Windows.Forms.Label();
+            this.chkHunter = new System.Windows.Forms.CheckBox();
+            this.txtHunter = new System.Windows.Forms.TextBox();
+            this.lblHunter = new System.Windows.Forms.Label();
             this.tabRespOpts = new System.Windows.Forms.TabPage();
             this.removeNumBox = new System.Windows.Forms.NumericUpDown();
             this.textResponse1 = new System.Windows.Forms.TextBox();
@@ -104,11 +86,29 @@
             this.tabEditRespOpts = new System.Windows.Forms.TabPage();
             this.lblProbLose = new System.Windows.Forms.Label();
             this.lblProbPass = new System.Windows.Forms.Label();
+            this.strengthReq = new System.Windows.Forms.NumericUpDown();
+            this.strengthCost = new System.Windows.Forms.NumericUpDown();
+            this.knowCost = new System.Windows.Forms.NumericUpDown();
             this.lblProbWin = new System.Windows.Forms.Label();
+            this.marksCost = new System.Windows.Forms.NumericUpDown();
+            this.knowReq = new System.Windows.Forms.NumericUpDown();
+            this.loyalCost = new System.Windows.Forms.NumericUpDown();
             this.lblWithStdParty = new System.Windows.Forms.Label();
+            this.percCost = new System.Windows.Forms.NumericUpDown();
+            this.marksReq = new System.Windows.Forms.NumericUpDown();
+            this.agilityCost = new System.Windows.Forms.NumericUpDown();
             this.lblProbLoseTxt = new System.Windows.Forms.Label();
+            this.diploCost = new System.Windows.Forms.NumericUpDown();
+            this.loyalReq = new System.Windows.Forms.NumericUpDown();
+            this.tacticsCost = new System.Windows.Forms.NumericUpDown();
             this.lblProbPassTxt = new System.Windows.Forms.Label();
+            this.strengthLabelC = new System.Windows.Forms.Label();
+            this.percReq = new System.Windows.Forms.NumericUpDown();
+            this.knowLabelC = new System.Windows.Forms.Label();
             this.lblProbOfWinTxt = new System.Windows.Forms.Label();
+            this.marksLabelC = new System.Windows.Forms.Label();
+            this.agilityReq = new System.Windows.Forms.NumericUpDown();
+            this.loyalCostC = new System.Windows.Forms.Label();
             this.pnlOther = new System.Windows.Forms.Panel();
             this.lblLoseEffects = new System.Windows.Forms.Label();
             this.comboBoxLoseApplication = new System.Windows.Forms.ComboBox();
@@ -126,6 +126,9 @@
             this.loseFollowUpLabel = new System.Windows.Forms.Label();
             this.passFollowUpLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.percLabelC = new System.Windows.Forms.Label();
+            this.diploReq = new System.Windows.Forms.NumericUpDown();
+            this.agilityLabelC = new System.Windows.Forms.Label();
             this.pnlResText = new System.Windows.Forms.Panel();
             this.passText = new System.Windows.Forms.TextBox();
             this.passTextLabel = new System.Windows.Forms.Label();
@@ -133,26 +136,13 @@
             this.loseTextLabel = new System.Windows.Forms.Label();
             this.winText = new System.Windows.Forms.TextBox();
             this.winTextLabel = new System.Windows.Forms.Label();
+            this.diploLabelC = new System.Windows.Forms.Label();
+            this.tacticsReq = new System.Windows.Forms.NumericUpDown();
+            this.tacticsLabelC = new System.Windows.Forms.Label();
             this.pnlCost = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.statLabelC = new System.Windows.Forms.Label();
-            this.strengthCost = new System.Windows.Forms.NumericUpDown();
-            this.knowCost = new System.Windows.Forms.NumericUpDown();
-            this.marksCost = new System.Windows.Forms.NumericUpDown();
-            this.loyalCost = new System.Windows.Forms.NumericUpDown();
-            this.percCost = new System.Windows.Forms.NumericUpDown();
-            this.agilityCost = new System.Windows.Forms.NumericUpDown();
-            this.diploCost = new System.Windows.Forms.NumericUpDown();
-            this.tacticsCost = new System.Windows.Forms.NumericUpDown();
-            this.strengthLabelC = new System.Windows.Forms.Label();
-            this.knowLabelC = new System.Windows.Forms.Label();
-            this.marksLabelC = new System.Windows.Forms.Label();
-            this.loyalCostC = new System.Windows.Forms.Label();
-            this.percLabelC = new System.Windows.Forms.Label();
-            this.agilityLabelC = new System.Windows.Forms.Label();
-            this.diploLabelC = new System.Windows.Forms.Label();
-            this.tacticsLabelC = new System.Windows.Forms.Label();
             this.foodCost = new System.Windows.Forms.NumericUpDown();
             this.staminaCost = new System.Windows.Forms.NumericUpDown();
             this.moraleCost = new System.Windows.Forms.NumericUpDown();
@@ -170,6 +160,8 @@
             this.medLabelC = new System.Windows.Forms.Label();
             this.waterLabelC = new System.Windows.Forms.Label();
             this.costLabel = new System.Windows.Forms.Label();
+            this.strengthLabelR = new System.Windows.Forms.Label();
+            this.knowLabelR = new System.Windows.Forms.Label();
             this.pnlLose = new System.Windows.Forms.Panel();
             this.subtractLabel = new System.Windows.Forms.Label();
             this.statLabelL = new System.Windows.Forms.Label();
@@ -207,6 +199,7 @@
             this.medLabelL = new System.Windows.Forms.Label();
             this.waterLabelL = new System.Windows.Forms.Label();
             this.loseLabel = new System.Windows.Forms.Label();
+            this.marksLabelR = new System.Windows.Forms.Label();
             this.pnlWin = new System.Windows.Forms.Panel();
             this.addLabel = new System.Windows.Forms.Label();
             this.statLabelW = new System.Windows.Forms.Label();
@@ -244,25 +237,10 @@
             this.medLabelW = new System.Windows.Forms.Label();
             this.waterLabelW = new System.Windows.Forms.Label();
             this.winLabel = new System.Windows.Forms.Label();
+            this.loyalLabelR = new System.Windows.Forms.Label();
             this.pnlReq = new System.Windows.Forms.Panel();
             this.statLabelR = new System.Windows.Forms.Label();
             this.amountLabelR = new System.Windows.Forms.Label();
-            this.strengthReq = new System.Windows.Forms.NumericUpDown();
-            this.knowReq = new System.Windows.Forms.NumericUpDown();
-            this.marksReq = new System.Windows.Forms.NumericUpDown();
-            this.loyalReq = new System.Windows.Forms.NumericUpDown();
-            this.percReq = new System.Windows.Forms.NumericUpDown();
-            this.agilityReq = new System.Windows.Forms.NumericUpDown();
-            this.diploReq = new System.Windows.Forms.NumericUpDown();
-            this.tacticsReq = new System.Windows.Forms.NumericUpDown();
-            this.strengthLabelR = new System.Windows.Forms.Label();
-            this.knowLabelR = new System.Windows.Forms.Label();
-            this.marksLabelR = new System.Windows.Forms.Label();
-            this.loyalLabelR = new System.Windows.Forms.Label();
-            this.percLabelR = new System.Windows.Forms.Label();
-            this.agilityLabelR = new System.Windows.Forms.Label();
-            this.diploLabelR = new System.Windows.Forms.Label();
-            this.tacticsLabelR = new System.Windows.Forms.Label();
             this.foodReq = new System.Windows.Forms.NumericUpDown();
             this.staminaReq = new System.Windows.Forms.NumericUpDown();
             this.moraleReq = new System.Windows.Forms.NumericUpDown();
@@ -280,6 +258,7 @@
             this.medLabelR = new System.Windows.Forms.Label();
             this.waterLabelR = new System.Windows.Forms.Label();
             this.reqLabel = new System.Windows.Forms.Label();
+            this.percLabelR = new System.Windows.Forms.Label();
             this.pnlMod = new System.Windows.Forms.Panel();
             this.statMLabel = new System.Windows.Forms.Label();
             this.applyMLabel = new System.Windows.Forms.Label();
@@ -308,33 +287,36 @@
             this.agilityLabel = new System.Windows.Forms.Label();
             this.diploLabel = new System.Windows.Forms.Label();
             this.tacticsLabel = new System.Windows.Forms.Label();
-            this.foodModB = new System.Windows.Forms.CheckBox();
-            this.staminaModB = new System.Windows.Forms.CheckBox();
-            this.moraleModB = new System.Windows.Forms.CheckBox();
-            this.vModB = new System.Windows.Forms.CheckBox();
-            this.valueModB = new System.Windows.Forms.CheckBox();
-            this.ammoModB = new System.Windows.Forms.CheckBox();
-            this.medModB = new System.Windows.Forms.CheckBox();
-            this.waterModB = new System.Windows.Forms.CheckBox();
-            this.foodMod = new System.Windows.Forms.NumericUpDown();
+            this.modLabel = new System.Windows.Forms.Label();
+            this.agilityLabelR = new System.Windows.Forms.Label();
+            this.lblCurrentResponse = new System.Windows.Forms.Label();
+            this.diploLabelR = new System.Windows.Forms.Label();
+            this.comboBoxRespToEdit = new System.Windows.Forms.ComboBox();
+            this.tacticsLabelR = new System.Windows.Forms.Label();
+            this.waterLabel = new System.Windows.Forms.Label();
+            this.waterMod = new System.Windows.Forms.NumericUpDown();
+            this.medLabel = new System.Windows.Forms.Label();
             this.staminaMod = new System.Windows.Forms.NumericUpDown();
+            this.valueModB = new System.Windows.Forms.CheckBox();
+            this.ammoLabel = new System.Windows.Forms.Label();
+            this.vModB = new System.Windows.Forms.CheckBox();
+            this.foodMod = new System.Windows.Forms.NumericUpDown();
+            this.packLabel = new System.Windows.Forms.Label();
             this.moraleMod = new System.Windows.Forms.NumericUpDown();
+            this.ammoModB = new System.Windows.Forms.CheckBox();
+            this.valueLabel = new System.Windows.Forms.Label();
+            this.moraleModB = new System.Windows.Forms.CheckBox();
+            this.waterModB = new System.Windows.Forms.CheckBox();
+            this.moraleLabel = new System.Windows.Forms.Label();
             this.valueMod = new System.Windows.Forms.NumericUpDown();
+            this.medModB = new System.Windows.Forms.CheckBox();
+            this.stamLabel = new System.Windows.Forms.Label();
+            this.staminaModB = new System.Windows.Forms.CheckBox();
             this.packMod = new System.Windows.Forms.NumericUpDown();
+            this.foodLabel = new System.Windows.Forms.Label();
+            this.foodModB = new System.Windows.Forms.CheckBox();
             this.ammoMod = new System.Windows.Forms.NumericUpDown();
             this.medMod = new System.Windows.Forms.NumericUpDown();
-            this.waterMod = new System.Windows.Forms.NumericUpDown();
-            this.foodLabel = new System.Windows.Forms.Label();
-            this.stamLabel = new System.Windows.Forms.Label();
-            this.moraleLabel = new System.Windows.Forms.Label();
-            this.valueLabel = new System.Windows.Forms.Label();
-            this.packLabel = new System.Windows.Forms.Label();
-            this.ammoLabel = new System.Windows.Forms.Label();
-            this.medLabel = new System.Windows.Forms.Label();
-            this.waterLabel = new System.Windows.Forms.Label();
-            this.modLabel = new System.Windows.Forms.Label();
-            this.lblCurrentResponse = new System.Windows.Forms.Label();
-            this.comboBoxRespToEdit = new System.Windows.Forms.ComboBox();
             this.tabFinish = new System.Windows.Forms.TabPage();
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
@@ -344,26 +326,36 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog_LoadEvent = new System.Windows.Forms.OpenFileDialog();
-            this.radioAnd = new System.Windows.Forms.RadioButton();
-            this.radioOr = new System.Windows.Forms.RadioButton();
-            this.radioNot = new System.Windows.Forms.RadioButton();
+            this.lblAnd = new System.Windows.Forms.Label();
+            this.lblOr = new System.Windows.Forms.Label();
+            this.orClassInput = new System.Windows.Forms.CheckedListBox();
+            this.lblNot = new System.Windows.Forms.Label();
+            this.notClassInput = new System.Windows.Forms.CheckedListBox();
             this.tabMain.SuspendLayout();
             this.tabGeneralInfo.SuspendLayout();
             this.Advice.SuspendLayout();
             this.tabRespOpts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.removeNumBox)).BeginInit();
             this.tabEditRespOpts.SuspendLayout();
-            this.pnlOther.SuspendLayout();
-            this.pnlResText.SuspendLayout();
-            this.pnlCost.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.strengthReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.knowReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loyalCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.percCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.marksReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agilityCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diploCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyalReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tacticsCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.percReq)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agilityReq)).BeginInit();
+            this.pnlOther.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.diploReq)).BeginInit();
+            this.pnlResText.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tacticsReq)).BeginInit();
+            this.pnlCost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foodCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moraleCost)).BeginInit();
@@ -407,14 +399,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.medWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterWin)).BeginInit();
             this.pnlReq.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.strengthReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.knowReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marksReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loyalReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.percReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agilityReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diploReq)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tacticsReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foodReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moraleReq)).BeginInit();
@@ -432,14 +416,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.agilityMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diploMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tacticsMod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moraleMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valueMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ammoMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medMod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.waterMod)).BeginInit();
             this.tabFinish.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -458,9 +442,11 @@
             // 
             // tabGeneralInfo
             // 
-            this.tabGeneralInfo.Controls.Add(this.radioNot);
-            this.tabGeneralInfo.Controls.Add(this.radioOr);
-            this.tabGeneralInfo.Controls.Add(this.radioAnd);
+            this.tabGeneralInfo.Controls.Add(this.lblNot);
+            this.tabGeneralInfo.Controls.Add(this.notClassInput);
+            this.tabGeneralInfo.Controls.Add(this.lblOr);
+            this.tabGeneralInfo.Controls.Add(this.orClassInput);
+            this.tabGeneralInfo.Controls.Add(this.lblAnd);
             this.tabGeneralInfo.Controls.Add(this.chkOnlyOnce);
             this.tabGeneralInfo.Controls.Add(this.btnLoadEvent);
             this.tabGeneralInfo.Controls.Add(this.selectplayerB);
@@ -468,8 +454,8 @@
             this.tabGeneralInfo.Controls.Add(this.introDescInput);
             this.tabGeneralInfo.Controls.Add(this.frequencyLabel);
             this.tabGeneralInfo.Controls.Add(this.frequencyInput);
-            this.tabGeneralInfo.Controls.Add(this.reqPaMemInput);
-            this.tabGeneralInfo.Controls.Add(this.reqPaMemLabel);
+            this.tabGeneralInfo.Controls.Add(this.andClassInput);
+            this.tabGeneralInfo.Controls.Add(this.reqClassLabel);
             this.tabGeneralInfo.Controls.Add(this.possibleLocationsLabel);
             this.tabGeneralInfo.Controls.Add(this.locationsInput);
             this.tabGeneralInfo.Controls.Add(this.eventTypeInput);
@@ -488,17 +474,17 @@
             // chkOnlyOnce
             // 
             this.chkOnlyOnce.AutoSize = true;
-            this.chkOnlyOnce.Location = new System.Drawing.Point(224, 144);
+            this.chkOnlyOnce.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkOnlyOnce.Location = new System.Drawing.Point(679, 38);
             this.chkOnlyOnce.Name = "chkOnlyOnce";
             this.chkOnlyOnce.Size = new System.Drawing.Size(113, 17);
             this.chkOnlyOnce.TabIndex = 4;
             this.chkOnlyOnce.Text = "Only Occurs Once";
-            this.chkOnlyOnce.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkOnlyOnce.UseVisualStyleBackColor = true;
             // 
             // btnLoadEvent
             // 
-            this.btnLoadEvent.Location = new System.Drawing.Point(369, 428);
+            this.btnLoadEvent.Location = new System.Drawing.Point(717, 441);
             this.btnLoadEvent.Name = "btnLoadEvent";
             this.btnLoadEvent.Size = new System.Drawing.Size(75, 23);
             this.btnLoadEvent.TabIndex = 11;
@@ -519,7 +505,7 @@
             // introDescLabel
             // 
             this.introDescLabel.AutoSize = true;
-            this.introDescLabel.Location = new System.Drawing.Point(221, 176);
+            this.introDescLabel.Location = new System.Drawing.Point(215, 81);
             this.introDescLabel.Name = "introDescLabel";
             this.introDescLabel.Size = new System.Drawing.Size(122, 13);
             this.introDescLabel.TabIndex = 26;
@@ -527,16 +513,16 @@
             // 
             // introDescInput
             // 
-            this.introDescInput.Location = new System.Drawing.Point(224, 192);
+            this.introDescInput.Location = new System.Drawing.Point(218, 107);
             this.introDescInput.Multiline = true;
             this.introDescInput.Name = "introDescInput";
-            this.introDescInput.Size = new System.Drawing.Size(220, 139);
+            this.introDescInput.Size = new System.Drawing.Size(574, 139);
             this.introDescInput.TabIndex = 5;
             // 
             // frequencyLabel
             // 
             this.frequencyLabel.AutoSize = true;
-            this.frequencyLabel.Location = new System.Drawing.Point(221, 81);
+            this.frequencyLabel.Location = new System.Drawing.Point(506, 13);
             this.frequencyLabel.Name = "frequencyLabel";
             this.frequencyLabel.Size = new System.Drawing.Size(60, 13);
             this.frequencyLabel.TabIndex = 24;
@@ -552,42 +538,37 @@
             "Uncommon",
             "Common",
             "Likely"});
-            this.frequencyInput.Location = new System.Drawing.Point(224, 107);
+            this.frequencyInput.Location = new System.Drawing.Point(572, 10);
             this.frequencyInput.Name = "frequencyInput";
             this.frequencyInput.Size = new System.Drawing.Size(220, 21);
             this.frequencyInput.TabIndex = 3;
             // 
-            // reqPaMemInput
+            // andClassInput
             // 
-            this.reqPaMemInput.CheckOnClick = true;
-            this.reqPaMemInput.FormattingEnabled = true;
-            this.reqPaMemInput.Items.AddRange(new object[] {
-            "Jan Kruger",
-            "Gunther Reinhart",
-            "Roland Perry",
-            "Theunis Van Zyl",
-            "Willem de Bruin",
-            "Jakobus Kotze",
-            "Umbopa",
-            "Macumazahn",
-            "Wonai",
-            "Duncan MacKinnon",
-            "Jack Reed",
-            "Tariro"});
-            this.reqPaMemInput.Location = new System.Drawing.Point(11, 354);
-            this.reqPaMemInput.MultiColumn = true;
-            this.reqPaMemInput.Name = "reqPaMemInput";
-            this.reqPaMemInput.Size = new System.Drawing.Size(433, 64);
-            this.reqPaMemInput.TabIndex = 10;
+            this.andClassInput.CheckOnClick = true;
+            this.andClassInput.FormattingEnabled = true;
+            this.andClassInput.Items.AddRange(new object[] {
+            "Hunter",
+            "Mercenary",
+            "Naturalist",
+            "Missionary",
+            "Explorer",
+            "Guide"});
+            this.andClassInput.Location = new System.Drawing.Point(48, 344);
+            this.andClassInput.MultiColumn = true;
+            this.andClassInput.Name = "andClassInput";
+            this.andClassInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.andClassInput.Size = new System.Drawing.Size(744, 19);
+            this.andClassInput.TabIndex = 10;
             // 
-            // reqPaMemLabel
+            // reqClassLabel
             // 
-            this.reqPaMemLabel.AutoSize = true;
-            this.reqPaMemLabel.Location = new System.Drawing.Point(9, 318);
-            this.reqPaMemLabel.Name = "reqPaMemLabel";
-            this.reqPaMemLabel.Size = new System.Drawing.Size(126, 13);
-            this.reqPaMemLabel.TabIndex = 21;
-            this.reqPaMemLabel.Text = "Required Party Members:";
+            this.reqClassLabel.AutoSize = true;
+            this.reqClassLabel.Location = new System.Drawing.Point(9, 318);
+            this.reqClassLabel.Name = "reqClassLabel";
+            this.reqClassLabel.Size = new System.Drawing.Size(92, 13);
+            this.reqClassLabel.TabIndex = 21;
+            this.reqClassLabel.Text = "Required Classes:";
             // 
             // possibleLocationsLabel
             // 
@@ -660,45 +641,27 @@
             // 
             // Advice
             // 
-            this.Advice.Controls.Add(this.lblGuntherReinhart);
-            this.Advice.Controls.Add(this.lblDuncanMacKinnon);
-            this.Advice.Controls.Add(this.lblJackReed);
-            this.Advice.Controls.Add(this.lblRolandPerry);
-            this.Advice.Controls.Add(this.chkGuntherReinhart);
-            this.Advice.Controls.Add(this.chkRolandPerry);
-            this.Advice.Controls.Add(this.chkJackReed);
-            this.Advice.Controls.Add(this.chkDuncanMacKinnon);
-            this.Advice.Controls.Add(this.chkJakobusKotze);
-            this.Advice.Controls.Add(this.txtDuncanMacKinnon);
-            this.Advice.Controls.Add(this.txtGuntherReinhart);
-            this.Advice.Controls.Add(this.txtJackReed);
-            this.Advice.Controls.Add(this.txtRolandPerry);
-            this.Advice.Controls.Add(this.txtJakobusKotze);
-            this.Advice.Controls.Add(this.lblJakobusKotze);
-            this.Advice.Controls.Add(this.chkWillemDeBruin);
-            this.Advice.Controls.Add(this.txtWillemDeBruin);
-            this.Advice.Controls.Add(this.lblWillemDeBruin);
-            this.Advice.Controls.Add(this.lblTheunisVanZyl);
-            this.Advice.Controls.Add(this.lblJanKruger);
-            this.Advice.Controls.Add(this.lblTariro);
-            this.Advice.Controls.Add(this.lblWonai);
-            this.Advice.Controls.Add(this.chkTheunisVanZyl);
-            this.Advice.Controls.Add(this.chkWonai);
-            this.Advice.Controls.Add(this.chkTariro);
-            this.Advice.Controls.Add(this.chkJanKruger);
-            this.Advice.Controls.Add(this.chkMacumazahn);
-            this.Advice.Controls.Add(this.txtJanKruger);
-            this.Advice.Controls.Add(this.txtTheunisVanZyl);
-            this.Advice.Controls.Add(this.txtTariro);
-            this.Advice.Controls.Add(this.txtWonai);
-            this.Advice.Controls.Add(this.txtMacumazahn);
+            this.Advice.Controls.Add(this.lblGuide);
+            this.Advice.Controls.Add(this.lblExplorer);
+            this.Advice.Controls.Add(this.lblMissionary);
+            this.Advice.Controls.Add(this.lblNaturalist);
+            this.Advice.Controls.Add(this.chkGuide);
+            this.Advice.Controls.Add(this.chkNaturalist);
+            this.Advice.Controls.Add(this.chkMissionary);
+            this.Advice.Controls.Add(this.chkExplorer);
+            this.Advice.Controls.Add(this.chkMercenary);
+            this.Advice.Controls.Add(this.txtExplorer);
+            this.Advice.Controls.Add(this.txtGuide);
+            this.Advice.Controls.Add(this.txtMissionary);
+            this.Advice.Controls.Add(this.txtNaturalist);
+            this.Advice.Controls.Add(this.txtMercenary);
             this.Advice.Controls.Add(this.IsAdviceUseful);
             this.Advice.Controls.Add(this.CharacterAdvice);
             this.Advice.Controls.Add(this.CharacterTtype);
-            this.Advice.Controls.Add(this.lblMacumazahn);
-            this.Advice.Controls.Add(this.chkUmbopa);
-            this.Advice.Controls.Add(this.txtUmbopa);
-            this.Advice.Controls.Add(this.lblUmbopa);
+            this.Advice.Controls.Add(this.lblMercenary);
+            this.Advice.Controls.Add(this.chkHunter);
+            this.Advice.Controls.Add(this.txtHunter);
+            this.Advice.Controls.Add(this.lblHunter);
             this.Advice.Location = new System.Drawing.Point(4, 22);
             this.Advice.Name = "Advice";
             this.Advice.Padding = new System.Windows.Forms.Padding(3);
@@ -707,271 +670,121 @@
             this.Advice.Text = "Advice";
             this.Advice.UseVisualStyleBackColor = true;
             // 
-            // lblGuntherReinhart
+            // lblGuide
             // 
-            this.lblGuntherReinhart.AutoSize = true;
-            this.lblGuntherReinhart.Location = new System.Drawing.Point(20, 450);
-            this.lblGuntherReinhart.Name = "lblGuntherReinhart";
-            this.lblGuntherReinhart.Size = new System.Drawing.Size(88, 13);
-            this.lblGuntherReinhart.TabIndex = 38;
-            this.lblGuntherReinhart.Text = "Gunther Reinhart";
+            this.lblGuide.AutoSize = true;
+            this.lblGuide.Location = new System.Drawing.Point(34, 241);
+            this.lblGuide.Name = "lblGuide";
+            this.lblGuide.Size = new System.Drawing.Size(35, 13);
+            this.lblGuide.TabIndex = 20;
+            this.lblGuide.Text = "Guide";
             // 
-            // lblDuncanMacKinnon
+            // lblExplorer
             // 
-            this.lblDuncanMacKinnon.AutoSize = true;
-            this.lblDuncanMacKinnon.Location = new System.Drawing.Point(6, 413);
-            this.lblDuncanMacKinnon.Name = "lblDuncanMacKinnon";
-            this.lblDuncanMacKinnon.Size = new System.Drawing.Size(102, 13);
-            this.lblDuncanMacKinnon.TabIndex = 37;
-            this.lblDuncanMacKinnon.Text = "Duncan MacKinnon";
+            this.lblExplorer.AutoSize = true;
+            this.lblExplorer.Location = new System.Drawing.Point(24, 204);
+            this.lblExplorer.Name = "lblExplorer";
+            this.lblExplorer.Size = new System.Drawing.Size(45, 13);
+            this.lblExplorer.TabIndex = 19;
+            this.lblExplorer.Text = "Explorer";
             // 
-            // lblJackReed
+            // lblMissionary
             // 
-            this.lblJackReed.AutoSize = true;
-            this.lblJackReed.Location = new System.Drawing.Point(49, 377);
-            this.lblJackReed.Name = "lblJackReed";
-            this.lblJackReed.Size = new System.Drawing.Size(59, 13);
-            this.lblJackReed.TabIndex = 36;
-            this.lblJackReed.Text = "Jack Reed";
+            this.lblMissionary.AutoSize = true;
+            this.lblMissionary.Location = new System.Drawing.Point(13, 168);
+            this.lblMissionary.Name = "lblMissionary";
+            this.lblMissionary.Size = new System.Drawing.Size(56, 13);
+            this.lblMissionary.TabIndex = 18;
+            this.lblMissionary.Text = "Missionary";
             // 
-            // lblRolandPerry
+            // lblNaturalist
             // 
-            this.lblRolandPerry.AutoSize = true;
-            this.lblRolandPerry.Location = new System.Drawing.Point(40, 341);
-            this.lblRolandPerry.Name = "lblRolandPerry";
-            this.lblRolandPerry.Size = new System.Drawing.Size(68, 13);
-            this.lblRolandPerry.TabIndex = 35;
-            this.lblRolandPerry.Text = "Roland Perry";
+            this.lblNaturalist.AutoSize = true;
+            this.lblNaturalist.Location = new System.Drawing.Point(18, 129);
+            this.lblNaturalist.Name = "lblNaturalist";
+            this.lblNaturalist.Size = new System.Drawing.Size(51, 13);
+            this.lblNaturalist.TabIndex = 17;
+            this.lblNaturalist.Text = "Naturalist";
             // 
-            // chkGuntherReinhart
+            // chkGuide
             // 
-            this.chkGuntherReinhart.AutoSize = true;
-            this.chkGuntherReinhart.Location = new System.Drawing.Point(821, 449);
-            this.chkGuntherReinhart.Name = "chkGuntherReinhart";
-            this.chkGuntherReinhart.Size = new System.Drawing.Size(15, 14);
-            this.chkGuntherReinhart.TabIndex = 24;
-            this.chkGuntherReinhart.UseVisualStyleBackColor = true;
+            this.chkGuide.AutoSize = true;
+            this.chkGuide.Location = new System.Drawing.Point(821, 240);
+            this.chkGuide.Name = "chkGuide";
+            this.chkGuide.Size = new System.Drawing.Size(15, 14);
+            this.chkGuide.TabIndex = 18;
+            this.chkGuide.UseVisualStyleBackColor = true;
             // 
-            // chkRolandPerry
+            // chkNaturalist
             // 
-            this.chkRolandPerry.AutoSize = true;
-            this.chkRolandPerry.Location = new System.Drawing.Point(821, 341);
-            this.chkRolandPerry.Name = "chkRolandPerry";
-            this.chkRolandPerry.Size = new System.Drawing.Size(15, 14);
-            this.chkRolandPerry.TabIndex = 21;
-            this.chkRolandPerry.UseVisualStyleBackColor = true;
+            this.chkNaturalist.AutoSize = true;
+            this.chkNaturalist.Location = new System.Drawing.Point(821, 132);
+            this.chkNaturalist.Name = "chkNaturalist";
+            this.chkNaturalist.Size = new System.Drawing.Size(15, 14);
+            this.chkNaturalist.TabIndex = 15;
+            this.chkNaturalist.UseVisualStyleBackColor = true;
             // 
-            // chkJackReed
+            // chkMissionary
             // 
-            this.chkJackReed.AutoSize = true;
-            this.chkJackReed.Location = new System.Drawing.Point(822, 377);
-            this.chkJackReed.Name = "chkJackReed";
-            this.chkJackReed.Size = new System.Drawing.Size(15, 14);
-            this.chkJackReed.TabIndex = 22;
-            this.chkJackReed.UseVisualStyleBackColor = true;
+            this.chkMissionary.AutoSize = true;
+            this.chkMissionary.Location = new System.Drawing.Point(822, 168);
+            this.chkMissionary.Name = "chkMissionary";
+            this.chkMissionary.Size = new System.Drawing.Size(15, 14);
+            this.chkMissionary.TabIndex = 16;
+            this.chkMissionary.UseVisualStyleBackColor = true;
             // 
-            // chkDuncanMacKinnon
+            // chkExplorer
             // 
-            this.chkDuncanMacKinnon.AutoSize = true;
-            this.chkDuncanMacKinnon.Location = new System.Drawing.Point(821, 413);
-            this.chkDuncanMacKinnon.Name = "chkDuncanMacKinnon";
-            this.chkDuncanMacKinnon.Size = new System.Drawing.Size(15, 14);
-            this.chkDuncanMacKinnon.TabIndex = 23;
-            this.chkDuncanMacKinnon.UseVisualStyleBackColor = true;
+            this.chkExplorer.AutoSize = true;
+            this.chkExplorer.Location = new System.Drawing.Point(821, 204);
+            this.chkExplorer.Name = "chkExplorer";
+            this.chkExplorer.Size = new System.Drawing.Size(15, 14);
+            this.chkExplorer.TabIndex = 17;
+            this.chkExplorer.UseVisualStyleBackColor = true;
             // 
-            // chkJakobusKotze
+            // chkMercenary
             // 
-            this.chkJakobusKotze.AutoSize = true;
-            this.chkJakobusKotze.Location = new System.Drawing.Point(821, 306);
-            this.chkJakobusKotze.Name = "chkJakobusKotze";
-            this.chkJakobusKotze.Size = new System.Drawing.Size(15, 14);
-            this.chkJakobusKotze.TabIndex = 20;
-            this.chkJakobusKotze.UseVisualStyleBackColor = true;
+            this.chkMercenary.AutoSize = true;
+            this.chkMercenary.Location = new System.Drawing.Point(821, 97);
+            this.chkMercenary.Name = "chkMercenary";
+            this.chkMercenary.Size = new System.Drawing.Size(15, 14);
+            this.chkMercenary.TabIndex = 14;
+            this.chkMercenary.UseVisualStyleBackColor = true;
             // 
-            // txtDuncanMacKinnon
+            // txtExplorer
             // 
-            this.txtDuncanMacKinnon.Location = new System.Drawing.Point(119, 410);
-            this.txtDuncanMacKinnon.Name = "txtDuncanMacKinnon";
-            this.txtDuncanMacKinnon.Size = new System.Drawing.Size(696, 20);
-            this.txtDuncanMacKinnon.TabIndex = 11;
+            this.txtExplorer.Location = new System.Drawing.Point(75, 201);
+            this.txtExplorer.Name = "txtExplorer";
+            this.txtExplorer.Size = new System.Drawing.Size(740, 20);
+            this.txtExplorer.TabIndex = 5;
             // 
-            // txtGuntherReinhart
+            // txtGuide
             // 
-            this.txtGuntherReinhart.Location = new System.Drawing.Point(119, 446);
-            this.txtGuntherReinhart.Name = "txtGuntherReinhart";
-            this.txtGuntherReinhart.Size = new System.Drawing.Size(696, 20);
-            this.txtGuntherReinhart.TabIndex = 12;
+            this.txtGuide.Location = new System.Drawing.Point(75, 237);
+            this.txtGuide.Name = "txtGuide";
+            this.txtGuide.Size = new System.Drawing.Size(740, 20);
+            this.txtGuide.TabIndex = 6;
             // 
-            // txtJackReed
+            // txtMissionary
             // 
-            this.txtJackReed.Location = new System.Drawing.Point(119, 374);
-            this.txtJackReed.Name = "txtJackReed";
-            this.txtJackReed.Size = new System.Drawing.Size(696, 20);
-            this.txtJackReed.TabIndex = 10;
+            this.txtMissionary.Location = new System.Drawing.Point(75, 165);
+            this.txtMissionary.Name = "txtMissionary";
+            this.txtMissionary.Size = new System.Drawing.Size(740, 20);
+            this.txtMissionary.TabIndex = 4;
             // 
-            // txtRolandPerry
+            // txtNaturalist
             // 
-            this.txtRolandPerry.Location = new System.Drawing.Point(119, 338);
-            this.txtRolandPerry.Name = "txtRolandPerry";
-            this.txtRolandPerry.Size = new System.Drawing.Size(696, 20);
-            this.txtRolandPerry.TabIndex = 9;
+            this.txtNaturalist.Location = new System.Drawing.Point(75, 129);
+            this.txtNaturalist.Name = "txtNaturalist";
+            this.txtNaturalist.Size = new System.Drawing.Size(740, 20);
+            this.txtNaturalist.TabIndex = 3;
             // 
-            // txtJakobusKotze
+            // txtMercenary
             // 
-            this.txtJakobusKotze.Location = new System.Drawing.Point(119, 303);
-            this.txtJakobusKotze.Name = "txtJakobusKotze";
-            this.txtJakobusKotze.Size = new System.Drawing.Size(696, 20);
-            this.txtJakobusKotze.TabIndex = 8;
-            // 
-            // lblJakobusKotze
-            // 
-            this.lblJakobusKotze.AutoSize = true;
-            this.lblJakobusKotze.Location = new System.Drawing.Point(31, 306);
-            this.lblJakobusKotze.Name = "lblJakobusKotze";
-            this.lblJakobusKotze.Size = new System.Drawing.Size(77, 13);
-            this.lblJakobusKotze.TabIndex = 24;
-            this.lblJakobusKotze.Text = "Jakobus Kotze";
-            // 
-            // chkWillemDeBruin
-            // 
-            this.chkWillemDeBruin.AutoSize = true;
-            this.chkWillemDeBruin.Location = new System.Drawing.Point(821, 273);
-            this.chkWillemDeBruin.Name = "chkWillemDeBruin";
-            this.chkWillemDeBruin.Size = new System.Drawing.Size(15, 14);
-            this.chkWillemDeBruin.TabIndex = 19;
-            this.chkWillemDeBruin.UseVisualStyleBackColor = true;
-            // 
-            // txtWillemDeBruin
-            // 
-            this.txtWillemDeBruin.Location = new System.Drawing.Point(119, 270);
-            this.txtWillemDeBruin.Name = "txtWillemDeBruin";
-            this.txtWillemDeBruin.Size = new System.Drawing.Size(696, 20);
-            this.txtWillemDeBruin.TabIndex = 7;
-            // 
-            // lblWillemDeBruin
-            // 
-            this.lblWillemDeBruin.AutoSize = true;
-            this.lblWillemDeBruin.Location = new System.Drawing.Point(28, 272);
-            this.lblWillemDeBruin.Name = "lblWillemDeBruin";
-            this.lblWillemDeBruin.Size = new System.Drawing.Size(80, 13);
-            this.lblWillemDeBruin.TabIndex = 21;
-            this.lblWillemDeBruin.Text = "Willem de Bruin";
-            // 
-            // lblTheunisVanZyl
-            // 
-            this.lblTheunisVanZyl.AutoSize = true;
-            this.lblTheunisVanZyl.Location = new System.Drawing.Point(24, 241);
-            this.lblTheunisVanZyl.Name = "lblTheunisVanZyl";
-            this.lblTheunisVanZyl.Size = new System.Drawing.Size(84, 13);
-            this.lblTheunisVanZyl.TabIndex = 20;
-            this.lblTheunisVanZyl.Text = "Theunis Van Zyl";
-            // 
-            // lblJanKruger
-            // 
-            this.lblJanKruger.AutoSize = true;
-            this.lblJanKruger.Location = new System.Drawing.Point(50, 204);
-            this.lblJanKruger.Name = "lblJanKruger";
-            this.lblJanKruger.Size = new System.Drawing.Size(58, 13);
-            this.lblJanKruger.TabIndex = 19;
-            this.lblJanKruger.Text = "Jan Kruger";
-            // 
-            // lblTariro
-            // 
-            this.lblTariro.AutoSize = true;
-            this.lblTariro.Location = new System.Drawing.Point(74, 168);
-            this.lblTariro.Name = "lblTariro";
-            this.lblTariro.Size = new System.Drawing.Size(34, 13);
-            this.lblTariro.TabIndex = 18;
-            this.lblTariro.Text = "Tariro";
-            // 
-            // lblWonai
-            // 
-            this.lblWonai.AutoSize = true;
-            this.lblWonai.Location = new System.Drawing.Point(70, 132);
-            this.lblWonai.Name = "lblWonai";
-            this.lblWonai.Size = new System.Drawing.Size(38, 13);
-            this.lblWonai.TabIndex = 17;
-            this.lblWonai.Text = "Wonai";
-            // 
-            // chkTheunisVanZyl
-            // 
-            this.chkTheunisVanZyl.AutoSize = true;
-            this.chkTheunisVanZyl.Location = new System.Drawing.Point(821, 240);
-            this.chkTheunisVanZyl.Name = "chkTheunisVanZyl";
-            this.chkTheunisVanZyl.Size = new System.Drawing.Size(15, 14);
-            this.chkTheunisVanZyl.TabIndex = 18;
-            this.chkTheunisVanZyl.UseVisualStyleBackColor = true;
-            // 
-            // chkWonai
-            // 
-            this.chkWonai.AutoSize = true;
-            this.chkWonai.Location = new System.Drawing.Point(821, 132);
-            this.chkWonai.Name = "chkWonai";
-            this.chkWonai.Size = new System.Drawing.Size(15, 14);
-            this.chkWonai.TabIndex = 15;
-            this.chkWonai.UseVisualStyleBackColor = true;
-            // 
-            // chkTariro
-            // 
-            this.chkTariro.AutoSize = true;
-            this.chkTariro.Location = new System.Drawing.Point(822, 168);
-            this.chkTariro.Name = "chkTariro";
-            this.chkTariro.Size = new System.Drawing.Size(15, 14);
-            this.chkTariro.TabIndex = 16;
-            this.chkTariro.UseVisualStyleBackColor = true;
-            // 
-            // chkJanKruger
-            // 
-            this.chkJanKruger.AutoSize = true;
-            this.chkJanKruger.Location = new System.Drawing.Point(821, 204);
-            this.chkJanKruger.Name = "chkJanKruger";
-            this.chkJanKruger.Size = new System.Drawing.Size(15, 14);
-            this.chkJanKruger.TabIndex = 17;
-            this.chkJanKruger.UseVisualStyleBackColor = true;
-            // 
-            // chkMacumazahn
-            // 
-            this.chkMacumazahn.AutoSize = true;
-            this.chkMacumazahn.Location = new System.Drawing.Point(821, 97);
-            this.chkMacumazahn.Name = "chkMacumazahn";
-            this.chkMacumazahn.Size = new System.Drawing.Size(15, 14);
-            this.chkMacumazahn.TabIndex = 14;
-            this.chkMacumazahn.UseVisualStyleBackColor = true;
-            // 
-            // txtJanKruger
-            // 
-            this.txtJanKruger.Location = new System.Drawing.Point(119, 201);
-            this.txtJanKruger.Name = "txtJanKruger";
-            this.txtJanKruger.Size = new System.Drawing.Size(696, 20);
-            this.txtJanKruger.TabIndex = 5;
-            // 
-            // txtTheunisVanZyl
-            // 
-            this.txtTheunisVanZyl.Location = new System.Drawing.Point(119, 237);
-            this.txtTheunisVanZyl.Name = "txtTheunisVanZyl";
-            this.txtTheunisVanZyl.Size = new System.Drawing.Size(696, 20);
-            this.txtTheunisVanZyl.TabIndex = 6;
-            // 
-            // txtTariro
-            // 
-            this.txtTariro.Location = new System.Drawing.Point(119, 165);
-            this.txtTariro.Name = "txtTariro";
-            this.txtTariro.Size = new System.Drawing.Size(696, 20);
-            this.txtTariro.TabIndex = 4;
-            // 
-            // txtWonai
-            // 
-            this.txtWonai.Location = new System.Drawing.Point(119, 129);
-            this.txtWonai.Name = "txtWonai";
-            this.txtWonai.Size = new System.Drawing.Size(696, 20);
-            this.txtWonai.TabIndex = 3;
-            // 
-            // txtMacumazahn
-            // 
-            this.txtMacumazahn.Location = new System.Drawing.Point(119, 94);
-            this.txtMacumazahn.Name = "txtMacumazahn";
-            this.txtMacumazahn.Size = new System.Drawing.Size(696, 20);
-            this.txtMacumazahn.TabIndex = 2;
+            this.txtMercenary.Location = new System.Drawing.Point(75, 94);
+            this.txtMercenary.Name = "txtMercenary";
+            this.txtMercenary.Size = new System.Drawing.Size(740, 20);
+            this.txtMercenary.TabIndex = 2;
             // 
             // IsAdviceUseful
             // 
@@ -997,45 +810,45 @@
             // 
             this.CharacterTtype.AutoSize = true;
             this.CharacterTtype.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CharacterTtype.Location = new System.Drawing.Point(51, 40);
+            this.CharacterTtype.Location = new System.Drawing.Point(32, 40);
             this.CharacterTtype.Name = "CharacterTtype";
-            this.CharacterTtype.Size = new System.Drawing.Size(62, 13);
+            this.CharacterTtype.Size = new System.Drawing.Size(37, 13);
             this.CharacterTtype.TabIndex = 4;
-            this.CharacterTtype.Text = "Character";
+            this.CharacterTtype.Text = "Class";
             // 
-            // lblMacumazahn
+            // lblMercenary
             // 
-            this.lblMacumazahn.AutoSize = true;
-            this.lblMacumazahn.Location = new System.Drawing.Point(37, 97);
-            this.lblMacumazahn.Name = "lblMacumazahn";
-            this.lblMacumazahn.Size = new System.Drawing.Size(71, 13);
-            this.lblMacumazahn.TabIndex = 3;
-            this.lblMacumazahn.Text = "Macumazahn";
+            this.lblMercenary.AutoSize = true;
+            this.lblMercenary.Location = new System.Drawing.Point(12, 97);
+            this.lblMercenary.Name = "lblMercenary";
+            this.lblMercenary.Size = new System.Drawing.Size(57, 13);
+            this.lblMercenary.TabIndex = 3;
+            this.lblMercenary.Text = "Mercenary";
             // 
-            // chkUmbopa
+            // chkHunter
             // 
-            this.chkUmbopa.AutoSize = true;
-            this.chkUmbopa.Location = new System.Drawing.Point(821, 64);
-            this.chkUmbopa.Name = "chkUmbopa";
-            this.chkUmbopa.Size = new System.Drawing.Size(15, 14);
-            this.chkUmbopa.TabIndex = 13;
-            this.chkUmbopa.UseVisualStyleBackColor = true;
+            this.chkHunter.AutoSize = true;
+            this.chkHunter.Location = new System.Drawing.Point(821, 64);
+            this.chkHunter.Name = "chkHunter";
+            this.chkHunter.Size = new System.Drawing.Size(15, 14);
+            this.chkHunter.TabIndex = 13;
+            this.chkHunter.UseVisualStyleBackColor = true;
             // 
-            // txtUmbopa
+            // txtHunter
             // 
-            this.txtUmbopa.Location = new System.Drawing.Point(119, 61);
-            this.txtUmbopa.Name = "txtUmbopa";
-            this.txtUmbopa.Size = new System.Drawing.Size(696, 20);
-            this.txtUmbopa.TabIndex = 1;
+            this.txtHunter.Location = new System.Drawing.Point(75, 61);
+            this.txtHunter.Name = "txtHunter";
+            this.txtHunter.Size = new System.Drawing.Size(740, 20);
+            this.txtHunter.TabIndex = 1;
             // 
-            // lblUmbopa
+            // lblHunter
             // 
-            this.lblUmbopa.AutoSize = true;
-            this.lblUmbopa.Location = new System.Drawing.Point(61, 63);
-            this.lblUmbopa.Name = "lblUmbopa";
-            this.lblUmbopa.Size = new System.Drawing.Size(47, 13);
-            this.lblUmbopa.TabIndex = 0;
-            this.lblUmbopa.Text = "Umbopa";
+            this.lblHunter.AutoSize = true;
+            this.lblHunter.Location = new System.Drawing.Point(30, 61);
+            this.lblHunter.Name = "lblHunter";
+            this.lblHunter.Size = new System.Drawing.Size(39, 13);
+            this.lblHunter.TabIndex = 0;
+            this.lblHunter.Text = "Hunter";
             // 
             // tabRespOpts
             // 
@@ -1220,20 +1033,76 @@
             this.tabEditRespOpts.AutoScroll = true;
             this.tabEditRespOpts.Controls.Add(this.lblProbLose);
             this.tabEditRespOpts.Controls.Add(this.lblProbPass);
+            this.tabEditRespOpts.Controls.Add(this.strengthReq);
+            this.tabEditRespOpts.Controls.Add(this.strengthCost);
+            this.tabEditRespOpts.Controls.Add(this.knowCost);
             this.tabEditRespOpts.Controls.Add(this.lblProbWin);
+            this.tabEditRespOpts.Controls.Add(this.marksCost);
+            this.tabEditRespOpts.Controls.Add(this.knowReq);
+            this.tabEditRespOpts.Controls.Add(this.loyalCost);
             this.tabEditRespOpts.Controls.Add(this.lblWithStdParty);
+            this.tabEditRespOpts.Controls.Add(this.percCost);
+            this.tabEditRespOpts.Controls.Add(this.marksReq);
+            this.tabEditRespOpts.Controls.Add(this.agilityCost);
             this.tabEditRespOpts.Controls.Add(this.lblProbLoseTxt);
+            this.tabEditRespOpts.Controls.Add(this.diploCost);
+            this.tabEditRespOpts.Controls.Add(this.loyalReq);
+            this.tabEditRespOpts.Controls.Add(this.tacticsCost);
             this.tabEditRespOpts.Controls.Add(this.lblProbPassTxt);
+            this.tabEditRespOpts.Controls.Add(this.strengthLabelC);
+            this.tabEditRespOpts.Controls.Add(this.percReq);
+            this.tabEditRespOpts.Controls.Add(this.knowLabelC);
             this.tabEditRespOpts.Controls.Add(this.lblProbOfWinTxt);
+            this.tabEditRespOpts.Controls.Add(this.marksLabelC);
+            this.tabEditRespOpts.Controls.Add(this.agilityReq);
+            this.tabEditRespOpts.Controls.Add(this.loyalCostC);
             this.tabEditRespOpts.Controls.Add(this.pnlOther);
+            this.tabEditRespOpts.Controls.Add(this.percLabelC);
+            this.tabEditRespOpts.Controls.Add(this.diploReq);
+            this.tabEditRespOpts.Controls.Add(this.agilityLabelC);
             this.tabEditRespOpts.Controls.Add(this.pnlResText);
+            this.tabEditRespOpts.Controls.Add(this.diploLabelC);
+            this.tabEditRespOpts.Controls.Add(this.tacticsReq);
+            this.tabEditRespOpts.Controls.Add(this.tacticsLabelC);
             this.tabEditRespOpts.Controls.Add(this.pnlCost);
+            this.tabEditRespOpts.Controls.Add(this.strengthLabelR);
+            this.tabEditRespOpts.Controls.Add(this.knowLabelR);
             this.tabEditRespOpts.Controls.Add(this.pnlLose);
+            this.tabEditRespOpts.Controls.Add(this.marksLabelR);
             this.tabEditRespOpts.Controls.Add(this.pnlWin);
+            this.tabEditRespOpts.Controls.Add(this.loyalLabelR);
             this.tabEditRespOpts.Controls.Add(this.pnlReq);
+            this.tabEditRespOpts.Controls.Add(this.percLabelR);
             this.tabEditRespOpts.Controls.Add(this.pnlMod);
+            this.tabEditRespOpts.Controls.Add(this.agilityLabelR);
             this.tabEditRespOpts.Controls.Add(this.lblCurrentResponse);
+            this.tabEditRespOpts.Controls.Add(this.diploLabelR);
             this.tabEditRespOpts.Controls.Add(this.comboBoxRespToEdit);
+            this.tabEditRespOpts.Controls.Add(this.tacticsLabelR);
+            this.tabEditRespOpts.Controls.Add(this.waterLabel);
+            this.tabEditRespOpts.Controls.Add(this.waterMod);
+            this.tabEditRespOpts.Controls.Add(this.medLabel);
+            this.tabEditRespOpts.Controls.Add(this.staminaMod);
+            this.tabEditRespOpts.Controls.Add(this.valueModB);
+            this.tabEditRespOpts.Controls.Add(this.ammoLabel);
+            this.tabEditRespOpts.Controls.Add(this.vModB);
+            this.tabEditRespOpts.Controls.Add(this.foodMod);
+            this.tabEditRespOpts.Controls.Add(this.packLabel);
+            this.tabEditRespOpts.Controls.Add(this.moraleMod);
+            this.tabEditRespOpts.Controls.Add(this.ammoModB);
+            this.tabEditRespOpts.Controls.Add(this.valueLabel);
+            this.tabEditRespOpts.Controls.Add(this.moraleModB);
+            this.tabEditRespOpts.Controls.Add(this.waterModB);
+            this.tabEditRespOpts.Controls.Add(this.moraleLabel);
+            this.tabEditRespOpts.Controls.Add(this.valueMod);
+            this.tabEditRespOpts.Controls.Add(this.medModB);
+            this.tabEditRespOpts.Controls.Add(this.stamLabel);
+            this.tabEditRespOpts.Controls.Add(this.staminaModB);
+            this.tabEditRespOpts.Controls.Add(this.packMod);
+            this.tabEditRespOpts.Controls.Add(this.foodLabel);
+            this.tabEditRespOpts.Controls.Add(this.foodModB);
+            this.tabEditRespOpts.Controls.Add(this.ammoMod);
+            this.tabEditRespOpts.Controls.Add(this.medMod);
             this.tabEditRespOpts.Location = new System.Drawing.Point(4, 22);
             this.tabEditRespOpts.Name = "tabEditRespOpts";
             this.tabEditRespOpts.Size = new System.Drawing.Size(856, 534);
@@ -1260,6 +1129,36 @@
             this.lblProbPass.TabIndex = 523;
             this.lblProbPass.Text = "20%";
             // 
+            // strengthReq
+            // 
+            this.strengthReq.Enabled = false;
+            this.strengthReq.Location = new System.Drawing.Point(777, 49);
+            this.strengthReq.Name = "strengthReq";
+            this.strengthReq.Size = new System.Drawing.Size(44, 20);
+            this.strengthReq.TabIndex = 367;
+            this.strengthReq.Visible = false;
+            this.strengthReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // strengthCost
+            // 
+            this.strengthCost.Enabled = false;
+            this.strengthCost.Location = new System.Drawing.Point(641, 73);
+            this.strengthCost.Name = "strengthCost";
+            this.strengthCost.Size = new System.Drawing.Size(44, 20);
+            this.strengthCost.TabIndex = 474;
+            this.strengthCost.Visible = false;
+            this.strengthCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // knowCost
+            // 
+            this.knowCost.Enabled = false;
+            this.knowCost.Location = new System.Drawing.Point(641, 73);
+            this.knowCost.Name = "knowCost";
+            this.knowCost.Size = new System.Drawing.Size(44, 20);
+            this.knowCost.TabIndex = 473;
+            this.knowCost.Visible = false;
+            this.knowCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
             // lblProbWin
             // 
             this.lblProbWin.AutoSize = true;
@@ -1268,6 +1167,36 @@
             this.lblProbWin.Size = new System.Drawing.Size(27, 13);
             this.lblProbWin.TabIndex = 522;
             this.lblProbWin.Text = "40%";
+            // 
+            // marksCost
+            // 
+            this.marksCost.Enabled = false;
+            this.marksCost.Location = new System.Drawing.Point(641, 72);
+            this.marksCost.Name = "marksCost";
+            this.marksCost.Size = new System.Drawing.Size(44, 20);
+            this.marksCost.TabIndex = 472;
+            this.marksCost.Visible = false;
+            this.marksCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // knowReq
+            // 
+            this.knowReq.Enabled = false;
+            this.knowReq.Location = new System.Drawing.Point(778, 52);
+            this.knowReq.Name = "knowReq";
+            this.knowReq.Size = new System.Drawing.Size(44, 20);
+            this.knowReq.TabIndex = 366;
+            this.knowReq.Visible = false;
+            this.knowReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // loyalCost
+            // 
+            this.loyalCost.Enabled = false;
+            this.loyalCost.Location = new System.Drawing.Point(643, 75);
+            this.loyalCost.Name = "loyalCost";
+            this.loyalCost.Size = new System.Drawing.Size(44, 20);
+            this.loyalCost.TabIndex = 471;
+            this.loyalCost.Visible = false;
+            this.loyalCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // lblWithStdParty
             // 
@@ -1278,6 +1207,36 @@
             this.lblWithStdParty.TabIndex = 521;
             this.lblWithStdParty.Text = "With a Standard Party:";
             // 
+            // percCost
+            // 
+            this.percCost.Enabled = false;
+            this.percCost.Location = new System.Drawing.Point(643, 73);
+            this.percCost.Name = "percCost";
+            this.percCost.Size = new System.Drawing.Size(44, 20);
+            this.percCost.TabIndex = 470;
+            this.percCost.Visible = false;
+            this.percCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // marksReq
+            // 
+            this.marksReq.Enabled = false;
+            this.marksReq.Location = new System.Drawing.Point(783, 52);
+            this.marksReq.Name = "marksReq";
+            this.marksReq.Size = new System.Drawing.Size(44, 20);
+            this.marksReq.TabIndex = 365;
+            this.marksReq.Visible = false;
+            this.marksReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // agilityCost
+            // 
+            this.agilityCost.Enabled = false;
+            this.agilityCost.Location = new System.Drawing.Point(643, 75);
+            this.agilityCost.Name = "agilityCost";
+            this.agilityCost.Size = new System.Drawing.Size(44, 20);
+            this.agilityCost.TabIndex = 469;
+            this.agilityCost.Visible = false;
+            this.agilityCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
             // lblProbLoseTxt
             // 
             this.lblProbLoseTxt.AutoSize = true;
@@ -1286,6 +1245,36 @@
             this.lblProbLoseTxt.Size = new System.Drawing.Size(99, 13);
             this.lblProbLoseTxt.TabIndex = 520;
             this.lblProbLoseTxt.Text = "Probability of Lose: ";
+            // 
+            // diploCost
+            // 
+            this.diploCost.Enabled = false;
+            this.diploCost.Location = new System.Drawing.Point(643, 73);
+            this.diploCost.Name = "diploCost";
+            this.diploCost.Size = new System.Drawing.Size(44, 20);
+            this.diploCost.TabIndex = 468;
+            this.diploCost.Visible = false;
+            this.diploCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // loyalReq
+            // 
+            this.loyalReq.Enabled = false;
+            this.loyalReq.Location = new System.Drawing.Point(785, 50);
+            this.loyalReq.Name = "loyalReq";
+            this.loyalReq.Size = new System.Drawing.Size(44, 20);
+            this.loyalReq.TabIndex = 364;
+            this.loyalReq.Visible = false;
+            this.loyalReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // tacticsCost
+            // 
+            this.tacticsCost.Enabled = false;
+            this.tacticsCost.Location = new System.Drawing.Point(643, 73);
+            this.tacticsCost.Name = "tacticsCost";
+            this.tacticsCost.Size = new System.Drawing.Size(44, 20);
+            this.tacticsCost.TabIndex = 467;
+            this.tacticsCost.Visible = false;
+            this.tacticsCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
             // lblProbPassTxt
             // 
@@ -1296,6 +1285,38 @@
             this.lblProbPassTxt.TabIndex = 519;
             this.lblProbPassTxt.Text = "Probability of Pass: ";
             // 
+            // strengthLabelC
+            // 
+            this.strengthLabelC.AutoSize = true;
+            this.strengthLabelC.Enabled = false;
+            this.strengthLabelC.Location = new System.Drawing.Point(554, 72);
+            this.strengthLabelC.Name = "strengthLabelC";
+            this.strengthLabelC.Size = new System.Drawing.Size(45, 13);
+            this.strengthLabelC.TabIndex = 466;
+            this.strengthLabelC.Text = "strength";
+            this.strengthLabelC.Visible = false;
+            // 
+            // percReq
+            // 
+            this.percReq.Enabled = false;
+            this.percReq.Location = new System.Drawing.Point(788, 54);
+            this.percReq.Name = "percReq";
+            this.percReq.Size = new System.Drawing.Size(44, 20);
+            this.percReq.TabIndex = 363;
+            this.percReq.Visible = false;
+            this.percReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // knowLabelC
+            // 
+            this.knowLabelC.AutoSize = true;
+            this.knowLabelC.Enabled = false;
+            this.knowLabelC.Location = new System.Drawing.Point(555, 72);
+            this.knowLabelC.Name = "knowLabelC";
+            this.knowLabelC.Size = new System.Drawing.Size(59, 13);
+            this.knowLabelC.TabIndex = 465;
+            this.knowLabelC.Text = "knowledge";
+            this.knowLabelC.Visible = false;
+            // 
             // lblProbOfWinTxt
             // 
             this.lblProbOfWinTxt.AutoSize = true;
@@ -1304,6 +1325,39 @@
             this.lblProbOfWinTxt.Size = new System.Drawing.Size(95, 13);
             this.lblProbOfWinTxt.TabIndex = 518;
             this.lblProbOfWinTxt.Text = "Probability of Win: ";
+            // 
+            // marksLabelC
+            // 
+            this.marksLabelC.AutoSize = true;
+            this.marksLabelC.Enabled = false;
+            this.marksLabelC.Location = new System.Drawing.Point(555, 72);
+            this.marksLabelC.Name = "marksLabelC";
+            this.marksLabelC.Size = new System.Drawing.Size(74, 13);
+            this.marksLabelC.TabIndex = 464;
+            this.marksLabelC.Text = "marksmanship";
+            this.marksLabelC.Visible = false;
+            // 
+            // agilityReq
+            // 
+            this.agilityReq.Enabled = false;
+            this.agilityReq.Location = new System.Drawing.Point(787, 50);
+            this.agilityReq.Name = "agilityReq";
+            this.agilityReq.Size = new System.Drawing.Size(44, 20);
+            this.agilityReq.TabIndex = 362;
+            this.agilityReq.Visible = false;
+            this.agilityReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // loyalCostC
+            // 
+            this.loyalCostC.AutoSize = true;
+            this.loyalCostC.Enabled = false;
+            this.loyalCostC.Location = new System.Drawing.Point(557, 74);
+            this.loyalCostC.Name = "loyalCostC";
+            this.loyalCostC.Size = new System.Drawing.Size(36, 13);
+            this.loyalCostC.TabIndex = 463;
+            this.loyalCostC.Text = "loyalty";
+            this.loyalCostC.Visible = false;
+            this.loyalCostC.Click += new System.EventHandler(this.loyalCostC_Click);
             // 
             // pnlOther
             // 
@@ -1485,6 +1539,38 @@
             this.label1.TabIndex = 484;
             this.label1.Text = "Win Follow-up Event";
             // 
+            // percLabelC
+            // 
+            this.percLabelC.AutoSize = true;
+            this.percLabelC.Enabled = false;
+            this.percLabelC.Location = new System.Drawing.Point(556, 72);
+            this.percLabelC.Name = "percLabelC";
+            this.percLabelC.Size = new System.Drawing.Size(57, 13);
+            this.percLabelC.TabIndex = 462;
+            this.percLabelC.Text = "perception";
+            this.percLabelC.Visible = false;
+            // 
+            // diploReq
+            // 
+            this.diploReq.Enabled = false;
+            this.diploReq.Location = new System.Drawing.Point(787, 51);
+            this.diploReq.Name = "diploReq";
+            this.diploReq.Size = new System.Drawing.Size(44, 20);
+            this.diploReq.TabIndex = 361;
+            this.diploReq.Visible = false;
+            this.diploReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // agilityLabelC
+            // 
+            this.agilityLabelC.AutoSize = true;
+            this.agilityLabelC.Enabled = false;
+            this.agilityLabelC.Location = new System.Drawing.Point(555, 76);
+            this.agilityLabelC.Name = "agilityLabelC";
+            this.agilityLabelC.Size = new System.Drawing.Size(33, 13);
+            this.agilityLabelC.TabIndex = 461;
+            this.agilityLabelC.Text = "agility";
+            this.agilityLabelC.Visible = false;
+            // 
             // pnlResText
             // 
             this.pnlResText.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1494,9 +1580,9 @@
             this.pnlResText.Controls.Add(this.loseTextLabel);
             this.pnlResText.Controls.Add(this.winText);
             this.pnlResText.Controls.Add(this.winTextLabel);
-            this.pnlResText.Location = new System.Drawing.Point(447, 637);
+            this.pnlResText.Location = new System.Drawing.Point(13, 637);
             this.pnlResText.Name = "pnlResText";
-            this.pnlResText.Size = new System.Drawing.Size(376, 262);
+            this.pnlResText.Size = new System.Drawing.Size(810, 262);
             this.pnlResText.TabIndex = 516;
             // 
             // passText
@@ -1504,7 +1590,7 @@
             this.passText.Location = new System.Drawing.Point(17, 193);
             this.passText.Multiline = true;
             this.passText.Name = "passText";
-            this.passText.Size = new System.Drawing.Size(341, 50);
+            this.passText.Size = new System.Drawing.Size(775, 50);
             this.passText.TabIndex = 481;
             // 
             // passTextLabel
@@ -1522,7 +1608,7 @@
             this.loseText.Location = new System.Drawing.Point(17, 103);
             this.loseText.Multiline = true;
             this.loseText.Name = "loseText";
-            this.loseText.Size = new System.Drawing.Size(341, 50);
+            this.loseText.Size = new System.Drawing.Size(775, 50);
             this.loseText.TabIndex = 479;
             // 
             // loseTextLabel
@@ -1540,7 +1626,7 @@
             this.winText.Location = new System.Drawing.Point(17, 23);
             this.winText.Multiline = true;
             this.winText.Name = "winText";
-            this.winText.Size = new System.Drawing.Size(341, 50);
+            this.winText.Size = new System.Drawing.Size(775, 50);
             this.winText.TabIndex = 477;
             // 
             // winTextLabel
@@ -1553,28 +1639,44 @@
             this.winTextLabel.TabIndex = 476;
             this.winTextLabel.Text = "Win Text";
             // 
+            // diploLabelC
+            // 
+            this.diploLabelC.AutoSize = true;
+            this.diploLabelC.Enabled = false;
+            this.diploLabelC.Location = new System.Drawing.Point(555, 73);
+            this.diploLabelC.Name = "diploLabelC";
+            this.diploLabelC.Size = new System.Drawing.Size(54, 13);
+            this.diploLabelC.TabIndex = 460;
+            this.diploLabelC.Text = "diplomacy";
+            this.diploLabelC.Visible = false;
+            // 
+            // tacticsReq
+            // 
+            this.tacticsReq.Enabled = false;
+            this.tacticsReq.Location = new System.Drawing.Point(788, 50);
+            this.tacticsReq.Name = "tacticsReq";
+            this.tacticsReq.Size = new System.Drawing.Size(44, 20);
+            this.tacticsReq.TabIndex = 360;
+            this.tacticsReq.Visible = false;
+            this.tacticsReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // tacticsLabelC
+            // 
+            this.tacticsLabelC.AutoSize = true;
+            this.tacticsLabelC.Enabled = false;
+            this.tacticsLabelC.Location = new System.Drawing.Point(555, 75);
+            this.tacticsLabelC.Name = "tacticsLabelC";
+            this.tacticsLabelC.Size = new System.Drawing.Size(38, 13);
+            this.tacticsLabelC.TabIndex = 459;
+            this.tacticsLabelC.Text = "tactics";
+            this.tacticsLabelC.Visible = false;
+            // 
             // pnlCost
             // 
             this.pnlCost.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlCost.Controls.Add(this.label23);
             this.pnlCost.Controls.Add(this.label40);
             this.pnlCost.Controls.Add(this.statLabelC);
-            this.pnlCost.Controls.Add(this.strengthCost);
-            this.pnlCost.Controls.Add(this.knowCost);
-            this.pnlCost.Controls.Add(this.marksCost);
-            this.pnlCost.Controls.Add(this.loyalCost);
-            this.pnlCost.Controls.Add(this.percCost);
-            this.pnlCost.Controls.Add(this.agilityCost);
-            this.pnlCost.Controls.Add(this.diploCost);
-            this.pnlCost.Controls.Add(this.tacticsCost);
-            this.pnlCost.Controls.Add(this.strengthLabelC);
-            this.pnlCost.Controls.Add(this.knowLabelC);
-            this.pnlCost.Controls.Add(this.marksLabelC);
-            this.pnlCost.Controls.Add(this.loyalCostC);
-            this.pnlCost.Controls.Add(this.percLabelC);
-            this.pnlCost.Controls.Add(this.agilityLabelC);
-            this.pnlCost.Controls.Add(this.diploLabelC);
-            this.pnlCost.Controls.Add(this.tacticsLabelC);
             this.pnlCost.Controls.Add(this.foodCost);
             this.pnlCost.Controls.Add(this.staminaCost);
             this.pnlCost.Controls.Add(this.moraleCost);
@@ -1592,16 +1694,16 @@
             this.pnlCost.Controls.Add(this.medLabelC);
             this.pnlCost.Controls.Add(this.waterLabelC);
             this.pnlCost.Controls.Add(this.costLabel);
-            this.pnlCost.Location = new System.Drawing.Point(13, 637);
+            this.pnlCost.Location = new System.Drawing.Point(593, 101);
             this.pnlCost.Name = "pnlCost";
-            this.pnlCost.Size = new System.Drawing.Size(376, 262);
+            this.pnlCost.Size = new System.Drawing.Size(230, 262);
             this.pnlCost.TabIndex = 515;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(82, 26);
+            this.label23.Location = new System.Drawing.Point(112, 26);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(67, 13);
             this.label23.TabIndex = 483;
@@ -1611,7 +1713,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(92, 13);
+            this.label40.Location = new System.Drawing.Point(122, 13);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(48, 13);
             this.label40.TabIndex = 482;
@@ -1621,151 +1723,15 @@
             // 
             this.statLabelC.AutoSize = true;
             this.statLabelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statLabelC.Location = new System.Drawing.Point(8, 26);
+            this.statLabelC.Location = new System.Drawing.Point(22, 26);
             this.statLabelC.Name = "statLabelC";
             this.statLabelC.Size = new System.Drawing.Size(28, 13);
             this.statLabelC.TabIndex = 475;
             this.statLabelC.Text = "stat";
             // 
-            // strengthCost
-            // 
-            this.strengthCost.Location = new System.Drawing.Point(304, 226);
-            this.strengthCost.Name = "strengthCost";
-            this.strengthCost.Size = new System.Drawing.Size(44, 20);
-            this.strengthCost.TabIndex = 474;
-            this.strengthCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // knowCost
-            // 
-            this.knowCost.Location = new System.Drawing.Point(304, 201);
-            this.knowCost.Name = "knowCost";
-            this.knowCost.Size = new System.Drawing.Size(44, 20);
-            this.knowCost.TabIndex = 473;
-            this.knowCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // marksCost
-            // 
-            this.marksCost.Location = new System.Drawing.Point(304, 175);
-            this.marksCost.Name = "marksCost";
-            this.marksCost.Size = new System.Drawing.Size(44, 20);
-            this.marksCost.TabIndex = 472;
-            this.marksCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // loyalCost
-            // 
-            this.loyalCost.Location = new System.Drawing.Point(304, 149);
-            this.loyalCost.Name = "loyalCost";
-            this.loyalCost.Size = new System.Drawing.Size(44, 20);
-            this.loyalCost.TabIndex = 471;
-            this.loyalCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // percCost
-            // 
-            this.percCost.Location = new System.Drawing.Point(304, 123);
-            this.percCost.Name = "percCost";
-            this.percCost.Size = new System.Drawing.Size(44, 20);
-            this.percCost.TabIndex = 470;
-            this.percCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // agilityCost
-            // 
-            this.agilityCost.Location = new System.Drawing.Point(304, 97);
-            this.agilityCost.Name = "agilityCost";
-            this.agilityCost.Size = new System.Drawing.Size(44, 20);
-            this.agilityCost.TabIndex = 469;
-            this.agilityCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // diploCost
-            // 
-            this.diploCost.Location = new System.Drawing.Point(304, 72);
-            this.diploCost.Name = "diploCost";
-            this.diploCost.Size = new System.Drawing.Size(44, 20);
-            this.diploCost.TabIndex = 468;
-            this.diploCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // tacticsCost
-            // 
-            this.tacticsCost.Location = new System.Drawing.Point(304, 46);
-            this.tacticsCost.Name = "tacticsCost";
-            this.tacticsCost.Size = new System.Drawing.Size(44, 20);
-            this.tacticsCost.TabIndex = 467;
-            this.tacticsCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // strengthLabelC
-            // 
-            this.strengthLabelC.AutoSize = true;
-            this.strengthLabelC.Location = new System.Drawing.Point(212, 228);
-            this.strengthLabelC.Name = "strengthLabelC";
-            this.strengthLabelC.Size = new System.Drawing.Size(45, 13);
-            this.strengthLabelC.TabIndex = 466;
-            this.strengthLabelC.Text = "strength";
-            // 
-            // knowLabelC
-            // 
-            this.knowLabelC.AutoSize = true;
-            this.knowLabelC.Location = new System.Drawing.Point(213, 203);
-            this.knowLabelC.Name = "knowLabelC";
-            this.knowLabelC.Size = new System.Drawing.Size(59, 13);
-            this.knowLabelC.TabIndex = 465;
-            this.knowLabelC.Text = "knowledge";
-            // 
-            // marksLabelC
-            // 
-            this.marksLabelC.AutoSize = true;
-            this.marksLabelC.Location = new System.Drawing.Point(213, 178);
-            this.marksLabelC.Name = "marksLabelC";
-            this.marksLabelC.Size = new System.Drawing.Size(74, 13);
-            this.marksLabelC.TabIndex = 464;
-            this.marksLabelC.Text = "marksmanship";
-            // 
-            // loyalCostC
-            // 
-            this.loyalCostC.AutoSize = true;
-            this.loyalCostC.Location = new System.Drawing.Point(213, 151);
-            this.loyalCostC.Name = "loyalCostC";
-            this.loyalCostC.Size = new System.Drawing.Size(36, 13);
-            this.loyalCostC.TabIndex = 463;
-            this.loyalCostC.Text = "loyalty";
-            // 
-            // percLabelC
-            // 
-            this.percLabelC.AutoSize = true;
-            this.percLabelC.Location = new System.Drawing.Point(212, 125);
-            this.percLabelC.Name = "percLabelC";
-            this.percLabelC.Size = new System.Drawing.Size(57, 13);
-            this.percLabelC.TabIndex = 462;
-            this.percLabelC.Text = "perception";
-            // 
-            // agilityLabelC
-            // 
-            this.agilityLabelC.AutoSize = true;
-            this.agilityLabelC.Location = new System.Drawing.Point(211, 101);
-            this.agilityLabelC.Name = "agilityLabelC";
-            this.agilityLabelC.Size = new System.Drawing.Size(33, 13);
-            this.agilityLabelC.TabIndex = 461;
-            this.agilityLabelC.Text = "agility";
-            // 
-            // diploLabelC
-            // 
-            this.diploLabelC.AutoSize = true;
-            this.diploLabelC.Location = new System.Drawing.Point(211, 75);
-            this.diploLabelC.Name = "diploLabelC";
-            this.diploLabelC.Size = new System.Drawing.Size(54, 13);
-            this.diploLabelC.TabIndex = 460;
-            this.diploLabelC.Text = "diplomacy";
-            // 
-            // tacticsLabelC
-            // 
-            this.tacticsLabelC.AutoSize = true;
-            this.tacticsLabelC.Location = new System.Drawing.Point(211, 48);
-            this.tacticsLabelC.Name = "tacticsLabelC";
-            this.tacticsLabelC.Size = new System.Drawing.Size(38, 13);
-            this.tacticsLabelC.TabIndex = 459;
-            this.tacticsLabelC.Text = "tactics";
-            // 
             // foodCost
             // 
-            this.foodCost.Location = new System.Drawing.Point(99, 226);
+            this.foodCost.Location = new System.Drawing.Point(122, 228);
             this.foodCost.Name = "foodCost";
             this.foodCost.Size = new System.Drawing.Size(44, 20);
             this.foodCost.TabIndex = 458;
@@ -1773,7 +1739,7 @@
             // 
             // staminaCost
             // 
-            this.staminaCost.Location = new System.Drawing.Point(99, 201);
+            this.staminaCost.Location = new System.Drawing.Point(122, 203);
             this.staminaCost.Name = "staminaCost";
             this.staminaCost.Size = new System.Drawing.Size(44, 20);
             this.staminaCost.TabIndex = 457;
@@ -1781,7 +1747,7 @@
             // 
             // moraleCost
             // 
-            this.moraleCost.Location = new System.Drawing.Point(99, 175);
+            this.moraleCost.Location = new System.Drawing.Point(122, 177);
             this.moraleCost.Name = "moraleCost";
             this.moraleCost.Size = new System.Drawing.Size(44, 20);
             this.moraleCost.TabIndex = 456;
@@ -1789,7 +1755,7 @@
             // 
             // valueCost
             // 
-            this.valueCost.Location = new System.Drawing.Point(99, 149);
+            this.valueCost.Location = new System.Drawing.Point(122, 151);
             this.valueCost.Name = "valueCost";
             this.valueCost.Size = new System.Drawing.Size(44, 20);
             this.valueCost.TabIndex = 455;
@@ -1797,7 +1763,7 @@
             // 
             // packCost
             // 
-            this.packCost.Location = new System.Drawing.Point(99, 123);
+            this.packCost.Location = new System.Drawing.Point(122, 125);
             this.packCost.Name = "packCost";
             this.packCost.Size = new System.Drawing.Size(44, 20);
             this.packCost.TabIndex = 454;
@@ -1805,7 +1771,7 @@
             // 
             // ammoCost
             // 
-            this.ammoCost.Location = new System.Drawing.Point(99, 97);
+            this.ammoCost.Location = new System.Drawing.Point(122, 99);
             this.ammoCost.Name = "ammoCost";
             this.ammoCost.Size = new System.Drawing.Size(44, 20);
             this.ammoCost.TabIndex = 453;
@@ -1813,7 +1779,7 @@
             // 
             // medCost
             // 
-            this.medCost.Location = new System.Drawing.Point(99, 72);
+            this.medCost.Location = new System.Drawing.Point(122, 74);
             this.medCost.Name = "medCost";
             this.medCost.Size = new System.Drawing.Size(44, 20);
             this.medCost.TabIndex = 452;
@@ -1821,7 +1787,7 @@
             // 
             // waterCost
             // 
-            this.waterCost.Location = new System.Drawing.Point(99, 46);
+            this.waterCost.Location = new System.Drawing.Point(122, 46);
             this.waterCost.Name = "waterCost";
             this.waterCost.Size = new System.Drawing.Size(44, 20);
             this.waterCost.TabIndex = 451;
@@ -1830,7 +1796,7 @@
             // foodLabelC
             // 
             this.foodLabelC.AutoSize = true;
-            this.foodLabelC.Location = new System.Drawing.Point(8, 228);
+            this.foodLabelC.Location = new System.Drawing.Point(22, 227);
             this.foodLabelC.Name = "foodLabelC";
             this.foodLabelC.Size = new System.Drawing.Size(28, 13);
             this.foodLabelC.TabIndex = 450;
@@ -1839,7 +1805,7 @@
             // staminaLabelC
             // 
             this.staminaLabelC.AutoSize = true;
-            this.staminaLabelC.Location = new System.Drawing.Point(8, 203);
+            this.staminaLabelC.Location = new System.Drawing.Point(22, 202);
             this.staminaLabelC.Name = "staminaLabelC";
             this.staminaLabelC.Size = new System.Drawing.Size(43, 13);
             this.staminaLabelC.TabIndex = 449;
@@ -1848,7 +1814,7 @@
             // moraleLabelC
             // 
             this.moraleLabelC.AutoSize = true;
-            this.moraleLabelC.Location = new System.Drawing.Point(8, 177);
+            this.moraleLabelC.Location = new System.Drawing.Point(22, 176);
             this.moraleLabelC.Name = "moraleLabelC";
             this.moraleLabelC.Size = new System.Drawing.Size(38, 13);
             this.moraleLabelC.TabIndex = 448;
@@ -1857,7 +1823,7 @@
             // valueLabelC
             // 
             this.valueLabelC.AutoSize = true;
-            this.valueLabelC.Location = new System.Drawing.Point(8, 152);
+            this.valueLabelC.Location = new System.Drawing.Point(22, 151);
             this.valueLabelC.Name = "valueLabelC";
             this.valueLabelC.Size = new System.Drawing.Size(52, 13);
             this.valueLabelC.TabIndex = 447;
@@ -1866,7 +1832,7 @@
             // packLabelC
             // 
             this.packLabelC.AutoSize = true;
-            this.packLabelC.Location = new System.Drawing.Point(8, 125);
+            this.packLabelC.Location = new System.Drawing.Point(22, 124);
             this.packLabelC.Name = "packLabelC";
             this.packLabelC.Size = new System.Drawing.Size(69, 13);
             this.packLabelC.TabIndex = 446;
@@ -1875,7 +1841,7 @@
             // ammoLabelC
             // 
             this.ammoLabelC.AutoSize = true;
-            this.ammoLabelC.Location = new System.Drawing.Point(8, 101);
+            this.ammoLabelC.Location = new System.Drawing.Point(22, 100);
             this.ammoLabelC.Name = "ammoLabelC";
             this.ammoLabelC.Size = new System.Drawing.Size(35, 13);
             this.ammoLabelC.TabIndex = 445;
@@ -1884,7 +1850,7 @@
             // medLabelC
             // 
             this.medLabelC.AutoSize = true;
-            this.medLabelC.Location = new System.Drawing.Point(8, 75);
+            this.medLabelC.Location = new System.Drawing.Point(22, 74);
             this.medLabelC.Name = "medLabelC";
             this.medLabelC.Size = new System.Drawing.Size(49, 13);
             this.medLabelC.TabIndex = 444;
@@ -1893,7 +1859,7 @@
             // waterLabelC
             // 
             this.waterLabelC.AutoSize = true;
-            this.waterLabelC.Location = new System.Drawing.Point(8, 48);
+            this.waterLabelC.Location = new System.Drawing.Point(22, 48);
             this.waterLabelC.Name = "waterLabelC";
             this.waterLabelC.Size = new System.Drawing.Size(33, 13);
             this.waterLabelC.TabIndex = 443;
@@ -1903,11 +1869,33 @@
             // 
             this.costLabel.AutoSize = true;
             this.costLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.costLabel.Location = new System.Drawing.Point(6, 10);
+            this.costLabel.Location = new System.Drawing.Point(22, 10);
             this.costLabel.Name = "costLabel";
             this.costLabel.Size = new System.Drawing.Size(32, 13);
             this.costLabel.TabIndex = 442;
             this.costLabel.Text = "Cost";
+            // 
+            // strengthLabelR
+            // 
+            this.strengthLabelR.AutoSize = true;
+            this.strengthLabelR.Enabled = false;
+            this.strengthLabelR.Location = new System.Drawing.Point(685, 51);
+            this.strengthLabelR.Name = "strengthLabelR";
+            this.strengthLabelR.Size = new System.Drawing.Size(45, 13);
+            this.strengthLabelR.TabIndex = 359;
+            this.strengthLabelR.Text = "strength";
+            this.strengthLabelR.Visible = false;
+            // 
+            // knowLabelR
+            // 
+            this.knowLabelR.AutoSize = true;
+            this.knowLabelR.Enabled = false;
+            this.knowLabelR.Location = new System.Drawing.Point(687, 54);
+            this.knowLabelR.Name = "knowLabelR";
+            this.knowLabelR.Size = new System.Drawing.Size(59, 13);
+            this.knowLabelR.TabIndex = 358;
+            this.knowLabelR.Text = "knowledge";
+            this.knowLabelR.Visible = false;
             // 
             // pnlLose
             // 
@@ -1948,16 +1936,16 @@
             this.pnlLose.Controls.Add(this.medLabelL);
             this.pnlLose.Controls.Add(this.waterLabelL);
             this.pnlLose.Controls.Add(this.loseLabel);
-            this.pnlLose.Location = new System.Drawing.Point(447, 368);
+            this.pnlLose.Location = new System.Drawing.Point(13, 369);
             this.pnlLose.Name = "pnlLose";
-            this.pnlLose.Size = new System.Drawing.Size(376, 262);
+            this.pnlLose.Size = new System.Drawing.Size(364, 262);
             this.pnlLose.TabIndex = 514;
             // 
             // subtractLabel
             // 
             this.subtractLabel.AutoSize = true;
             this.subtractLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtractLabel.Location = new System.Drawing.Point(82, 26);
+            this.subtractLabel.Location = new System.Drawing.Point(110, 26);
             this.subtractLabel.Name = "subtractLabel";
             this.subtractLabel.Size = new System.Drawing.Size(67, 13);
             this.subtractLabel.TabIndex = 441;
@@ -1967,7 +1955,7 @@
             // 
             this.statLabelL.AutoSize = true;
             this.statLabelL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statLabelL.Location = new System.Drawing.Point(8, 26);
+            this.statLabelL.Location = new System.Drawing.Point(22, 26);
             this.statLabelL.Name = "statLabelL";
             this.statLabelL.Size = new System.Drawing.Size(28, 13);
             this.statLabelL.TabIndex = 439;
@@ -1977,7 +1965,7 @@
             // 
             this.amountLLabel.AutoSize = true;
             this.amountLLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountLLabel.Location = new System.Drawing.Point(94, 13);
+            this.amountLLabel.Location = new System.Drawing.Point(122, 13);
             this.amountLLabel.Name = "amountLLabel";
             this.amountLLabel.Size = new System.Drawing.Size(48, 13);
             this.amountLLabel.TabIndex = 438;
@@ -1985,7 +1973,7 @@
             // 
             // strengthLose
             // 
-            this.strengthLose.Location = new System.Drawing.Point(322, 226);
+            this.strengthLose.Location = new System.Drawing.Point(302, 227);
             this.strengthLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -1998,7 +1986,7 @@
             // 
             // knowLose
             // 
-            this.knowLose.Location = new System.Drawing.Point(322, 201);
+            this.knowLose.Location = new System.Drawing.Point(302, 202);
             this.knowLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2011,7 +1999,7 @@
             // 
             // markLose
             // 
-            this.markLose.Location = new System.Drawing.Point(322, 175);
+            this.markLose.Location = new System.Drawing.Point(302, 176);
             this.markLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2024,7 +2012,7 @@
             // 
             // loyalLose
             // 
-            this.loyalLose.Location = new System.Drawing.Point(322, 149);
+            this.loyalLose.Location = new System.Drawing.Point(302, 150);
             this.loyalLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2037,7 +2025,7 @@
             // 
             // percLose
             // 
-            this.percLose.Location = new System.Drawing.Point(322, 123);
+            this.percLose.Location = new System.Drawing.Point(302, 124);
             this.percLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2050,7 +2038,7 @@
             // 
             // agilityLose
             // 
-            this.agilityLose.Location = new System.Drawing.Point(322, 97);
+            this.agilityLose.Location = new System.Drawing.Point(302, 98);
             this.agilityLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2063,7 +2051,7 @@
             // 
             // diploLose
             // 
-            this.diploLose.Location = new System.Drawing.Point(322, 72);
+            this.diploLose.Location = new System.Drawing.Point(302, 73);
             this.diploLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2076,7 +2064,7 @@
             // 
             // tacticsLose
             // 
-            this.tacticsLose.Location = new System.Drawing.Point(322, 46);
+            this.tacticsLose.Location = new System.Drawing.Point(302, 46);
             this.tacticsLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2090,7 +2078,7 @@
             // strengthLabelL
             // 
             this.strengthLabelL.AutoSize = true;
-            this.strengthLabelL.Location = new System.Drawing.Point(230, 228);
+            this.strengthLabelL.Location = new System.Drawing.Point(221, 228);
             this.strengthLabelL.Name = "strengthLabelL";
             this.strengthLabelL.Size = new System.Drawing.Size(45, 13);
             this.strengthLabelL.TabIndex = 429;
@@ -2099,7 +2087,7 @@
             // knowLabelL
             // 
             this.knowLabelL.AutoSize = true;
-            this.knowLabelL.Location = new System.Drawing.Point(231, 203);
+            this.knowLabelL.Location = new System.Drawing.Point(222, 203);
             this.knowLabelL.Name = "knowLabelL";
             this.knowLabelL.Size = new System.Drawing.Size(59, 13);
             this.knowLabelL.TabIndex = 428;
@@ -2108,7 +2096,7 @@
             // marksLabelL
             // 
             this.marksLabelL.AutoSize = true;
-            this.marksLabelL.Location = new System.Drawing.Point(231, 178);
+            this.marksLabelL.Location = new System.Drawing.Point(222, 178);
             this.marksLabelL.Name = "marksLabelL";
             this.marksLabelL.Size = new System.Drawing.Size(74, 13);
             this.marksLabelL.TabIndex = 427;
@@ -2117,7 +2105,7 @@
             // loyalLabelL
             // 
             this.loyalLabelL.AutoSize = true;
-            this.loyalLabelL.Location = new System.Drawing.Point(231, 151);
+            this.loyalLabelL.Location = new System.Drawing.Point(222, 151);
             this.loyalLabelL.Name = "loyalLabelL";
             this.loyalLabelL.Size = new System.Drawing.Size(36, 13);
             this.loyalLabelL.TabIndex = 426;
@@ -2126,7 +2114,7 @@
             // percLabelL
             // 
             this.percLabelL.AutoSize = true;
-            this.percLabelL.Location = new System.Drawing.Point(230, 125);
+            this.percLabelL.Location = new System.Drawing.Point(221, 125);
             this.percLabelL.Name = "percLabelL";
             this.percLabelL.Size = new System.Drawing.Size(57, 13);
             this.percLabelL.TabIndex = 425;
@@ -2135,7 +2123,7 @@
             // agilityLabelL
             // 
             this.agilityLabelL.AutoSize = true;
-            this.agilityLabelL.Location = new System.Drawing.Point(229, 101);
+            this.agilityLabelL.Location = new System.Drawing.Point(220, 101);
             this.agilityLabelL.Name = "agilityLabelL";
             this.agilityLabelL.Size = new System.Drawing.Size(33, 13);
             this.agilityLabelL.TabIndex = 424;
@@ -2144,7 +2132,7 @@
             // diploLabelL
             // 
             this.diploLabelL.AutoSize = true;
-            this.diploLabelL.Location = new System.Drawing.Point(229, 75);
+            this.diploLabelL.Location = new System.Drawing.Point(220, 75);
             this.diploLabelL.Name = "diploLabelL";
             this.diploLabelL.Size = new System.Drawing.Size(54, 13);
             this.diploLabelL.TabIndex = 423;
@@ -2153,7 +2141,7 @@
             // tacticsLabelL
             // 
             this.tacticsLabelL.AutoSize = true;
-            this.tacticsLabelL.Location = new System.Drawing.Point(229, 48);
+            this.tacticsLabelL.Location = new System.Drawing.Point(220, 48);
             this.tacticsLabelL.Name = "tacticsLabelL";
             this.tacticsLabelL.Size = new System.Drawing.Size(38, 13);
             this.tacticsLabelL.TabIndex = 422;
@@ -2161,7 +2149,7 @@
             // 
             // foodLose
             // 
-            this.foodLose.Location = new System.Drawing.Point(99, 226);
+            this.foodLose.Location = new System.Drawing.Point(122, 226);
             this.foodLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2174,7 +2162,7 @@
             // 
             // staminaLose
             // 
-            this.staminaLose.Location = new System.Drawing.Point(99, 201);
+            this.staminaLose.Location = new System.Drawing.Point(122, 201);
             this.staminaLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2187,7 +2175,7 @@
             // 
             // moraleLose
             // 
-            this.moraleLose.Location = new System.Drawing.Point(99, 175);
+            this.moraleLose.Location = new System.Drawing.Point(122, 175);
             this.moraleLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2200,7 +2188,7 @@
             // 
             // valueLose
             // 
-            this.valueLose.Location = new System.Drawing.Point(99, 149);
+            this.valueLose.Location = new System.Drawing.Point(122, 149);
             this.valueLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2213,7 +2201,7 @@
             // 
             // packLose
             // 
-            this.packLose.Location = new System.Drawing.Point(99, 123);
+            this.packLose.Location = new System.Drawing.Point(122, 123);
             this.packLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2226,7 +2214,7 @@
             // 
             // ammoLose
             // 
-            this.ammoLose.Location = new System.Drawing.Point(99, 97);
+            this.ammoLose.Location = new System.Drawing.Point(122, 97);
             this.ammoLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2239,7 +2227,7 @@
             // 
             // medLose
             // 
-            this.medLose.Location = new System.Drawing.Point(99, 72);
+            this.medLose.Location = new System.Drawing.Point(122, 72);
             this.medLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2252,7 +2240,7 @@
             // 
             // waterLose
             // 
-            this.waterLose.Location = new System.Drawing.Point(99, 46);
+            this.waterLose.Location = new System.Drawing.Point(122, 46);
             this.waterLose.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2266,7 +2254,7 @@
             // foodLabelL
             // 
             this.foodLabelL.AutoSize = true;
-            this.foodLabelL.Location = new System.Drawing.Point(8, 228);
+            this.foodLabelL.Location = new System.Drawing.Point(22, 226);
             this.foodLabelL.Name = "foodLabelL";
             this.foodLabelL.Size = new System.Drawing.Size(28, 13);
             this.foodLabelL.TabIndex = 413;
@@ -2275,7 +2263,7 @@
             // staminaLabelL
             // 
             this.staminaLabelL.AutoSize = true;
-            this.staminaLabelL.Location = new System.Drawing.Point(8, 203);
+            this.staminaLabelL.Location = new System.Drawing.Point(22, 201);
             this.staminaLabelL.Name = "staminaLabelL";
             this.staminaLabelL.Size = new System.Drawing.Size(43, 13);
             this.staminaLabelL.TabIndex = 412;
@@ -2284,7 +2272,7 @@
             // moraleLabelL
             // 
             this.moraleLabelL.AutoSize = true;
-            this.moraleLabelL.Location = new System.Drawing.Point(8, 177);
+            this.moraleLabelL.Location = new System.Drawing.Point(22, 175);
             this.moraleLabelL.Name = "moraleLabelL";
             this.moraleLabelL.Size = new System.Drawing.Size(38, 13);
             this.moraleLabelL.TabIndex = 411;
@@ -2293,7 +2281,7 @@
             // valueLabelL
             // 
             this.valueLabelL.AutoSize = true;
-            this.valueLabelL.Location = new System.Drawing.Point(8, 152);
+            this.valueLabelL.Location = new System.Drawing.Point(22, 150);
             this.valueLabelL.Name = "valueLabelL";
             this.valueLabelL.Size = new System.Drawing.Size(52, 13);
             this.valueLabelL.TabIndex = 410;
@@ -2302,7 +2290,7 @@
             // packLabelL
             // 
             this.packLabelL.AutoSize = true;
-            this.packLabelL.Location = new System.Drawing.Point(8, 125);
+            this.packLabelL.Location = new System.Drawing.Point(22, 123);
             this.packLabelL.Name = "packLabelL";
             this.packLabelL.Size = new System.Drawing.Size(69, 13);
             this.packLabelL.TabIndex = 409;
@@ -2311,7 +2299,7 @@
             // ammoLabelL
             // 
             this.ammoLabelL.AutoSize = true;
-            this.ammoLabelL.Location = new System.Drawing.Point(8, 101);
+            this.ammoLabelL.Location = new System.Drawing.Point(22, 99);
             this.ammoLabelL.Name = "ammoLabelL";
             this.ammoLabelL.Size = new System.Drawing.Size(35, 13);
             this.ammoLabelL.TabIndex = 408;
@@ -2320,7 +2308,7 @@
             // medLabelL
             // 
             this.medLabelL.AutoSize = true;
-            this.medLabelL.Location = new System.Drawing.Point(8, 75);
+            this.medLabelL.Location = new System.Drawing.Point(22, 73);
             this.medLabelL.Name = "medLabelL";
             this.medLabelL.Size = new System.Drawing.Size(49, 13);
             this.medLabelL.TabIndex = 407;
@@ -2329,7 +2317,7 @@
             // waterLabelL
             // 
             this.waterLabelL.AutoSize = true;
-            this.waterLabelL.Location = new System.Drawing.Point(8, 48);
+            this.waterLabelL.Location = new System.Drawing.Point(22, 46);
             this.waterLabelL.Name = "waterLabelL";
             this.waterLabelL.Size = new System.Drawing.Size(33, 13);
             this.waterLabelL.TabIndex = 406;
@@ -2339,11 +2327,22 @@
             // 
             this.loseLabel.AutoSize = true;
             this.loseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loseLabel.Location = new System.Drawing.Point(8, 6);
+            this.loseLabel.Location = new System.Drawing.Point(22, 6);
             this.loseLabel.Name = "loseLabel";
             this.loseLabel.Size = new System.Drawing.Size(34, 13);
             this.loseLabel.TabIndex = 405;
             this.loseLabel.Text = "Lose";
+            // 
+            // marksLabelR
+            // 
+            this.marksLabelR.AutoSize = true;
+            this.marksLabelR.Enabled = false;
+            this.marksLabelR.Location = new System.Drawing.Point(692, 55);
+            this.marksLabelR.Name = "marksLabelR";
+            this.marksLabelR.Size = new System.Drawing.Size(74, 13);
+            this.marksLabelR.TabIndex = 357;
+            this.marksLabelR.Text = "marksmanship";
+            this.marksLabelR.Visible = false;
             // 
             // pnlWin
             // 
@@ -2384,16 +2383,16 @@
             this.pnlWin.Controls.Add(this.medLabelW);
             this.pnlWin.Controls.Add(this.waterLabelW);
             this.pnlWin.Controls.Add(this.winLabel);
-            this.pnlWin.Location = new System.Drawing.Point(13, 368);
+            this.pnlWin.Location = new System.Drawing.Point(459, 369);
             this.pnlWin.Name = "pnlWin";
-            this.pnlWin.Size = new System.Drawing.Size(376, 262);
+            this.pnlWin.Size = new System.Drawing.Size(364, 262);
             this.pnlWin.TabIndex = 513;
             // 
             // addLabel
             // 
             this.addLabel.AutoSize = true;
             this.addLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addLabel.Location = new System.Drawing.Point(90, 26);
+            this.addLabel.Location = new System.Drawing.Point(122, 26);
             this.addLabel.Name = "addLabel";
             this.addLabel.Size = new System.Drawing.Size(42, 13);
             this.addLabel.TabIndex = 440;
@@ -2403,7 +2402,7 @@
             // 
             this.statLabelW.AutoSize = true;
             this.statLabelW.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statLabelW.Location = new System.Drawing.Point(4, 26);
+            this.statLabelW.Location = new System.Drawing.Point(22, 26);
             this.statLabelW.Name = "statLabelW";
             this.statLabelW.Size = new System.Drawing.Size(28, 13);
             this.statLabelW.TabIndex = 404;
@@ -2413,7 +2412,7 @@
             // 
             this.amountWLabel.AutoSize = true;
             this.amountWLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountWLabel.Location = new System.Drawing.Point(91, 13);
+            this.amountWLabel.Location = new System.Drawing.Point(119, 13);
             this.amountWLabel.Name = "amountWLabel";
             this.amountWLabel.Size = new System.Drawing.Size(48, 13);
             this.amountWLabel.TabIndex = 403;
@@ -2421,7 +2420,7 @@
             // 
             // strengthWin
             // 
-            this.strengthWin.Location = new System.Drawing.Point(300, 226);
+            this.strengthWin.Location = new System.Drawing.Point(302, 226);
             this.strengthWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2434,7 +2433,7 @@
             // 
             // knowWin
             // 
-            this.knowWin.Location = new System.Drawing.Point(300, 201);
+            this.knowWin.Location = new System.Drawing.Point(302, 201);
             this.knowWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2447,7 +2446,7 @@
             // 
             // marksWin
             // 
-            this.marksWin.Location = new System.Drawing.Point(300, 175);
+            this.marksWin.Location = new System.Drawing.Point(302, 175);
             this.marksWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2460,7 +2459,7 @@
             // 
             // loyalWin
             // 
-            this.loyalWin.Location = new System.Drawing.Point(300, 149);
+            this.loyalWin.Location = new System.Drawing.Point(302, 149);
             this.loyalWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2473,7 +2472,7 @@
             // 
             // percWin
             // 
-            this.percWin.Location = new System.Drawing.Point(300, 123);
+            this.percWin.Location = new System.Drawing.Point(302, 123);
             this.percWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2486,7 +2485,7 @@
             // 
             // agilityWin
             // 
-            this.agilityWin.Location = new System.Drawing.Point(300, 97);
+            this.agilityWin.Location = new System.Drawing.Point(302, 97);
             this.agilityWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2499,7 +2498,7 @@
             // 
             // diploWin
             // 
-            this.diploWin.Location = new System.Drawing.Point(300, 72);
+            this.diploWin.Location = new System.Drawing.Point(302, 72);
             this.diploWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2512,7 +2511,7 @@
             // 
             // tacticsWin
             // 
-            this.tacticsWin.Location = new System.Drawing.Point(300, 46);
+            this.tacticsWin.Location = new System.Drawing.Point(302, 46);
             this.tacticsWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2526,7 +2525,7 @@
             // strengthLabelW
             // 
             this.strengthLabelW.AutoSize = true;
-            this.strengthLabelW.Location = new System.Drawing.Point(208, 228);
+            this.strengthLabelW.Location = new System.Drawing.Point(221, 226);
             this.strengthLabelW.Name = "strengthLabelW";
             this.strengthLabelW.Size = new System.Drawing.Size(45, 13);
             this.strengthLabelW.TabIndex = 394;
@@ -2535,7 +2534,7 @@
             // knowLabelW
             // 
             this.knowLabelW.AutoSize = true;
-            this.knowLabelW.Location = new System.Drawing.Point(209, 203);
+            this.knowLabelW.Location = new System.Drawing.Point(222, 201);
             this.knowLabelW.Name = "knowLabelW";
             this.knowLabelW.Size = new System.Drawing.Size(59, 13);
             this.knowLabelW.TabIndex = 393;
@@ -2544,7 +2543,7 @@
             // markLabelW
             // 
             this.markLabelW.AutoSize = true;
-            this.markLabelW.Location = new System.Drawing.Point(209, 178);
+            this.markLabelW.Location = new System.Drawing.Point(222, 176);
             this.markLabelW.Name = "markLabelW";
             this.markLabelW.Size = new System.Drawing.Size(74, 13);
             this.markLabelW.TabIndex = 392;
@@ -2553,7 +2552,7 @@
             // loyalLabelW
             // 
             this.loyalLabelW.AutoSize = true;
-            this.loyalLabelW.Location = new System.Drawing.Point(209, 151);
+            this.loyalLabelW.Location = new System.Drawing.Point(222, 149);
             this.loyalLabelW.Name = "loyalLabelW";
             this.loyalLabelW.Size = new System.Drawing.Size(36, 13);
             this.loyalLabelW.TabIndex = 391;
@@ -2562,7 +2561,7 @@
             // percLabelW
             // 
             this.percLabelW.AutoSize = true;
-            this.percLabelW.Location = new System.Drawing.Point(208, 125);
+            this.percLabelW.Location = new System.Drawing.Point(221, 123);
             this.percLabelW.Name = "percLabelW";
             this.percLabelW.Size = new System.Drawing.Size(57, 13);
             this.percLabelW.TabIndex = 390;
@@ -2571,7 +2570,7 @@
             // agilityLabelW
             // 
             this.agilityLabelW.AutoSize = true;
-            this.agilityLabelW.Location = new System.Drawing.Point(207, 101);
+            this.agilityLabelW.Location = new System.Drawing.Point(220, 99);
             this.agilityLabelW.Name = "agilityLabelW";
             this.agilityLabelW.Size = new System.Drawing.Size(33, 13);
             this.agilityLabelW.TabIndex = 389;
@@ -2580,7 +2579,7 @@
             // diploLabelW
             // 
             this.diploLabelW.AutoSize = true;
-            this.diploLabelW.Location = new System.Drawing.Point(207, 75);
+            this.diploLabelW.Location = new System.Drawing.Point(220, 73);
             this.diploLabelW.Name = "diploLabelW";
             this.diploLabelW.Size = new System.Drawing.Size(54, 13);
             this.diploLabelW.TabIndex = 388;
@@ -2589,7 +2588,7 @@
             // tacticsLabelW
             // 
             this.tacticsLabelW.AutoSize = true;
-            this.tacticsLabelW.Location = new System.Drawing.Point(207, 48);
+            this.tacticsLabelW.Location = new System.Drawing.Point(220, 46);
             this.tacticsLabelW.Name = "tacticsLabelW";
             this.tacticsLabelW.Size = new System.Drawing.Size(38, 13);
             this.tacticsLabelW.TabIndex = 387;
@@ -2597,7 +2596,7 @@
             // 
             // foodWin
             // 
-            this.foodWin.Location = new System.Drawing.Point(95, 226);
+            this.foodWin.Location = new System.Drawing.Point(122, 226);
             this.foodWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2610,7 +2609,7 @@
             // 
             // staminaWin
             // 
-            this.staminaWin.Location = new System.Drawing.Point(95, 201);
+            this.staminaWin.Location = new System.Drawing.Point(122, 201);
             this.staminaWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2623,7 +2622,7 @@
             // 
             // moraleWin
             // 
-            this.moraleWin.Location = new System.Drawing.Point(95, 175);
+            this.moraleWin.Location = new System.Drawing.Point(122, 175);
             this.moraleWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2636,7 +2635,7 @@
             // 
             // valueWin
             // 
-            this.valueWin.Location = new System.Drawing.Point(95, 149);
+            this.valueWin.Location = new System.Drawing.Point(122, 149);
             this.valueWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2649,7 +2648,7 @@
             // 
             // packWin
             // 
-            this.packWin.Location = new System.Drawing.Point(95, 123);
+            this.packWin.Location = new System.Drawing.Point(122, 123);
             this.packWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2662,7 +2661,7 @@
             // 
             // ammoWin
             // 
-            this.ammoWin.Location = new System.Drawing.Point(95, 97);
+            this.ammoWin.Location = new System.Drawing.Point(122, 97);
             this.ammoWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2675,7 +2674,7 @@
             // 
             // medWin
             // 
-            this.medWin.Location = new System.Drawing.Point(95, 72);
+            this.medWin.Location = new System.Drawing.Point(122, 72);
             this.medWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2688,7 +2687,7 @@
             // 
             // waterWin
             // 
-            this.waterWin.Location = new System.Drawing.Point(95, 46);
+            this.waterWin.Location = new System.Drawing.Point(122, 46);
             this.waterWin.Minimum = new decimal(new int[] {
             100,
             0,
@@ -2702,7 +2701,7 @@
             // foodLabelW
             // 
             this.foodLabelW.AutoSize = true;
-            this.foodLabelW.Location = new System.Drawing.Point(4, 228);
+            this.foodLabelW.Location = new System.Drawing.Point(22, 226);
             this.foodLabelW.Name = "foodLabelW";
             this.foodLabelW.Size = new System.Drawing.Size(28, 13);
             this.foodLabelW.TabIndex = 378;
@@ -2711,7 +2710,7 @@
             // staminaLabelW
             // 
             this.staminaLabelW.AutoSize = true;
-            this.staminaLabelW.Location = new System.Drawing.Point(4, 203);
+            this.staminaLabelW.Location = new System.Drawing.Point(22, 201);
             this.staminaLabelW.Name = "staminaLabelW";
             this.staminaLabelW.Size = new System.Drawing.Size(43, 13);
             this.staminaLabelW.TabIndex = 377;
@@ -2720,7 +2719,7 @@
             // moraleLabelW
             // 
             this.moraleLabelW.AutoSize = true;
-            this.moraleLabelW.Location = new System.Drawing.Point(4, 177);
+            this.moraleLabelW.Location = new System.Drawing.Point(22, 175);
             this.moraleLabelW.Name = "moraleLabelW";
             this.moraleLabelW.Size = new System.Drawing.Size(38, 13);
             this.moraleLabelW.TabIndex = 376;
@@ -2729,7 +2728,7 @@
             // valueLabelW
             // 
             this.valueLabelW.AutoSize = true;
-            this.valueLabelW.Location = new System.Drawing.Point(4, 152);
+            this.valueLabelW.Location = new System.Drawing.Point(22, 150);
             this.valueLabelW.Name = "valueLabelW";
             this.valueLabelW.Size = new System.Drawing.Size(52, 13);
             this.valueLabelW.TabIndex = 375;
@@ -2738,7 +2737,7 @@
             // packLabelW
             // 
             this.packLabelW.AutoSize = true;
-            this.packLabelW.Location = new System.Drawing.Point(4, 125);
+            this.packLabelW.Location = new System.Drawing.Point(22, 123);
             this.packLabelW.Name = "packLabelW";
             this.packLabelW.Size = new System.Drawing.Size(69, 13);
             this.packLabelW.TabIndex = 374;
@@ -2747,7 +2746,7 @@
             // ammoLabelW
             // 
             this.ammoLabelW.AutoSize = true;
-            this.ammoLabelW.Location = new System.Drawing.Point(4, 101);
+            this.ammoLabelW.Location = new System.Drawing.Point(22, 99);
             this.ammoLabelW.Name = "ammoLabelW";
             this.ammoLabelW.Size = new System.Drawing.Size(35, 13);
             this.ammoLabelW.TabIndex = 373;
@@ -2756,7 +2755,7 @@
             // medLabelW
             // 
             this.medLabelW.AutoSize = true;
-            this.medLabelW.Location = new System.Drawing.Point(4, 75);
+            this.medLabelW.Location = new System.Drawing.Point(22, 73);
             this.medLabelW.Name = "medLabelW";
             this.medLabelW.Size = new System.Drawing.Size(49, 13);
             this.medLabelW.TabIndex = 372;
@@ -2765,7 +2764,7 @@
             // waterLabelW
             // 
             this.waterLabelW.AutoSize = true;
-            this.waterLabelW.Location = new System.Drawing.Point(4, 48);
+            this.waterLabelW.Location = new System.Drawing.Point(22, 48);
             this.waterLabelW.Name = "waterLabelW";
             this.waterLabelW.Size = new System.Drawing.Size(33, 13);
             this.waterLabelW.TabIndex = 371;
@@ -2775,33 +2774,28 @@
             // 
             this.winLabel.AutoSize = true;
             this.winLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winLabel.Location = new System.Drawing.Point(4, 6);
+            this.winLabel.Location = new System.Drawing.Point(22, 6);
             this.winLabel.Name = "winLabel";
             this.winLabel.Size = new System.Drawing.Size(29, 13);
             this.winLabel.TabIndex = 370;
             this.winLabel.Text = "Win";
+            // 
+            // loyalLabelR
+            // 
+            this.loyalLabelR.AutoSize = true;
+            this.loyalLabelR.Enabled = false;
+            this.loyalLabelR.Location = new System.Drawing.Point(694, 52);
+            this.loyalLabelR.Name = "loyalLabelR";
+            this.loyalLabelR.Size = new System.Drawing.Size(36, 13);
+            this.loyalLabelR.TabIndex = 356;
+            this.loyalLabelR.Text = "loyalty";
+            this.loyalLabelR.Visible = false;
             // 
             // pnlReq
             // 
             this.pnlReq.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlReq.Controls.Add(this.statLabelR);
             this.pnlReq.Controls.Add(this.amountLabelR);
-            this.pnlReq.Controls.Add(this.strengthReq);
-            this.pnlReq.Controls.Add(this.knowReq);
-            this.pnlReq.Controls.Add(this.marksReq);
-            this.pnlReq.Controls.Add(this.loyalReq);
-            this.pnlReq.Controls.Add(this.percReq);
-            this.pnlReq.Controls.Add(this.agilityReq);
-            this.pnlReq.Controls.Add(this.diploReq);
-            this.pnlReq.Controls.Add(this.tacticsReq);
-            this.pnlReq.Controls.Add(this.strengthLabelR);
-            this.pnlReq.Controls.Add(this.knowLabelR);
-            this.pnlReq.Controls.Add(this.marksLabelR);
-            this.pnlReq.Controls.Add(this.loyalLabelR);
-            this.pnlReq.Controls.Add(this.percLabelR);
-            this.pnlReq.Controls.Add(this.agilityLabelR);
-            this.pnlReq.Controls.Add(this.diploLabelR);
-            this.pnlReq.Controls.Add(this.tacticsLabelR);
             this.pnlReq.Controls.Add(this.foodReq);
             this.pnlReq.Controls.Add(this.staminaReq);
             this.pnlReq.Controls.Add(this.moraleReq);
@@ -2819,16 +2813,16 @@
             this.pnlReq.Controls.Add(this.medLabelR);
             this.pnlReq.Controls.Add(this.waterLabelR);
             this.pnlReq.Controls.Add(this.reqLabel);
-            this.pnlReq.Location = new System.Drawing.Point(447, 100);
+            this.pnlReq.Location = new System.Drawing.Point(303, 100);
             this.pnlReq.Name = "pnlReq";
-            this.pnlReq.Size = new System.Drawing.Size(376, 262);
+            this.pnlReq.Size = new System.Drawing.Size(230, 262);
             this.pnlReq.TabIndex = 512;
             // 
             // statLabelR
             // 
             this.statLabelR.AutoSize = true;
             this.statLabelR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statLabelR.Location = new System.Drawing.Point(9, 26);
+            this.statLabelR.Location = new System.Drawing.Point(22, 26);
             this.statLabelR.Name = "statLabelR";
             this.statLabelR.Size = new System.Drawing.Size(28, 13);
             this.statLabelR.TabIndex = 369;
@@ -2838,151 +2832,15 @@
             // 
             this.amountLabelR.AutoSize = true;
             this.amountLabelR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountLabelR.Location = new System.Drawing.Point(95, 26);
+            this.amountLabelR.Location = new System.Drawing.Point(120, 26);
             this.amountLabelR.Name = "amountLabelR";
             this.amountLabelR.Size = new System.Drawing.Size(48, 13);
             this.amountLabelR.TabIndex = 368;
             this.amountLabelR.Text = "amount";
             // 
-            // strengthReq
-            // 
-            this.strengthReq.Location = new System.Drawing.Point(325, 226);
-            this.strengthReq.Name = "strengthReq";
-            this.strengthReq.Size = new System.Drawing.Size(44, 20);
-            this.strengthReq.TabIndex = 367;
-            this.strengthReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // knowReq
-            // 
-            this.knowReq.Location = new System.Drawing.Point(325, 201);
-            this.knowReq.Name = "knowReq";
-            this.knowReq.Size = new System.Drawing.Size(44, 20);
-            this.knowReq.TabIndex = 366;
-            this.knowReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // marksReq
-            // 
-            this.marksReq.Location = new System.Drawing.Point(325, 175);
-            this.marksReq.Name = "marksReq";
-            this.marksReq.Size = new System.Drawing.Size(44, 20);
-            this.marksReq.TabIndex = 365;
-            this.marksReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // loyalReq
-            // 
-            this.loyalReq.Location = new System.Drawing.Point(325, 149);
-            this.loyalReq.Name = "loyalReq";
-            this.loyalReq.Size = new System.Drawing.Size(44, 20);
-            this.loyalReq.TabIndex = 364;
-            this.loyalReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // percReq
-            // 
-            this.percReq.Location = new System.Drawing.Point(325, 123);
-            this.percReq.Name = "percReq";
-            this.percReq.Size = new System.Drawing.Size(44, 20);
-            this.percReq.TabIndex = 363;
-            this.percReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // agilityReq
-            // 
-            this.agilityReq.Location = new System.Drawing.Point(325, 97);
-            this.agilityReq.Name = "agilityReq";
-            this.agilityReq.Size = new System.Drawing.Size(44, 20);
-            this.agilityReq.TabIndex = 362;
-            this.agilityReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // diploReq
-            // 
-            this.diploReq.Location = new System.Drawing.Point(325, 72);
-            this.diploReq.Name = "diploReq";
-            this.diploReq.Size = new System.Drawing.Size(44, 20);
-            this.diploReq.TabIndex = 361;
-            this.diploReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // tacticsReq
-            // 
-            this.tacticsReq.Location = new System.Drawing.Point(325, 46);
-            this.tacticsReq.Name = "tacticsReq";
-            this.tacticsReq.Size = new System.Drawing.Size(44, 20);
-            this.tacticsReq.TabIndex = 360;
-            this.tacticsReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // strengthLabelR
-            // 
-            this.strengthLabelR.AutoSize = true;
-            this.strengthLabelR.Location = new System.Drawing.Point(233, 228);
-            this.strengthLabelR.Name = "strengthLabelR";
-            this.strengthLabelR.Size = new System.Drawing.Size(45, 13);
-            this.strengthLabelR.TabIndex = 359;
-            this.strengthLabelR.Text = "strength";
-            // 
-            // knowLabelR
-            // 
-            this.knowLabelR.AutoSize = true;
-            this.knowLabelR.Location = new System.Drawing.Point(234, 203);
-            this.knowLabelR.Name = "knowLabelR";
-            this.knowLabelR.Size = new System.Drawing.Size(59, 13);
-            this.knowLabelR.TabIndex = 358;
-            this.knowLabelR.Text = "knowledge";
-            // 
-            // marksLabelR
-            // 
-            this.marksLabelR.AutoSize = true;
-            this.marksLabelR.Location = new System.Drawing.Point(234, 178);
-            this.marksLabelR.Name = "marksLabelR";
-            this.marksLabelR.Size = new System.Drawing.Size(74, 13);
-            this.marksLabelR.TabIndex = 357;
-            this.marksLabelR.Text = "marksmanship";
-            // 
-            // loyalLabelR
-            // 
-            this.loyalLabelR.AutoSize = true;
-            this.loyalLabelR.Location = new System.Drawing.Point(234, 151);
-            this.loyalLabelR.Name = "loyalLabelR";
-            this.loyalLabelR.Size = new System.Drawing.Size(36, 13);
-            this.loyalLabelR.TabIndex = 356;
-            this.loyalLabelR.Text = "loyalty";
-            // 
-            // percLabelR
-            // 
-            this.percLabelR.AutoSize = true;
-            this.percLabelR.Location = new System.Drawing.Point(233, 125);
-            this.percLabelR.Name = "percLabelR";
-            this.percLabelR.Size = new System.Drawing.Size(57, 13);
-            this.percLabelR.TabIndex = 355;
-            this.percLabelR.Text = "perception";
-            // 
-            // agilityLabelR
-            // 
-            this.agilityLabelR.AutoSize = true;
-            this.agilityLabelR.Location = new System.Drawing.Point(232, 101);
-            this.agilityLabelR.Name = "agilityLabelR";
-            this.agilityLabelR.Size = new System.Drawing.Size(33, 13);
-            this.agilityLabelR.TabIndex = 354;
-            this.agilityLabelR.Text = "agility";
-            // 
-            // diploLabelR
-            // 
-            this.diploLabelR.AutoSize = true;
-            this.diploLabelR.Location = new System.Drawing.Point(232, 75);
-            this.diploLabelR.Name = "diploLabelR";
-            this.diploLabelR.Size = new System.Drawing.Size(54, 13);
-            this.diploLabelR.TabIndex = 353;
-            this.diploLabelR.Text = "diplomacy";
-            // 
-            // tacticsLabelR
-            // 
-            this.tacticsLabelR.AutoSize = true;
-            this.tacticsLabelR.Location = new System.Drawing.Point(232, 48);
-            this.tacticsLabelR.Name = "tacticsLabelR";
-            this.tacticsLabelR.Size = new System.Drawing.Size(38, 13);
-            this.tacticsLabelR.TabIndex = 352;
-            this.tacticsLabelR.Text = "tactics";
-            // 
             // foodReq
             // 
-            this.foodReq.Location = new System.Drawing.Point(100, 226);
+            this.foodReq.Location = new System.Drawing.Point(122, 226);
             this.foodReq.Name = "foodReq";
             this.foodReq.Size = new System.Drawing.Size(44, 20);
             this.foodReq.TabIndex = 351;
@@ -2990,7 +2848,7 @@
             // 
             // staminaReq
             // 
-            this.staminaReq.Location = new System.Drawing.Point(100, 201);
+            this.staminaReq.Location = new System.Drawing.Point(122, 201);
             this.staminaReq.Name = "staminaReq";
             this.staminaReq.Size = new System.Drawing.Size(44, 20);
             this.staminaReq.TabIndex = 350;
@@ -2998,7 +2856,7 @@
             // 
             // moraleReq
             // 
-            this.moraleReq.Location = new System.Drawing.Point(100, 175);
+            this.moraleReq.Location = new System.Drawing.Point(122, 175);
             this.moraleReq.Name = "moraleReq";
             this.moraleReq.Size = new System.Drawing.Size(44, 20);
             this.moraleReq.TabIndex = 349;
@@ -3006,7 +2864,7 @@
             // 
             // valueReq
             // 
-            this.valueReq.Location = new System.Drawing.Point(100, 149);
+            this.valueReq.Location = new System.Drawing.Point(122, 149);
             this.valueReq.Name = "valueReq";
             this.valueReq.Size = new System.Drawing.Size(44, 20);
             this.valueReq.TabIndex = 348;
@@ -3014,7 +2872,7 @@
             // 
             // packReq
             // 
-            this.packReq.Location = new System.Drawing.Point(100, 123);
+            this.packReq.Location = new System.Drawing.Point(122, 123);
             this.packReq.Name = "packReq";
             this.packReq.Size = new System.Drawing.Size(44, 20);
             this.packReq.TabIndex = 347;
@@ -3022,7 +2880,7 @@
             // 
             // ammoReq
             // 
-            this.ammoReq.Location = new System.Drawing.Point(100, 97);
+            this.ammoReq.Location = new System.Drawing.Point(122, 97);
             this.ammoReq.Name = "ammoReq";
             this.ammoReq.Size = new System.Drawing.Size(44, 20);
             this.ammoReq.TabIndex = 346;
@@ -3030,7 +2888,7 @@
             // 
             // medReq
             // 
-            this.medReq.Location = new System.Drawing.Point(100, 72);
+            this.medReq.Location = new System.Drawing.Point(122, 72);
             this.medReq.Name = "medReq";
             this.medReq.Size = new System.Drawing.Size(44, 20);
             this.medReq.TabIndex = 345;
@@ -3038,7 +2896,7 @@
             // 
             // waterReq
             // 
-            this.waterReq.Location = new System.Drawing.Point(100, 46);
+            this.waterReq.Location = new System.Drawing.Point(122, 46);
             this.waterReq.Name = "waterReq";
             this.waterReq.Size = new System.Drawing.Size(44, 20);
             this.waterReq.TabIndex = 344;
@@ -3047,7 +2905,7 @@
             // foodLabelR
             // 
             this.foodLabelR.AutoSize = true;
-            this.foodLabelR.Location = new System.Drawing.Point(9, 228);
+            this.foodLabelR.Location = new System.Drawing.Point(22, 228);
             this.foodLabelR.Name = "foodLabelR";
             this.foodLabelR.Size = new System.Drawing.Size(28, 13);
             this.foodLabelR.TabIndex = 343;
@@ -3056,7 +2914,7 @@
             // staminaLabelR
             // 
             this.staminaLabelR.AutoSize = true;
-            this.staminaLabelR.Location = new System.Drawing.Point(9, 203);
+            this.staminaLabelR.Location = new System.Drawing.Point(22, 203);
             this.staminaLabelR.Name = "staminaLabelR";
             this.staminaLabelR.Size = new System.Drawing.Size(43, 13);
             this.staminaLabelR.TabIndex = 342;
@@ -3065,7 +2923,7 @@
             // moraleLabelR
             // 
             this.moraleLabelR.AutoSize = true;
-            this.moraleLabelR.Location = new System.Drawing.Point(9, 177);
+            this.moraleLabelR.Location = new System.Drawing.Point(22, 177);
             this.moraleLabelR.Name = "moraleLabelR";
             this.moraleLabelR.Size = new System.Drawing.Size(38, 13);
             this.moraleLabelR.TabIndex = 341;
@@ -3074,7 +2932,7 @@
             // valueLabelR
             // 
             this.valueLabelR.AutoSize = true;
-            this.valueLabelR.Location = new System.Drawing.Point(9, 152);
+            this.valueLabelR.Location = new System.Drawing.Point(22, 152);
             this.valueLabelR.Name = "valueLabelR";
             this.valueLabelR.Size = new System.Drawing.Size(52, 13);
             this.valueLabelR.TabIndex = 340;
@@ -3083,7 +2941,7 @@
             // packLabelR
             // 
             this.packLabelR.AutoSize = true;
-            this.packLabelR.Location = new System.Drawing.Point(9, 125);
+            this.packLabelR.Location = new System.Drawing.Point(22, 125);
             this.packLabelR.Name = "packLabelR";
             this.packLabelR.Size = new System.Drawing.Size(69, 13);
             this.packLabelR.TabIndex = 339;
@@ -3092,7 +2950,7 @@
             // ammoLabelR
             // 
             this.ammoLabelR.AutoSize = true;
-            this.ammoLabelR.Location = new System.Drawing.Point(9, 101);
+            this.ammoLabelR.Location = new System.Drawing.Point(22, 101);
             this.ammoLabelR.Name = "ammoLabelR";
             this.ammoLabelR.Size = new System.Drawing.Size(35, 13);
             this.ammoLabelR.TabIndex = 338;
@@ -3101,7 +2959,7 @@
             // medLabelR
             // 
             this.medLabelR.AutoSize = true;
-            this.medLabelR.Location = new System.Drawing.Point(9, 75);
+            this.medLabelR.Location = new System.Drawing.Point(22, 75);
             this.medLabelR.Name = "medLabelR";
             this.medLabelR.Size = new System.Drawing.Size(49, 13);
             this.medLabelR.TabIndex = 337;
@@ -3110,7 +2968,7 @@
             // waterLabelR
             // 
             this.waterLabelR.AutoSize = true;
-            this.waterLabelR.Location = new System.Drawing.Point(9, 48);
+            this.waterLabelR.Location = new System.Drawing.Point(22, 48);
             this.waterLabelR.Name = "waterLabelR";
             this.waterLabelR.Size = new System.Drawing.Size(33, 13);
             this.waterLabelR.TabIndex = 336;
@@ -3120,11 +2978,22 @@
             // 
             this.reqLabel.AutoSize = true;
             this.reqLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reqLabel.Location = new System.Drawing.Point(9, 6);
+            this.reqLabel.Location = new System.Drawing.Point(22, 6);
             this.reqLabel.Name = "reqLabel";
             this.reqLabel.Size = new System.Drawing.Size(84, 13);
             this.reqLabel.TabIndex = 335;
             this.reqLabel.Text = "Requirements";
+            // 
+            // percLabelR
+            // 
+            this.percLabelR.AutoSize = true;
+            this.percLabelR.Enabled = false;
+            this.percLabelR.Location = new System.Drawing.Point(696, 56);
+            this.percLabelR.Name = "percLabelR";
+            this.percLabelR.Size = new System.Drawing.Size(57, 13);
+            this.percLabelR.TabIndex = 355;
+            this.percLabelR.Text = "perception";
+            this.percLabelR.Visible = false;
             // 
             // pnlMod
             // 
@@ -3156,41 +3025,17 @@
             this.pnlMod.Controls.Add(this.agilityLabel);
             this.pnlMod.Controls.Add(this.diploLabel);
             this.pnlMod.Controls.Add(this.tacticsLabel);
-            this.pnlMod.Controls.Add(this.foodModB);
-            this.pnlMod.Controls.Add(this.staminaModB);
-            this.pnlMod.Controls.Add(this.moraleModB);
-            this.pnlMod.Controls.Add(this.vModB);
-            this.pnlMod.Controls.Add(this.valueModB);
-            this.pnlMod.Controls.Add(this.ammoModB);
-            this.pnlMod.Controls.Add(this.medModB);
-            this.pnlMod.Controls.Add(this.waterModB);
-            this.pnlMod.Controls.Add(this.foodMod);
-            this.pnlMod.Controls.Add(this.staminaMod);
-            this.pnlMod.Controls.Add(this.moraleMod);
-            this.pnlMod.Controls.Add(this.valueMod);
-            this.pnlMod.Controls.Add(this.packMod);
-            this.pnlMod.Controls.Add(this.ammoMod);
-            this.pnlMod.Controls.Add(this.medMod);
-            this.pnlMod.Controls.Add(this.waterMod);
-            this.pnlMod.Controls.Add(this.foodLabel);
-            this.pnlMod.Controls.Add(this.stamLabel);
-            this.pnlMod.Controls.Add(this.moraleLabel);
-            this.pnlMod.Controls.Add(this.valueLabel);
-            this.pnlMod.Controls.Add(this.packLabel);
-            this.pnlMod.Controls.Add(this.ammoLabel);
-            this.pnlMod.Controls.Add(this.medLabel);
-            this.pnlMod.Controls.Add(this.waterLabel);
             this.pnlMod.Controls.Add(this.modLabel);
             this.pnlMod.Location = new System.Drawing.Point(13, 100);
             this.pnlMod.Name = "pnlMod";
-            this.pnlMod.Size = new System.Drawing.Size(376, 262);
+            this.pnlMod.Size = new System.Drawing.Size(230, 262);
             this.pnlMod.TabIndex = 511;
             // 
             // statMLabel
             // 
             this.statMLabel.AutoSize = true;
             this.statMLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statMLabel.Location = new System.Drawing.Point(5, 30);
+            this.statMLabel.Location = new System.Drawing.Point(18, 30);
             this.statMLabel.Name = "statMLabel";
             this.statMLabel.Size = new System.Drawing.Size(28, 13);
             this.statMLabel.TabIndex = 334;
@@ -3200,7 +3045,7 @@
             // 
             this.applyMLabel.AutoSize = true;
             this.applyMLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.applyMLabel.Location = new System.Drawing.Point(139, 30);
+            this.applyMLabel.Location = new System.Drawing.Point(150, 30);
             this.applyMLabel.Name = "applyMLabel";
             this.applyMLabel.Size = new System.Drawing.Size(44, 13);
             this.applyMLabel.TabIndex = 333;
@@ -3210,7 +3055,7 @@
             // 
             this.amountMLabel.AutoSize = true;
             this.amountMLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountMLabel.Location = new System.Drawing.Point(91, 30);
+            this.amountMLabel.Location = new System.Drawing.Point(96, 30);
             this.amountMLabel.Name = "amountMLabel";
             this.amountMLabel.Size = new System.Drawing.Size(48, 13);
             this.amountMLabel.TabIndex = 332;
@@ -3219,7 +3064,7 @@
             // strengthModB
             // 
             this.strengthModB.AutoSize = true;
-            this.strengthModB.Location = new System.Drawing.Point(353, 232);
+            this.strengthModB.Location = new System.Drawing.Point(165, 233);
             this.strengthModB.Name = "strengthModB";
             this.strengthModB.Size = new System.Drawing.Size(15, 14);
             this.strengthModB.TabIndex = 331;
@@ -3229,7 +3074,7 @@
             // knowModB
             // 
             this.knowModB.AutoSize = true;
-            this.knowModB.Location = new System.Drawing.Point(353, 207);
+            this.knowModB.Location = new System.Drawing.Point(165, 208);
             this.knowModB.Name = "knowModB";
             this.knowModB.Size = new System.Drawing.Size(15, 14);
             this.knowModB.TabIndex = 330;
@@ -3239,7 +3084,7 @@
             // marksModB
             // 
             this.marksModB.AutoSize = true;
-            this.marksModB.Location = new System.Drawing.Point(353, 182);
+            this.marksModB.Location = new System.Drawing.Point(165, 183);
             this.marksModB.Name = "marksModB";
             this.marksModB.Size = new System.Drawing.Size(15, 14);
             this.marksModB.TabIndex = 329;
@@ -3249,7 +3094,7 @@
             // loyalModB
             // 
             this.loyalModB.AutoSize = true;
-            this.loyalModB.Location = new System.Drawing.Point(353, 155);
+            this.loyalModB.Location = new System.Drawing.Point(165, 156);
             this.loyalModB.Name = "loyalModB";
             this.loyalModB.Size = new System.Drawing.Size(15, 14);
             this.loyalModB.TabIndex = 328;
@@ -3259,7 +3104,7 @@
             // percModB
             // 
             this.percModB.AutoSize = true;
-            this.percModB.Location = new System.Drawing.Point(353, 129);
+            this.percModB.Location = new System.Drawing.Point(165, 130);
             this.percModB.Name = "percModB";
             this.percModB.Size = new System.Drawing.Size(15, 14);
             this.percModB.TabIndex = 327;
@@ -3269,7 +3114,7 @@
             // agilityModB
             // 
             this.agilityModB.AutoSize = true;
-            this.agilityModB.Location = new System.Drawing.Point(353, 105);
+            this.agilityModB.Location = new System.Drawing.Point(165, 106);
             this.agilityModB.Name = "agilityModB";
             this.agilityModB.Size = new System.Drawing.Size(15, 14);
             this.agilityModB.TabIndex = 326;
@@ -3279,7 +3124,7 @@
             // diploModB
             // 
             this.diploModB.AutoSize = true;
-            this.diploModB.Location = new System.Drawing.Point(353, 78);
+            this.diploModB.Location = new System.Drawing.Point(165, 79);
             this.diploModB.Name = "diploModB";
             this.diploModB.Size = new System.Drawing.Size(15, 14);
             this.diploModB.TabIndex = 325;
@@ -3289,7 +3134,7 @@
             // tacticsModB
             // 
             this.tacticsModB.AutoSize = true;
-            this.tacticsModB.Location = new System.Drawing.Point(353, 52);
+            this.tacticsModB.Location = new System.Drawing.Point(165, 53);
             this.tacticsModB.Name = "tacticsModB";
             this.tacticsModB.Size = new System.Drawing.Size(15, 14);
             this.tacticsModB.TabIndex = 324;
@@ -3298,7 +3143,7 @@
             // 
             // strengthMod
             // 
-            this.strengthMod.Location = new System.Drawing.Point(301, 230);
+            this.strengthMod.Location = new System.Drawing.Point(98, 231);
             this.strengthMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3316,7 +3161,7 @@
             // 
             // knowMod
             // 
-            this.knowMod.Location = new System.Drawing.Point(301, 205);
+            this.knowMod.Location = new System.Drawing.Point(98, 206);
             this.knowMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3334,7 +3179,7 @@
             // 
             // markMod
             // 
-            this.markMod.Location = new System.Drawing.Point(301, 179);
+            this.markMod.Location = new System.Drawing.Point(98, 180);
             this.markMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3352,7 +3197,7 @@
             // 
             // loyalMod
             // 
-            this.loyalMod.Location = new System.Drawing.Point(301, 153);
+            this.loyalMod.Location = new System.Drawing.Point(98, 154);
             this.loyalMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3370,7 +3215,7 @@
             // 
             // percMod
             // 
-            this.percMod.Location = new System.Drawing.Point(301, 127);
+            this.percMod.Location = new System.Drawing.Point(98, 128);
             this.percMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3388,7 +3233,7 @@
             // 
             // agilityMod
             // 
-            this.agilityMod.Location = new System.Drawing.Point(301, 101);
+            this.agilityMod.Location = new System.Drawing.Point(98, 102);
             this.agilityMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3406,7 +3251,7 @@
             // 
             // diploMod
             // 
-            this.diploMod.Location = new System.Drawing.Point(301, 76);
+            this.diploMod.Location = new System.Drawing.Point(98, 77);
             this.diploMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3424,7 +3269,7 @@
             // 
             // tacticsMod
             // 
-            this.tacticsMod.Location = new System.Drawing.Point(301, 50);
+            this.tacticsMod.Location = new System.Drawing.Point(98, 51);
             this.tacticsMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3443,7 +3288,7 @@
             // strengthLabel
             // 
             this.strengthLabel.AutoSize = true;
-            this.strengthLabel.Location = new System.Drawing.Point(214, 232);
+            this.strengthLabel.Location = new System.Drawing.Point(18, 233);
             this.strengthLabel.Name = "strengthLabel";
             this.strengthLabel.Size = new System.Drawing.Size(45, 13);
             this.strengthLabel.TabIndex = 315;
@@ -3452,7 +3297,7 @@
             // knowLabel
             // 
             this.knowLabel.AutoSize = true;
-            this.knowLabel.Location = new System.Drawing.Point(215, 207);
+            this.knowLabel.Location = new System.Drawing.Point(18, 208);
             this.knowLabel.Name = "knowLabel";
             this.knowLabel.Size = new System.Drawing.Size(59, 13);
             this.knowLabel.TabIndex = 314;
@@ -3461,7 +3306,7 @@
             // markLabel
             // 
             this.markLabel.AutoSize = true;
-            this.markLabel.Location = new System.Drawing.Point(215, 182);
+            this.markLabel.Location = new System.Drawing.Point(18, 183);
             this.markLabel.Name = "markLabel";
             this.markLabel.Size = new System.Drawing.Size(74, 13);
             this.markLabel.TabIndex = 313;
@@ -3470,7 +3315,7 @@
             // loyalLabel
             // 
             this.loyalLabel.AutoSize = true;
-            this.loyalLabel.Location = new System.Drawing.Point(215, 155);
+            this.loyalLabel.Location = new System.Drawing.Point(18, 156);
             this.loyalLabel.Name = "loyalLabel";
             this.loyalLabel.Size = new System.Drawing.Size(36, 13);
             this.loyalLabel.TabIndex = 312;
@@ -3479,7 +3324,7 @@
             // percLabel
             // 
             this.percLabel.AutoSize = true;
-            this.percLabel.Location = new System.Drawing.Point(214, 129);
+            this.percLabel.Location = new System.Drawing.Point(18, 130);
             this.percLabel.Name = "percLabel";
             this.percLabel.Size = new System.Drawing.Size(57, 13);
             this.percLabel.TabIndex = 311;
@@ -3488,7 +3333,7 @@
             // agilityLabel
             // 
             this.agilityLabel.AutoSize = true;
-            this.agilityLabel.Location = new System.Drawing.Point(213, 105);
+            this.agilityLabel.Location = new System.Drawing.Point(18, 106);
             this.agilityLabel.Name = "agilityLabel";
             this.agilityLabel.Size = new System.Drawing.Size(33, 13);
             this.agilityLabel.TabIndex = 310;
@@ -3497,7 +3342,7 @@
             // diploLabel
             // 
             this.diploLabel.AutoSize = true;
-            this.diploLabel.Location = new System.Drawing.Point(213, 79);
+            this.diploLabel.Location = new System.Drawing.Point(18, 80);
             this.diploLabel.Name = "diploLabel";
             this.diploLabel.Size = new System.Drawing.Size(54, 13);
             this.diploLabel.TabIndex = 309;
@@ -3506,221 +3351,93 @@
             // tacticsLabel
             // 
             this.tacticsLabel.AutoSize = true;
-            this.tacticsLabel.Location = new System.Drawing.Point(213, 52);
+            this.tacticsLabel.Location = new System.Drawing.Point(18, 53);
             this.tacticsLabel.Name = "tacticsLabel";
             this.tacticsLabel.Size = new System.Drawing.Size(38, 13);
             this.tacticsLabel.TabIndex = 308;
             this.tacticsLabel.Text = "tactics";
             // 
-            // foodModB
+            // modLabel
             // 
-            this.foodModB.AutoSize = true;
-            this.foodModB.Location = new System.Drawing.Point(151, 232);
-            this.foodModB.Name = "foodModB";
-            this.foodModB.Size = new System.Drawing.Size(15, 14);
-            this.foodModB.TabIndex = 307;
-            this.foodModB.UseVisualStyleBackColor = true;
-            this.foodModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            this.modLabel.AutoSize = true;
+            this.modLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modLabel.Location = new System.Drawing.Point(18, 6);
+            this.modLabel.Name = "modLabel";
+            this.modLabel.Size = new System.Drawing.Size(55, 13);
+            this.modLabel.TabIndex = 283;
+            this.modLabel.Text = "Modifers";
             // 
-            // staminaModB
+            // agilityLabelR
             // 
-            this.staminaModB.AutoSize = true;
-            this.staminaModB.Location = new System.Drawing.Point(151, 207);
-            this.staminaModB.Name = "staminaModB";
-            this.staminaModB.Size = new System.Drawing.Size(15, 14);
-            this.staminaModB.TabIndex = 306;
-            this.staminaModB.UseVisualStyleBackColor = true;
-            this.staminaModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            this.agilityLabelR.AutoSize = true;
+            this.agilityLabelR.Enabled = false;
+            this.agilityLabelR.Location = new System.Drawing.Point(694, 54);
+            this.agilityLabelR.Name = "agilityLabelR";
+            this.agilityLabelR.Size = new System.Drawing.Size(33, 13);
+            this.agilityLabelR.TabIndex = 354;
+            this.agilityLabelR.Text = "agility";
+            this.agilityLabelR.Visible = false;
             // 
-            // moraleModB
+            // lblCurrentResponse
             // 
-            this.moraleModB.AutoSize = true;
-            this.moraleModB.Location = new System.Drawing.Point(151, 182);
-            this.moraleModB.Name = "moraleModB";
-            this.moraleModB.Size = new System.Drawing.Size(15, 14);
-            this.moraleModB.TabIndex = 305;
-            this.moraleModB.UseVisualStyleBackColor = true;
-            this.moraleModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            this.lblCurrentResponse.AutoSize = true;
+            this.lblCurrentResponse.Location = new System.Drawing.Point(10, 15);
+            this.lblCurrentResponse.Name = "lblCurrentResponse";
+            this.lblCurrentResponse.Size = new System.Drawing.Size(132, 13);
+            this.lblCurrentResponse.TabIndex = 498;
+            this.lblCurrentResponse.Text = "Current Response To Edit:";
             // 
-            // vModB
+            // diploLabelR
             // 
-            this.vModB.AutoSize = true;
-            this.vModB.Location = new System.Drawing.Point(151, 155);
-            this.vModB.Name = "vModB";
-            this.vModB.Size = new System.Drawing.Size(15, 14);
-            this.vModB.TabIndex = 304;
-            this.vModB.UseVisualStyleBackColor = true;
-            this.vModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            this.diploLabelR.AutoSize = true;
+            this.diploLabelR.Enabled = false;
+            this.diploLabelR.Location = new System.Drawing.Point(694, 54);
+            this.diploLabelR.Name = "diploLabelR";
+            this.diploLabelR.Size = new System.Drawing.Size(54, 13);
+            this.diploLabelR.TabIndex = 353;
+            this.diploLabelR.Text = "diplomacy";
+            this.diploLabelR.Visible = false;
             // 
-            // valueModB
+            // comboBoxRespToEdit
             // 
-            this.valueModB.AutoSize = true;
-            this.valueModB.Location = new System.Drawing.Point(151, 129);
-            this.valueModB.Name = "valueModB";
-            this.valueModB.Size = new System.Drawing.Size(15, 14);
-            this.valueModB.TabIndex = 303;
-            this.valueModB.UseVisualStyleBackColor = true;
-            this.valueModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            this.comboBoxRespToEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRespToEdit.FormattingEnabled = true;
+            this.comboBoxRespToEdit.Items.AddRange(new object[] {
+            "Event 1",
+            "Event 2",
+            "Event 3"});
+            this.comboBoxRespToEdit.Location = new System.Drawing.Point(148, 12);
+            this.comboBoxRespToEdit.Name = "comboBoxRespToEdit";
+            this.comboBoxRespToEdit.Size = new System.Drawing.Size(675, 21);
+            this.comboBoxRespToEdit.TabIndex = 497;
+            this.comboBoxRespToEdit.SelectionChangeCommitted += new System.EventHandler(this.comboBoxEvent_SelectedIndexChanged);
             // 
-            // ammoModB
+            // tacticsLabelR
             // 
-            this.ammoModB.AutoSize = true;
-            this.ammoModB.Location = new System.Drawing.Point(151, 105);
-            this.ammoModB.Name = "ammoModB";
-            this.ammoModB.Size = new System.Drawing.Size(15, 14);
-            this.ammoModB.TabIndex = 302;
-            this.ammoModB.UseVisualStyleBackColor = true;
-            this.ammoModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            this.tacticsLabelR.AutoSize = true;
+            this.tacticsLabelR.Enabled = false;
+            this.tacticsLabelR.Location = new System.Drawing.Point(695, 52);
+            this.tacticsLabelR.Name = "tacticsLabelR";
+            this.tacticsLabelR.Size = new System.Drawing.Size(38, 13);
+            this.tacticsLabelR.TabIndex = 352;
+            this.tacticsLabelR.Text = "tactics";
+            this.tacticsLabelR.Visible = false;
             // 
-            // medModB
+            // waterLabel
             // 
-            this.medModB.AutoSize = true;
-            this.medModB.Location = new System.Drawing.Point(151, 79);
-            this.medModB.Name = "medModB";
-            this.medModB.Size = new System.Drawing.Size(15, 14);
-            this.medModB.TabIndex = 301;
-            this.medModB.UseVisualStyleBackColor = true;
-            this.medModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
-            // 
-            // waterModB
-            // 
-            this.waterModB.AutoSize = true;
-            this.waterModB.Location = new System.Drawing.Point(151, 52);
-            this.waterModB.Name = "waterModB";
-            this.waterModB.Size = new System.Drawing.Size(15, 14);
-            this.waterModB.TabIndex = 300;
-            this.waterModB.UseVisualStyleBackColor = true;
-            this.waterModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
-            // 
-            // foodMod
-            // 
-            this.foodMod.Location = new System.Drawing.Point(96, 230);
-            this.foodMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.foodMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.foodMod.Name = "foodMod";
-            this.foodMod.Size = new System.Drawing.Size(44, 20);
-            this.foodMod.TabIndex = 299;
-            this.foodMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // staminaMod
-            // 
-            this.staminaMod.Location = new System.Drawing.Point(96, 205);
-            this.staminaMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.staminaMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.staminaMod.Name = "staminaMod";
-            this.staminaMod.Size = new System.Drawing.Size(44, 20);
-            this.staminaMod.TabIndex = 298;
-            this.staminaMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // moraleMod
-            // 
-            this.moraleMod.Location = new System.Drawing.Point(96, 179);
-            this.moraleMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.moraleMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.moraleMod.Name = "moraleMod";
-            this.moraleMod.Size = new System.Drawing.Size(44, 20);
-            this.moraleMod.TabIndex = 297;
-            this.moraleMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // valueMod
-            // 
-            this.valueMod.Location = new System.Drawing.Point(96, 153);
-            this.valueMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.valueMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.valueMod.Name = "valueMod";
-            this.valueMod.Size = new System.Drawing.Size(44, 20);
-            this.valueMod.TabIndex = 296;
-            this.valueMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // packMod
-            // 
-            this.packMod.Location = new System.Drawing.Point(96, 127);
-            this.packMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.packMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.packMod.Name = "packMod";
-            this.packMod.Size = new System.Drawing.Size(44, 20);
-            this.packMod.TabIndex = 295;
-            this.packMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // ammoMod
-            // 
-            this.ammoMod.Location = new System.Drawing.Point(96, 101);
-            this.ammoMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.ammoMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.ammoMod.Name = "ammoMod";
-            this.ammoMod.Size = new System.Drawing.Size(44, 20);
-            this.ammoMod.TabIndex = 294;
-            this.ammoMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // medMod
-            // 
-            this.medMod.Location = new System.Drawing.Point(96, 76);
-            this.medMod.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.medMod.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.medMod.Name = "medMod";
-            this.medMod.Size = new System.Drawing.Size(44, 20);
-            this.medMod.TabIndex = 293;
-            this.medMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
+            this.waterLabel.AutoSize = true;
+            this.waterLabel.Enabled = false;
+            this.waterLabel.Location = new System.Drawing.Point(500, 49);
+            this.waterLabel.Name = "waterLabel";
+            this.waterLabel.Size = new System.Drawing.Size(33, 13);
+            this.waterLabel.TabIndex = 284;
+            this.waterLabel.Text = "water";
+            this.waterLabel.Visible = false;
             // 
             // waterMod
             // 
-            this.waterMod.Location = new System.Drawing.Point(96, 50);
+            this.waterMod.Enabled = false;
+            this.waterMod.Location = new System.Drawing.Point(591, 47);
             this.waterMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3734,112 +3451,321 @@
             this.waterMod.Name = "waterMod";
             this.waterMod.Size = new System.Drawing.Size(44, 20);
             this.waterMod.TabIndex = 292;
+            this.waterMod.Visible = false;
             this.waterMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
-            // 
-            // foodLabel
-            // 
-            this.foodLabel.AutoSize = true;
-            this.foodLabel.Location = new System.Drawing.Point(5, 232);
-            this.foodLabel.Name = "foodLabel";
-            this.foodLabel.Size = new System.Drawing.Size(28, 13);
-            this.foodLabel.TabIndex = 291;
-            this.foodLabel.Text = "food";
-            // 
-            // stamLabel
-            // 
-            this.stamLabel.AutoSize = true;
-            this.stamLabel.Location = new System.Drawing.Point(5, 207);
-            this.stamLabel.Name = "stamLabel";
-            this.stamLabel.Size = new System.Drawing.Size(43, 13);
-            this.stamLabel.TabIndex = 290;
-            this.stamLabel.Text = "stamina";
-            // 
-            // moraleLabel
-            // 
-            this.moraleLabel.AutoSize = true;
-            this.moraleLabel.Location = new System.Drawing.Point(5, 181);
-            this.moraleLabel.Name = "moraleLabel";
-            this.moraleLabel.Size = new System.Drawing.Size(38, 13);
-            this.moraleLabel.TabIndex = 289;
-            this.moraleLabel.Text = "morale";
-            // 
-            // valueLabel
-            // 
-            this.valueLabel.AutoSize = true;
-            this.valueLabel.Location = new System.Drawing.Point(5, 156);
-            this.valueLabel.Name = "valueLabel";
-            this.valueLabel.Size = new System.Drawing.Size(52, 13);
-            this.valueLabel.TabIndex = 288;
-            this.valueLabel.Text = "valuables";
-            // 
-            // packLabel
-            // 
-            this.packLabel.AutoSize = true;
-            this.packLabel.Location = new System.Drawing.Point(5, 129);
-            this.packLabel.Name = "packLabel";
-            this.packLabel.Size = new System.Drawing.Size(69, 13);
-            this.packLabel.TabIndex = 287;
-            this.packLabel.Text = "pack animals";
-            // 
-            // ammoLabel
-            // 
-            this.ammoLabel.AutoSize = true;
-            this.ammoLabel.Location = new System.Drawing.Point(5, 105);
-            this.ammoLabel.Name = "ammoLabel";
-            this.ammoLabel.Size = new System.Drawing.Size(35, 13);
-            this.ammoLabel.TabIndex = 286;
-            this.ammoLabel.Text = "ammo";
             // 
             // medLabel
             // 
             this.medLabel.AutoSize = true;
-            this.medLabel.Location = new System.Drawing.Point(5, 79);
+            this.medLabel.Enabled = false;
+            this.medLabel.Location = new System.Drawing.Point(500, 49);
             this.medLabel.Name = "medLabel";
             this.medLabel.Size = new System.Drawing.Size(49, 13);
             this.medLabel.TabIndex = 285;
             this.medLabel.Text = "medicine";
+            this.medLabel.Visible = false;
             // 
-            // waterLabel
+            // staminaMod
             // 
-            this.waterLabel.AutoSize = true;
-            this.waterLabel.Location = new System.Drawing.Point(5, 52);
-            this.waterLabel.Name = "waterLabel";
-            this.waterLabel.Size = new System.Drawing.Size(33, 13);
-            this.waterLabel.TabIndex = 284;
-            this.waterLabel.Text = "water";
+            this.staminaMod.Enabled = false;
+            this.staminaMod.Location = new System.Drawing.Point(591, 50);
+            this.staminaMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.staminaMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.staminaMod.Name = "staminaMod";
+            this.staminaMod.Size = new System.Drawing.Size(44, 20);
+            this.staminaMod.TabIndex = 298;
+            this.staminaMod.Visible = false;
+            this.staminaMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
-            // modLabel
+            // valueModB
             // 
-            this.modLabel.AutoSize = true;
-            this.modLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modLabel.Location = new System.Drawing.Point(5, 6);
-            this.modLabel.Name = "modLabel";
-            this.modLabel.Size = new System.Drawing.Size(55, 13);
-            this.modLabel.TabIndex = 283;
-            this.modLabel.Text = "Modifers";
+            this.valueModB.AutoSize = true;
+            this.valueModB.Enabled = false;
+            this.valueModB.Location = new System.Drawing.Point(646, 47);
+            this.valueModB.Name = "valueModB";
+            this.valueModB.Size = new System.Drawing.Size(15, 14);
+            this.valueModB.TabIndex = 303;
+            this.valueModB.UseVisualStyleBackColor = true;
+            this.valueModB.Visible = false;
+            this.valueModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
             // 
-            // lblCurrentResponse
+            // ammoLabel
             // 
-            this.lblCurrentResponse.AutoSize = true;
-            this.lblCurrentResponse.Location = new System.Drawing.Point(10, 15);
-            this.lblCurrentResponse.Name = "lblCurrentResponse";
-            this.lblCurrentResponse.Size = new System.Drawing.Size(132, 13);
-            this.lblCurrentResponse.TabIndex = 498;
-            this.lblCurrentResponse.Text = "Current Response To Edit:";
+            this.ammoLabel.AutoSize = true;
+            this.ammoLabel.Enabled = false;
+            this.ammoLabel.Location = new System.Drawing.Point(501, 49);
+            this.ammoLabel.Name = "ammoLabel";
+            this.ammoLabel.Size = new System.Drawing.Size(35, 13);
+            this.ammoLabel.TabIndex = 286;
+            this.ammoLabel.Text = "ammo";
+            this.ammoLabel.Visible = false;
             // 
-            // comboBoxRespToEdit
+            // vModB
             // 
-            this.comboBoxRespToEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRespToEdit.FormattingEnabled = true;
-            this.comboBoxRespToEdit.Items.AddRange(new object[] {
-            "Event 1",
-            "Event 2",
-            "Event 3"});
-            this.comboBoxRespToEdit.Location = new System.Drawing.Point(148, 12);
-            this.comboBoxRespToEdit.Name = "comboBoxRespToEdit";
-            this.comboBoxRespToEdit.Size = new System.Drawing.Size(670, 21);
-            this.comboBoxRespToEdit.TabIndex = 497;
-            this.comboBoxRespToEdit.SelectionChangeCommitted += new System.EventHandler(this.comboBoxEvent_SelectedIndexChanged);
+            this.vModB.AutoSize = true;
+            this.vModB.Enabled = false;
+            this.vModB.Location = new System.Drawing.Point(647, 49);
+            this.vModB.Name = "vModB";
+            this.vModB.Size = new System.Drawing.Size(15, 14);
+            this.vModB.TabIndex = 304;
+            this.vModB.UseVisualStyleBackColor = true;
+            this.vModB.Visible = false;
+            this.vModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // foodMod
+            // 
+            this.foodMod.Enabled = false;
+            this.foodMod.Location = new System.Drawing.Point(594, 46);
+            this.foodMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.foodMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.foodMod.Name = "foodMod";
+            this.foodMod.Size = new System.Drawing.Size(44, 20);
+            this.foodMod.TabIndex = 299;
+            this.foodMod.Visible = false;
+            this.foodMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
+            // 
+            // packLabel
+            // 
+            this.packLabel.AutoSize = true;
+            this.packLabel.Enabled = false;
+            this.packLabel.Location = new System.Drawing.Point(500, 47);
+            this.packLabel.Name = "packLabel";
+            this.packLabel.Size = new System.Drawing.Size(69, 13);
+            this.packLabel.TabIndex = 287;
+            this.packLabel.Text = "pack animals";
+            this.packLabel.Visible = false;
+            // 
+            // moraleMod
+            // 
+            this.moraleMod.Enabled = false;
+            this.moraleMod.Location = new System.Drawing.Point(593, 48);
+            this.moraleMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.moraleMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.moraleMod.Name = "moraleMod";
+            this.moraleMod.Size = new System.Drawing.Size(44, 20);
+            this.moraleMod.TabIndex = 297;
+            this.moraleMod.Visible = false;
+            this.moraleMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
+            // 
+            // ammoModB
+            // 
+            this.ammoModB.AutoSize = true;
+            this.ammoModB.Enabled = false;
+            this.ammoModB.Location = new System.Drawing.Point(647, 49);
+            this.ammoModB.Name = "ammoModB";
+            this.ammoModB.Size = new System.Drawing.Size(15, 14);
+            this.ammoModB.TabIndex = 302;
+            this.ammoModB.UseVisualStyleBackColor = true;
+            this.ammoModB.Visible = false;
+            this.ammoModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // valueLabel
+            // 
+            this.valueLabel.AutoSize = true;
+            this.valueLabel.Enabled = false;
+            this.valueLabel.Location = new System.Drawing.Point(501, 50);
+            this.valueLabel.Name = "valueLabel";
+            this.valueLabel.Size = new System.Drawing.Size(52, 13);
+            this.valueLabel.TabIndex = 288;
+            this.valueLabel.Text = "valuables";
+            this.valueLabel.Visible = false;
+            // 
+            // moraleModB
+            // 
+            this.moraleModB.AutoSize = true;
+            this.moraleModB.Enabled = false;
+            this.moraleModB.Location = new System.Drawing.Point(648, 51);
+            this.moraleModB.Name = "moraleModB";
+            this.moraleModB.Size = new System.Drawing.Size(15, 14);
+            this.moraleModB.TabIndex = 305;
+            this.moraleModB.UseVisualStyleBackColor = true;
+            this.moraleModB.Visible = false;
+            this.moraleModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // waterModB
+            // 
+            this.waterModB.AutoSize = true;
+            this.waterModB.Enabled = false;
+            this.waterModB.Location = new System.Drawing.Point(646, 49);
+            this.waterModB.Name = "waterModB";
+            this.waterModB.Size = new System.Drawing.Size(15, 14);
+            this.waterModB.TabIndex = 300;
+            this.waterModB.UseVisualStyleBackColor = true;
+            this.waterModB.Visible = false;
+            this.waterModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // moraleLabel
+            // 
+            this.moraleLabel.AutoSize = true;
+            this.moraleLabel.Enabled = false;
+            this.moraleLabel.Location = new System.Drawing.Point(502, 50);
+            this.moraleLabel.Name = "moraleLabel";
+            this.moraleLabel.Size = new System.Drawing.Size(38, 13);
+            this.moraleLabel.TabIndex = 289;
+            this.moraleLabel.Text = "morale";
+            this.moraleLabel.Visible = false;
+            // 
+            // valueMod
+            // 
+            this.valueMod.Enabled = false;
+            this.valueMod.Location = new System.Drawing.Point(592, 47);
+            this.valueMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.valueMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.valueMod.Name = "valueMod";
+            this.valueMod.Size = new System.Drawing.Size(44, 20);
+            this.valueMod.TabIndex = 296;
+            this.valueMod.Visible = false;
+            this.valueMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
+            // 
+            // medModB
+            // 
+            this.medModB.AutoSize = true;
+            this.medModB.Enabled = false;
+            this.medModB.Location = new System.Drawing.Point(646, 49);
+            this.medModB.Name = "medModB";
+            this.medModB.Size = new System.Drawing.Size(15, 14);
+            this.medModB.TabIndex = 301;
+            this.medModB.UseVisualStyleBackColor = true;
+            this.medModB.Visible = false;
+            this.medModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // stamLabel
+            // 
+            this.stamLabel.AutoSize = true;
+            this.stamLabel.Enabled = false;
+            this.stamLabel.Location = new System.Drawing.Point(500, 52);
+            this.stamLabel.Name = "stamLabel";
+            this.stamLabel.Size = new System.Drawing.Size(43, 13);
+            this.stamLabel.TabIndex = 290;
+            this.stamLabel.Text = "stamina";
+            this.stamLabel.Visible = false;
+            // 
+            // staminaModB
+            // 
+            this.staminaModB.AutoSize = true;
+            this.staminaModB.Enabled = false;
+            this.staminaModB.Location = new System.Drawing.Point(646, 52);
+            this.staminaModB.Name = "staminaModB";
+            this.staminaModB.Size = new System.Drawing.Size(15, 14);
+            this.staminaModB.TabIndex = 306;
+            this.staminaModB.UseVisualStyleBackColor = true;
+            this.staminaModB.Visible = false;
+            this.staminaModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // packMod
+            // 
+            this.packMod.Enabled = false;
+            this.packMod.Location = new System.Drawing.Point(591, 45);
+            this.packMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.packMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.packMod.Name = "packMod";
+            this.packMod.Size = new System.Drawing.Size(44, 20);
+            this.packMod.TabIndex = 295;
+            this.packMod.Visible = false;
+            this.packMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
+            // 
+            // foodLabel
+            // 
+            this.foodLabel.AutoSize = true;
+            this.foodLabel.Enabled = false;
+            this.foodLabel.Location = new System.Drawing.Point(503, 48);
+            this.foodLabel.Name = "foodLabel";
+            this.foodLabel.Size = new System.Drawing.Size(28, 13);
+            this.foodLabel.TabIndex = 291;
+            this.foodLabel.Text = "food";
+            this.foodLabel.Visible = false;
+            // 
+            // foodModB
+            // 
+            this.foodModB.AutoSize = true;
+            this.foodModB.Enabled = false;
+            this.foodModB.Location = new System.Drawing.Point(649, 48);
+            this.foodModB.Name = "foodModB";
+            this.foodModB.Size = new System.Drawing.Size(15, 14);
+            this.foodModB.TabIndex = 307;
+            this.foodModB.UseVisualStyleBackColor = true;
+            this.foodModB.Visible = false;
+            this.foodModB.CheckedChanged += new System.EventHandler(this.waterModB_CheckedChanged);
+            // 
+            // ammoMod
+            // 
+            this.ammoMod.Enabled = false;
+            this.ammoMod.Location = new System.Drawing.Point(592, 45);
+            this.ammoMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.ammoMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.ammoMod.Name = "ammoMod";
+            this.ammoMod.Size = new System.Drawing.Size(44, 20);
+            this.ammoMod.TabIndex = 294;
+            this.ammoMod.Visible = false;
+            this.ammoMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
+            // 
+            // medMod
+            // 
+            this.medMod.Enabled = false;
+            this.medMod.Location = new System.Drawing.Point(591, 46);
+            this.medMod.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.medMod.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.medMod.Name = "medMod";
+            this.medMod.Size = new System.Drawing.Size(44, 20);
+            this.medMod.TabIndex = 293;
+            this.medMod.Visible = false;
+            this.medMod.ValueChanged += new System.EventHandler(this.waterMod_ValueChanged);
             // 
             // tabFinish
             // 
@@ -3916,37 +3842,66 @@
             this.openFileDialog_LoadEvent.Filter = "Text Files|*.txt";
             this.openFileDialog_LoadEvent.Title = "Load Event";
             // 
-            // radioAnd
+            // lblAnd
             // 
-            this.radioAnd.AutoSize = true;
-            this.radioAnd.Checked = true;
-            this.radioAnd.Location = new System.Drawing.Point(12, 334);
-            this.radioAnd.Name = "radioAnd";
-            this.radioAnd.Size = new System.Drawing.Size(48, 17);
-            this.radioAnd.TabIndex = 7;
-            this.radioAnd.TabStop = true;
-            this.radioAnd.Text = "AND";
-            this.radioAnd.UseVisualStyleBackColor = true;
+            this.lblAnd.AutoSize = true;
+            this.lblAnd.Location = new System.Drawing.Point(9, 347);
+            this.lblAnd.Name = "lblAnd";
+            this.lblAnd.Size = new System.Drawing.Size(33, 13);
+            this.lblAnd.TabIndex = 27;
+            this.lblAnd.Text = "AND:";
             // 
-            // radioOr
+            // lblOr
             // 
-            this.radioOr.AutoSize = true;
-            this.radioOr.Location = new System.Drawing.Point(86, 334);
-            this.radioOr.Name = "radioOr";
-            this.radioOr.Size = new System.Drawing.Size(41, 17);
-            this.radioOr.TabIndex = 8;
-            this.radioOr.Text = "OR";
-            this.radioOr.UseVisualStyleBackColor = true;
+            this.lblOr.AutoSize = true;
+            this.lblOr.Location = new System.Drawing.Point(9, 385);
+            this.lblOr.Name = "lblOr";
+            this.lblOr.Size = new System.Drawing.Size(26, 13);
+            this.lblOr.TabIndex = 29;
+            this.lblOr.Text = "OR:";
             // 
-            // radioNot
+            // orClassInput
             // 
-            this.radioNot.AutoSize = true;
-            this.radioNot.Location = new System.Drawing.Point(153, 334);
-            this.radioNot.Name = "radioNot";
-            this.radioNot.Size = new System.Drawing.Size(48, 17);
-            this.radioNot.TabIndex = 9;
-            this.radioNot.Text = "NOT";
-            this.radioNot.UseVisualStyleBackColor = true;
+            this.orClassInput.CheckOnClick = true;
+            this.orClassInput.FormattingEnabled = true;
+            this.orClassInput.Items.AddRange(new object[] {
+            "Hunter",
+            "Mercenary",
+            "Naturalist",
+            "Missionary",
+            "Explorer",
+            "Guide"});
+            this.orClassInput.Location = new System.Drawing.Point(48, 382);
+            this.orClassInput.MultiColumn = true;
+            this.orClassInput.Name = "orClassInput";
+            this.orClassInput.Size = new System.Drawing.Size(744, 19);
+            this.orClassInput.TabIndex = 28;
+            // 
+            // lblNot
+            // 
+            this.lblNot.AutoSize = true;
+            this.lblNot.Location = new System.Drawing.Point(9, 419);
+            this.lblNot.Name = "lblNot";
+            this.lblNot.Size = new System.Drawing.Size(33, 13);
+            this.lblNot.TabIndex = 31;
+            this.lblNot.Text = "NOT:";
+            // 
+            // notClassInput
+            // 
+            this.notClassInput.CheckOnClick = true;
+            this.notClassInput.FormattingEnabled = true;
+            this.notClassInput.Items.AddRange(new object[] {
+            "Hunter",
+            "Mercenary",
+            "Naturalist",
+            "Missionary",
+            "Explorer",
+            "Guide"});
+            this.notClassInput.Location = new System.Drawing.Point(48, 416);
+            this.notClassInput.MultiColumn = true;
+            this.notClassInput.Name = "notClassInput";
+            this.notClassInput.Size = new System.Drawing.Size(744, 19);
+            this.notClassInput.TabIndex = 30;
             // 
             // frmMain
             // 
@@ -3969,20 +3924,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.removeNumBox)).EndInit();
             this.tabEditRespOpts.ResumeLayout(false);
             this.tabEditRespOpts.PerformLayout();
-            this.pnlOther.ResumeLayout(false);
-            this.pnlOther.PerformLayout();
-            this.pnlResText.ResumeLayout(false);
-            this.pnlResText.PerformLayout();
-            this.pnlCost.ResumeLayout(false);
-            this.pnlCost.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.strengthReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.knowCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.knowReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loyalCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.percCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.marksReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agilityCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diploCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyalReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tacticsCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.percReq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agilityReq)).EndInit();
+            this.pnlOther.ResumeLayout(false);
+            this.pnlOther.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.diploReq)).EndInit();
+            this.pnlResText.ResumeLayout(false);
+            this.pnlResText.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tacticsReq)).EndInit();
+            this.pnlCost.ResumeLayout(false);
+            this.pnlCost.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foodCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moraleCost)).EndInit();
@@ -4029,14 +3992,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.waterWin)).EndInit();
             this.pnlReq.ResumeLayout(false);
             this.pnlReq.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.strengthReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.knowReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marksReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loyalReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.percReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agilityReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diploReq)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tacticsReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foodReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moraleReq)).EndInit();
@@ -4055,14 +4010,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.agilityMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diploMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tacticsMod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moraleMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valueMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ammoMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medMod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.waterMod)).EndInit();
             this.tabFinish.ResumeLayout(false);
             this.tabFinish.PerformLayout();
             this.ResumeLayout(false);
@@ -4074,27 +4029,27 @@
         private System.Windows.Forms.TabControl tabMain;
         private System.Windows.Forms.TabPage Advice;
         private System.Windows.Forms.TabPage tabEditRespOpts;
-        private System.Windows.Forms.CheckBox chkUmbopa;
-        private System.Windows.Forms.TextBox txtUmbopa;
-        private System.Windows.Forms.Label lblUmbopa;
+        private System.Windows.Forms.CheckBox chkHunter;
+        private System.Windows.Forms.TextBox txtHunter;
+        private System.Windows.Forms.Label lblHunter;
         private System.Windows.Forms.Label CharacterAdvice;
         private System.Windows.Forms.Label CharacterTtype;
-        private System.Windows.Forms.Label lblMacumazahn;
+        private System.Windows.Forms.Label lblMercenary;
         private System.Windows.Forms.Label IsAdviceUseful;
-        private System.Windows.Forms.Label lblTheunisVanZyl;
-        private System.Windows.Forms.Label lblJanKruger;
-        private System.Windows.Forms.Label lblTariro;
-        private System.Windows.Forms.Label lblWonai;
-        private System.Windows.Forms.CheckBox chkTheunisVanZyl;
-        private System.Windows.Forms.CheckBox chkWonai;
-        private System.Windows.Forms.CheckBox chkTariro;
-        private System.Windows.Forms.CheckBox chkJanKruger;
-        private System.Windows.Forms.CheckBox chkMacumazahn;
-        private System.Windows.Forms.TextBox txtJanKruger;
-        private System.Windows.Forms.TextBox txtTheunisVanZyl;
-        private System.Windows.Forms.TextBox txtTariro;
-        private System.Windows.Forms.TextBox txtWonai;
-        private System.Windows.Forms.TextBox txtMacumazahn;
+        private System.Windows.Forms.Label lblGuide;
+        private System.Windows.Forms.Label lblExplorer;
+        private System.Windows.Forms.Label lblMissionary;
+        private System.Windows.Forms.Label lblNaturalist;
+        private System.Windows.Forms.CheckBox chkGuide;
+        private System.Windows.Forms.CheckBox chkNaturalist;
+        private System.Windows.Forms.CheckBox chkMissionary;
+        private System.Windows.Forms.CheckBox chkExplorer;
+        private System.Windows.Forms.CheckBox chkMercenary;
+        private System.Windows.Forms.TextBox txtExplorer;
+        private System.Windows.Forms.TextBox txtGuide;
+        private System.Windows.Forms.TextBox txtMissionary;
+        private System.Windows.Forms.TextBox txtNaturalist;
+        private System.Windows.Forms.TextBox txtMercenary;
         private System.Windows.Forms.TabPage tabGeneralInfo;
         private System.Windows.Forms.TabPage tabRespOpts;
         private System.Windows.Forms.TabPage tabFinish;
@@ -4108,8 +4063,8 @@
         private System.Windows.Forms.TextBox introDescInput;
         private System.Windows.Forms.Label frequencyLabel;
         private System.Windows.Forms.ComboBox frequencyInput;
-        private System.Windows.Forms.CheckedListBox reqPaMemInput;
-        private System.Windows.Forms.Label reqPaMemLabel;
+        private System.Windows.Forms.CheckedListBox andClassInput;
+        private System.Windows.Forms.Label reqClassLabel;
         private System.Windows.Forms.Label possibleLocationsLabel;
         private System.Windows.Forms.CheckedListBox locationsInput;
         private System.Windows.Forms.ComboBox eventTypeInput;
@@ -4327,24 +4282,6 @@
         private System.Windows.Forms.Label waterLabel;
         private System.Windows.Forms.Label modLabel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label lblGuntherReinhart;
-        private System.Windows.Forms.Label lblDuncanMacKinnon;
-        private System.Windows.Forms.Label lblJackReed;
-        private System.Windows.Forms.Label lblRolandPerry;
-        private System.Windows.Forms.CheckBox chkGuntherReinhart;
-        private System.Windows.Forms.CheckBox chkRolandPerry;
-        private System.Windows.Forms.CheckBox chkJackReed;
-        private System.Windows.Forms.CheckBox chkDuncanMacKinnon;
-        private System.Windows.Forms.CheckBox chkJakobusKotze;
-        private System.Windows.Forms.TextBox txtDuncanMacKinnon;
-        private System.Windows.Forms.TextBox txtGuntherReinhart;
-        private System.Windows.Forms.TextBox txtJackReed;
-        private System.Windows.Forms.TextBox txtRolandPerry;
-        private System.Windows.Forms.TextBox txtJakobusKotze;
-        private System.Windows.Forms.Label lblJakobusKotze;
-        private System.Windows.Forms.CheckBox chkWillemDeBruin;
-        private System.Windows.Forms.TextBox txtWillemDeBruin;
-        private System.Windows.Forms.Label lblWillemDeBruin;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblCurrentResponse;
         private System.Windows.Forms.ComboBox comboBoxRespToEdit;
@@ -4386,9 +4323,11 @@
         private System.Windows.Forms.Label lblProbLoseTxt;
         private System.Windows.Forms.Label lblProbPassTxt;
         private System.Windows.Forms.Label lblProbOfWinTxt;
-        private System.Windows.Forms.RadioButton radioOr;
-        private System.Windows.Forms.RadioButton radioAnd;
-        private System.Windows.Forms.RadioButton radioNot;
+        private System.Windows.Forms.Label lblAnd;
+        private System.Windows.Forms.Label lblNot;
+        private System.Windows.Forms.CheckedListBox notClassInput;
+        private System.Windows.Forms.Label lblOr;
+        private System.Windows.Forms.CheckedListBox orClassInput;
 
     }
 }

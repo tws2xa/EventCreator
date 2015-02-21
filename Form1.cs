@@ -78,12 +78,22 @@ namespace EventCreator
         internal List<string> getRequiredParty()
         {        
             List<String> reqPartyMem = new List<String>();
-            if (radioNot.Checked) reqPartyMem.Add(useNot);
-            else if (radioOr.Checked) reqPartyMem.Add(useOr);
-            //Else default to AND
-            foreach (int index in reqPaMemInput.CheckedIndices)
+            //AND
+            foreach (int index in andClassInput.CheckedIndices)
             {
-                reqPartyMem.Add((String)(reqPaMemInput.Items[index]));
+                reqPartyMem.Add((String)(andClassInput.Items[index]));
+            }
+            //OR
+            reqPartyMem.Add(useOr);
+            foreach (int index in orClassInput.CheckedIndices)
+            {
+                reqPartyMem.Add((String)(orClassInput.Items[index]));
+            }
+            //NOT
+            reqPartyMem.Add(useNot);
+            foreach (int index in notClassInput.CheckedIndices)
+            {
+                reqPartyMem.Add((String)(notClassInput.Items[index]));
             }
             return reqPartyMem;
         }
@@ -150,31 +160,48 @@ namespace EventCreator
                 {
                     locationsInput.SetItemChecked(i, locations.Contains(locationsInput.Items[i]));
                 }
+
+                //Clear the and/or/not boxes for required party members
+                CheckedListBox toClear = andClassInput;
+                for (int j = 0; j < 3; j++)
+                {
+                    foreach (int index in toClear.CheckedIndices)
+                    {
+                        toClear.SetItemChecked(index, false);
+                    }
+                    if (toClear == andClassInput) toClear = orClassInput;
+                    else if (toClear == orClassInput) toClear = notClassInput;
+                    else break;
+                }
+                //Re-fill the and/or/not boxes of required party members
                 List<string> partyNeeded = GetListFromJSON<List<string>>(theEvent.myDictionary[Keys.REQ_PARTY_KEY]);
-                int startIndex = 0;
-                if (partyNeeded[0] == useNot)
+                CheckedListBox curBox = andClassInput;
+                for (int i = 0; i < partyNeeded.Count; i++)
                 {
-                    radioNot.Checked = true;
-                    startIndex = 1;
+                    if (partyNeeded[i] == useOr)
+                    {
+                        curBox = orClassInput;
+                        continue;
+                    }
+                    if (partyNeeded[i] == useNot)
+                    {
+                        curBox = notClassInput;
+                        continue;
+                    }
+                    if (curBox.Items.Contains(partyNeeded[i]))
+                    {
+                        Console.WriteLine("ADDING " + partyNeeded[i] + " TO " + curBox.Name); 
+                        curBox.SetItemChecked(curBox.Items.IndexOf(partyNeeded[i]), true);
+                    }
                 }
-                else if (partyNeeded[0] == useOr)
-                {
-                    radioOr.Checked = true;
-                    startIndex = 1;
-                }
-                else
-                {
-                    radioAnd.Checked = true;
-                }
-                for (int i = 0; i < reqPaMemInput.Items.Count; i++)
-                {
-                    reqPaMemInput.SetItemChecked(i, partyNeeded.Contains(reqPaMemInput.Items[i]));
-                }
+
+
                 introDescInput.Text = (string)theEvent.myDictionary[Keys.INTRO_TEXT_KEY];
                 selectplayerB.Checked = (bool)theEvent.myDictionary[Keys.PARTY_MEMBER_TARGETED_KEY];
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine("Error loading General Info Tab:\n" + e.Message);
                 return "General Information";
             }
             return "";
@@ -193,106 +220,55 @@ namespace EventCreator
         {
 
             string preTxt = LETTER_NOT_USEFUL;
-            if (chkUmbopa.Checked == true)
+            if (chkHunter.Checked == true)
             {
                 preTxt = LETTER_USEFUL;
             }
-            string adviceHunter = preTxt + txtUmbopa.Text;
+            string adviceHunter = preTxt + txtHunter.Text;
 
             preTxt = LETTER_NOT_USEFUL;
-            if (chkMacumazahn.Checked == true)
+            if (chkMercenary.Checked == true)
             {
                 preTxt = LETTER_USEFUL;
             }
-            string adviceMercenary = preTxt + txtMacumazahn.Text;
+            string adviceMercenary = preTxt + txtMercenary.Text;
 
             preTxt = LETTER_NOT_USEFUL;
-            if (chkWonai.Checked == true)
+            if (chkNaturalist.Checked == true)
             {
                 preTxt = LETTER_USEFUL;
             }
-            string adviceNaturalist = preTxt + txtWonai.Text;
+            string adviceNaturalist = preTxt + txtNaturalist.Text;
 
             preTxt = LETTER_NOT_USEFUL;
-            if (chkTariro.Checked == true)
+            if (chkMissionary.Checked == true)
             {
                 preTxt = LETTER_USEFUL;
             }
-            string adviceMissionary = preTxt + txtTariro.Text;
+            string adviceMissionary = preTxt + txtMissionary.Text;
 
             preTxt = LETTER_NOT_USEFUL;
-            if (chkJanKruger.Checked == true)
+            if (chkExplorer.Checked == true)
             {
                 preTxt = LETTER_USEFUL;
             }
-            string adviceExplorer = preTxt + txtJanKruger.Text;
+            string adviceExplorer = preTxt + txtExplorer.Text;
 
             preTxt = LETTER_NOT_USEFUL;
-            if (chkTheunisVanZyl.Checked == true)
+            if (chkGuide.Checked == true)
             {
                 preTxt = LETTER_USEFUL;
             }
-            string adviceGuide = preTxt + txtTheunisVanZyl.Text;
-
-            preTxt = LETTER_NOT_USEFUL;
-            if (chkWillemDeBruin.Checked == true)
-            {
-                preTxt = LETTER_USEFUL;
-            }
-            string adviceWillemDeBruin = preTxt + txtWillemDeBruin.Text;
-
-            preTxt = LETTER_NOT_USEFUL;
-            if (chkJakobusKotze.Checked == true)
-            {
-                preTxt = LETTER_USEFUL;
-            }
-            string adviceJakobusKotze = preTxt + txtJakobusKotze.Text;
-
-            preTxt = LETTER_NOT_USEFUL;
-            if (chkRolandPerry.Checked == true)
-            {
-                preTxt = LETTER_USEFUL;
-            }
-            string adviceRolandPerry = preTxt + txtRolandPerry.Text;
-
-            preTxt = LETTER_NOT_USEFUL;
-            if (chkJackReed.Checked == true)
-            {
-                preTxt = LETTER_USEFUL;
-            }
-            string adviceJackReed = preTxt + txtJackReed.Text;
-
-            preTxt = LETTER_NOT_USEFUL;
-            if (chkDuncanMacKinnon.Checked == true)
-            {
-                preTxt = LETTER_USEFUL;
-            }
-            string adviceDuncanMacKinnon = preTxt + txtDuncanMacKinnon.Text;
-
-            preTxt = LETTER_NOT_USEFUL;
-            if (chkGuntherReinhart.Checked == true)
-            {
-                preTxt = LETTER_USEFUL;
-            }
-            string adviceGuntherReinhart = preTxt + txtGuntherReinhart.Text;
-
-
+            string adviceGuide = preTxt + txtGuide.Text;
 
 
             Dictionary<String, String> dictionaryAdvice = new Dictionary<String, String>();
-            dictionaryAdvice.Add(lblUmbopa.Text, adviceHunter);
-            dictionaryAdvice.Add(lblMacumazahn.Text, adviceMercenary);
-            dictionaryAdvice.Add(lblWonai.Text, adviceNaturalist);
-            dictionaryAdvice.Add(lblTariro.Text, adviceMissionary);
-            dictionaryAdvice.Add(lblJanKruger.Text, adviceExplorer);
-            dictionaryAdvice.Add(lblTheunisVanZyl.Text, adviceGuide);
-            dictionaryAdvice.Add(lblWillemDeBruin.Text, adviceWillemDeBruin);
-            dictionaryAdvice.Add(lblJakobusKotze.Text, adviceJakobusKotze);
-            dictionaryAdvice.Add(lblRolandPerry.Text, adviceRolandPerry);
-            dictionaryAdvice.Add(lblJackReed.Text, adviceJackReed);
-            dictionaryAdvice.Add(lblDuncanMacKinnon.Text, adviceDuncanMacKinnon);
-            dictionaryAdvice.Add(lblGuntherReinhart.Text, adviceGuntherReinhart);
-            
+            dictionaryAdvice.Add(lblHunter.Text, adviceHunter);
+            dictionaryAdvice.Add(lblMercenary.Text, adviceMercenary);
+            dictionaryAdvice.Add(lblNaturalist.Text, adviceNaturalist);
+            dictionaryAdvice.Add(lblMissionary.Text, adviceMissionary);
+            dictionaryAdvice.Add(lblExplorer.Text, adviceExplorer);
+            dictionaryAdvice.Add(lblGuide.Text, adviceGuide);            
 
             return dictionaryAdvice;
         }
@@ -306,31 +282,35 @@ namespace EventCreator
         {
             try
             {
+                //First we check for advice listed by class
+                //If it doesn't exist, it may be an old event from previous event creator iterations, which saved advice by person.
+                //So if no advice by class, it checks both people who were of that class in old versions.
+                //If still nothing, leave advice blank.
                 Dictionary<string, string> advice = GetObjFromJSON<Dictionary<string, string>>(theEvent.myDictionary[Keys.ADVICE_KEY]);
-                //Umbopa
-                SetAdviceRow(txtUmbopa, chkUmbopa, advice[lblUmbopa.Text]);
-                //Macumazahn
-                SetAdviceRow(txtMacumazahn, chkMacumazahn, advice[lblMacumazahn.Text]);
-                //Wonai
-                SetAdviceRow(txtWonai, chkWonai, advice[lblWonai.Text]);
-                //Tariro
-                SetAdviceRow(txtTariro, chkTariro, advice[lblTariro.Text]);
-                //JanKruger
-                SetAdviceRow(txtJanKruger, chkJanKruger, advice[lblJanKruger.Text]);
-                //TheunisVanZyl
-                SetAdviceRow(txtTheunisVanZyl, chkTheunisVanZyl, advice[lblTheunisVanZyl.Text]);
-                //WillemDeBruin
-                SetAdviceRow(txtWillemDeBruin, chkWillemDeBruin, advice[lblWillemDeBruin.Text]);
-                //JakobusKotze
-                SetAdviceRow(txtJakobusKotze, chkJakobusKotze, advice[lblJakobusKotze.Text]);
-                //RolandPerry
-                SetAdviceRow(txtRolandPerry, chkRolandPerry, advice[lblRolandPerry.Text]);
-                //JackReed
-                SetAdviceRow(txtJackReed, chkJackReed, advice[lblJackReed.Text]);
-                //DuncanMacKinnon
-                SetAdviceRow(txtDuncanMacKinnon, chkDuncanMacKinnon, advice[lblDuncanMacKinnon.Text]);
-                //GuntherReinhart
-                SetAdviceRow(txtGuntherReinhart, chkGuntherReinhart, advice[lblGuntherReinhart.Text]);
+                //Hunter
+                if (advice.ContainsKey(lblHunter.Text)) SetAdviceRow(txtHunter, chkHunter, advice[lblHunter.Text]);
+                else if (advice.ContainsKey("Macumazahn")) SetAdviceRow(txtHunter, chkHunter, advice["Macumazahn"]);
+                else if (advice.ContainsKey("Jan Kruger")) SetAdviceRow(txtHunter, chkHunter, advice["Jan Kruger"]);
+                //Mercenary
+                if (advice.ContainsKey(lblMercenary.Text)) SetAdviceRow(txtMercenary, chkMercenary, advice[lblMercenary.Text]);
+                else if (advice.ContainsKey("Umbopa")) SetAdviceRow(txtHunter, chkHunter, advice["Umbopa"]);
+                else if (advice.ContainsKey("Gunther Reinhart")) SetAdviceRow(txtHunter, chkHunter, advice["Gunther Reinhart"]);
+                //Naturalist
+                if (advice.ContainsKey(lblNaturalist.Text)) SetAdviceRow(txtNaturalist, chkNaturalist, advice[lblNaturalist.Text]);
+                else if (advice.ContainsKey("Wonai")) SetAdviceRow(txtHunter, chkHunter, advice["Wonai"]);
+                else if (advice.ContainsKey("Roland Perry")) SetAdviceRow(txtHunter, chkHunter, advice["Roland Perry"]);
+                //Missionary
+                if (advice.ContainsKey(lblMissionary.Text)) SetAdviceRow(txtMissionary, chkMissionary, advice[lblMissionary.Text]);
+                else if (advice.ContainsKey("Theunis Van Zyl")) SetAdviceRow(txtHunter, chkHunter, advice["Theunis Van Zyl"]);
+                else if (advice.ContainsKey("Duncan MacKinnon")) SetAdviceRow(txtHunter, chkHunter, advice["Duncan MacKinnon"]);
+                //Explorer
+                if (advice.ContainsKey(lblExplorer.Text)) SetAdviceRow(txtExplorer, chkExplorer, advice[lblExplorer.Text]);
+                else if (advice.ContainsKey("Willem de Bruin")) SetAdviceRow(txtHunter, chkHunter, advice["Willem de Bruin"]);
+                else if (advice.ContainsKey("Jack Reed")) SetAdviceRow(txtHunter, chkHunter, advice["Jack Reed"]);
+                //Guide
+                if (advice.ContainsKey(lblGuide.Text)) SetAdviceRow(txtGuide, chkGuide, advice[lblGuide.Text]);
+                else if (advice.ContainsKey("Tariro")) SetAdviceRow(txtHunter, chkHunter, advice["Tariro"]);
+                else if (advice.ContainsKey("Jakobus Kotze")) SetAdviceRow(txtHunter, chkHunter, advice["Jakobus Kotze"]);
             }
             catch (Exception e)
             {
@@ -1102,7 +1082,7 @@ namespace EventCreator
 
         private void setEditRespLayout()
         {
-            int panelWidth = pnlMod.Width;
+            //int panelWidth = pnlMod.Width;
             int panelHeight = pnlMod.Height;
 
             int tabWidth = tabMain.Width;
@@ -1120,16 +1100,17 @@ namespace EventCreator
 
             while (pnlIndex <= respEditPanels.Count - 1)
             {
-                while (curX + panelWidth < tabWidth && !finished)
+                while (!finished && curX + respEditPanels[pnlIndex].Width < tabWidth)
                 {
                     Panel curPnl = respEditPanels[pnlIndex];
+
+                    curPnl.Location = new Point(curX, curY);
+                    curX += respEditPanels[pnlIndex].Width + hSpacer;
+
                     pnlIndex++;
 
                     if (pnlIndex > respEditPanels.Count - 1) finished = true;
 
-                    curPnl.Location = new Point(curX, curY);
-
-                    curX += panelWidth + hSpacer;
                 }
                 curX = border;
                 curY += panelHeight + vSpacer;
@@ -1348,7 +1329,7 @@ namespace EventCreator
 
             respEditPanels = new List<Panel>()
             {
-                pnlMod, pnlReq, pnlWin, pnlLose, pnlCost, pnlResText
+                pnlMod, pnlReq, pnlCost, pnlWin, pnlLose, pnlResText
             };
         }
 
@@ -1408,6 +1389,11 @@ namespace EventCreator
             frmHeight = this.Height;
 
             setEditRespLayout();
+        }
+
+        private void loyalCostC_Click(object sender, EventArgs e)
+        {
+
         }
         
         /* ------------------------------------------------ */
