@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabGeneralInfo = new System.Windows.Forms.TabPage();
+            this.lblNot = new System.Windows.Forms.Label();
+            this.notClassInput = new System.Windows.Forms.CheckedListBox();
+            this.lblOr = new System.Windows.Forms.Label();
+            this.orClassInput = new System.Windows.Forms.CheckedListBox();
+            this.lblAnd = new System.Windows.Forms.Label();
             this.chkOnlyOnce = new System.Windows.Forms.CheckBox();
             this.btnLoadEvent = new System.Windows.Forms.Button();
             this.selectplayerB = new System.Windows.Forms.CheckBox();
@@ -84,18 +89,23 @@
             this.labelResponse4 = new System.Windows.Forms.Label();
             this.labelResponse5 = new System.Windows.Forms.Label();
             this.tabEditRespOpts = new System.Windows.Forms.TabPage();
+            this.passText = new System.Windows.Forms.TextBox();
             this.lblProbLose = new System.Windows.Forms.Label();
+            this.passTextLabel = new System.Windows.Forms.Label();
             this.lblProbPass = new System.Windows.Forms.Label();
             this.strengthReq = new System.Windows.Forms.NumericUpDown();
             this.strengthCost = new System.Windows.Forms.NumericUpDown();
             this.knowCost = new System.Windows.Forms.NumericUpDown();
             this.lblProbWin = new System.Windows.Forms.Label();
+            this.browse2 = new System.Windows.Forms.Button();
             this.marksCost = new System.Windows.Forms.NumericUpDown();
             this.knowReq = new System.Windows.Forms.NumericUpDown();
             this.loyalCost = new System.Windows.Forms.NumericUpDown();
+            this.passFollowUp = new System.Windows.Forms.TextBox();
             this.lblWithStdParty = new System.Windows.Forms.Label();
             this.percCost = new System.Windows.Forms.NumericUpDown();
             this.marksReq = new System.Windows.Forms.NumericUpDown();
+            this.passFollowUpLabel = new System.Windows.Forms.Label();
             this.agilityCost = new System.Windows.Forms.NumericUpDown();
             this.lblProbLoseTxt = new System.Windows.Forms.Label();
             this.diploCost = new System.Windows.Forms.NumericUpDown();
@@ -118,20 +128,15 @@
             this.chkWinKill = new System.Windows.Forms.CheckBox();
             this.btnRespOptSave = new System.Windows.Forms.Button();
             this.btnBrowse3 = new System.Windows.Forms.Button();
-            this.browse2 = new System.Windows.Forms.Button();
             this.browse1 = new System.Windows.Forms.Button();
             this.loseFollowUp = new System.Windows.Forms.TextBox();
-            this.passFollowUp = new System.Windows.Forms.TextBox();
             this.winFollowUp = new System.Windows.Forms.TextBox();
             this.loseFollowUpLabel = new System.Windows.Forms.Label();
-            this.passFollowUpLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.percLabelC = new System.Windows.Forms.Label();
             this.diploReq = new System.Windows.Forms.NumericUpDown();
             this.agilityLabelC = new System.Windows.Forms.Label();
             this.pnlResText = new System.Windows.Forms.Panel();
-            this.passText = new System.Windows.Forms.TextBox();
-            this.passTextLabel = new System.Windows.Forms.Label();
             this.loseText = new System.Windows.Forms.TextBox();
             this.loseTextLabel = new System.Windows.Forms.Label();
             this.winText = new System.Windows.Forms.TextBox();
@@ -326,11 +331,6 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog_LoadEvent = new System.Windows.Forms.OpenFileDialog();
-            this.lblAnd = new System.Windows.Forms.Label();
-            this.lblOr = new System.Windows.Forms.Label();
-            this.orClassInput = new System.Windows.Forms.CheckedListBox();
-            this.lblNot = new System.Windows.Forms.Label();
-            this.notClassInput = new System.Windows.Forms.CheckedListBox();
             this.tabMain.SuspendLayout();
             this.tabGeneralInfo.SuspendLayout();
             this.Advice.SuspendLayout();
@@ -470,6 +470,67 @@
             this.tabGeneralInfo.Text = "General Info";
             this.tabGeneralInfo.UseVisualStyleBackColor = true;
             this.tabGeneralInfo.Click += new System.EventHandler(this.tabGeneralInfo_Click);
+            // 
+            // lblNot
+            // 
+            this.lblNot.AutoSize = true;
+            this.lblNot.Location = new System.Drawing.Point(9, 419);
+            this.lblNot.Name = "lblNot";
+            this.lblNot.Size = new System.Drawing.Size(33, 13);
+            this.lblNot.TabIndex = 31;
+            this.lblNot.Text = "NOT:";
+            // 
+            // notClassInput
+            // 
+            this.notClassInput.CheckOnClick = true;
+            this.notClassInput.FormattingEnabled = true;
+            this.notClassInput.Items.AddRange(new object[] {
+            "Hunter",
+            "Mercenary",
+            "Naturalist",
+            "Missionary",
+            "Explorer",
+            "Guide"});
+            this.notClassInput.Location = new System.Drawing.Point(48, 416);
+            this.notClassInput.MultiColumn = true;
+            this.notClassInput.Name = "notClassInput";
+            this.notClassInput.Size = new System.Drawing.Size(744, 19);
+            this.notClassInput.TabIndex = 30;
+            // 
+            // lblOr
+            // 
+            this.lblOr.AutoSize = true;
+            this.lblOr.Location = new System.Drawing.Point(9, 385);
+            this.lblOr.Name = "lblOr";
+            this.lblOr.Size = new System.Drawing.Size(26, 13);
+            this.lblOr.TabIndex = 29;
+            this.lblOr.Text = "OR:";
+            // 
+            // orClassInput
+            // 
+            this.orClassInput.CheckOnClick = true;
+            this.orClassInput.FormattingEnabled = true;
+            this.orClassInput.Items.AddRange(new object[] {
+            "Hunter",
+            "Mercenary",
+            "Naturalist",
+            "Missionary",
+            "Explorer",
+            "Guide"});
+            this.orClassInput.Location = new System.Drawing.Point(48, 382);
+            this.orClassInput.MultiColumn = true;
+            this.orClassInput.Name = "orClassInput";
+            this.orClassInput.Size = new System.Drawing.Size(744, 19);
+            this.orClassInput.TabIndex = 28;
+            // 
+            // lblAnd
+            // 
+            this.lblAnd.AutoSize = true;
+            this.lblAnd.Location = new System.Drawing.Point(9, 347);
+            this.lblAnd.Name = "lblAnd";
+            this.lblAnd.Size = new System.Drawing.Size(33, 13);
+            this.lblAnd.TabIndex = 27;
+            this.lblAnd.Text = "AND:";
             // 
             // chkOnlyOnce
             // 
@@ -1031,18 +1092,23 @@
             // tabEditRespOpts
             // 
             this.tabEditRespOpts.AutoScroll = true;
+            this.tabEditRespOpts.Controls.Add(this.passText);
             this.tabEditRespOpts.Controls.Add(this.lblProbLose);
+            this.tabEditRespOpts.Controls.Add(this.passTextLabel);
             this.tabEditRespOpts.Controls.Add(this.lblProbPass);
             this.tabEditRespOpts.Controls.Add(this.strengthReq);
             this.tabEditRespOpts.Controls.Add(this.strengthCost);
             this.tabEditRespOpts.Controls.Add(this.knowCost);
             this.tabEditRespOpts.Controls.Add(this.lblProbWin);
+            this.tabEditRespOpts.Controls.Add(this.browse2);
             this.tabEditRespOpts.Controls.Add(this.marksCost);
             this.tabEditRespOpts.Controls.Add(this.knowReq);
             this.tabEditRespOpts.Controls.Add(this.loyalCost);
+            this.tabEditRespOpts.Controls.Add(this.passFollowUp);
             this.tabEditRespOpts.Controls.Add(this.lblWithStdParty);
             this.tabEditRespOpts.Controls.Add(this.percCost);
             this.tabEditRespOpts.Controls.Add(this.marksReq);
+            this.tabEditRespOpts.Controls.Add(this.passFollowUpLabel);
             this.tabEditRespOpts.Controls.Add(this.agilityCost);
             this.tabEditRespOpts.Controls.Add(this.lblProbLoseTxt);
             this.tabEditRespOpts.Controls.Add(this.diploCost);
@@ -1111,6 +1177,16 @@
             this.tabEditRespOpts.UseVisualStyleBackColor = true;
             this.tabEditRespOpts.Enter += new System.EventHandler(this.tabEditRespOpts_Enter);
             // 
+            // passText
+            // 
+            this.passText.Enabled = false;
+            this.passText.Location = new System.Drawing.Point(449, 71);
+            this.passText.Multiline = true;
+            this.passText.Name = "passText";
+            this.passText.Size = new System.Drawing.Size(96, 20);
+            this.passText.TabIndex = 481;
+            this.passText.Visible = false;
+            // 
             // lblProbLose
             // 
             this.lblProbLose.AutoSize = true;
@@ -1119,6 +1195,18 @@
             this.lblProbLose.Size = new System.Drawing.Size(27, 13);
             this.lblProbLose.TabIndex = 524;
             this.lblProbLose.Text = "40%";
+            // 
+            // passTextLabel
+            // 
+            this.passTextLabel.AutoSize = true;
+            this.passTextLabel.Enabled = false;
+            this.passTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passTextLabel.Location = new System.Drawing.Point(446, 51);
+            this.passTextLabel.Name = "passTextLabel";
+            this.passTextLabel.Size = new System.Drawing.Size(63, 13);
+            this.passTextLabel.TabIndex = 480;
+            this.passTextLabel.Text = "Pass Text";
+            this.passTextLabel.Visible = false;
             // 
             // lblProbPass
             // 
@@ -1168,6 +1256,18 @@
             this.lblProbWin.TabIndex = 522;
             this.lblProbWin.Text = "40%";
             // 
+            // browse2
+            // 
+            this.browse2.Enabled = false;
+            this.browse2.Location = new System.Drawing.Point(564, 66);
+            this.browse2.Name = "browse2";
+            this.browse2.Size = new System.Drawing.Size(10, 23);
+            this.browse2.TabIndex = 491;
+            this.browse2.Text = "Browse";
+            this.browse2.UseVisualStyleBackColor = true;
+            this.browse2.Visible = false;
+            this.browse2.Click += new System.EventHandler(this.browse2_Click);
+            // 
             // marksCost
             // 
             this.marksCost.Enabled = false;
@@ -1198,6 +1298,15 @@
             this.loyalCost.Visible = false;
             this.loyalCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
             // 
+            // passFollowUp
+            // 
+            this.passFollowUp.Enabled = false;
+            this.passFollowUp.Location = new System.Drawing.Point(503, 68);
+            this.passFollowUp.Name = "passFollowUp";
+            this.passFollowUp.Size = new System.Drawing.Size(55, 20);
+            this.passFollowUp.TabIndex = 488;
+            this.passFollowUp.Visible = false;
+            // 
             // lblWithStdParty
             // 
             this.lblWithStdParty.AutoSize = true;
@@ -1226,6 +1335,17 @@
             this.marksReq.TabIndex = 365;
             this.marksReq.Visible = false;
             this.marksReq.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
+            // 
+            // passFollowUpLabel
+            // 
+            this.passFollowUpLabel.AutoSize = true;
+            this.passFollowUpLabel.Enabled = false;
+            this.passFollowUpLabel.Location = new System.Drawing.Point(500, 52);
+            this.passFollowUpLabel.Name = "passFollowUpLabel";
+            this.passFollowUpLabel.Size = new System.Drawing.Size(109, 13);
+            this.passFollowUpLabel.TabIndex = 485;
+            this.passFollowUpLabel.Text = "Pass Follow-up Event";
+            this.passFollowUpLabel.Visible = false;
             // 
             // agilityCost
             // 
@@ -1370,23 +1490,20 @@
             this.pnlOther.Controls.Add(this.chkWinKill);
             this.pnlOther.Controls.Add(this.btnRespOptSave);
             this.pnlOther.Controls.Add(this.btnBrowse3);
-            this.pnlOther.Controls.Add(this.browse2);
             this.pnlOther.Controls.Add(this.browse1);
             this.pnlOther.Controls.Add(this.loseFollowUp);
-            this.pnlOther.Controls.Add(this.passFollowUp);
             this.pnlOther.Controls.Add(this.winFollowUp);
             this.pnlOther.Controls.Add(this.loseFollowUpLabel);
-            this.pnlOther.Controls.Add(this.passFollowUpLabel);
             this.pnlOther.Controls.Add(this.label1);
-            this.pnlOther.Location = new System.Drawing.Point(10, 906);
+            this.pnlOther.Location = new System.Drawing.Point(13, 827);
             this.pnlOther.Name = "pnlOther";
-            this.pnlOther.Size = new System.Drawing.Size(812, 156);
+            this.pnlOther.Size = new System.Drawing.Size(810, 178);
             this.pnlOther.TabIndex = 517;
             // 
             // lblLoseEffects
             // 
             this.lblLoseEffects.AutoSize = true;
-            this.lblLoseEffects.Location = new System.Drawing.Point(557, 91);
+            this.lblLoseEffects.Location = new System.Drawing.Point(552, 98);
             this.lblLoseEffects.Name = "lblLoseEffects";
             this.lblLoseEffects.Size = new System.Drawing.Size(123, 13);
             this.lblLoseEffects.TabIndex = 510;
@@ -1400,7 +1517,7 @@
             "Everyone",
             "Selected Player",
             "Random Player"});
-            this.comboBoxLoseApplication.Location = new System.Drawing.Point(686, 88);
+            this.comboBoxLoseApplication.Location = new System.Drawing.Point(681, 95);
             this.comboBoxLoseApplication.Name = "comboBoxLoseApplication";
             this.comboBoxLoseApplication.Size = new System.Drawing.Size(109, 21);
             this.comboBoxLoseApplication.TabIndex = 509;
@@ -1409,7 +1526,7 @@
             // lblWinEffects
             // 
             this.lblWinEffects.AutoSize = true;
-            this.lblWinEffects.Location = new System.Drawing.Point(556, 59);
+            this.lblWinEffects.Location = new System.Drawing.Point(552, 63);
             this.lblWinEffects.Name = "lblWinEffects";
             this.lblWinEffects.Size = new System.Drawing.Size(119, 13);
             this.lblWinEffects.TabIndex = 506;
@@ -1423,7 +1540,7 @@
             "Everyone",
             "Selected Player",
             "Random Player"});
-            this.comboBoxWinApplication.Location = new System.Drawing.Point(685, 56);
+            this.comboBoxWinApplication.Location = new System.Drawing.Point(681, 60);
             this.comboBoxWinApplication.Name = "comboBoxWinApplication";
             this.comboBoxWinApplication.Size = new System.Drawing.Size(111, 21);
             this.comboBoxWinApplication.TabIndex = 505;
@@ -1453,7 +1570,7 @@
             // 
             // btnRespOptSave
             // 
-            this.btnRespOptSave.Location = new System.Drawing.Point(686, 122);
+            this.btnRespOptSave.Location = new System.Drawing.Point(349, 148);
             this.btnRespOptSave.Name = "btnRespOptSave";
             this.btnRespOptSave.Size = new System.Drawing.Size(109, 23);
             this.btnRespOptSave.TabIndex = 499;
@@ -1463,7 +1580,7 @@
             // 
             // btnBrowse3
             // 
-            this.btnBrowse3.Location = new System.Drawing.Point(449, 122);
+            this.btnBrowse3.Location = new System.Drawing.Point(445, 93);
             this.btnBrowse3.Name = "btnBrowse3";
             this.btnBrowse3.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse3.TabIndex = 492;
@@ -1471,19 +1588,9 @@
             this.btnBrowse3.UseVisualStyleBackColor = true;
             this.btnBrowse3.Click += new System.EventHandler(this.browse3_Click);
             // 
-            // browse2
-            // 
-            this.browse2.Location = new System.Drawing.Point(448, 73);
-            this.browse2.Name = "browse2";
-            this.browse2.Size = new System.Drawing.Size(75, 23);
-            this.browse2.TabIndex = 491;
-            this.browse2.Text = "Browse";
-            this.browse2.UseVisualStyleBackColor = true;
-            this.browse2.Click += new System.EventHandler(this.browse2_Click);
-            // 
             // browse1
             // 
-            this.browse1.Location = new System.Drawing.Point(448, 23);
+            this.browse1.Location = new System.Drawing.Point(444, 24);
             this.browse1.Name = "browse1";
             this.browse1.Size = new System.Drawing.Size(75, 23);
             this.browse1.TabIndex = 490;
@@ -1493,21 +1600,14 @@
             // 
             // loseFollowUp
             // 
-            this.loseFollowUp.Location = new System.Drawing.Point(10, 124);
+            this.loseFollowUp.Location = new System.Drawing.Point(6, 95);
             this.loseFollowUp.Name = "loseFollowUp";
             this.loseFollowUp.Size = new System.Drawing.Size(429, 20);
             this.loseFollowUp.TabIndex = 489;
             // 
-            // passFollowUp
-            // 
-            this.passFollowUp.Location = new System.Drawing.Point(10, 75);
-            this.passFollowUp.Name = "passFollowUp";
-            this.passFollowUp.Size = new System.Drawing.Size(429, 20);
-            this.passFollowUp.TabIndex = 488;
-            // 
             // winFollowUp
             // 
-            this.winFollowUp.Location = new System.Drawing.Point(10, 25);
+            this.winFollowUp.Location = new System.Drawing.Point(6, 26);
             this.winFollowUp.Name = "winFollowUp";
             this.winFollowUp.Size = new System.Drawing.Size(429, 20);
             this.winFollowUp.TabIndex = 487;
@@ -1515,25 +1615,16 @@
             // loseFollowUpLabel
             // 
             this.loseFollowUpLabel.AutoSize = true;
-            this.loseFollowUpLabel.Location = new System.Drawing.Point(7, 108);
+            this.loseFollowUpLabel.Location = new System.Drawing.Point(3, 79);
             this.loseFollowUpLabel.Name = "loseFollowUpLabel";
             this.loseFollowUpLabel.Size = new System.Drawing.Size(109, 13);
             this.loseFollowUpLabel.TabIndex = 486;
             this.loseFollowUpLabel.Text = "Lose Follow-up Event";
             // 
-            // passFollowUpLabel
-            // 
-            this.passFollowUpLabel.AutoSize = true;
-            this.passFollowUpLabel.Location = new System.Drawing.Point(7, 59);
-            this.passFollowUpLabel.Name = "passFollowUpLabel";
-            this.passFollowUpLabel.Size = new System.Drawing.Size(109, 13);
-            this.passFollowUpLabel.TabIndex = 485;
-            this.passFollowUpLabel.Text = "Pass Follow-up Event";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 9);
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 484;
@@ -1574,34 +1665,14 @@
             // pnlResText
             // 
             this.pnlResText.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlResText.Controls.Add(this.passText);
-            this.pnlResText.Controls.Add(this.passTextLabel);
             this.pnlResText.Controls.Add(this.loseText);
             this.pnlResText.Controls.Add(this.loseTextLabel);
             this.pnlResText.Controls.Add(this.winText);
             this.pnlResText.Controls.Add(this.winTextLabel);
             this.pnlResText.Location = new System.Drawing.Point(13, 637);
             this.pnlResText.Name = "pnlResText";
-            this.pnlResText.Size = new System.Drawing.Size(810, 262);
+            this.pnlResText.Size = new System.Drawing.Size(810, 178);
             this.pnlResText.TabIndex = 516;
-            // 
-            // passText
-            // 
-            this.passText.Location = new System.Drawing.Point(17, 193);
-            this.passText.Multiline = true;
-            this.passText.Name = "passText";
-            this.passText.Size = new System.Drawing.Size(775, 50);
-            this.passText.TabIndex = 481;
-            // 
-            // passTextLabel
-            // 
-            this.passTextLabel.AutoSize = true;
-            this.passTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passTextLabel.Location = new System.Drawing.Point(14, 173);
-            this.passTextLabel.Name = "passTextLabel";
-            this.passTextLabel.Size = new System.Drawing.Size(63, 13);
-            this.passTextLabel.TabIndex = 480;
-            this.passTextLabel.Text = "Pass Text";
             // 
             // loseText
             // 
@@ -3841,67 +3912,6 @@
             this.openFileDialog_LoadEvent.FileName = "*.txt";
             this.openFileDialog_LoadEvent.Filter = "Text Files|*.txt";
             this.openFileDialog_LoadEvent.Title = "Load Event";
-            // 
-            // lblAnd
-            // 
-            this.lblAnd.AutoSize = true;
-            this.lblAnd.Location = new System.Drawing.Point(9, 347);
-            this.lblAnd.Name = "lblAnd";
-            this.lblAnd.Size = new System.Drawing.Size(33, 13);
-            this.lblAnd.TabIndex = 27;
-            this.lblAnd.Text = "AND:";
-            // 
-            // lblOr
-            // 
-            this.lblOr.AutoSize = true;
-            this.lblOr.Location = new System.Drawing.Point(9, 385);
-            this.lblOr.Name = "lblOr";
-            this.lblOr.Size = new System.Drawing.Size(26, 13);
-            this.lblOr.TabIndex = 29;
-            this.lblOr.Text = "OR:";
-            // 
-            // orClassInput
-            // 
-            this.orClassInput.CheckOnClick = true;
-            this.orClassInput.FormattingEnabled = true;
-            this.orClassInput.Items.AddRange(new object[] {
-            "Hunter",
-            "Mercenary",
-            "Naturalist",
-            "Missionary",
-            "Explorer",
-            "Guide"});
-            this.orClassInput.Location = new System.Drawing.Point(48, 382);
-            this.orClassInput.MultiColumn = true;
-            this.orClassInput.Name = "orClassInput";
-            this.orClassInput.Size = new System.Drawing.Size(744, 19);
-            this.orClassInput.TabIndex = 28;
-            // 
-            // lblNot
-            // 
-            this.lblNot.AutoSize = true;
-            this.lblNot.Location = new System.Drawing.Point(9, 419);
-            this.lblNot.Name = "lblNot";
-            this.lblNot.Size = new System.Drawing.Size(33, 13);
-            this.lblNot.TabIndex = 31;
-            this.lblNot.Text = "NOT:";
-            // 
-            // notClassInput
-            // 
-            this.notClassInput.CheckOnClick = true;
-            this.notClassInput.FormattingEnabled = true;
-            this.notClassInput.Items.AddRange(new object[] {
-            "Hunter",
-            "Mercenary",
-            "Naturalist",
-            "Missionary",
-            "Explorer",
-            "Guide"});
-            this.notClassInput.Location = new System.Drawing.Point(48, 416);
-            this.notClassInput.MultiColumn = true;
-            this.notClassInput.Name = "notClassInput";
-            this.notClassInput.Size = new System.Drawing.Size(744, 19);
-            this.notClassInput.TabIndex = 30;
             // 
             // frmMain
             // 

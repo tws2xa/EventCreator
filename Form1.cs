@@ -1083,7 +1083,7 @@ namespace EventCreator
         private void setEditRespLayout()
         {
             //int panelWidth = pnlMod.Width;
-            int panelHeight = pnlMod.Height;
+            //int panelHeight = pnlMod.Height;
 
             int tabWidth = tabMain.Width;
 
@@ -1098,6 +1098,8 @@ namespace EventCreator
 
             bool finished = false;
 
+            int maxHeightThisRow = 0;
+
             while (pnlIndex <= respEditPanels.Count - 1)
             {
                 while (!finished && curX + respEditPanels[pnlIndex].Width < tabWidth)
@@ -1107,16 +1109,19 @@ namespace EventCreator
                     curPnl.Location = new Point(curX, curY);
                     curX += respEditPanels[pnlIndex].Width + hSpacer;
 
+                    if (respEditPanels[pnlIndex].Height > maxHeightThisRow) maxHeightThisRow = respEditPanels[pnlIndex].Height;
+
                     pnlIndex++;
 
                     if (pnlIndex > respEditPanels.Count - 1) finished = true;
 
                 }
                 curX = border;
-                curY += panelHeight + vSpacer;
+                curY += maxHeightThisRow + vSpacer;
+                maxHeightThisRow = 0;
             }
 
-            pnlOther.Location = new Point(curX, curY + vSpacer);
+            //pnlOther.Location = new Point(curX, curY + vSpacer);
         }
 
         private void waterModB_CheckedChanged(object sender, EventArgs e)
@@ -1329,7 +1334,7 @@ namespace EventCreator
 
             respEditPanels = new List<Panel>()
             {
-                pnlMod, pnlReq, pnlCost, pnlWin, pnlLose, pnlResText
+                pnlMod, pnlReq, pnlCost, pnlWin, pnlLose, pnlResText, pnlOther
             };
         }
 
