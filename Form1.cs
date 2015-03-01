@@ -1136,56 +1136,65 @@ namespace EventCreator
 
         public void updateRespProbabilities()
         {
-            List<int> avgGlobalResources = new List<int>() { 10, 10, 10, 10, 10, 90, 10, 0 };
-
-            List<int> resourceModifiers = getGlobalStats();
-
-            List<int> avgPartyStats = new List<int>() { 70, 70, 70, 60, 70, 70, 70, 70};
-
+            double rollNum = 50; //How many sides on the die.
+            int[,] avgTops = new int[3, 8]{
+                                {13, 13, 13, 13, 13, 13, 13, 13},
+                                {11, 11, 11, 11, 11, 11, 11, 11},
+                                {10, 10, 10, 10, 10, 10, 10, 10}
+                              };
             List<int> partyStatModifiers = getMemberStats();
+            int statNum = 0;
 
+            int totalMod = 0;
+            foreach(int modifier in partyStatModifiers) {
+                if (modifier == notAppliedModifier) continue;
+                
+                int top0 = avgTops[0, statNum];
+                int top1 = avgTops[1, statNum];
+                int top2 = avgTops[2, statNum];
 
-            int resourceModifier = 0;
-            for (int i = 0; i < avgGlobalResources.Count(); i++)
-            {
-                int currentResource = avgGlobalResources[i];
-                int currentResourceModifier = resourceModifiers[i];
+                double[] weights = getWeights(modifier, top0, top1, top2);
 
-                if (currentResourceModifier != notAppliedModifier)
-                {
-                    resourceModifier += currentResource - currentResourceModifier;
-                }
+                double weightedAvg = ((weights[0] * top0 + weights[1] * top1 + weights[2] * top2) / (weights[0] + weights[1] + weights[2]));
+
+                totalMod += ((int)Math.Floor(weightedAvg) - modifier);
+
+                statNum++;
             }
 
-            int partyStatModifier = 0;
-            for (int i = 0; i < avgPartyStats.Count(); i++)
-            {
-                int currentPartyStat = avgPartyStats[i];
-                int currentPartyStatModifier = partyStatModifiers[i];
+            //If rollNum = 50 (i.e. 50 sided die)
+            //probability that roll 0 to 50 + mod is >= 25 -> win
+            //probability that roll 0 to 50 + mod is < 25 -> lose
+            //Thus check if roll 0-50 < 25 - mod for lose or >= 25 - mod for win.
 
-                if (currentPartyStatModifier != notAppliedModifier)
-                {
-                    partyStatModifier += currentPartyStat - currentPartyStatModifier;
-                }
-            }
+            Console.WriteLine("Total Mod: " + totalMod);
+            double dividor = rollNum / 2.0 - totalMod;
 
-            int totalModifier = resourceModifier + partyStatModifier;
+            double winInterval = Math.Floor(((rollNum - dividor) / rollNum) * 100);
+            double loseInterval = Math.Floor((dividor / rollNum) * 100);
 
-            //r = Random Roll 0-100 + modifier.
-            //r < 40 -- Lose
-            // 40 <= r < 60 -- pass
-            // r >= 60 -- Win
+            winInterval = Math.Min(100, Math.Max(winInterval, 0));
+            loseInterval = Math.Min(100, Math.Max(loseInterval, 0));
 
-            float loseThreshold = Math.Max(0, Math.Min(100, 40 - totalModifier)); //Clamp value between 0 and 100
-            float winThreshold = Math.Max(0, Math.Min(100, 60 - totalModifier)); //Clamp value between 0 and 100
+            lblProbWin.Text = (winInterval + "%");
+            lblProbLose.Text = (loseInterval + "%");
+        }
 
-            float loseInterval = loseThreshold;
-            float passInterval = winThreshold - loseThreshold;
-            float winInterval = 100 - winThreshold;
-            
-            lblProbWin.Text = ((winInterval) + "%");
-            lblProbPass.Text = ((passInterval) + "%");
-            lblProbLose.Text = ((loseInterval) + "%");
+        private double[] getWeights(int modifier, int top0, int top1, int top2)
+        {
+            int minWeight = 1;
+
+            double dif1 = top0 - modifier;
+            double dif2 = top1 - modifier;
+            double dif3 = top2 - modifier;
+
+            double addNum = Math.Max(0, minWeight - dif3);
+
+            dif1 += addNum;
+            dif2 += addNum;
+            dif3 += addNum;
+
+            return new double[3] { dif1, dif2, dif3 };
         }
         
         private void waterCost_ValueChanged(object sender, EventArgs e)

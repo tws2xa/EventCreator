@@ -92,7 +92,6 @@
             this.passText = new System.Windows.Forms.TextBox();
             this.lblProbLose = new System.Windows.Forms.Label();
             this.passTextLabel = new System.Windows.Forms.Label();
-            this.lblProbPass = new System.Windows.Forms.Label();
             this.strengthReq = new System.Windows.Forms.NumericUpDown();
             this.strengthCost = new System.Windows.Forms.NumericUpDown();
             this.knowCost = new System.Windows.Forms.NumericUpDown();
@@ -111,7 +110,6 @@
             this.diploCost = new System.Windows.Forms.NumericUpDown();
             this.loyalReq = new System.Windows.Forms.NumericUpDown();
             this.tacticsCost = new System.Windows.Forms.NumericUpDown();
-            this.lblProbPassTxt = new System.Windows.Forms.Label();
             this.strengthLabelC = new System.Windows.Forms.Label();
             this.percReq = new System.Windows.Forms.NumericUpDown();
             this.knowLabelC = new System.Windows.Forms.Label();
@@ -1095,7 +1093,6 @@
             this.tabEditRespOpts.Controls.Add(this.passText);
             this.tabEditRespOpts.Controls.Add(this.lblProbLose);
             this.tabEditRespOpts.Controls.Add(this.passTextLabel);
-            this.tabEditRespOpts.Controls.Add(this.lblProbPass);
             this.tabEditRespOpts.Controls.Add(this.strengthReq);
             this.tabEditRespOpts.Controls.Add(this.strengthCost);
             this.tabEditRespOpts.Controls.Add(this.knowCost);
@@ -1114,7 +1111,6 @@
             this.tabEditRespOpts.Controls.Add(this.diploCost);
             this.tabEditRespOpts.Controls.Add(this.loyalReq);
             this.tabEditRespOpts.Controls.Add(this.tacticsCost);
-            this.tabEditRespOpts.Controls.Add(this.lblProbPassTxt);
             this.tabEditRespOpts.Controls.Add(this.strengthLabelC);
             this.tabEditRespOpts.Controls.Add(this.percReq);
             this.tabEditRespOpts.Controls.Add(this.knowLabelC);
@@ -1190,11 +1186,11 @@
             // lblProbLose
             // 
             this.lblProbLose.AutoSize = true;
-            this.lblProbLose.Location = new System.Drawing.Point(362, 66);
+            this.lblProbLose.Location = new System.Drawing.Point(236, 66);
             this.lblProbLose.Name = "lblProbLose";
             this.lblProbLose.Size = new System.Drawing.Size(27, 13);
             this.lblProbLose.TabIndex = 524;
-            this.lblProbLose.Text = "40%";
+            this.lblProbLose.Text = "50%";
             // 
             // passTextLabel
             // 
@@ -1207,15 +1203,6 @@
             this.passTextLabel.TabIndex = 480;
             this.passTextLabel.Text = "Pass Text";
             this.passTextLabel.Visible = false;
-            // 
-            // lblProbPass
-            // 
-            this.lblProbPass.AutoSize = true;
-            this.lblProbPass.Location = new System.Drawing.Point(231, 66);
-            this.lblProbPass.Name = "lblProbPass";
-            this.lblProbPass.Size = new System.Drawing.Size(27, 13);
-            this.lblProbPass.TabIndex = 523;
-            this.lblProbPass.Text = "20%";
             // 
             // strengthReq
             // 
@@ -1254,7 +1241,7 @@
             this.lblProbWin.Name = "lblProbWin";
             this.lblProbWin.Size = new System.Drawing.Size(27, 13);
             this.lblProbWin.TabIndex = 522;
-            this.lblProbWin.Text = "40%";
+            this.lblProbWin.Text = "50%";
             // 
             // browse2
             // 
@@ -1360,7 +1347,7 @@
             // lblProbLoseTxt
             // 
             this.lblProbLoseTxt.AutoSize = true;
-            this.lblProbLoseTxt.Location = new System.Drawing.Point(271, 66);
+            this.lblProbLoseTxt.Location = new System.Drawing.Point(145, 66);
             this.lblProbLoseTxt.Name = "lblProbLoseTxt";
             this.lblProbLoseTxt.Size = new System.Drawing.Size(99, 13);
             this.lblProbLoseTxt.TabIndex = 520;
@@ -1395,15 +1382,6 @@
             this.tacticsCost.TabIndex = 467;
             this.tacticsCost.Visible = false;
             this.tacticsCost.ValueChanged += new System.EventHandler(this.waterCost_ValueChanged);
-            // 
-            // lblProbPassTxt
-            // 
-            this.lblProbPassTxt.AutoSize = true;
-            this.lblProbPassTxt.Location = new System.Drawing.Point(140, 66);
-            this.lblProbPassTxt.Name = "lblProbPassTxt";
-            this.lblProbPassTxt.Size = new System.Drawing.Size(99, 13);
-            this.lblProbPassTxt.TabIndex = 519;
-            this.lblProbPassTxt.Text = "Probability of Pass: ";
             // 
             // strengthLabelC
             // 
@@ -4327,11 +4305,9 @@
         private System.Windows.Forms.Panel pnlMod;
         private System.Windows.Forms.Panel pnlOther;
         private System.Windows.Forms.Label lblProbLose;
-        private System.Windows.Forms.Label lblProbPass;
         private System.Windows.Forms.Label lblProbWin;
         private System.Windows.Forms.Label lblWithStdParty;
         private System.Windows.Forms.Label lblProbLoseTxt;
-        private System.Windows.Forms.Label lblProbPassTxt;
         private System.Windows.Forms.Label lblProbOfWinTxt;
         private System.Windows.Forms.Label lblAnd;
         private System.Windows.Forms.Label lblNot;
